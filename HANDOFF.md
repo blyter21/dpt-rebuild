@@ -115,12 +115,14 @@ Primary docs:
 | `loop-logs/074-deployment-readiness-layer.md` | Vercel/Supabase readiness layer: env templates, source-mode docs, smoke-test docs, verifier command. |
 | `loop-logs/075-media-storage-migration-plan.md` | Final media storage migration plan: bucket/object mapping, upload command manifest, CDN-base helper. |
 | `loop-logs/076-vercel-preview-preflight.md` | Vercel preview package/preflight: app-local vercel config, env docs, final smoke report. |
+| `loop-logs/077-vercel-preview-poy-polish.md` | Public preview polish for Player of the Year strip overflow/clipping. |
 | `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |
 | `reports/dpt-supabase-public-migration-path.md` | Supabase public schema/seed/repository migration path report and validation notes. |
 | `reports/dpt-local-postgres-supabase-repository-validation.md` | Local embedded Postgres validation and SupabaseRepository implementation report. |
 | `reports/dpt-deployment-readiness-verification.md` | Deployment-readiness verification output and current blockers. |
 | `reports/dpt-media-storage-plan-verification.md` | Final no-upload media storage migration verification report. |
 | `reports/dpt-vercel-preview-preflight-report.md` | First Vercel preview approval/preflight report. |
+| `reports/dpt-vercel-preview-live-verification.md` | Live Vercel preview route/media/browser verification report. |
 | `reports/dpt-vercel-preview-route-media-smoke.json` | Machine-readable final route/media smoke output for preview approval. |
 | `docs/DPT_VERCEL_PREVIEW_PACKAGE.md` | Vercel preview project/root/env/checklist notes. |
 | `docs/DPT_VERCEL_ENV_VARS.md` | Vercel env var matrix for JSON fallback and future Supabase mode. |

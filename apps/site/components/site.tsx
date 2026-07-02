@@ -94,7 +94,7 @@ export function Leaderboard({ players }: { players: LeaderboardPlayer[] }) {
     <div id="leaderboard" className="poy-strip">
       <Link href="/leaderboard" className="poy-title">Player of the Year</Link>
       <div className="poy-scroll">
-        {players.slice(0, 10).map((player) => {
+        {players.slice(0, 5).map((player) => {
           const avatar = mediaUrl(player.avatarUrl);
           return (
             <div className="poy-tile" key={player.playerId}>
