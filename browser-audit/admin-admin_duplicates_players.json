@@ -1,0 +1,268 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/duplicates/players",
+    "headings":  [
+                     "Fix Duplicate Players List",
+                     "Primary Account",
+                     "Secondary Account",
+                     "Player Information",
+                     "Tournament History"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "52",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Clear",
+                    "Merge Accounts",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "View History",
+                    "Cancel",
+                    "Proceed"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Profile Picture",
+                                       "First Name",
+                                       "Last Name",
+                                       "Nick Name",
+                                       "Mobile Number",
+                                       "Email Address",
+                                       "Created By",
+                                       "Created Date",
+                                       "Actions",
+                                       "2533",
+                                       "7014901151",
+                                       "-",
+                                       "Aug 14 2025",
+                                       "Primary Merge into Primary View History"
+                                   ],
+                       "rows":  51,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Profile Picture",
+                                              "First Name",
+                                              "Last Name",
+                                              "Nick Name",
+                                              "Mobile Number",
+                                              "Email Address",
+                                              "Created By",
+                                              "Created Date",
+                                              "Actions"
+                                          ],
+                                          [
+                                              "2533",
+                                              "7014901151",
+                                              "-",
+                                              "Aug 14 2025",
+                                              "Primary Merge into Primary View History"
+                                          ],
+                                          [
+                                              "2191",
+                                              "7014600352",
+                                              "-",
+                                              "Aug 29 2024",
+                                              "Primary Merge into Primary View History"
+                                          ]
+                                      ]
+                   },
+                   {
+                       "index":  1,
+                       "headers":  [
+                                       "Date",
+                                       "Location",
+                                       "Tournament",
+                                       "Points",
+                                       "Winnings",
+                                       "Rank"
+                                   ],
+                       "rows":  1,
+                       "sampleRows":  [
+                                          [
+                                              "Date",
+                                              "Location",
+                                              "Tournament",
+                                              "Points",
+                                              "Winnings",
+                                              "Rank"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Fix Duplicate Players List Clear Merge Accounts Show 10 25 50 100 All entries Search: # Profile Picture First Name Last Name Nick Name Mobile Number 2533 7014901151 2191 7014600352 2192 6128671044 2195 7015909591 2242 7012693813 2267 7012305323 2030 7017100119 2337 7014293505 2338 7013885680 2359 7013689832 2079 2184071805 2081 2184074067 2095 2182009113 2141 7012057676 2142 7012825102 1859 7012900465 1387 7017154295 1392 7019899379 1394 6058809315 1107 7013407272 1698 7013402490 1727 2188495772 1731 7015200766 1770 8129298434 1242 6128199553 1601 7012147203 1609 7016212299 1611 7013062224 326 Aaron Drees 7013300561 2162 Aaron Geist 7017931449 2007 AAron Held 6056907799 1234 Aaron Johnson 7018665757 1606 Aaron Keller 7012268009 600 Aaron Knudson 7012695918 2238 Aaron knuth 7017291212 384 Aaron Raap 7012696995 2680 Aaron Templin 2183717122 1974 Aaron Trauger 2346 Aaron Trettel 2187702432 297 Aaron (ACE) Williamson 7017125390 1301 Abhilash Dube Abhi 8788067602 2398 Abraham Faumuina 2054 Abraham Salinas 7015093839 1798 Adam Azure 1540 Adam Boivin 1468 Adam Grant 7015522564 616 Adam Haskins 7013671322 1717 Adam Hillstrom 1730 Adam Hillstrom 6129990157 2578 Adam Kamps Showing 1 to 50 of 2,561 entries Previous 1 2 3 4 5 … 52 Next Dashboard Players",
+    "navText":  "Fix Duplicate Players"
+}

@@ -1,0 +1,297 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/venues",
+    "headings":  [
+                     "Venues List"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/venues/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/91/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/91"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/90/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/90"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/89/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/89"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/88/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/88"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/87/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/87"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/86/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/86"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/85/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/85"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/83/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/83"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/82/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/82"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/venues/81/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/venues/81"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "8",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/venues#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Name",
+                                       "Address",
+                                       "City",
+                                       "State",
+                                       "Zip",
+                                       "Status",
+                                       "Actions",
+                                       "91",
+                                       "Double Tree - West Fargo",
+                                       "825 E Beaton Drive",
+                                       "West Fargo",
+                                       "ND",
+                                       "58078",
+                                       "Published",
+                                       "Edit View"
+                                   ],
+                       "rows":  11,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Name",
+                                              "Address",
+                                              "City",
+                                              "State",
+                                              "Zip",
+                                              "Status",
+                                              "Actions"
+                                          ],
+                                          [
+                                              "91",
+                                              "Double Tree - West Fargo",
+                                              "825 E Beaton Drive",
+                                              "West Fargo",
+                                              "ND",
+                                              "58078",
+                                              "Published",
+                                              "Edit View"
+                                          ],
+                                          [
+                                              "90",
+                                              "Dakota Magic Casino",
+                                              "16849 102nd St SE",
+                                              "Hankinson",
+                                              "ND",
+                                              "58041",
+                                              "Published",
+                                              "Edit View"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Venues List Show 10 25 50 100 entries Search: # Name Address City State Zip Status Actions 91 Double Tree - West Fargo 825 E Beaton Drive West Fargo ND 58078 Published Edit View 90 Dakota Magic Casino 16849 102nd St SE Hankinson ND 58041 Published Edit View 89 Cactus Jacks 3402 Interstate Blvd S Fargo ND 58103 Published Edit View 88 City Brew Hall 120 4th St N, Suite A Wahpeton ND 58075 Published Edit View 87 Red River Valley Fairgrounds - Hartl Building 1805 Main Ave W West Fargo North Dakota 58078 Published Edit View 86 Watford City Eagles Club 1904 Main St Watford City North Dakota 58854 Published Edit View 85 Harvey Eagles Club 931 US-52 Bus Harvey ND 58341 Published Edit View 83 Bismarck Hotel 800 S 3rd St Bismarck ND 58504 Published Edit View 82 TBD TBD TBD ND 00000 Published Edit View 81 Angry Beaver Lodge 404 Main Ave Oakes ND 58474 Published Edit View Showing 1 to 10 of 78 entries Previous 1 2 3 4 5 … 8 Next Dashboard Venues",
+    "navText":  "Venues"
+}

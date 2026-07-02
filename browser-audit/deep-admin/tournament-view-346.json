@@ -1,0 +1,153 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/tournaments/346",
+    "headings":  [
+                     "Tournament Show"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/tournaments/346#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Manage Tournament",
+                      "href":  "https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers"
+                  },
+                  {
+                      "text":  "List",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/tournaments/346/edit"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Manage Tournament",
+                    "List",
+                    "Edit"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "Name",
+                                       "Black Chip Bounty"
+                                   ],
+                       "rows":  20,
+                       "sampleRows":  [
+                                          [
+                                              "Name",
+                                              "Black Chip Bounty"
+                                          ],
+                                          [
+                                              "Event",
+                                              "Poker Brat Black Chip BOUNTY Tournament"
+                                          ],
+                                          [
+                                              "Venue",
+                                              "Windbreak"
+                                          ],
+                                          [
+                                              "Short Description",
+                                              "The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). One-time add-on for $100 (20,000 chips) is available until registration closes. (must have chips to add on) For each player you take out, you earn a $100 bounty! Late registration, \u0026 add-ons are open through dinner break. (Approximately 4:30 pm) Suggested Dealer appreciation $20 - Tips are appreciated but not mandatory to play"
+                                          ],
+                                          [
+                                              "Long Description"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Tournament Show Manage Tournament List Edit Name Black Chip Bounty Event Poker Brat Black Chip BOUNTY Tournament Venue Windbreak Short Description The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). One-time add-on for $100 (20,000 chips) is available until registration closes. (must have chips to add on) For each player you take out, you earn a $100 bounty! Late registration, \u0026 add-ons are open through dinner break. (Approximately 4:30 pm) Suggested Dealer appreciation $20 - Tips are appreciated but not mandatory to play Long Description Start Date 2026-06-07 11:00:00 End Date 2026-06-07 11:00:00 Registration Start Date 2026-06-07 11:00:00 Registration End Date 2026-06-07 11:00:00 Initial Buy In $200 Dealer Appreciation Fee 20% Initial Chips Count 20000 Rebuys $100 Rebuy Dealer Appreciation Fee $0 Rebuy Chips Count 20000 Charity Take 15% Players at Final Table 8 Status Published Created at 2026-05-18 13:14:04 (1 month ago) Updated at 2026-06-07 18:56:54 (2 weeks ago) Updated at: 2 weeks ago, Created at: Monday, May 18, 2026 1:14 PM Dashboard Tournaments Show",
+    "targetName":  "tournament-view-346"
+}

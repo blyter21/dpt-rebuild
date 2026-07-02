@@ -1,0 +1,20 @@
+{
+  "name": "dpt-rebuild-lab",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm --workspace packages/tournament-engine test",
+    "dpt:seed:public": "python3 scripts/build_dpt_supabase_seed.py",
+    "dpt:db:validate": "node scripts/validate_dpt_public_postgres.mjs",
+    "dpt:media:manifest": "python3 scripts/build_dpt_media_manifest.py",
+    "dpt:media:storage-plan": "python3 scripts/build_dpt_media_storage_plan.py",
+    "dpt:verify:public": "bash scripts/verify_dpt_deployment_readiness.sh"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.3",
+    "supabase": "^2.108.0"
+  }
+}

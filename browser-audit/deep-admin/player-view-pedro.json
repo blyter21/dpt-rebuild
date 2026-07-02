@@ -1,0 +1,145 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/users/2787",
+    "headings":  [
+                     "User Show"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/users/2787#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "List",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2787/edit"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Users",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "List",
+                    "Edit"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "Name"
+                                   ],
+                       "rows":  8,
+                       "sampleRows":  [
+                                          [
+                                              "Name"
+                                          ],
+                                          [
+                                              "Email",
+                                              "pedro@fpngaming.com"
+                                          ],
+                                          [
+                                              "Birthdate"
+                                          ],
+                                          [
+                                              "Phone"
+                                          ],
+                                          [
+                                              "Roles",
+                                              "Administrator User"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications User Show List Edit Name Email pedro@fpngaming.com Birthdate Phone Roles Administrator User Permissions view_admin add_users edit_users restore_users view_users edit_own_users edit_state_users view_list_users view_own_users add_leagues edit_leagues edit_own_leagues edit_state_leagues restore_leagues view_leagues view_list_leagues view_own_leagues add_seasons edit_seasons edit_own_seasons edit_state_seasons restore_seasons view_seasons view_list_seasons view_own_seasons add_events edit_events edit_own_events edit_state_events restore_events view_events view_list_events view_own_events add_venues edit_venues edit_own_venues edit_state_venues restore_venues view_venues view_list_venues view_own_venues add_tournaments edit_tournaments edit_own_tournaments edit_state_tournaments restore_tournaments view_tournaments view_list_tournaments view_own_tournaments add_players edit_players edit_own_players edit_state_players restore_players view_players view_list_players view_own_players add_tournamentupdates edit_tournamentupdates edit_own_tournamentupdates edit_state_tournamentupdates restore_tournamentupdates view_tournamentupdates view_list_tournamentupdates view_own_tournamentupdates add_articles edit_articles edit_own_articles edit_state_articles restore_articles view_articles view_list_articles view_own_articles add_blinds edit_blinds edit_own_blinds edit_state_blinds restore_blinds view_blinds view_list_blinds view_own_blinds duplicate_list_players merge_account_players add_internalnotifications edit_internalnotifications edit_own_internalnotifications edit_state_internalnotifications restore_internalnotifications view_internalnotifications view_list_internalnotifications view_own_internalnotifications Created at 2026-06-27 20:25:49 (13 hours ago) Updated at 2026-06-27 20:26:25 (13 hours ago) Updated at: 13 hours ago, Created at: Saturday, June 27, 2026 8:25 PM Dashboard Users Show",
+    "targetName":  "player-view-pedro"
+}

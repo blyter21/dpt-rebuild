@@ -1,0 +1,296 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/venues/create",
+    "headings":  [
+                     "Venue Create",
+                     "Status *",
+                     "Name *",
+                     "Address *",
+                     "City *",
+                     "State *",
+                     "Zip *",
+                     "Phone",
+                     "Logo",
+                     "Banner Image",
+                     "Facebook",
+                     "Twitter",
+                     "Instagram",
+                     "YouTube",
+                     "Website",
+                     "Select Location/City/Address"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/venues/create#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "index":  1,
+                      "action":  "https://dakotapokertour.com/admin/venues",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     },
+                                     {
+                                         "tag":  "select",
+                                         "type":  "select-one",
+                                         "name":  "status",
+                                         "id":  "status",
+                                         "placeholder":  "",
+                                         "value":  "1",
+                                         "label":  "Status *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "name",
+                                         "id":  "name",
+                                         "placeholder":  "Name",
+                                         "value":  "",
+                                         "label":  "Name *"
+                                     },
+                                     {
+                                         "tag":  "textarea",
+                                         "type":  "textarea",
+                                         "name":  "address",
+                                         "id":  "address",
+                                         "placeholder":  "Address",
+                                         "value":  "",
+                                         "label":  "Address *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "city",
+                                         "id":  "city",
+                                         "placeholder":  "City",
+                                         "value":  "",
+                                         "label":  "City *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "state",
+                                         "id":  "state",
+                                         "placeholder":  "State",
+                                         "value":  "",
+                                         "label":  "State *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "zip",
+                                         "id":  "zip",
+                                         "placeholder":  "Zip",
+                                         "value":  "",
+                                         "label":  "Zip *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "phone",
+                                         "id":  "phone",
+                                         "placeholder":  "Phone",
+                                         "value":  "",
+                                         "label":  "Phone"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "file",
+                                         "name":  "logo",
+                                         "id":  "logo",
+                                         "placeholder":  "",
+                                         "value":  "",
+                                         "label":  "Logo"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "file",
+                                         "name":  "banner_image",
+                                         "id":  "banner_image",
+                                         "placeholder":  "",
+                                         "value":  "",
+                                         "label":  "Banner Image"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "fb_url",
+                                         "id":  "fb_url",
+                                         "placeholder":  "Facebook",
+                                         "value":  "",
+                                         "label":  "Facebook"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "twitter_url",
+                                         "id":  "twitter_url",
+                                         "placeholder":  "Twitter",
+                                         "value":  "",
+                                         "label":  "Twitter"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "instagram_url",
+                                         "id":  "instagram_url",
+                                         "placeholder":  "Instagram",
+                                         "value":  "",
+                                         "label":  "Instagram"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "youtube_url",
+                                         "id":  "youtube_url",
+                                         "placeholder":  "YouTube",
+                                         "value":  "",
+                                         "label":  "YouTube"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "website",
+                                         "id":  "website",
+                                         "placeholder":  "Website",
+                                         "value":  "",
+                                         "label":  "Website"
+                                     },
+                                     {
+                                         "tag":  "textarea",
+                                         "type":  "textarea",
+                                         "name":  "map_location_address",
+                                         "id":  "map_location_address",
+                                         "placeholder":  "Select Location/City/Address",
+                                         "value":  "",
+                                         "label":  "Select Location/City/Address"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "map_location_latitude",
+                                         "id":  "map_location_latitude",
+                                         "placeholder":  "Latitude",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "map_location_longitude",
+                                         "id":  "map_location_longitude",
+                                         "placeholder":  "Longitude",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Create",
+                    "Create"
+                ],
+    "tables":  [
+
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Venue Create Create Status * Published Unpublished Name * Address * City * State * Zip * Phone Logo Banner Image Facebook Twitter Instagram YouTube Website Google Map Location Select Location/City/Address Create Dashboard Venues Create",
+    "targetName":  "venue-create"
+}

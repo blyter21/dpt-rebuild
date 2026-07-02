@@ -1,0 +1,218 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/seasons",
+    "headings":  [
+                     "Seasons List"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/seasons#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/seasons/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/seasons/8/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/seasons/8"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/seasons/7/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/seasons/7"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/seasons/6/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/seasons/6"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/seasons/4/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/seasons/4"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/seasons/2/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/seasons/2"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/seasons#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/seasons#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/seasons#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Name",
+                                       "League",
+                                       "Start Date",
+                                       "End Date",
+                                       "Status",
+                                       "Actions",
+                                       "8",
+                                       "2026",
+                                       "Dakota Poker Tour",
+                                       "2026-01-01",
+                                       "2026-12-31",
+                                       "Published",
+                                       "Edit View"
+                                   ],
+                       "rows":  6,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Name",
+                                              "League",
+                                              "Start Date",
+                                              "End Date",
+                                              "Status",
+                                              "Actions"
+                                          ],
+                                          [
+                                              "8",
+                                              "2026",
+                                              "Dakota Poker Tour",
+                                              "2026-01-01",
+                                              "2026-12-31",
+                                              "Published",
+                                              "Edit View"
+                                          ],
+                                          [
+                                              "7",
+                                              "2025",
+                                              "Dakota Poker Tour",
+                                              "2025-01-01",
+                                              "2025-12-31",
+                                              "Published",
+                                              "Edit View"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Seasons List Show 10 25 50 100 entries Search: # Name League Start Date End Date Status Actions 8 2026 Dakota Poker Tour 2026-01-01 2026-12-31 Published Edit View 7 2025 Dakota Poker Tour 2025-01-01 2025-12-31 Published Edit View 6 2023-24 Dakota Poker Tour 2023-07-17 2024-05-24 Published Edit View 4 2022-23 Dakota Poker Tour 2022-06-15 2023-05-31 Published Edit View 2 Season XI Dakota Poker Tour 2020-01-01 2021-12-31 Published Edit View Showing 1 to 5 of 5 entries Previous 1 Next Dashboard Seasons",
+    "navText":  "Seasons"
+}

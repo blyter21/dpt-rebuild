@@ -1,0 +1,62 @@
+﻿[
+    {
+        "text":  "Sign Out",
+        "href":  "https://dakotapokertour.com/admin"
+    },
+    {
+        "text":  "Articles",
+        "href":  "https://dakotapokertour.com/admin/articles"
+    },
+    {
+        "text":  "Live Updates",
+        "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+    },
+    {
+        "text":  "Blind Structures",
+        "href":  "https://dakotapokertour.com/admin/blinds"
+    },
+    {
+        "text":  "Dashboard",
+        "href":  "https://dakotapokertour.com/admin/dashboard"
+    },
+    {
+        "text":  "Fix Duplicate Players",
+        "href":  "https://dakotapokertour.com/admin/duplicates/players"
+    },
+    {
+        "text":  "Events",
+        "href":  "https://dakotapokertour.com/admin/events"
+    },
+    {
+        "text":  "",
+        "href":  "https://dakotapokertour.com/admin/internal-notifications"
+    },
+    {
+        "text":  "Leagues",
+        "href":  "https://dakotapokertour.com/admin/leagues"
+    },
+    {
+        "text":  "Payout Distributions Template",
+        "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+    },
+    {
+        "text":  "Seasons",
+        "href":  "https://dakotapokertour.com/admin/seasons"
+    },
+    {
+        "text":  "Notifications",
+        "href":  "https://dakotapokertour.com/admin/send-notifications"
+    },
+    {
+        "text":  "Tournaments",
+        "href":  "https://dakotapokertour.com/admin/tournaments"
+    },
+    {
+        "text":  "Players",
+        "href":  "https://dakotapokertour.com/admin/users"
+    },
+    {
+        "text":  "Venues",
+        "href":  "https://dakotapokertour.com/admin/venues"
+    }
+]

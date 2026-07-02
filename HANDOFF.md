@@ -1,0 +1,266 @@
+# DPT Rebuild Lab — Handoff Summary
+
+Last updated: `2026-06-27T11:51:26Z`
+
+This is the current working handoff for the Dakota Poker Tour rebuild lab. It is intended for Pedro/future agents picking up the local rebuild without rereading every loop log.
+
+## Safety boundaries
+
+- Legacy Laravel reference repo: `/home/hermes/projects/dpt-web`
+- Laravel app root: `/home/hermes/projects/dpt-web/src`
+- Rebuild lab: `/home/hermes/projects/dpt-rebuild-lab`
+- Do **not** push to GitHub without Brook's explicit request.
+- Do **not** deploy to Vercel/Supabase production.
+- Do **not** use production credentials in this lab.
+- Treat the Laravel repo as read-only reference except local reports/spec files.
+
+## Current architecture
+
+```text
+apps/admin Next.js UI
+  -> apps/admin/lib/admin-api-client.ts
+  -> apps/admin/lib/admin-api-config.ts
+  -> apps/admin/lib/admin-api-contracts.ts
+  -> apps/admin/lib/admin-api-mock-route.ts
+  -> /api/dpt and /api/dpt/[rpc]
+  -> apps/admin/lib/mock-dpt-rpc.ts
+  -> apps/admin/lib/mock-dpt-services.ts
+  -> packages/tournament-engine
+```
+
+Future disabled path:
+
+```text
+apps/admin/lib/admin-api-supabase.ts
+  -> future Supabase rpc()/Edge/server transaction transport
+```
+
+The active/default transport remains:
+
+```text
+mock-route
+```
+
+Supabase is not connected.
+
+## Current packages/apps
+
+| Path | Purpose |
+|---|---|
+| `packages/tournament-engine` | Pure tested TypeScript domain logic extracted from Laravel behavior. |
+| `apps/admin` | Mock-data Next.js Tournament Desk prototype. |
+| `supabase` | Draft migrations, seed data, RLS helpers, RPC signatures, local setup docs, replacement plan. |
+| `DPT_REBUILD_SPEC` | Entity maps, business rules, schema drafts, migration/RLS/API/test plans. |
+| `loop-logs` | Evidence logs for each loop. |
+
+## Current local app
+
+Run:
+
+```bash
+npm --workspace apps/admin run dev
+```
+
+Current dev server process at handoff:
+
+```text
+proc_9a934ecd4b94
+```
+
+URL:
+
+```text
+http://127.0.0.1:3000
+```
+
+Expected UI indicators:
+
+```text
+Tournament Desk Command Center
+Transport: mock-route
+Safe local mode
+Supabase disconnected
+Transport Diagnostics
+```
+
+## API/docs map
+
+Primary docs:
+
+| File | Purpose |
+|---|---|
+| `apps/admin/app/admin-simulator.tsx` | Browser-backed DPT admin/public replica shell, now partially componentized through `components/dpt-replica/`. |
+| `apps/admin/components/dpt-replica/` | Extracted reusable types, mock data, utilities, UI primitives, form controls, list/action controls, feature-section entry points, and component README. |
+| `apps/admin/components/dpt-replica/sections/` | Feature-section entry points for PublicPreview, Dashboard, Tournaments, Events, Players, Venues, Articles, Notifications, Structures, Reports, Parity, Migration, Roles, and LiveManager. |
+| `apps/admin/API.md` | Local mock API route index and RPC docs. |
+| `apps/admin/ENVIRONMENT.md` | Exact env vars and safety behavior for transport selection. |
+| `supabase/SUPABASE_REPLACEMENT_PLAN.md` | Mapping from local mock API boundary to future Supabase RPC/Edge/server implementation. |
+| `packages/tournament-engine/ENGINE_RULE_MAPPING.md` | Mapping between engine functions and Laravel behavior. |
+| `GOAL.md` | Running milestone checklist. |
+| `PROJECT_STATUS.md` | Concise business-impact status summary for Brook/Nacho. |
+| `DPT_CURRENT_PLATFORM_MAP.md` | Browser-authenticated public/admin feature map and replica gap analysis. |
+| `DPT_AUTO_ADVANCE_RESULTS.md` | Latest auto-advance results summary and verification evidence. |
+| `DPT_COMPONENTIZATION_RESULTS.md` | Componentization auto-advance results for loops 044-053. |
+| `DPT_SECTION_EXTRACTION_RESULTS.md` | Feature-section extraction results for loops 054-063. |
+| `DPT_REPLACEMENT_SITE_RESULTS.md` | Corrected clean public replacement app results using uploaded production SQL. |
+| `loop-logs/065-sql-backed-public-subpages.md` | SQL-backed public subpages/routes for Events, Leaderboard, Venues, News, Champions, and tournament details. |
+| `loop-logs/066-production-media-url-mapping.md` | Live production media URL mapping and rendering for logo, events, articles, venues, tournaments, and player avatars. |
+| `loop-logs/067-media-manifest-local-samples.md` | Media migration manifest, URL validation, local sample downloads, and local-first media fallback. |
+| `loop-logs/068-bulk-media-local-copy.md` | Bulk local copy of all 309 valid production media assets plus broken-assets review. |
+| `loop-logs/069-launch-public-polish.md` | Launch-facing public homepage polish: staging-copy removal, video embeds, text cleanup, and fidelity refinements. |
+| `loop-logs/070-visual-parity-pass.md` | Live-vs-local visual parity pass: hero/header/POY/sidebar/cards/footer/mobile CSS refinements. |
+| `loop-logs/071-icons-video-interactive-qa.md` | SVG icon replacement, local YouTube thumbnail cards, and browser interactive public-route QA. |
+| `loop-logs/072-supabase-public-migration-path.md` | Local-only Supabase public schema/views/seed/repository migration path. |
+| `loop-logs/073-local-postgres-supabase-repository.md` | PGlite local schema/seed execution validation plus SupabaseRepository with JSON fallback. |
+| `loop-logs/074-deployment-readiness-layer.md` | Vercel/Supabase readiness layer: env templates, source-mode docs, smoke-test docs, verifier command. |
+| `loop-logs/075-media-storage-migration-plan.md` | Final media storage migration plan: bucket/object mapping, upload command manifest, CDN-base helper. |
+| `loop-logs/076-vercel-preview-preflight.md` | Vercel preview package/preflight: app-local vercel config, env docs, final smoke report. |
+| `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |
+| `reports/dpt-supabase-public-migration-path.md` | Supabase public schema/seed/repository migration path report and validation notes. |
+| `reports/dpt-local-postgres-supabase-repository-validation.md` | Local embedded Postgres validation and SupabaseRepository implementation report. |
+| `reports/dpt-deployment-readiness-verification.md` | Deployment-readiness verification output and current blockers. |
+| `reports/dpt-media-storage-plan-verification.md` | Final no-upload media storage migration verification report. |
+| `reports/dpt-vercel-preview-preflight-report.md` | First Vercel preview approval/preflight report. |
+| `reports/dpt-vercel-preview-route-media-smoke.json` | Machine-readable final route/media smoke output for preview approval. |
+| `docs/DPT_VERCEL_PREVIEW_PACKAGE.md` | Vercel preview project/root/env/checklist notes. |
+| `docs/DPT_VERCEL_ENV_VARS.md` | Vercel env var matrix for JSON fallback and future Supabase mode. |
+| `apps/site/data/dpt-media-storage-manifest.json` | Final storage object-path manifest for local media assets. |
+| `reports/dpt-media-upload-commands.jsonl` | Dry-run upload command templates for future approved storage copy. |
+| `reports/dpt-local-postgres-validation.json` | Machine-readable row-count/view validation output from PGlite. |
+| `reports/dpt-homepage-parity-side-by-side.png` | Side-by-side live homepage vs local replacement screenshot artifact. |
+| `reports/dpt-media-migration-report.md` | Media manifest report: valid/broken asset counts, downloaded local assets, and next storage-copy path. |
+| `reports/dpt-broken-assets-review.md` | Review list for 19 missing/broken legacy media references. |
+| `apps/site/` | New SQL-backed public DakotaPokerTour.com replacement app path, separate from old mock admin shell. |
+| `scripts/extract_public_dpt_data.py` | Extracts public-facing JSON data from uploaded production SQL for the replacement site. |
+
+Routes:
+
+| Route | Purpose |
+|---|---|
+| `GET /api/dpt` | Route index: supported RPC names and links. |
+| `GET /api/dpt/diagnostics` | Active transport, supported RPCs, safe-mode/Supabase-disabled status without secrets. |
+| `POST /api/dpt/[rpc]` | Mock RPC execution endpoint. |
+
+Supported RPC names:
+
+```text
+dpt_check_in_player
+dpt_add_tournament_addon
+dpt_eliminate_player
+dpt_undo_player_stat
+dpt_recalculate_manual_ranks
+dpt_advance_flight_players
+dpt_undo_flight_advancement
+dpt_materialize_tournament_payouts
+dpt_get_toc_qualifiers
+set_flight_carryover_mode
+get_prize_pool
+get_last_display_score
+```
+
+## Transport/env behavior
+
+Safe defaults:
+
+```dotenv
+NEXT_PUBLIC_DPT_ADMIN_API_TRANSPORT=mock-route
+NEXT_PUBLIC_DPT_ENABLE_SUPABASE_TRANSPORT=false
+```
+
+Supabase **does not enable accidentally**. Setting only:
+
+```dotenv
+NEXT_PUBLIC_DPT_ADMIN_API_TRANSPORT=supabase-rpc
+```
+
+keeps the app on `mock-route`. Selecting the placeholder Supabase path requires:
+
+```dotenv
+NEXT_PUBLIC_DPT_ADMIN_API_TRANSPORT=supabase-rpc
+NEXT_PUBLIC_DPT_ENABLE_SUPABASE_TRANSPORT=true
+```
+
+Even then, `admin-api-supabase.ts` is only a disabled/testable placeholder unless explicit adapter/config is supplied.
+
+## Current verification status
+
+### Current test totals
+
+Latest verified commands:
+
+```bash
+npm --workspace apps/admin test
+npm --workspace packages/tournament-engine test
+npm --workspace apps/admin run typecheck
+npm --workspace apps/admin run build
+```
+
+Latest known test counts:
+
+| Layer | Test files | Tests |
+|---|---:|---:|
+| Tournament engine | 6 | 31 |
+| Admin service/API/client/contracts/transports/config/diagnostics/routes | 10 | 36 |
+| **Total** | **16** | **67** |
+
+Latest actual test output excerpt:
+
+```text
+@dpt/admin-prototype test:
+Test Files  10 passed (10)
+Tests       36 passed (36)
+
+@dpt/tournament-engine test:
+Test Files  6 passed (6)
+Tests       31 passed (31)
+```
+
+## Current known blockers before real Supabase
+
+1. Docker/local Supabase is unavailable in the current environment.
+2. `psql` is unavailable in the current environment.
+3. Supabase migrations/RLS/seed have not yet been executed against a real local DB.
+4. Seed profiles are not linked to real `auth.users` rows yet.
+5. Host/manager tournament assignment model is not designed yet.
+6. Audit/tournament-update process needs final shape before production-like admin mutation logging.
+7. Next/PostCSS audit advisories remain unresolved; `npm audit --omit=dev` reports 2 vulnerabilities and suggests a breaking Next 16 upgrade.
+8. Browser screenshot tooling is blocked by missing Chromium dependency `libnspr4.so`; use build output, HTTP status, and content checks until fixed.
+
+## Common commands
+
+```bash
+# Engine tests
+npm --workspace packages/tournament-engine test
+
+# Admin tests
+npm --workspace apps/admin test
+
+# Admin typecheck/build
+npm --workspace apps/admin run typecheck
+npm --workspace apps/admin run build
+
+# Full current verification pattern
+npm --workspace apps/admin test \
+  && npm --workspace packages/tournament-engine test \
+  && npm --workspace apps/admin run typecheck \
+  && npm --workspace apps/admin run build
+
+# API smoke checks, with dev server running
+curl -s http://127.0.0.1:3000/api/dpt
+curl -s http://127.0.0.1:3000/api/dpt/diagnostics
+curl -s -X POST -H 'content-type: application/json' -d '{}' \
+  http://127.0.0.1:3000/api/dpt/dpt_check_in_player
+```
+
+## Dev server caveat
+
+After adding/changing route files, the Next dev server has sometimes returned fallback/error HTML for new route smoke checks. If this happens, restart the tracked dev process and rerun the same curl check before assuming the route code is broken.
+
+## Next recommended loop
+
+A good next loop is one of:
+
+1. Add or maintain `PROJECT_STATUS.md` if Brook/Nacho need a fresh executive summary.
+2. Add initial Supabase contract implementation stubs in SQL/TypeScript for the simplest read-only query path.
+3. Prepare Docker/local Supabase execution steps, but only if Docker becomes available.
+4. Start a public-site mock prototype after the admin/API boundary stabilizes.

@@ -1,0 +1,292 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/events",
+    "headings":  [
+                     "Events List"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/events/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/89/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/89"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/88/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/88"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/87/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/87"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/86/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/86"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/85/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/85"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/84/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/84"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/83/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/83"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/82/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/82"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/81/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/81"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/80/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/80"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "9",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Name",
+                                       "Season",
+                                       "Start Date",
+                                       "End Date",
+                                       "Status",
+                                       "Actions",
+                                       "89",
+                                       "Poker Brat Black Chip BOUNTY Tournament",
+                                       "2026",
+                                       "2026-06-07",
+                                       "2026-06-07",
+                                       "Published",
+                                       "Edit View"
+                                   ],
+                       "rows":  11,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Name",
+                                              "Season",
+                                              "Start Date",
+                                              "End Date",
+                                              "Status",
+                                              "Actions"
+                                          ],
+                                          [
+                                              "89",
+                                              "Poker Brat Black Chip BOUNTY Tournament",
+                                              "2026",
+                                              "2026-06-07",
+                                              "2026-06-07",
+                                              "Published",
+                                              "Edit View"
+                                          ],
+                                          [
+                                              "88",
+                                              "Spring Championship",
+                                              "2026",
+                                              "2026-05-15",
+                                              "2026-05-17",
+                                              "Published",
+                                              "Edit View"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Events List Show 10 25 50 100 entries Search: # Name Season Start Date End Date Status Actions 89 Poker Brat Black Chip BOUNTY Tournament 2026 2026-06-07 2026-06-07 Published Edit View 88 Spring Championship 2026 2026-05-15 2026-05-17 Published Edit View 87 Casselton Vets 2026 2026-04-17 2026-04-18 Published Edit View 86 Pour Decisions Deep Stack 2026 2026-03-21 2026-03-21 Published Edit View 85 The Buffalo City Showdown 2026 2026-02-07 2026-02-07 Published Edit View 84 Casino State Championship\"-LIVE REPORTED BY POKERNEWS!! $10,700 WSOP Main Event Seat Package ON TOP of 1st place! $250 Buy-in. $710 Buy Backs on double bags! SIX flights this year! $300,000+ Est. Prize Pool 2025 2025-12-31 2026-01-04 Unpublished Edit View 83 Dakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \"Dream Chaser V\" Tournament! $5,000 Player of the Series package up for grabs! 2025 2025-11-20 2025-11-23 Published Edit View 82 L.I.S.T.E.N. INC Monster Stack 10/31/2025 2025 2025-10-31 2025-11-01 Published Edit View 81 L.I.S.T.E.N. INC Monster Stack 2026 2026-03-13 2026-03-14 Published Edit View 80 The Buckskin Shootout 2026 2026-03-27 2026-03-28 Published Edit View Showing 1 to 10 of 82 entries Previous 1 2 3 4 5 … 9 Next Dashboard Events",
+    "navText":  "Events"
+}

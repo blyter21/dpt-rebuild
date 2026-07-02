@@ -1,0 +1,66 @@
+{
+  "runtime": "PGlite embedded Postgres-compatible runtime",
+  "schemaExecuted": true,
+  "seedExecuted": true,
+  "counts": {
+    "dpt_public_venues": {
+      "expected": 77,
+      "actual": 77,
+      "ok": true
+    },
+    "dpt_public_events": {
+      "expected": 60,
+      "actual": 60,
+      "ok": true
+    },
+    "dpt_public_tournaments": {
+      "expected": 80,
+      "actual": 80,
+      "ok": true
+    },
+    "dpt_public_articles": {
+      "expected": 80,
+      "actual": 80,
+      "ok": true
+    },
+    "dpt_public_players": {
+      "expected": 25,
+      "actual": 25,
+      "ok": true
+    },
+    "dpt_public_leaderboard_entries": {
+      "expected": 25,
+      "actual": 25,
+      "ok": true
+    },
+    "dpt_public_champions": {
+      "expected": 40,
+      "actual": 40,
+      "ok": true
+    },
+    "dpt_public_videos": {
+      "expected": 2,
+      "actual": 2,
+      "ok": true
+    },
+    "dpt_media_assets": {
+      "expected": 328,
+      "actual": 328,
+      "ok": true
+    }
+  },
+  "homepage": {
+    "events": 60,
+    "leaderboard": 25,
+    "articles": 80,
+    "venues": 77,
+    "champions": 40,
+    "videos": 2,
+    "ok": true
+  },
+  "rls": {
+    "checked": true,
+    "note": "Migration contains RLS enable statements and public read policies. PGlite executes schema but does not replace Docker/Supabase role-enforcement QA."
+  },
+  "errors": []
+}

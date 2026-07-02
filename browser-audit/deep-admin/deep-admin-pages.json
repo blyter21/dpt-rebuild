@@ -1,0 +1,1724 @@
+﻿[
+    {
+        "targetName":  "tournament-create",
+        "url":  "https://dakotapokertour.com/admin/tournaments/create",
+        "error":  "Unterminated string passed in. (16380): {\"id\":2,\"result\":{\"result\":{\"type\":\"string\",\"value\":\"{\\\"title\\\":\\\"Dakota Poker Tour\\\",\\\"url\\\":\\\"https://dakotapokertour.com/admin/tournaments/create\\\",\\\"headings\\\":[\\\"Tournament Create\\\",\\\"Status *\\\",\\\"Featured *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Choose Tournament Type *\\\",\\\"Choose Point System *\\\",\\\"Flight Tournaments? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Direct Registration to Main Tournament? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Chips Accumulator? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Flight Tournament Details\\\",\\\"Name *\\\",\\\"Start Date *\\\",\\\"Initial Buy In *\\\",\\\"Charity Take *\\\",\\\"Initial Chips Count *\\\",\\\"Qualifier? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Main Tournament *\\\",\\\"Select Tournament\\\",\\\"Qualifier Prize\\\",\\\"Choose Event *\\\",\\\"Choose Venue *\\\",\\\"Name *\\\",\\\"Short Description *\\\",\\\"Long Description\\\",\\\"Live Stream Video URL\\\",\\\"Logo\\\",\\\"Banner Image\\\",\\\"Multi Day\\\",\\\"Start Date *\\\",\\\"End Date\\\",\\\"Registration Start Date *\\\",\\\"Registration End Date *\\\",\\\"Initial Buy In *\\\",\\\"Dealer Appreciation Fee *\\\",\\\"Initial Chips Count *\\\",\\\"Allow Rebuy? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Allowed Rebuys Limit *\\\",\\\"Rebuys *\\\",\\\"Rebuy Dealer Appreciation Fee *\\\",\\\"Allow Rebuy Chips? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Rebuy Chips Count *\\\",\\\"Title Count *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Participation Bonus Points *\\\",\\\"Points Multiplier? *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Points Multiplier Value *\\\",\\\"Blind Intervals\\\",\\\"Charity Take *\\\",\\\"Maximum BuyIn\\\",\\\"Players at Final Table\\\",\\\"Rules Description *\\\"],\\\"links\\\":[{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin\\\"},{\\\"text\\\":\\\"View Site\\\",\\\"href\\\":\\\"https://dakotapokertour.com/\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/internal-notifications\\\"},{\\\"text\\\":\\\"Sign Out\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/create#\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"},{\\\"text\\\":\\\"Tournaments\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments\\\"},{\\\"text\\\":\\\"Payout Distributions Template\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/payoutdistributions\\\"},{\\\"text\\\":\\\"Blind Structures\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/blinds\\\"},{\\\"text\\\":\\\"Live Updates\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles?liveupdate=1\\\"},{\\\"text\\\":\\\"Events\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/events\\\"},{\\\"text\\\":\\\"Seasons\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/seasons\\\"},{\\\"text\\\":\\\"Leagues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/leagues\\\"},{\\\"text\\\":\\\"Venues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/venues\\\"},{\\\"text\\\":\\\"Articles\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles\\\"},{\\\"text\\\":\\\"Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/users\\\"},{\\\"text\\\":\\\"Fix Duplicate Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/duplicates/players\\\"},{\\\"text\\\":\\\"Notifications\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/send-notifications\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"},{\\\"text\\\":\\\"Tournaments\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments\\\"}],\\\"forms\\\":[{\\\"index\\\":0,\\\"action\\\":\\\"https://dakotapokertour.com/logout\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":1,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"status\\\",\\\"id\\\":\\\"status\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Status *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"featured\\\",\\\"id\\\":\\\"featured1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"featured\\\",\\\"id\\\":\\\"featured2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"tournament_type_id\\\",\\\"id\\\":\\\"tournament_type_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Choose Tournament Type *\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"point_distribution_id\\\",\\\"id\\\":\\\"point_distribution_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Choose Point System *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"advancing_to_flight_tournaments\\\",\\\"id\\\":\\\"advancing_to_flight_tournaments1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"advancing_to_flight_tournaments\\\",\\\"id\\\":\\\"advancing_to_flight_tournaments_no\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_search_registration\\\",\\\"id\\\":\\\"allow_search_registration1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_search_registration\\\",\\\"id\\\":\\\"allow_search_registration2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"chips_accumulator\\\",\\\"id\\\":\\\"chips_accumulator1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"chips_accumulator\\\",\\\"id\\\":\\\"chips_accumulator2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"flight[0][flight_name]\\\",\\\"id\\\":\\\"flight_name\\\",\\\"placeholder\\\":\\\"Name\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"flight[0][flight_start_date]\\\",\\\"id\\\":\\\"flight_registration_start_date\\\",\\\"placeholder\\\":\\\"Start Date\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Start Date *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"flight[0][flight_minimum_buyin]\\\",\\\"id\\\":\\\"flight_minimum_buyin\\\",\\\"placeholder\\\":\\\"Initial Buy In\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"flight[0][flight_tournament_fee]\\\",\\\"id\\\":\\\"flight_tournament_fee\\\",\\\"placeholder\\\":\\\"Charity Take\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"flight[0][flight_initial_chips_count]\\\",\\\"id\\\":\\\"flight_initial_chips_count\\\",\\\"placeholder\\\":\\\"Initial Chips Count\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"qualifier_tournament\\\",\\\"id\\\":\\\"qualifier_tournament1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"qualifier_tournament\\\",\\\"id\\\":\\\"qualifier_tournament2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"advancing_tournaments_id\\\",\\\"id\\\":\\\"main_tournament\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"qualifier_tournament_ids\\\",\\\"id\\\":\\\"qualifier_tournament_ids\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Main Tournament *\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"qualifier_prize\\\",\\\"id\\\":\\\"qualifier_prize\\\",\\\"placeholder\\\":\\\"Qualifier Prize\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Qualifier Prize\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"event_id\\\",\\\"id\\\":\\\"event_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Choose Event *\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"venue_id\\\",\\\"id\\\":\\\"venue_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Choose Venue *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"name\\\",\\\"id\\\":\\\"name\\\",\\\"placeholder\\\":\\\"Name\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Flight Tournament Details\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"short_description\\\",\\\"id\\\":\\\"short_description\\\",\\\"placeholder\\\":\\\"Short Description\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Short Description *\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"long_description\\\",\\\"id\\\":\\\"long_description\\\",\\\"placeholder\\\":\\\"Long Description\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Long Description\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"live_stream_url\\\",\\\"id\\\":\\\"live_stream_url\\\",\\\"placeholder\\\":\\\"Live Stream Youtube Video URL\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Live Stream Video URL\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"file\\\",\\\"name\\\":\\\"logo\\\",\\\"id\\\":\\\"logo\\\",\\\"placeholder\\\":\\\"Logo\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Logo\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"file\\\",\\\"name\\\":\\\"banner_image\\\",\\\"id\\\":\\\"banner_image\\\",\\\"placeholder\\\":\\\"Banner Image\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Banner Image\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"checkbox\\\",\\\"name\\\":\\\"multi_day\\\",\\\"id\\\":\\\"multi_day\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"Multi Day\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"start_date\\\",\\\"id\\\":\\\"start_date\\\",\\\"placeholder\\\":\\\"Start Date\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Start Date *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"end_date\\\",\\\"id\\\":\\\"end_date\\\",\\\"placeholder\\\":\\\"End Date\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"End Date\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"registration_start_date\\\",\\\"id\\\":\\\"registration_start_date\\\",\\\"placeholder\\\":\\\"Registration Start Date\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Registration Start Date *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"registration_end_date\\\",\\\"id\\\":\\\"registration_end_date\\\",\\\"placeholder\\\":\\\"Registration End Date\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Registration End Date *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"minimum_buyin\\\",\\\"id\\\":\\\"minimum_buyin\\\",\\\"placeholder\\\":\\\"Initial Buy In\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Initial Buy In *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"dealer_fee\\\",\\\"id\\\":\\\"dealer_fee\\\",\\\"placeholder\\\":\\\"Dealer Appreciation Fee\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Featured *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"initial_chips_count\\\",\\\"id\\\":\\\"initial_chips_count\\\",\\\"placeholder\\\":\\\"Initial Chips Count\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Initial Chips Count *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_rebuy\\\",\\\"id\\\":\\\"allow_rebuy1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_rebuy\\\",\\\"id\\\":\\\"allow_rebuy2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"allowed_rebuys_limit\\\",\\\"id\\\":\\\"allowed_rebuys_limit\\\",\\\"placeholder\\\":\\\"Allowed Rebuys Limit\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Allowed Rebuys Limit *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"rebuy_amount\\\",\\\"id\\\":\\\"rebuy_amount\\\",\\\"placeholder\\\":\\\"Rebuys\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Rebuys *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"rebuy_fee\\\",\\\"id\\\":\\\"rebuy_fee\\\",\\\"placeholder\\\":\\\"Rebuy Dealer Appreciation Fee\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Rebuy Dealer Appreciation Fee *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_rebuy_chips\\\",\\\"id\\\":\\\"allow_rebuy_chips1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"allow_rebuy_chips\\\",\\\"id\\\":\\\"allow_rebuy_chips2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"rebuy_chips_count\\\",\\\"id\\\":\\\"rebuy_chips_count\\\",\\\"placeholder\\\":\\\"Rebuy Chips Count\\\",\\\"value\\\":"
+    },
+    {
+        "targetName":  "tournament-edit-346",
+        "url":  "https://dakotapokertour.com/admin/tournaments/346/edit",
+        "error":  "Invalid JSON primitive: ."
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/tournaments/346",
+        "headings":  [
+                         "Tournament Show"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/tournaments/346#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "Manage Tournament",
+                          "href":  "https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers"
+                      },
+                      {
+                          "text":  "List",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Edit",
+                          "href":  "https://dakotapokertour.com/admin/tournaments/346/edit"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "Manage Tournament",
+                        "List",
+                        "Edit"
+                    ],
+        "tables":  [
+                       {
+                           "index":  0,
+                           "headers":  [
+                                           "Name",
+                                           "Black Chip Bounty"
+                                       ],
+                           "rows":  20,
+                           "sampleRows":  [
+                                              [
+                                                  "Name",
+                                                  "Black Chip Bounty"
+                                              ],
+                                              [
+                                                  "Event",
+                                                  "Poker Brat Black Chip BOUNTY Tournament"
+                                              ],
+                                              [
+                                                  "Venue",
+                                                  "Windbreak"
+                                              ],
+                                              [
+                                                  "Short Description",
+                                                  "The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). One-time add-on for $100 (20,000 chips) is available until registration closes. (must have chips to add on) For each player you take out, you earn a $100 bounty! Late registration, \u0026 add-ons are open through dinner break. (Approximately 4:30 pm) Suggested Dealer appreciation $20 - Tips are appreciated but not mandatory to play"
+                                              ],
+                                              [
+                                                  "Long Description"
+                                              ]
+                                          ]
+                       }
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Tournament Show Manage Tournament List Edit Name Black Chip Bounty Event Poker Brat Black Chip BOUNTY Tournament Venue Windbreak Short Description The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). One-time add-on for $100 (20,000 chips) is available until registration closes. (must have chips to add on) For each player you take out, you earn a $100 bounty! Late registration, \u0026 add-ons are open through dinner break. (Approximately 4:30 pm) Suggested Dealer appreciation $20 - Tips are appreciated but not mandatory to play Long Description Start Date 2026-06-07 11:00:00 End Date 2026-06-07 11:00:00 Registration Start Date 2026-06-07 11:00:00 Registration End Date 2026-06-07 11:00:00 Initial Buy In $200 Dealer Appreciation Fee 20% Initial Chips Count 20000 Rebuys $100 Rebuy Dealer Appreciation Fee $0 Rebuy Chips Count 20000 Charity Take 15% Players at Final Table 8 Status Published Created at 2026-05-18 13:14:04 (1 month ago) Updated at 2026-06-07 18:56:54 (2 weeks ago) Updated at: 2 weeks ago, Created at: Monday, May 18, 2026 1:14 PM Dashboard Tournaments Show",
+        "targetName":  "tournament-view-346"
+    },
+    {
+        "targetName":  "tournament-manage-346",
+        "url":  "https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers",
+        "error":  "Unterminated string passed in. (16374): {\"id\":7,\"result\":{\"result\":{\"type\":\"string\",\"value\":\"{\\\"title\\\":\\\"Dakota Poker Tour\\\",\\\"url\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers\\\",\\\"headings\\\":[\\\"Tournament Management\\\",\\\"97\\\",\\\"0\\\",\\\"Jun 07\\\",\\\"$200 Rebuys $100\\\",\\\"3,820,000\\\",\\\"3,820,000\\\",\\\"$23,880\\\",\\\"Show 102550100 entries\\\",\\\"Registered Players\\\",\\\"Show 10 25 50 100 entries\\\",\\\"Check In\\\",\\\"Initial Buy In\\\",\\\"Dealer Appreciation Fee\\\",\\\"Buy In *\\\",\\\"Chips Count *\\\",\\\"Add Rebuy/Add-on?\\\",\\\"Yes\\\",\\\"No\\\",\\\"How Many Addons? *\\\",\\\"Rebuys\\\",\\\"Rebuy Dealer Appreciation Fee\\\",\\\"Total Addon BuyIn\\\",\\\"Total Addon Chips Count\\\",\\\"Review/Edit Check In Details\\\",\\\"Initial Buy In\\\",\\\"Dealer Appreciation Fee\\\",\\\"Buy In *\\\",\\\"Chips Count *\\\",\\\"Add Rebuy/Add-on?\\\",\\\"Yes\\\",\\\"No\\\",\\\"How Many Addons? *\\\",\\\"Rebuys\\\",\\\"Rebuy Dealer Appreciation Fee\\\",\\\"Total Addon BuyIn\\\",\\\"Total Addon Chips Count\\\",\\\"Edit Elimination Player\\\",\\\"Select Player *\\\",\\\"Points *\\\",\\\"Total Buy in *\\\",\\\"Winnings *\\\",\\\"Addon Buy In\\\",\\\"How Many Addons? *\\\",\\\"Rebuys\\\",\\\"Rebuy Dealer Appreciation Fee\\\",\\\"Addon Buy In *\\\",\\\"Addon Chips Count *\\\",\\\"Preview \u0026 Edit Elimination Players\\\",\\\"Add Player\\\",\\\"Initial Buy In\\\",\\\"Dealer Appreciation Fee\\\",\\\"Buy In *\\\",\\\"Initial Chips Count *\\\",\\\"Live Update Add\\\",\\\"Status *\\\",\\\"Featured *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Choose Tournament *\\\",\\\"Article Title *\\\",\\\"Article Text *\\\",\\\"Photo\\\",\\\"Video URL\\\",\\\"Tag Players\\\",\\\"Date *\\\"],\\\"links\\\":[{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin\\\"},{\\\"text\\\":\\\"View Site\\\",\\\"href\\\":\\\"https://dakotapokertour.com/\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/internal-notifications\\\"},{\\\"text\\\":\\\"Sign Out\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"},{\\\"text\\\":\\\"Tournaments\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments\\\"},{\\\"text\\\":\\\"Payout Distributions Template\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/payoutdistributions\\\"},{\\\"text\\\":\\\"Blind Structures\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/blinds\\\"},{\\\"text\\\":\\\"Live Updates\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles?liveupdate=1\\\"},{\\\"text\\\":\\\"Events\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/events\\\"},{\\\"text\\\":\\\"Seasons\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/seasons\\\"},{\\\"text\\\":\\\"Leagues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/leagues\\\"},{\\\"text\\\":\\\"Venues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/venues\\\"},{\\\"text\\\":\\\"Articles\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles\\\"},{\\\"text\\\":\\\"Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/users\\\"},{\\\"text\\\":\\\"Fix Duplicate Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/duplicates/players\\\"},{\\\"text\\\":\\\"Notifications\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/send-notifications\\\"},{\\\"text\\\":\\\"Reset\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/resetTournament\\\"},{\\\"text\\\":\\\"Payouts\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/edit#structurespay\\\"},{\\\"text\\\":\\\"Open Registration\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/openRegistration\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026\\\"},{\\\"text\\\":\\\"More Info\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#more-info\\\"},{\\\"text\\\":\\\"Previous\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Next\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Preview \u0026 Edit\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/269/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2781/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/859/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2747/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/387/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2782/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1614/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/162/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/244/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1038/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/175/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1429/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/784/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/350/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2612/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2752/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/161/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1437/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/338/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2686/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2129/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/241/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/180/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2627/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/169/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2512/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1622/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2158/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/796/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1056/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2341/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/986/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1608/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2083/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/867/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1489/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/976/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/462/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/153/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2779/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2646/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2714/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/228/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1049/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2507/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/806/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1037/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/798/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2783/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/647/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2144/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1458/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/354/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2437/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2484/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2784/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2199/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/600/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/268/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2785/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/163/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2755/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2675/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/114/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2157/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/885/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/792/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1215/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/223/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2240/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/342/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/165/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2651/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1636/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/875/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1363/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/737/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2514/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/860/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/743/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2780/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2746/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/789/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/192/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/225/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/311/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2145/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/803/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/347/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2553/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/219/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1816/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/1051/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/226/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/2601/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Undo Elimination\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/888/undoPlayerStat?tournament_id=346\\\"},{\\\"text\\\":\\\"Previous\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/34"
+    },
+    {
+        "targetName":  "tournament-updates-create-346",
+        "url":  "https://dakotapokertour.com/admin/articles/create?liveupdate=1\u0026tid=346",
+        "error":  "Invalid JSON primitive: index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"1\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Next\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Click here if your player does NOT have a mobile and has NO email access?\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/index_checkedInPlayers#\\\"},{\\\"text\\\":\\\"Cut Keyboard shortcut Ctrl+X\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"Copy Keyboard shortcut Ctrl+C\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"Paste Keyboard shortcut Ctrl+V\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"Paste as plain text Keyboard shortcut Ctrl+Shift+V\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"Paste from Word\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"Undo Keyboard shortcut Ctrl+Z\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"Redo Keyboard shortcut Ctrl+Y\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"Spell Check As You Type\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"Link Keyboard shortcut Ctrl+K\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"Unlink\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"Anchor\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"Image\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"Table\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"Insert Horizontal Line\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"Insert Special Character\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"Maximize\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"Bold Keyboard shortcut Ctrl+B\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"Italic Keyboard shortcut Ctrl+I\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"Strikethrough\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"Remove Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"Insert/Remove Numbered List\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"Insert/Remove Bulleted List\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"Decrease Indent\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"Increase Indent\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"Block Quote\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"About CKEditor 4\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"}],\\\"forms\\\":[{\\\"index\\\":0,\\\"action\\\":\\\"https://dakotapokertour.com/logout\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":1,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/bulkEliminate\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"datatable_reg_length\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"Show 10 25 50 100 entries\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"search\\\",\\\"name\\\":\\\"\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"Search players from the registered players\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"checkbox\\\",\\\"name\\\":\\\"\\\",\\\"id\\\":\\\"selectAll\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"on\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":2,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/checkIn\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"dealer_fee\\\",\\\"id\\\":\\\"dealer_fee\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"initial_buyin\\\",\\\"id\\\":\\\"initial_buyin\\\",\\\"placeholder\\\":\\\"Buy In\\\",\\\"value\\\":\\\"220\\\",\\\"label\\\":\\\"Buy In *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"initial_chips_count\\\",\\\"id\\\":\\\"initial_chips_count\\\",\\\"placeholder\\\":\\\"Chips Count\\\",\\\"value\\\":\\\"20000\\\",\\\"label\\\":\\\"Chips Count *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"include_addons\\\",\\\"id\\\":\\\"include_addons1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"include_addons\\\",\\\"id\\\":\\\"include_addons2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"no_of_addons\\\",\\\"id\\\":\\\"no_of_addons\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"How Many Addons? *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_addon_buyin\\\",\\\"id\\\":\\\"total_addon_buyin\\\",\\\"placeholder\\\":\\\"Total Addon BuyIn\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"Total Addon BuyIn\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_addon_chips\\\",\\\"id\\\":\\\"total_addon_chips\\\",\\\"placeholder\\\":\\\"Total Addon Chips Count\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"Total Addon Chips Count\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"rebuy_fee\\\",\\\"id\\\":\\\"rebuy_fee\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"user_id\\\",\\\"id\\\":\\\"user_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"tournament_type_id\\\",\\\"id\\\":\\\"tournament_type_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":3,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/pre_reg_edit_checkIn\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"dealer_fee\\\",\\\"id\\\":\\\"dealer_fee\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"initial_buyin\\\",\\\"id\\\":\\\"initial_buyin\\\",\\\"placeholder\\\":\\\"Buy In\\\",\\\"value\\\":\\\"220\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"initial_chips_count\\\",\\\"id\\\":\\\"initial_chips_count\\\",\\\"placeholder\\\":\\\"Chips Count\\\",\\\"value\\\":\\\"20000\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"include_addons\\\",\\\"id\\\":\\\"include_addons_review1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"include_addons\\\",\\\"id\\\":\\\"include_addons_review2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"no_of_addons\\\",\\\"id\\\":\\\"review_no_of_addons\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_addon_buyin\\\",\\\"id\\\":\\\"review_total_addon_buyin\\\",\\\"placeholder\\\":\\\"Total Addon BuyIn\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_addon_chips\\\",\\\"id\\\":\\\"review_total_addon_chips\\\",\\\"placeholder\\\":\\\"Total Addon Chips Count\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"rebuy_fee\\\",\\\"id\\\":\\\"rebuy_fee\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"user_id\\\",\\\"id\\\":\\\"review_user_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"tournament_type_id\\\",\\\"id\\\":\\\"tournament_type_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":4,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/edit_EliminatePlayer\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"player_id\\\",\\\"id\\\":\\\"player_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"score\\\",\\\"id\\\":\\\"score\\\",\\\"placeholder\\\":\\\"Points\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Select Player *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in_amount\\\",\\\"id\\\":\\\"total_buy_in_amount\\\",\\\"placeholder\\\":\\\"Total Buy in\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Total Buy in *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"winnings\\\",\\\"id\\\":\\\"winnings\\\",\\\"placeholder\\\":\\\"Winnings\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Winnings *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"edit_user_id\\\",\\\"id\\\":\\\"edit_user_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":5,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/addonBuyIn\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"addon_buy_in_amount\\\",\\\"id\\\":\\\"addon_buy_in_amount\\\",\\\"placeholder\\\":\\\"Addon Buy In\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"Addon Buy In *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"addon_rebuy_fee\\\",\\\"id\\\":\\\"addon_rebuy_fee\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"addon_chips_count\\\",\\\"id\\\":\\\"addon_chips_count\\\",\\\"placeholder\\\":\\\"Addon Chips Count\\\",\\\"value\\\":\\\"20000\\\",\\\"label\\\":\\\"Addon Chips Count *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"addon_user_id\\\",\\\"id\\\":\\\"addon_user_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"tournament_type_id\\\",\\\"id\\\":\\\"tournament_type_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":6,\\\"action\\\":\\\"https://dakotapokertour.com/admin/tournaments/346/updateEliminatedRanks\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[269]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[269]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[269]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"1100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[859]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"2\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[859]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[859]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"600\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[153]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"3\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[153]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[153]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[387]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"4\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[387]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[387]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"500\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2747]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"5\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2747]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2747]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"600\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[175]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"6\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[175]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[175]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2781]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"7\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2781]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2781]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"1000\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2779]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"8\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2779]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2779]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2646]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"9\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2646]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2646]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1429]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"10\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1429]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1429]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1614]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"11\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1614]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1614]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[784]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"12\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[784]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[784]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2686]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"13\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2686]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2686]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2714]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"14\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2714]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2714]\\\",\\\"i."
+    },
+    {
+        "targetName":  "event-create",
+        "url":  "https://dakotapokertour.com/admin/events/create",
+        "error":  "Invalid JSON primitive: d."
+    },
+    {
+        "targetName":  "event-edit-89",
+        "url":  "https://dakotapokertour.com/admin/events/89/edit",
+        "error":  "Invalid JSON primitive: \\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1037]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[860]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"53\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[860]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[860]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[743]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"54\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[743]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[743]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[462]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"55\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[462]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[462]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2512]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"56\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2512]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2512]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2514]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"57\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2514]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2514]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2199]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"58\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2199]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2199]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2627]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"59\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2627]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2627]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[311]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"60\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[311]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[311]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[192]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"61\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[192]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[192]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2240]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"62\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2240]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2240]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[223]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"63\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[223]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[223]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[789]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"64\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[789]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[789]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1489]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"65\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1489]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1489]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2144]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"66\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2144]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2144]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2746]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"67\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2746]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2746]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[226]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"68\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[226]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[226]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2083]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"69\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2083]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2083]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[803]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"70\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[803]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[803]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1049]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"71\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1049]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1049]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[792]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"72\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[792]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[792]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[165]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"73\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[165]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[165]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2484]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"74\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2484]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2484]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[986]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"75\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[986]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[986]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2675]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"76\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2675]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2675]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2780]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2780]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2780]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2158]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2158]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2158]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"100\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[342]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[342]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[342]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[875]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[875]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[875]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1363]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1363]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1363]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1215]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1215]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1215]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2612]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2612]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2612]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"200\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2784]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2784]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2784]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2601]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2601]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2601]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[1816]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[1816]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[1816]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[885]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[885]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[885]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2783]\\\",\\\"id\\\":\\\"ranknew\\\",\\\"placeholder\\\":\\\"Rank\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"total_buy_in[2783]\\\",\\\"id\\\":\\\"total_buy_in_upd\\\",\\\"placeholder\\\":\\\"Total Buy In\\\",\\\"value\\\":\\\"300\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"bounty[2783]\\\",\\\"id\\\":\\\"bounty\\\",\\\"placeholder\\\":\\\"Bounty\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"number\\\",\\\"name\\\":\\\"rank[2755]\\\",\\\"."
+    },
+    {
+        "targetName":  "event-view-89",
+        "url":  "https://dakotapokertour.com/admin/events/89",
+        "error":  "Invalid JSON primitive: id."
+    },
+    {
+        "targetName":  "player-create",
+        "url":  "https://dakotapokertour.com/admin/users/create",
+        "error":  "Invalid object passed in, \u0027:\u0027 or \u0027}\u0027 expected. (28): {\"id\":9,\"result\":{\"frameId\":"
+    },
+    {
+        "targetName":  "player-edit-pedro",
+        "url":  "https://dakotapokertour.com/admin/users/2787/edit",
+        "error":  "Invalid JSON primitive: \"loaderId\":\"B2B1EBE4A4D7BDF14CD3736BC6E9EF86\",\"errorText\":\"net::ERR_ABORTED\",\"isDownload\":false}}."
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/users/2787",
+        "headings":  [
+                         "User Show"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/users/2787#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "List",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Edit",
+                          "href":  "https://dakotapokertour.com/admin/users/2787/edit"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Users",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "List",
+                        "Edit"
+                    ],
+        "tables":  [
+                       {
+                           "index":  0,
+                           "headers":  [
+                                           "Name"
+                                       ],
+                           "rows":  8,
+                           "sampleRows":  [
+                                              [
+                                                  "Name"
+                                              ],
+                                              [
+                                                  "Email",
+                                                  "pedro@fpngaming.com"
+                                              ],
+                                              [
+                                                  "Birthdate"
+                                              ],
+                                              [
+                                                  "Phone"
+                                              ],
+                                              [
+                                                  "Roles",
+                                                  "Administrator User"
+                                              ]
+                                          ]
+                       }
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications User Show List Edit Name Email pedro@fpngaming.com Birthdate Phone Roles Administrator User Permissions view_admin add_users edit_users restore_users view_users edit_own_users edit_state_users view_list_users view_own_users add_leagues edit_leagues edit_own_leagues edit_state_leagues restore_leagues view_leagues view_list_leagues view_own_leagues add_seasons edit_seasons edit_own_seasons edit_state_seasons restore_seasons view_seasons view_list_seasons view_own_seasons add_events edit_events edit_own_events edit_state_events restore_events view_events view_list_events view_own_events add_venues edit_venues edit_own_venues edit_state_venues restore_venues view_venues view_list_venues view_own_venues add_tournaments edit_tournaments edit_own_tournaments edit_state_tournaments restore_tournaments view_tournaments view_list_tournaments view_own_tournaments add_players edit_players edit_own_players edit_state_players restore_players view_players view_list_players view_own_players add_tournamentupdates edit_tournamentupdates edit_own_tournamentupdates edit_state_tournamentupdates restore_tournamentupdates view_tournamentupdates view_list_tournamentupdates view_own_tournamentupdates add_articles edit_articles edit_own_articles edit_state_articles restore_articles view_articles view_list_articles view_own_articles add_blinds edit_blinds edit_own_blinds edit_state_blinds restore_blinds view_blinds view_list_blinds view_own_blinds duplicate_list_players merge_account_players add_internalnotifications edit_internalnotifications edit_own_internalnotifications edit_state_internalnotifications restore_internalnotifications view_internalnotifications view_list_internalnotifications view_own_internalnotifications Created at 2026-06-27 20:25:49 (13 hours ago) Updated at 2026-06-27 20:26:25 (13 hours ago) Updated at: 13 hours ago, Created at: Saturday, June 27, 2026 8:25 PM Dashboard Users Show",
+        "targetName":  "player-view-pedro"
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/venues/create",
+        "headings":  [
+                         "Venue Create",
+                         "Status *",
+                         "Name *",
+                         "Address *",
+                         "City *",
+                         "State *",
+                         "Zip *",
+                         "Phone",
+                         "Logo",
+                         "Banner Image",
+                         "Facebook",
+                         "Twitter",
+                         "Instagram",
+                         "YouTube",
+                         "Website",
+                         "Select Location/City/Address"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/venues/create#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "index":  1,
+                          "action":  "https://dakotapokertour.com/admin/venues",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "select",
+                                             "type":  "select-one",
+                                             "name":  "status",
+                                             "id":  "status",
+                                             "placeholder":  "",
+                                             "value":  "1",
+                                             "label":  "Status *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "name",
+                                             "id":  "name",
+                                             "placeholder":  "Name",
+                                             "value":  "",
+                                             "label":  "Name *"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "address",
+                                             "id":  "address",
+                                             "placeholder":  "Address",
+                                             "value":  "",
+                                             "label":  "Address *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "city",
+                                             "id":  "city",
+                                             "placeholder":  "City",
+                                             "value":  "",
+                                             "label":  "City *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "state",
+                                             "id":  "state",
+                                             "placeholder":  "State",
+                                             "value":  "",
+                                             "label":  "State *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "zip",
+                                             "id":  "zip",
+                                             "placeholder":  "Zip",
+                                             "value":  "",
+                                             "label":  "Zip *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "phone",
+                                             "id":  "phone",
+                                             "placeholder":  "Phone",
+                                             "value":  "",
+                                             "label":  "Phone"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "logo",
+                                             "id":  "logo",
+                                             "placeholder":  "",
+                                             "value":  "",
+                                             "label":  "Logo"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "banner_image",
+                                             "id":  "banner_image",
+                                             "placeholder":  "",
+                                             "value":  "",
+                                             "label":  "Banner Image"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "fb_url",
+                                             "id":  "fb_url",
+                                             "placeholder":  "Facebook",
+                                             "value":  "",
+                                             "label":  "Facebook"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "twitter_url",
+                                             "id":  "twitter_url",
+                                             "placeholder":  "Twitter",
+                                             "value":  "",
+                                             "label":  "Twitter"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "instagram_url",
+                                             "id":  "instagram_url",
+                                             "placeholder":  "Instagram",
+                                             "value":  "",
+                                             "label":  "Instagram"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "youtube_url",
+                                             "id":  "youtube_url",
+                                             "placeholder":  "YouTube",
+                                             "value":  "",
+                                             "label":  "YouTube"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "website",
+                                             "id":  "website",
+                                             "placeholder":  "Website",
+                                             "value":  "",
+                                             "label":  "Website"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "map_location_address",
+                                             "id":  "map_location_address",
+                                             "placeholder":  "Select Location/City/Address",
+                                             "value":  "",
+                                             "label":  "Select Location/City/Address"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "map_location_latitude",
+                                             "id":  "map_location_latitude",
+                                             "placeholder":  "Latitude",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "map_location_longitude",
+                                             "id":  "map_location_longitude",
+                                             "placeholder":  "Longitude",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "Create",
+                        "Create"
+                    ],
+        "tables":  [
+
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Venue Create Create Status * Published Unpublished Name * Address * City * State * Zip * Phone Logo Banner Image Facebook Twitter Instagram YouTube Website Google Map Location Select Location/City/Address Create Dashboard Venues Create",
+        "targetName":  "venue-create"
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/venues/91/edit",
+        "headings":  [
+                         "Venue Edit",
+                         "Status *",
+                         "Name *",
+                         "Address *",
+                         "City *",
+                         "State *",
+                         "Zip *",
+                         "Phone",
+                         "Logo",
+                         "Banner Image",
+                         "Facebook",
+                         "Twitter",
+                         "Instagram",
+                         "YouTube",
+                         "Website",
+                         "Select Location/City/Address"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/venues/91/edit#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "Cancel",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "index":  1,
+                          "action":  "https://dakotapokertour.com/admin/venues/91",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_method",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "select",
+                                             "type":  "select-one",
+                                             "name":  "status",
+                                             "id":  "status",
+                                             "placeholder":  "",
+                                             "value":  "1",
+                                             "label":  "Status *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "name",
+                                             "id":  "name",
+                                             "placeholder":  "Name",
+                                             "value":  "Double Tree - West Fargo",
+                                             "label":  "Name *"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "address",
+                                             "id":  "address",
+                                             "placeholder":  "Address",
+                                             "value":  "825 E Beaton Drive",
+                                             "label":  "Address *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "city",
+                                             "id":  "city",
+                                             "placeholder":  "City",
+                                             "value":  "West Fargo",
+                                             "label":  "City *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "state",
+                                             "id":  "state",
+                                             "placeholder":  "State",
+                                             "value":  "ND",
+                                             "label":  "State *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "zip",
+                                             "id":  "zip",
+                                             "placeholder":  "Zip",
+                                             "value":  "58078",
+                                             "label":  "Zip *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "phone",
+                                             "id":  "phone",
+                                             "placeholder":  "Phone",
+                                             "value":  "",
+                                             "label":  "Phone"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "logo",
+                                             "id":  "logo",
+                                             "placeholder":  "Logo",
+                                             "value":  "",
+                                             "label":  "Logo"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "existing_logo",
+                                             "id":  "existing_logo",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "banner_image",
+                                             "id":  "banner_image",
+                                             "placeholder":  "Banner Image",
+                                             "value":  "",
+                                             "label":  "Banner Image"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "fb_url",
+                                             "id":  "fb_url",
+                                             "placeholder":  "Facebook",
+                                             "value":  "",
+                                             "label":  "Facebook"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "twitter_url",
+                                             "id":  "twitter_url",
+                                             "placeholder":  "Twitter",
+                                             "value":  "",
+                                             "label":  "Twitter"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "instagram_url",
+                                             "id":  "instagram_url",
+                                             "placeholder":  "Instagram",
+                                             "value":  "",
+                                             "label":  "Instagram"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "youtube_url",
+                                             "id":  "youtube_url",
+                                             "placeholder":  "YouTube",
+                                             "value":  "",
+                                             "label":  "YouTube"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "website",
+                                             "id":  "website",
+                                             "placeholder":  "Website",
+                                             "value":  "",
+                                             "label":  "Website"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "map_location_address",
+                                             "id":  "map_location_address",
+                                             "placeholder":  "Select Location/City/Address",
+                                             "value":  "825 East Beaton Drive, West Fargo, ND, USA",
+                                             "label":  "Select Location/City/Address"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "map_location_latitude",
+                                             "id":  "map_location_latitude",
+                                             "placeholder":  "Latitude",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "map_location_longitude",
+                                             "id":  "map_location_longitude",
+                                             "placeholder":  "Longitude",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "Save",
+                        "Save",
+                        "Cancel"
+                    ],
+        "tables":  [
+
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Venue Edit Save Status * Published Unpublished Name * Address * City * State * Zip * Phone Logo Banner Image Facebook Twitter Instagram YouTube Website Google Map Location Select Location/City/Address Save Cancel Updated at: 2 months ago, Created at: Tuesday, April 7, 2026 2:55 PM Dashboard Venues Edit",
+        "targetName":  "venue-edit-91"
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/seasons/create",
+        "headings":  [
+                         "Season Create",
+                         "Status *",
+                         "Choose League *",
+                         "Name *",
+                         "Description *",
+                         "Default *",
+                         "Yes",
+                         "No",
+                         "Logo",
+                         "Banner Image",
+                         "Start Date *",
+                         "End Date *"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/seasons/create#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Cut\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Copy\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Undo\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Redo\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Link\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Unlink\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Anchor\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Image\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Table\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Maximize\u0027)"
+                      },
+                      {
+                          "text":  "Source",
+                          "href":  "javascript:void(\u0027Source\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Bold\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Italic\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Remove Format\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Block Quote\u0027)"
+                      },
+                      {
+                          "text":  "Styles",
+                          "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                      },
+                      {
+                          "text":  "Format",
+                          "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "index":  1,
+                          "action":  "https://dakotapokertour.com/admin/seasons",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "select",
+                                             "type":  "select-one",
+                                             "name":  "status",
+                                             "id":  "status",
+                                             "placeholder":  "",
+                                             "value":  "1",
+                                             "label":  "Status *"
+                                         },
+                                         {
+                                             "tag":  "select",
+                                             "type":  "select-one",
+                                             "name":  "league_id",
+                                             "id":  "league_id",
+                                             "placeholder":  "",
+                                             "value":  "",
+                                             "label":  "Choose League *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "name",
+                                             "id":  "name",
+                                             "placeholder":  "Name",
+                                             "value":  "",
+                                             "label":  "Name *"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "description",
+                                             "id":  "description",
+                                             "placeholder":  "Description",
+                                             "value":  "",
+                                             "label":  "Description *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "radio",
+                                             "name":  "default",
+                                             "id":  "featured1",
+                                             "placeholder":  "",
+                                             "value":  "1",
+                                             "label":  "Yes"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "radio",
+                                             "name":  "default",
+                                             "id":  "featured2",
+                                             "placeholder":  "",
+                                             "value":  "0",
+                                             "label":  "No"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "logo",
+                                             "id":  "logo",
+                                             "placeholder":  "",
+                                             "value":  "",
+                                             "label":  "Logo"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "file",
+                                             "name":  "banner_image",
+                                             "id":  "banner_image",
+                                             "placeholder":  "",
+                                             "value":  "",
+                                             "label":  "Banner Image"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "start_date",
+                                             "id":  "start_date",
+                                             "placeholder":  "Start Date",
+                                             "value":  "",
+                                             "label":  "Start Date *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "end_date",
+                                             "id":  "end_date",
+                                             "placeholder":  "End Date",
+                                             "value":  "",
+                                             "label":  "End Date *"
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "Create",
+                        "Create",
+                        "Save Selected",
+                        "Save Selected"
+                    ],
+        "tables":  [
+                       {
+                           "index":  0,
+                           "headers":  [
+                                           "Sun",
+                                           "Mon",
+                                           "Tue",
+                                           "Wed",
+                                           "Thu",
+                                           "Fri",
+                                           "Sat",
+                                           "31",
+                                           "1",
+                                           "2",
+                                           "3",
+                                           "4",
+                                           "5",
+                                           "6"
+                                       ],
+                           "rows":  6,
+                           "sampleRows":  [
+                                              [
+                                                  "Sun",
+                                                  "Mon",
+                                                  "Tue",
+                                                  "Wed",
+                                                  "Thu",
+                                                  "Fri",
+                                                  "Sat"
+                                              ],
+                                              [
+                                                  "31",
+                                                  "1",
+                                                  "2",
+                                                  "3",
+                                                  "4",
+                                                  "5",
+                                                  "6"
+                                              ],
+                                              [
+                                                  "7",
+                                                  "8",
+                                                  "9",
+                                                  "10",
+                                                  "11",
+                                                  "12",
+                                                  "13"
+                                              ],
+                                              [
+                                                  "14",
+                                                  "15",
+                                                  "16",
+                                                  "17",
+                                                  "18",
+                                                  "19",
+                                                  "20"
+                                              ],
+                                              [
+                                                  "21",
+                                                  "22",
+                                                  "23",
+                                                  "24",
+                                                  "25",
+                                                  "26",
+                                                  "27"
+                                              ]
+                                          ]
+                       },
+                       {
+                           "index":  1,
+                           "headers":  [
+                                           "Sun",
+                                           "Mon",
+                                           "Tue",
+                                           "Wed",
+                                           "Thu",
+                                           "Fri",
+                                           "Sat",
+                                           "31",
+                                           "1",
+                                           "2",
+                                           "3",
+                                           "4",
+                                           "5",
+                                           "6"
+                                       ],
+                           "rows":  6,
+                           "sampleRows":  [
+                                              [
+                                                  "Sun",
+                                                  "Mon",
+                                                  "Tue",
+                                                  "Wed",
+                                                  "Thu",
+                                                  "Fri",
+                                                  "Sat"
+                                              ],
+                                              [
+                                                  "31",
+                                                  "1",
+                                                  "2",
+                                                  "3",
+                                                  "4",
+                                                  "5",
+                                                  "6"
+                                              ],
+                                              [
+                                                  "7",
+                                                  "8",
+                                                  "9",
+                                                  "10",
+                                                  "11",
+                                                  "12",
+                                                  "13"
+                                              ],
+                                              [
+                                                  "14",
+                                                  "15",
+                                                  "16",
+                                                  "17",
+                                                  "18",
+                                                  "19",
+                                                  "20"
+                                              ],
+                                              [
+                                                  "21",
+                                                  "22",
+                                                  "23",
+                                                  "24",
+                                                  "25",
+                                                  "26",
+                                                  "27"
+                                              ]
+                                          ]
+                       }
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Season Create Create Status * Published Unpublished Choose League * - Choose League - Dakota Poker Tour FPN Name * Description * Source Styles Format ◢ Default * Yes No Logo Banner Image Start Date * End Date * Create Dashboard Seasons Create",
+        "targetName":  "season-create"
+    },
+    {
+        "title":  "Dakota Poker Tour",
+        "url":  "https://dakotapokertour.com/admin/leagues/create",
+        "headings":  [
+                         "League Create",
+                         "Status *",
+                         "Name *",
+                         "Description *"
+                     ],
+        "links":  [
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin"
+                      },
+                      {
+                          "text":  "View Site",
+                          "href":  "https://dakotapokertour.com/"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                      },
+                      {
+                          "text":  "Sign Out",
+                          "href":  "https://dakotapokertour.com/admin/leagues/create#"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Tournaments",
+                          "href":  "https://dakotapokertour.com/admin/tournaments"
+                      },
+                      {
+                          "text":  "Payout Distributions Template",
+                          "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                      },
+                      {
+                          "text":  "Blind Structures",
+                          "href":  "https://dakotapokertour.com/admin/blinds"
+                      },
+                      {
+                          "text":  "Live Updates",
+                          "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                      },
+                      {
+                          "text":  "Events",
+                          "href":  "https://dakotapokertour.com/admin/events"
+                      },
+                      {
+                          "text":  "Seasons",
+                          "href":  "https://dakotapokertour.com/admin/seasons"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      },
+                      {
+                          "text":  "Venues",
+                          "href":  "https://dakotapokertour.com/admin/venues"
+                      },
+                      {
+                          "text":  "Articles",
+                          "href":  "https://dakotapokertour.com/admin/articles"
+                      },
+                      {
+                          "text":  "Players",
+                          "href":  "https://dakotapokertour.com/admin/users"
+                      },
+                      {
+                          "text":  "Fix Duplicate Players",
+                          "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                      },
+                      {
+                          "text":  "Notifications",
+                          "href":  "https://dakotapokertour.com/admin/send-notifications"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Cut\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Copy\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Undo\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Redo\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Link\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Unlink\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Anchor\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Image\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Table\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Maximize\u0027)"
+                      },
+                      {
+                          "text":  "Source",
+                          "href":  "javascript:void(\u0027Source\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Bold\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Italic\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Remove Format\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027Block Quote\u0027)"
+                      },
+                      {
+                          "text":  "Styles",
+                          "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                      },
+                      {
+                          "text":  "Format",
+                          "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                      },
+                      {
+                          "text":  "",
+                          "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                      },
+                      {
+                          "text":  "Dashboard",
+                          "href":  "https://dakotapokertour.com/admin/dashboard"
+                      },
+                      {
+                          "text":  "Leagues",
+                          "href":  "https://dakotapokertour.com/admin/leagues"
+                      }
+                  ],
+        "forms":  [
+                      {
+                          "index":  0,
+                          "action":  "https://dakotapokertour.com/logout",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         }
+                                     ]
+                      },
+                      {
+                          "index":  1,
+                          "action":  "https://dakotapokertour.com/admin/leagues",
+                          "method":  "post",
+                          "inputs":  [
+                                         {
+                                             "tag":  "input",
+                                             "type":  "hidden",
+                                             "name":  "_token",
+                                             "id":  "",
+                                             "placeholder":  "",
+                                             "value":  "[hidden]",
+                                             "label":  ""
+                                         },
+                                         {
+                                             "tag":  "select",
+                                             "type":  "select-one",
+                                             "name":  "status",
+                                             "id":  "status",
+                                             "placeholder":  "",
+                                             "value":  "1",
+                                             "label":  "Status *"
+                                         },
+                                         {
+                                             "tag":  "input",
+                                             "type":  "text",
+                                             "name":  "name",
+                                             "id":  "name",
+                                             "placeholder":  "Name",
+                                             "value":  "",
+                                             "label":  "Name *"
+                                         },
+                                         {
+                                             "tag":  "textarea",
+                                             "type":  "textarea",
+                                             "name":  "description",
+                                             "id":  "description",
+                                             "placeholder":  "Description",
+                                             "value":  "",
+                                             "label":  "Description *"
+                                         }
+                                     ]
+                      }
+                  ],
+        "buttons":  [
+                        "Create",
+                        "Create"
+                    ],
+        "tables":  [
+
+                   ],
+        "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications League Create Create Status * Published Unpublished Name * Description * Source Styles Format ◢ Create Dashboard Leagues Create",
+        "targetName":  "league-create"
+    },
+    {
+        "targetName":  "article-create",
+        "url":  "https://dakotapokertour.com/admin/articles/create",
+        "error":  "Unterminated string passed in. (16380): {\"id\":25,\"result\":{\"result\":{\"type\":\"string\",\"value\":\"{\\\"title\\\":\\\"Dakota Poker Tour\\\",\\\"url\\\":\\\"https://dakotapokertour.com/admin/articles/create\\\",\\\"headings\\\":[\\\"Article Add\\\",\\\"Status *\\\",\\\"Choose Tournament\\\",\\\"Select Category\\\",\\\"Title *\\\",\\\"Published Date *\\\",\\\"Intro Text *\\\",\\\"Full Text\\\",\\\"Featured *\\\",\\\"Yes\\\",\\\"No\\\",\\\"Photo\\\",\\\"Video URL\\\",\\\"Tag Players\\\",\\\"Meta Description\\\",\\\"Meta Keywords\\\"],\\\"links\\\":[{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin\\\"},{\\\"text\\\":\\\"View Site\\\",\\\"href\\\":\\\"https://dakotapokertour.com/\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/internal-notifications\\\"},{\\\"text\\\":\\\"Sign Out\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles/create#\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"},{\\\"text\\\":\\\"Tournaments\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/tournaments\\\"},{\\\"text\\\":\\\"Payout Distributions Template\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/payoutdistributions\\\"},{\\\"text\\\":\\\"Blind Structures\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/blinds\\\"},{\\\"text\\\":\\\"Live Updates\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles?liveupdate=1\\\"},{\\\"text\\\":\\\"Events\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/events\\\"},{\\\"text\\\":\\\"Seasons\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/seasons\\\"},{\\\"text\\\":\\\"Leagues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/leagues\\\"},{\\\"text\\\":\\\"Venues\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/venues\\\"},{\\\"text\\\":\\\"Articles\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles\\\"},{\\\"text\\\":\\\"Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/users\\\"},{\\\"text\\\":\\\"Fix Duplicate Players\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/duplicates/players\\\"},{\\\"text\\\":\\\"Notifications\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/send-notifications\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Cut\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Copy\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste as plain text\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Paste from Word\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Undo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Redo\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Spell Check As You Type\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Link\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Unlink\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Anchor\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Image\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Table\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Horizontal Line\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert Special Character\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Maximize\u0027)\\\"},{\\\"text\\\":\\\"Source\\\",\\\"href\\\":\\\"javascript:void(\u0027Source\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Bold\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Italic\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Strikethrough\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Remove Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Numbered List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Insert/Remove Bulleted List\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Decrease Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Increase Indent\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027Block Quote\u0027)\\\"},{\\\"text\\\":\\\"Styles\\\",\\\"href\\\":\\\"javascript:void(\u0027Formatting Styles\u0027)\\\"},{\\\"text\\\":\\\"Format\\\",\\\"href\\\":\\\"javascript:void(\u0027Paragraph Format\u0027)\\\"},{\\\"text\\\":\\\"\\\",\\\"href\\\":\\\"javascript:void(\u0027About CKEditor 4\u0027)\\\"},{\\\"text\\\":\\\"Dashboard\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/dashboard\\\"},{\\\"text\\\":\\\"Article\\\",\\\"href\\\":\\\"https://dakotapokertour.com/admin/articles\\\"}],\\\"forms\\\":[{\\\"index\\\":0,\\\"action\\\":\\\"https://dakotapokertour.com/logout\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"}]},{\\\"index\\\":1,\\\"action\\\":\\\"https://dakotapokertour.com/admin/articles\\\",\\\"method\\\":\\\"post\\\",\\\"inputs\\\":[{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"hidden\\\",\\\"name\\\":\\\"_token\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"[hidden]\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"status\\\",\\\"id\\\":\\\"status\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Status *\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"tournament_id\\\",\\\"id\\\":\\\"tournament_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Choose Tournament\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-one\\\",\\\"name\\\":\\\"category_id\\\",\\\"id\\\":\\\"category_id\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Select Category\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"title\\\",\\\"id\\\":\\\"title\\\",\\\"placeholder\\\":\\\"Title\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Title *\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"published_at\\\",\\\"id\\\":\\\"published_at\\\",\\\"placeholder\\\":\\\"Published Date\\\",\\\"value\\\":\\\"2026-06-28 10:24\\\",\\\"label\\\":\\\"Published Date *\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"introtext\\\",\\\"id\\\":\\\"introtext\\\",\\\"placeholder\\\":\\\"Intro Text\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Intro Text *\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"fulltext\\\",\\\"id\\\":\\\"fulltext\\\",\\\"placeholder\\\":\\\"Full Text\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Full Text\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"featured\\\",\\\"id\\\":\\\"featured1\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"1\\\",\\\"label\\\":\\\"Yes\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"radio\\\",\\\"name\\\":\\\"featured\\\",\\\"id\\\":\\\"featured2\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"0\\\",\\\"label\\\":\\\"No\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"file\\\",\\\"name\\\":\\\"logo\\\",\\\"id\\\":\\\"logo\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Photo\\\"},{\\\"tag\\\":\\\"input\\\",\\\"type\\\":\\\"text\\\",\\\"name\\\":\\\"video_url\\\",\\\"id\\\":\\\"video_url\\\",\\\"placeholder\\\":\\\"Video URL\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Video URL\\\"},{\\\"tag\\\":\\\"select\\\",\\\"type\\\":\\\"select-multiple\\\",\\\"name\\\":\\\"associated_user_ids[]\\\",\\\"id\\\":\\\"associate-width\\\",\\\"placeholder\\\":\\\"\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"\\\",\\\"id\\\":\\\"\\\",\\\"placeholder\\\":\\\"Please Type To Select Players\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"meta_description\\\",\\\"id\\\":\\\"meta_description\\\",\\\"placeholder\\\":\\\"Meta Description\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Meta Description\\\"},{\\\"tag\\\":\\\"textarea\\\",\\\"type\\\":\\\"textarea\\\",\\\"name\\\":\\\"meta_keywords\\\",\\\"id\\\":\\\"metakey\\\",\\\"placeholder\\\":\\\"Meta Keywords\\\",\\\"value\\\":\\\"\\\",\\\"label\\\":\\\"Meta Keywords\\\"}]}],\\\"buttons\\\":[\\\"Create\\\",\\\"Basic Info\\\",\\\"SEO\\\",\\\"Create\\\",\\\"Save Selected\\\"],\\\"tables\\\":[{\\\"index\\\":0,\\\"headers\\\":[\\\"Sun\\\",\\\"Mon\\\",\\\"Tue\\\",\\\"Wed\\\",\\\"Thu\\\",\\\"Fri\\\",\\\"Sat\\\",\\\"31\\\",\\\"1\\\",\\\"2\\\",\\\"3\\\",\\\"4\\\",\\\"5\\\",\\\"6\\\"],\\\"rows\\\":6,\\\"sampleRows\\\":[[\\\"Sun\\\",\\\"Mon\\\",\\\"Tue\\\",\\\"Wed\\\",\\\"Thu\\\",\\\"Fri\\\",\\\"Sat\\\"],[\\\"31\\\",\\\"1\\\",\\\"2\\\",\\\"3\\\",\\\"4\\\",\\\"5\\\",\\\"6\\\"],[\\\"7\\\",\\\"8\\\",\\\"9\\\",\\\"10\\\",\\\"11\\\",\\\"12\\\",\\\"13\\\"],[\\\"14\\\",\\\"15\\\",\\\"16\\\",\\\"17\\\",\\\"18\\\",\\\"19\\\",\\\"20\\\"],[\\\"21\\\",\\\"22\\\",\\\"23\\\",\\\"24\\\",\\\"25\\\",\\\"26\\\",\\\"27\\\"]]}],\\\"text\\\":\\\"View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Article Add Create Basic Info SEO Status * Published Unpublished Choose Tournament - Choose Tournament - $1,000 Dream Chaser No Limit Hold\u0027em $165 No Limit Hold\u0027em Turbo $215 Big O-No Limit (5 Card Omaha Hi-Lo) $250 No Limit Hold\u0027em Monster Stack $315 Championship No Limit Hold\u0027em Alibis Seat Amvets Satellite # 2 Amvets Satellite #1 Angry Beaver Deep Stack Bar Nine $150 DPT Seat Bar Nine $225 Seat Bar Nine Dead Money Open Super Satellite Bar Nine Freeroll $150 DPT Seat-Hagge\u0027s Sept 17th Bar Nine Super Satellite Seat Bar Nine Thursday League - DPT Super Satellite Seat @ Hagge\u0027s Billy\u0027s Corner Bar Bismarck Amvets DPT Super Satellite Seat #1 of 4 Bismarck Amvets DPT Super Satellite Seat #2 of 4 Bismarck Amvets DPT Super Satellite Seat #3 of 4 Bismarck Amvets DPT Super Satellite Seat #4 of 4 Bison Turf - Thursday League DPT Super Satellite #1 Bison Turf - Thursday League DPT Super Satellite #1 Bison Turf - Thursday League DPT Super Satellite #2 Bison Turf Satellite Black Chip Bounty Black Chip Bounty Black Chip Bounty Black Chip Bounty Black Chip Bounty Black Chip Bounty Black Chip Bounty Black Chip Bounty Bordertown - DPT Super Satellite Seat @ Hagges Bordertown Bar and Grill Super Satellite Seat Bordertown Super Satellite Bounty Tournament Buckskin Deep Stack Buckskin Deep Stack Buckskin Friday Night Turbo Buckskin Friday Night Turbo Buckskin Friday Turbo Buckskin Satellite Seat # 1 Buckskin Satellite Seat # 2 Buckskin Shootout MAIN EVENT Buckskin Shootout Main Event Buckskin Super Satellite Buffalo City Showdown Buffalo City Showdown Buffalo City Showdown Buffalo City Showdown Deep Stack Cactus Jacks Open Friday Night Turbo Cactus Jacks Open Main Event Casselton Vets - DPT Super Satellite (Hagges) Casselton Vets Deepstack Casselton Vets Free Super Satellite Seat #1 Casselton Vets Free Super Satellite Seat #2 Casselton Vets Free Super Satellite Seat #3 Casselton Vets Free Super Satellite Seat #4 Casselton Vets Free Super Satellite Seat #5 Casselton Vets Super Satellite Casselton Vets Super Satellite Seat Champs DPT Super Satellite Seat #1 Champs DPT Super Satellite Seat #2 Champs Satellite #1 Champs Satellite #2 City Brew Hall Dead Money Open Dead Money Open - Super Satellite Dead Money Open Main Event Deep Stack Deep Stack Deep Stack Deep Stack Deep Stack Deepstack DPT Season 2022-23 Player Appreciation Freeroll DPT Season 2022-23 Tournament of Champions DPT Season XI Player Appreciation Freeroll DPT Season XI Tournament of Champions DPT Spring Championship MEGASTACK (100K) DPT Spring Championship MEGASTACK (100K) Dream Chaser Eagle Eye Eagle Eye Eagle Eye Eagle Eye Main Event East Grand Forks American Legion - $40 DPT Satellite Seat EGF Legion Super Satellite Seat #1 EGF Legion Super Satellite Seat #2 EGF Legion Super Satellite Seat #3 Event 1 \\\\\\\"RPT Season Premiere\\\\\\\" Fall Classic MEGASTACK (100K) Flight A Flight B Flight C Flight D FREEROLL @ \u0027Czech\u0027ers Sports Bar FREEROLL @ Ace of Spades (Tues) FREEROLL @ Ace of Spades (Wed) FREEROLL @ Alibi\u0027s Lounge FREEROLL @ Back Door Pub FREEROLL @ Bar Nine FREEROLL @ Billy\u0027s Corner Bar \u0026 Grill FREEROLL @ Bismarck Amvets FREEROLL @ Bismark Amvets FREEROLL @ BorderTown Bar \u0026 Grill FREEROLL @ Brickhouse Lounge FREEROLL @ Brothers Bar \u0026 Grill FREEROLL @ Bubba\u0027s Bar \u0026 Grill FREEROLL @ Cando Bar FREEROLL @ Casselton Vets Club FREEROLL @ Casselton Vets Club FREEROLL @ Cedar Inn FREEROLL @ Champs Paragon Bowl (Mon) FREEROLL @ Champs Paragon Bowl (Wed) FREEROLL @ City Limits Bar FREEROLL @ City Limits Bar \u0026 Bottle Shop FREEROLL @ Country Pub FREEROLL @ Danny\u0027s Dugout (Sun) FREEROLL @ Danny\u0027s Dugout (Tues) FREEROLL @ Dawn\u0027s Corner Bar \u0026 Grill FREEROLL @ EGF Legion FREEROLL @ Fergus Falls VFW FREEROLL @ Jumpin\u0027 Jacks (Mon) FREEROLL @ Jumpin\u0027 Jacks (Sun) FREEROLL @ Knuckleheads FREEROLL @ Last Chance Ranch Steakhouse FREEROLL @ Mc Kinney\u0027s On Southside FREEROLL @ Mills Lounge FREEROLL @ Morris Eagles Club FREEROLL @ Muddy Cow Bar FREEROLL @ No Name Bar \u0026 Grill FREEROLL @ Old 10 Saloon FREEROLL @ Old 10 Saloon FREEROLL @ Pit Stop FREEROLL @ Playtime Sports Bar \u0026 Ballroom FREEROLL @ Porland Liquor Store (Thurs) FREEROLL @ Portland Liquor Store (Mon) FREEROLL @ Portland Liquor Store (Thurs) FREEROLL @ Red Rock Bar \u0026 Grill FREEROLL @ Redwood Falls Legiou FREEROLL @ Route 47 Pub \u0026 Grub (Tues) FREEROLL @ Route 47 Pub \u0026 Grub (Wed) FREEROLL @ route 65 Pub \u0026 Grub FREEROLL @ Shorewood Pub FREEROLL @ Slammers FREEROLL @ Southgate Casino Bar \u0026 Grill FREEROLL @ Terrace Lanes (Thurs) FREEROLL @ Terrace Lanes (Tues) FREEROLL @ The Beer Garden 2 FREEROLL @ The Bison Turf FREEROLL @ The Dougout Bar \u0026 Grill FREEROLL @ The Hay Shed FREEROLL @ The Pipe FREEROLL @ Thirsty Duck FREEROLL @ Thirsty Duck (Sun) FREEROLL @ Valley City Eagles FREEROLL @ Valley City Eagles (Sun) FREEROLL @ Valley City Eagles (Wed) FREEROLL @ VC Eagles FREEROLL @ Woody\u0027s FREEROLL @ Wow! Zone Friday Night Super Satellite Friday Night Super Satellite Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Friday Night Turbo Full Throttle Poker Open *Super Satellite* Hagge\u0027s - Super Satellite Hagge\u0027s Bar \u0026 Grill Hagge\u0027s Deep Stack Hagge\u0027s Fall Classic - Deepstack Hagge\u0027s Super Satellite 2022-23 Kickoff Event Hole in one Main Event Hole in One Main Event Jamestown Elks Freeroll to Casselton Vets Super Satellite Jamestown Elks Satellite Seat #2 L.i.s.t.e.n. Inc Monster Stack Last Chance Ranch $150 DPT Seat Last Chance Satellite # 2 Last Chance Satellite #1 LISTEN INC MONSTER STACK Lotta\u0027s $165 RPT Seat M \u0026 J Saloon DPT Super Satellite Main Event Main Event Main Event Mandan Eagles - Friday Super Satellite Mandan Eagles Club Mega Stack Mandan Eagles DPT Deepstack Mills Lounge Super Satellite Seat Monster Stack Monster Stack Monster Stack Main Event Monster Stack Main Event Monster Stack Super Satellite Operation Red White \u0026 Bluff Phat Fish Main Event Phat Stacks Phat Stacks Phat Stacks at the Phat Fish Phat Stacks at the Phat Fish Poker Brat Bounty Tournament Poker Brat BOUNTY Tournament Poker Brat Classic Pour Decisions Pour Decisions Pour Decisions Deep Stack Pour Decisions Deep Stack Pour Decisions Mar 26th Pour Decisions Tioga RPT Casino State Championship RPT Casino State Championship RPT Casino State Championship Flight A RPT Casino State Championship Flight B RPT Casino State Championship Flight C RPT Casino State Championship Flight D RPT Casino State Championship Main Event RPT Summer Main Event RPT Summer Main Event Flight A RPT Summer Main Event Flight B RPT Summer Main Event Flight C RPT/DPT Main Event Season 2022-23 Kickoff Tournament Shorewood Pub - DPT Super Satellite Slammers - Monday League DPT Super Satellite (Hagges) Slammers $40 Satellite South Gate $150 DPT Seat Southgate Seat Southgate Super Satellite Seat # 1 Southgate Super Satellite Seat # 2 Speedway Full Throttle Poker Open Main Event Speedway Main Event Spring Championship MEGASTACK (100K) Sunday Fun-Day Turbo Sunday Fun-Day Turbo Sunday Second Chance Super Satellite Bonus @ Bar Nine Terrace Lanes The Pipe $150 DPT S"
+    },
+    {
+        "targetName":  "send-notifications",
+        "url":  "https://dakotapokertour.com/admin/send-notifications",
+        "error":  "Invalid JSON primitive: eat."
+    }
+]

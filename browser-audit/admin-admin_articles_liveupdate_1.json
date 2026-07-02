@@ -1,0 +1,294 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/articles?liveupdate=1",
+    "headings":  [
+                     "Live Updates List"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/articles/create?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/451/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/451?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/450/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/450?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/449/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/449?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/448/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/448?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/447/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/447?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/446/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/446?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/445/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/445?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/444/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/444?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/443/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/443?liveupdate=1"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/articles/442/edit?liveupdate=1"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/articles/442?liveupdate=1"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "39",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Title",
+                                       "Tournament",
+                                       "Category",
+                                       "Status",
+                                       "Featured",
+                                       "Published Date",
+                                       "Actions",
+                                       "451",
+                                       "♠️🏆 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion🏆♠️ (congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion)",
+                                       "Black Chip Bounty",
+                                       "News",
+                                       "Published",
+                                       "2026-06-07 11:13 PM",
+                                       "Edit View"
+                                   ],
+                       "rows":  11,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Title",
+                                              "Tournament",
+                                              "Category",
+                                              "Status",
+                                              "Featured",
+                                              "Published Date",
+                                              "Actions"
+                                          ],
+                                          [
+                                              "451",
+                                              "♠️🏆 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion🏆♠️ (congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion)",
+                                              "Black Chip Bounty",
+                                              "News",
+                                              "Published",
+                                              "2026-06-07 11:13 PM",
+                                              "Edit View"
+                                          ],
+                                          [
+                                              "450",
+                                              "Final Table of the Black Chip Bounty (final-table-of-the-black-chip-bounty)",
+                                              "Black Chip Bounty",
+                                              "News",
+                                              "Published",
+                                              "2026-06-07 8:00 PM",
+                                              "Edit View"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Live Updates List Show 10 25 50 100 entries Search: # Title Tournament Category Status Featured Published Date 451 ♠️🏆 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion🏆♠️ (congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion) Black Chip Bounty News Published 2026-06-07 11:13 PM 450 Final Table of the Black Chip Bounty (final-table-of-the-black-chip-bounty) Black Chip Bounty News Published 2026-06-07 8:00 PM 449 Registration closed in the black Chip bounty with 97 players (registration-closed-in-the-black-chip-bounty-with-97-players) Black Chip Bounty News Published 2026-06-07 6:00 PM 448 8 Tables in the Windbreak Black Chip Bounty (8-tables-in-the-windbreak-black-chip-bounty) Black Chip Bounty News Published 2026-06-07 1:30 PM 447 Dakota Poker Tour has Arrived at the Windbreak (dakota-poker-tour-has-arrived-at-the-windbreak) Black Chip Bounty News Published 2026-06-07 11:00 AM 446 💰 The Black Chip Bounty Tournament is officially underway (the-black-chip-bounty-tournament-is-officially-underway) Black Chip Bounty News Published 2026-05-17 2:00 PM 445 Black Chip Bounty Champion, Jason McClellan of Perham, Minnesota! 🏆♠️ (black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota) Black Chip Bounty News Published 2026-05-17 10:00 PM 444 Registration has officially CLOSED in today’s Black Chip Bounty Tournament! 💰♠️ (registration-has-officially-closed-in-today-s-black-chip-bounty-tournament) Black Chip Bounty News Published 2026-05-17 5:15 PM 443 FINAL TABLE in the Black Chip Bounty Tournament! 💰♠️🔥 (final-table-in-the-black-chip-bounty-tournament) Black Chip Bounty News Published 2026-05-17 7:00 PM 442 Final table of the Spring Championship (final-table-of-the-spring-championship) Spring Championship MEGASTACK (100K) News Published 2026-05-17 6:00 PM Showing 1 to 10 of 385 entries Previous 1 2 3 4 5 … 39 Next Dashboard Live Updates",
+    "navText":  "Live Updates"
+}

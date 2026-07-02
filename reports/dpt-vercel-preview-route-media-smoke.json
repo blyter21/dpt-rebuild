@@ -1,0 +1,78 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "routes": [
+    {
+      "route": "/",
+      "needle": "Player of the Year",
+      "ok": true,
+      "bytes": 70354
+    },
+    {
+      "route": "/events",
+      "needle": "All Events",
+      "ok": true,
+      "bytes": 307395
+    },
+    {
+      "route": "/events/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "needle": "Event Schedule",
+      "ok": true,
+      "bytes": 23213
+    },
+    {
+      "route": "/tournaments/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026",
+      "needle": "Tournament Info",
+      "ok": true,
+      "bytes": 28004
+    },
+    {
+      "route": "/leaderboard",
+      "needle": "Player of the Year Leaderboard",
+      "ok": true,
+      "bytes": 30818
+    },
+    {
+      "route": "/venues",
+      "needle": "Tournament host venues",
+      "ok": true,
+      "bytes": 75294
+    },
+    {
+      "route": "/news",
+      "needle": "Latest News",
+      "ok": true,
+      "bytes": 88653
+    },
+    {
+      "route": "/videos",
+      "needle": "Tri-State Championship Day 1",
+      "ok": true,
+      "bytes": 23307
+    },
+    {
+      "route": "/champions",
+      "needle": "Recent Champions",
+      "ok": true,
+      "bytes": 42114
+    },
+    {
+      "route": "/players",
+      "needle": "Public player leaderboard tiles",
+      "ok": true,
+      "bytes": 30819
+    },
+    {
+      "route": "/login",
+      "needle": "Account authentication",
+      "ok": true,
+      "bytes": 19742
+    }
+  ],
+  "media": {
+    "localImages": 33,
+    "remoteStorageImages": 0,
+    "cdnExamplePresent": false,
+    "heroSliderLocal": true,
+    "videoThumbLocal": true
+  }
+}

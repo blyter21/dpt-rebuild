@@ -1,0 +1,1200 @@
+[
+  {
+    "path": "/",
+    "url": "https://dakotapokertour.com/",
+    "status": 200,
+    "title": "Home | Dakota Poker Tour",
+    "headings": [
+      "Past Events",
+      "Videos",
+      "News",
+      "Latest Posts",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 88,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/player/awesome-basim",
+      "https://dakotapokertour.com/player/awesome-basim",
+      "https://dakotapokertour.com/player/lester-hauglid-2",
+      "https://dakotapokertour.com/player/lester-hauglid-2",
+      "https://dakotapokertour.com/player/wade-kyser",
+      "https://dakotapokertour.com/player/wade-kyser",
+      "https://dakotapokertour.com/player/ron-james",
+      "https://dakotapokertour.com/player/ron-james",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/player/mark-britton",
+      "https://dakotapokertour.com/player/mark-britton",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/niles-short",
+      "https://dakotapokertour.com/player/niles-short",
+      "https://dakotapokertour.com/player/vu-truong",
+      "https://dakotapokertour.com/player/vu-truong",
+      "https://dakotapokertour.com/player/jon-christensen-2",
+      "https://dakotapokertour.com/player/jon-christensen-2",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/venues/windbreak",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=info",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/venues/double-tree-west-fargo",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026?flag=results",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/venues/casselton-vets-club",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets"
+    ],
+    "text": "Home | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login PLAYER OF THE YEAR Rank 1 Basim Habib 1536 Points Rank 2 LESTER HAUGLID 1265 Points Rank 3 Wade Kyser 1164 Points Rank 4 Ron James 1153 Points Rank 5 Chase Lardy 1125 Points Rank 6 Mark Britton 1118 Points Rank 7 Eric Kassa 1073 Points Rank 8 Niles Short 1037 Points Rank 9 Vu Truong 1014 Points Rank 10 Jon Christensen 966 Points Past Events View All Poker Brat Black Chip BOUNTY Tournament Windbreak Jun 07, 2026 The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11... Tournament Info Results Spring Championship Double Tree - West Fargo May 15 - May 17, 2026 \ud83d\udea8 Dakota Poker Tour Spring Championship \u2013 Double Tree, West Fargo, ND \ud83d\udea8 The Dakota Poker... Event Info Results Casselton Vets Casselton Vets Club Apr 17 - Apr 18, 2026 Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 4/17/2026 Registration... Event Info Results The Buckskin Shootout Buckskin Mar 27 - Mar 28, 2026 Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 3/27/2026 Registration 5... Event Info Results Videos View All \ud83c\udf89 The action is officially underway at the Tri-State Poker Championship! \ud83c\udf89 Cactus Jacks Open - Live Stream Feature Event! News View All \u2660\ufe0f\ud83c\udfc6 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion\ud83c\udfc6\u2660\ufe0f Jun 07, 2026 11:13 PM Dakota Poker Tour Spring Championship winner, Eric Kassa of Wahpeton, North Dakota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 11:00 PM Black Chip Bounty Champion, Jason McClellan of Perham, Minnesota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 10:00 PM \u2660\ufe0f\u2666\ufe0f Chips are officially bagged for the night at the Dakota Poker Tour Spring Championship MEGASTACK! \u2666\ufe0f\u2660\ufe0f May 17, 2026 1:13 AM Mark Alinder of Fargo takes home $3100, Friday Night Turbo Champion May 16, 2026 1:00 AM Latest Posts Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/events",
+    "url": "https://dakotapokertour.com/events",
+    "status": 200,
+    "title": "Events | Dakota Poker Tour",
+    "headings": [
+      "Events",
+      "Upcoming Events",
+      "Past Events",
+      "Poker Brat Black Chip BOUNTY Tournament",
+      "Black Chip Bounty",
+      "Spring Championship",
+      "Black Chip Bounty",
+      "Spring Championship MEGASTACK (100K)",
+      "Friday Night Turbo",
+      "Casselton Vets",
+      "Deep Stack",
+      "Friday Night Turbo",
+      "The Buckskin Shootout",
+      "Buckskin Deep Stack",
+      "Buckskin Friday Night Turbo",
+      "Pour Decisions Deep Stack",
+      "Pour Decisions Deep Stack",
+      "L.I.S.T.E.N. INC Monster Stack",
+      "Monster Stack",
+      "Friday Night Turbo",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 112,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/venues/windbreak",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026",
+      "https://dakotapokertour.com/player/bryan-thompson",
+      "https://dakotapokertour.com/player/robert-baker",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/venues/double-tree-west-fargo",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026",
+      "https://dakotapokertour.com/player/jason-mcclellan",
+      "https://dakotapokertour.com/player/travis-lynde",
+      "https://dakotapokertour.com/player/jason-miller",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-spring-championship-megastack-100k-05-16-2026",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/brad-magnus",
+      "https://dakotapokertour.com/player/jackson-skjerseth",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-friday-night-turbo-05-15-2026",
+      "https://dakotapokertour.com/player/mark-alinder",
+      "https://dakotapokertour.com/player/travis-lynde",
+      "https://dakotapokertour.com/player/wade-hendrickson-2",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/venues/casselton-vets-club",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026",
+      "https://dakotapokertour.com/player/clint-otto",
+      "https://dakotapokertour.com/player/michael-headland",
+      "https://dakotapokertour.com/player/holden-kastet",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-casselton-vets-friday-night-turbo-04-17-2026",
+      "https://dakotapokertour.com/player/dave-dirkman",
+      "https://dakotapokertour.com/player/michael-driscoll-2",
+      "https://dakotapokertour.com/player/christian-young"
+    ],
+    "text": "Events | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Events Upcoming Events No Records Past Events Poker Brat Black Chip BOUNTY Tournament Jun 07, 2026 Windbreak The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11 am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). A one-time add-on for $100 (20,000 chips) is available until registration closes... Results Black Chip Bounty completed Jun 07, 2026 11:00 AM Bryan Thompson $4,900 Robert Baker $3,700 Chase Lardy $2,000 Spring Championship May 15 - May 17, 2026 Double Tree - West Fargo \ud83d\udea8 Dakota Poker Tour Spring Championship \u2013 Double Tree, West Fargo, ND \ud83d\udea8 The Dakota Poker Tour is excited to announce the Spring Championship at the DoubleTree Hotel in West Fargo, ND \u2660\ufe0f\u2666\ufe0f\u2663\ufe0f\u2665\ufe0f OFFICIA... Results Black Chip Bounty completed May 17, 2026 1:00 PM Jason McClellan $3,000 Travis Lynde $2,300 Jason Miller $1,600 Spring Championship MEGASTACK (100K) completed May 16, 2026 11:00 AM Eric Kassa $8,000 Brad Magnus $5,300 Jackson Skjerseth $3,500 Friday Night Turbo completed May 15, 2026 6:00 PM Mark Alinder $3,100 Travis Lynde $2,100 Wade Hendrickson $1,400 Casselton Vets Apr 17 - Apr 18, 2026 Casselton Vets Club Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 4/17/2026 Registration 5pm Cards in air 6pm 20 Min Blinds Late Reg until 8pm $100 Re-buys for 15k Chips $100 Addon for 15k chips (at the close of regi... Results Deep Stack completed Apr 18, 2026 12:00 PM Clint Otto $5,600 Michael Headland $3,560 Holden Kastet $2,660 Friday Night Turbo completed Apr 17, 2026 6:00 PM Dave Dirkman $2,380 Michael Driscoll $1,700 Christian Young $1,220 The Buckskin Shootout Mar 27 - Mar 28, 2026 Buckskin Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 3/27/2026 Registration 5pm, Cards in air 6pm, 20 Min Blinds, Late Reg until 8pm $100 Buy-in for 15k chips $100 Re-buys/add-on for 15k Chips until close of Registratio... Results Buckskin Deep Stack completed Mar 28, 2026 12:00 PM John Wendlick $4,200 Kelly Allmendinger $2,700 Placido Sotelo $2,000 Buckskin Friday Night Turbo completed Mar 27, 2026 6:00 PM Ryan Bickhart $2,700 Benji Milner $1,900 Nanette Edmondson $1,400 Pour Decisions Deep Stack Mar 21, 2026 Pour Decisions Saturday Deep Stack March 21, 2026 Registration opens at 11am, cards will be in the air at NOON! $150 buyin - 20,000 chips, 30 minute levels $50 add-on for 10,000 additional in chips (up to 3 times for max buyin of $300). The addon can be taken... Results Pour Decisions Deep Stack completed Mar 21, 2026 12:00 PM Shawn Cote $2,100 Colton Parham $1,400 Shannon Evans $1,000 L.I.S.T.E.N. INC Monster Stack Mar 13 - Mar 14, 2026 Playmaker's All American Lounge Dakota Poker Tour is coming to GRAND FORKS! FRIDAY NIGHT TURBO: Turbo $100 Buy-in for 15kchips Starts @ 6pm 20 Min Blinds Late Reg until 9pm $100 Re-buys for 15k Chips $100 Addon for 15k chips (until close of registration) Max $300... Results Monster Stack completed Mar 14, 2026 11:00 AM Kyle Mc Garry $5,800 Basim Habib $3,700 Leslie Haagenson $2,740 Friday Night Turbo completed Mar 13, 2026 6:00 PM Cole Johnson $3,600 Rob Urbatsch $2,200 Mark Britton $1,800 \u2039 1 2 3 4 5 6 7 8 9 10 ... 13 14 \u203a Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/upcomingEvents",
+    "url": "https://dakotapokertour.com/upcomingEvents",
+    "status": 200,
+    "title": "Upcoming Events | Dakota Poker Tour",
+    "headings": [
+      "Upcoming Events",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 32,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/upcomingEvents"
+    ],
+    "text": "Upcoming Events | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Upcoming Events No Records Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/pastEvents",
+    "url": "https://dakotapokertour.com/pastEvents",
+    "status": 200,
+    "title": "Past Events | Dakota Poker Tour",
+    "headings": [
+      "Past Events",
+      "Poker Brat Black Chip BOUNTY Tournament",
+      "Black Chip Bounty",
+      "Spring Championship",
+      "Black Chip Bounty",
+      "Spring Championship MEGASTACK (100K)",
+      "Friday Night Turbo",
+      "Casselton Vets",
+      "Deep Stack",
+      "Friday Night Turbo",
+      "The Buckskin Shootout",
+      "Buckskin Deep Stack",
+      "Buckskin Friday Night Turbo",
+      "Pour Decisions Deep Stack",
+      "Pour Decisions Deep Stack",
+      "L.I.S.T.E.N. INC Monster Stack",
+      "Monster Stack",
+      "Friday Night Turbo",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 112,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/venues/windbreak",
+      "https://dakotapokertour.com/index.php/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026",
+      "https://dakotapokertour.com/player/bryan-thompson",
+      "https://dakotapokertour.com/player/robert-baker",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-spring-championship",
+      "https://dakotapokertour.com/venues/double-tree-west-fargo",
+      "https://dakotapokertour.com/index.php/tournament/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026",
+      "https://dakotapokertour.com/player/jason-mcclellan",
+      "https://dakotapokertour.com/player/travis-lynde",
+      "https://dakotapokertour.com/player/jason-miller",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-spring-championship-megastack-100k-05-16-2026",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/brad-magnus",
+      "https://dakotapokertour.com/player/jackson-skjerseth",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-spring-championship-friday-night-turbo-05-15-2026",
+      "https://dakotapokertour.com/player/mark-alinder",
+      "https://dakotapokertour.com/player/travis-lynde",
+      "https://dakotapokertour.com/player/wade-hendrickson-2",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-casselton-vets",
+      "https://dakotapokertour.com/venues/casselton-vets-club",
+      "https://dakotapokertour.com/index.php/tournament/dakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026",
+      "https://dakotapokertour.com/player/clint-otto",
+      "https://dakotapokertour.com/player/michael-headland",
+      "https://dakotapokertour.com/player/holden-kastet",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-casselton-vets-friday-night-turbo-04-17-2026",
+      "https://dakotapokertour.com/player/dave-dirkman",
+      "https://dakotapokertour.com/player/michael-driscoll-2",
+      "https://dakotapokertour.com/player/christian-young"
+    ],
+    "text": "Past Events | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Past Events Poker Brat Black Chip BOUNTY Tournament Jun 07, 2026 Windbreak The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11 am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). A one-time add-on for $100 (20,000 chips) is available until registration closes... Results Black Chip Bounty completed Jun 07, 2026 11:00 AM Bryan Thompson $4,900 Robert Baker $3,700 Chase Lardy $2,000 Spring Championship May 15 - May 17, 2026 Double Tree - West Fargo \ud83d\udea8 Dakota Poker Tour Spring Championship \u2013 Double Tree, West Fargo, ND \ud83d\udea8 The Dakota Poker Tour is excited to announce the Spring Championship at the DoubleTree Hotel in West Fargo, ND \u2660\ufe0f\u2666\ufe0f\u2663\ufe0f\u2665\ufe0f OFFICIA... Results Black Chip Bounty completed May 17, 2026 1:00 PM Jason McClellan $3,000 Travis Lynde $2,300 Jason Miller $1,600 Spring Championship MEGASTACK (100K) completed May 16, 2026 11:00 AM Eric Kassa $8,000 Brad Magnus $5,300 Jackson Skjerseth $3,500 Friday Night Turbo completed May 15, 2026 6:00 PM Mark Alinder $3,100 Travis Lynde $2,100 Wade Hendrickson $1,400 Casselton Vets Apr 17 - Apr 18, 2026 Casselton Vets Club Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 4/17/2026 Registration 5pm Cards in air 6pm 20 Min Blinds Late Reg until 8pm $100 Re-buys for 15k Chips $100 Addon for 15k chips (at the close of regi... Results Deep Stack completed Apr 18, 2026 12:00 PM Clint Otto $5,600 Michael Headland $3,560 Holden Kastet $2,660 Friday Night Turbo completed Apr 17, 2026 6:00 PM Dave Dirkman $2,380 Michael Driscoll $1,700 Christian Young $1,220 The Buckskin Shootout Mar 27 - Mar 28, 2026 Buckskin Dakota Poker Tour's 2026 Season Presents... Friday Night Turbo 3/27/2026 Registration 5pm, Cards in air 6pm, 20 Min Blinds, Late Reg until 8pm $100 Buy-in for 15k chips $100 Re-buys/add-on for 15k Chips until close of Registratio... Results Buckskin Deep Stack completed Mar 28, 2026 12:00 PM John Wendlick $4,200 Kelly Allmendinger $2,700 Placido Sotelo $2,000 Buckskin Friday Night Turbo completed Mar 27, 2026 6:00 PM Ryan Bickhart $2,700 Benji Milner $1,900 Nanette Edmondson $1,400 Pour Decisions Deep Stack Mar 21, 2026 Pour Decisions Saturday Deep Stack March 21, 2026 Registration opens at 11am, cards will be in the air at NOON! $150 buyin - 20,000 chips, 30 minute levels $50 add-on for 10,000 additional in chips (up to 3 times for max buyin of $300). The addon can be taken... Results Pour Decisions Deep Stack completed Mar 21, 2026 12:00 PM Shawn Cote $2,100 Colton Parham $1,400 Shannon Evans $1,000 L.I.S.T.E.N. INC Monster Stack Mar 13 - Mar 14, 2026 Playmaker's All American Lounge Dakota Poker Tour is coming to GRAND FORKS! FRIDAY NIGHT TURBO: Turbo $100 Buy-in for 15kchips Starts @ 6pm 20 Min Blinds Late Reg until 9pm $100 Re-buys for 15k Chips $100 Addon for 15k chips (until close of registration) Max $300... Results Monster Stack completed Mar 14, 2026 11:00 AM Kyle Mc Garry $5,800 Basim Habib $3,700 Leslie Haagenson $2,740 Friday Night Turbo completed Mar 13, 2026 6:00 PM Cole Johnson $3,600 Rob Urbatsch $2,200 Mark Britton $1,800 \u2039 1 2 3 4 5 6 7 8 9 10 ... 13 14 \u203a Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/calendar",
+    "url": "https://dakotapokertour.com/calendar",
+    "status": 200,
+    "title": "Dakota Poker Tour",
+    "headings": [
+      "Calendar",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "",
+        "method": "get",
+        "inputs": [
+          {
+            "tag": "select",
+            "type": "",
+            "name": "events",
+            "placeholder": ""
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "tournament_type",
+            "placeholder": ""
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "tournaments",
+            "placeholder": ""
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "event_type",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 32,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/calendar"
+    ],
+    "text": "Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Calendar Event Casselton Vets Dead Money Open Eagle Eye Hole in One Deepstack L.I.S.T.E.N. INC Monster Stack Poker Brat Black Chip BOUNTY Tournament Pour Decisions Deep Stack Spring Championship The Buckskin Shootout The Buffalo City Showdown Buckskin Shootout Buffalo City Showdown Cactus Jacks Open Casselton Vets City Brew Hall Dakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \"Dream Chaser V\" Tournament! $5,000 Player of the Series package up for grabs! Dead Money Open DPT Spring Championship Hagge's Fall Classic Hole in One Deepstack L.I.S.T.E.N. INC Monster Stack L.I.S.T.E.N. INC Monster Stack 10/31/2025 Operation Poker: Red White & Bluff - Honoring Heroes for Veteran's Day at the Casselton Vets Phat Stacks at the Phat Fish Poker Brat Black Chip BOUNTY Tournament Pour Decisions The Poker Brat at the Windbreak The Tri-State Poker Championship Watford City Eagles Club Monster Stack \"RPT Casino State Championship\"-BRACELET EVENT! Buckskin Shootout Casselton Vets Club City Brew Hall Dakota Jim Dandy Poker Festival Dakota Jim Dandy Poker Festival ! Dead Money Open DPT Spring Championship Eagle Eye Hagge's Deep Stack Hagge's Fall Classic Hole in one Main Event L.I.S.T.E.N. INC Monster Stack Mandan Eagles Club Mega Stack Operation Poker: Red White & Bluff Phat Stacks at the Phat Fish Phat Stacks at the Phat Fish Poker Brat Black Chip BOUNTY Tournament Poker Brat BOUNTY Tournament Pour Decisions RPT Casino State Championship 2024/2025 RPT Summer Main Event RPT/DPT Season Championship Watford City Eagles Club Monster Stack Black Gold Deep Stack - Beulah ND Buckskin Shootout Buffalo City Showdown Casselton Vets Dead Money Open DPT Championship DPT Championship Bonus Freerolls Eagle Eye Hole In One - Oakes, ND L.i.s.t.e.n. Inc Monster Stack Mandan Eagles Phat Stacks at the Phat Fish Poker Brat BOUNTY Tournament Pour Decisions Tioga RPT Casino State Championship Season 2022-2023 Kickoff Buffalo City Showdown Dead Money Open DPT Season XI Championship Eagle Eye L.i.s.t.e.n. Inc Monster Stack Phat Stacks at the Phat Fish Poker Brat Classic Pour Decisions - Tioga ND Pour Decisions March 26 Season XI Kickoff Tournament - Hagge's Speedway Full Throttle Poker Open Tournament Type DPT Standard Satellite Freeroll Flight All Tournaments Upcoming Tournaments Past Tournaments All Tournament Event labels.common.preloader.msg_loading Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/news",
+    "url": "https://dakotapokertour.com/news",
+    "status": 200,
+    "title": "Latest News & Updates | Dakota Poker Tour",
+    "headings": [
+      "News",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 71,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/final-table-of-the-black-chip-bounty",
+      "https://dakotapokertour.com/articles/final-table-of-the-black-chip-bounty",
+      "https://dakotapokertour.com/articles/final-table-of-the-black-chip-bounty",
+      "https://dakotapokertour.com/articles/registration-closed-in-the-black-chip-bounty-with-97-players",
+      "https://dakotapokertour.com/articles/registration-closed-in-the-black-chip-bounty-with-97-players",
+      "https://dakotapokertour.com/articles/registration-closed-in-the-black-chip-bounty-with-97-players",
+      "https://dakotapokertour.com/articles/8-tables-in-the-windbreak-black-chip-bounty",
+      "https://dakotapokertour.com/articles/8-tables-in-the-windbreak-black-chip-bounty",
+      "https://dakotapokertour.com/articles/8-tables-in-the-windbreak-black-chip-bounty",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-has-arrived-at-the-windbreak",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-has-arrived-at-the-windbreak",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-has-arrived-at-the-windbreak",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-spring-championship-winner-eric-kassa-of-wahpeton-north-dakota",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-spring-championship-winner-eric-kassa-of-wahpeton-north-dakota",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-spring-championship-winner-eric-kassa-of-wahpeton-north-dakota",
+      "https://dakotapokertour.com/articles/black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota",
+      "https://dakotapokertour.com/articles/black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota",
+      "https://dakotapokertour.com/articles/black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota",
+      "https://dakotapokertour.com/articles/final-table-in-the-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/articles/final-table-in-the-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/articles/final-table-in-the-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/articles/final-table-of-the-spring-championship",
+      "https://dakotapokertour.com/articles/final-table-of-the-spring-championship",
+      "https://dakotapokertour.com/articles/final-table-of-the-spring-championship",
+      "https://dakotapokertour.com/news?page=2",
+      "https://dakotapokertour.com/news?page=3",
+      "https://dakotapokertour.com/news?page=4",
+      "https://dakotapokertour.com/news?page=5",
+      "https://dakotapokertour.com/news?page=6",
+      "https://dakotapokertour.com/news?page=7",
+      "https://dakotapokertour.com/news?page=8",
+      "https://dakotapokertour.com/news?page=9",
+      "https://dakotapokertour.com/news?page=10"
+    ],
+    "text": "Latest News & Updates | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login News \u2660\ufe0f\ud83c\udfc6 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion\ud83c\udfc6\u2660\ufe0f Jun 07, 2026 11:13 PM What an incredible day of poker at the Black Chip Bounty Tournament! Congratulations to all of our p... Read More Final Table of the Black Chip Bounty Jun 07, 2026 8:00 PM \ud83c\udfc6 Congratulations to Our Final Table! \ud83c\udfc6 After an incredible turnout of 97 players, we have offi... Read More Registration closed in the black Chip bounty with 97 players Jun 07, 2026 6:00 PM \ud83d\udea8 REGISTRATION IS CLOSED! \ud83d\udea8 What an incredible turnout today! We officially closed registration... Read More 8 Tables in the Windbreak Black Chip Bounty Jun 07, 2026 1:30 PM \u2660\ufe0f CARDS ARE IN THE AIR! \u2660\ufe0f The Dakota Poker Tour Bounty Tournament is officially u... Read More Dakota Poker Tour has Arrived at the Windbreak Jun 07, 2026 11:00 AM \u2660\ufe0f\u2666\ufe0f ATTENTION POKER FRIENDS! \u2666\ufe0f\u2660\ufe0f The Dakota Poker Tour has officially... Read More Dakota Poker Tour Spring Championship winner, Eric Kassa of Wahpeton, North Dakota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 11:00 PM Congratulations to the Dakota Poker Tour Spring Championship winner, Eric Kassa of Wahpeton, North D... Read More Black Chip Bounty Champion, Jason McClellan of Perham, Minnesota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 10:00 PM Congratulations to our Black Chip Bounty Champion, Jason McClellan of Perham, Minnesota! \ud83c\udfc6\u2660\ufe0f... Read More FINAL TABLE in the Black Chip Bounty Tournament! \ud83d\udcb0\u2660\ufe0f\ud83d\udd25 May 17, 2026 7:00 PM We have officially reached the FINAL TABLE in the Black Chip Bounty Tournament! \ud83d\udcb0\u2660\ufe0f\ud83d\udd25 Aft... Read More Final table of the Spring Championship May 17, 2026 6:00 PM Congratulations to everyone who made the final table of the Dakota Poker Tour Spring Championship! &... Read More \u2039 1 2 3 4 5 6 7 8 9 10 ... 29 30 \u203a Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/videos",
+    "url": "https://dakotapokertour.com/videos",
+    "status": 200,
+    "title": "Videos | Dakota Poker Tour",
+    "headings": [
+      "Videos",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 53,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/articles/the-action-is-officially-underway-at-the-tri-state-poker-championship",
+      "https://dakotapokertour.com/articles/the-action-is-officially-underway-at-the-tri-state-poker-championship",
+      "https://dakotapokertour.com/articles/cactus-jacks-open-live-stream-feature-event",
+      "https://dakotapokertour.com/articles/cactus-jacks-open-live-stream-feature-event",
+      "https://dakotapokertour.com/articles/dead-money-open-2025-hype-video",
+      "https://dakotapokertour.com/articles/dead-money-open-2025-hype-video",
+      "https://dakotapokertour.com/articles/dpt-and-rpt-team-up-for-the-hagge-s-fall-classic",
+      "https://dakotapokertour.com/articles/dpt-and-rpt-team-up-for-the-hagge-s-fall-classic",
+      "https://dakotapokertour.com/articles/tony-uhlir-wins-dpt-spring-championship-main-event-7-700",
+      "https://dakotapokertour.com/articles/tony-uhlir-wins-dpt-spring-championship-main-event-7-700",
+      "https://dakotapokertour.com/articles/dpt-is-back-for-the-dead-money-open",
+      "https://dakotapokertour.com/articles/dpt-is-back-for-the-dead-money-open",
+      "https://dakotapokertour.com/articles/the-dakota-poker-tour-returns-to-valley-city-this-weekend",
+      "https://dakotapokertour.com/articles/the-dakota-poker-tour-returns-to-valley-city-this-weekend",
+      "https://dakotapokertour.com/articles/dick-gerdes-bounty-champ-5-580",
+      "https://dakotapokertour.com/articles/dick-gerdes-bounty-champ-5-580",
+      "https://dakotapokertour.com/articles/the-eagle-eye-is-back-in-valley-city",
+      "https://dakotapokertour.com/articles/the-eagle-eye-is-back-in-valley-city",
+      "https://dakotapokertour.com/videos?page=2",
+      "https://dakotapokertour.com/videos?page=3",
+      "https://dakotapokertour.com/videos?page=2",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/videos"
+    ],
+    "text": "Videos | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Videos Please Like & Subscribe! Dakota Poker Tour YouTube Channel \ud83c\udf89 The action is officially underway at the Tri-State Poker Championship! \ud83c\udf89 Jun 28, 2026 10:24 AM Read More Cactus Jacks Open - Live Stream Feature Event! Jun 28, 2026 10:24 AM Read More Dead Money Open 2025 - *HYPE VIDEO* Jun 28, 2026 10:24 AM Read More Hagge's Fall Classic Kicks off Fall Schedule Jun 28, 2026 10:24 AM Read More Tony Uhlir Wins DPT Spring Championship Main Event $7,700 Jun 28, 2026 10:24 AM Read More DPT is Back for the Dead Money Open! Jun 28, 2026 10:24 AM Read More The Dakota Poker Tour Returns To Valley City This Weekend Jun 28, 2026 10:24 AM Read More Dick Gerdes Bounty Champ $5,580 Jun 28, 2026 10:24 AM Read More The Eagle Eye is BACK in Valley City Jun 28, 2026 10:24 AM Read More \u2039 1 2 3 \u203a Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/venues",
+    "url": "https://dakotapokertour.com/venues",
+    "status": 200,
+    "title": "Venues | Dakota Poker Tour",
+    "headings": [
+      "Venues",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 34,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/venues?layout=grid",
+      "https://dakotapokertour.com/venues?layout=list",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/venues"
+    ],
+    "text": "Venues | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Venues Load More Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/leaderboard",
+    "url": "https://dakotapokertour.com/leaderboard",
+    "status": 200,
+    "title": "Leaderboard | Dakota Poker Tour",
+    "headings": [
+      "Leaderboard",
+      "Leaderboard",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 32,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/leaderboard"
+    ],
+    "text": "Leaderboard | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Leaderboard Leaderboard 2025 2023-24 2022-23 Season XI All Tournaments Black Chip Bounty Black Chip Bounty Spring Championship MEGASTACK (100K) Friday Night Turbo Deep Stack Friday Night Turbo Buckskin Deep Stack Buckskin Friday Night Turbo Pour Decisions Deep Stack Monster Stack Friday Night Turbo Main Event Buffalo City Showdown Deep Stack Friday Night Turbo Eagle Eye Operation Red White & Bluff Friday Night Turbo LISTEN INC MONSTER STACK Friday Night Turbo Black Chip Bounty Sunday Second Chance The Tri-State Poker Championship 2025 The Tri-State Poker Championship Flight B The Tri-State Poker Championship Flight A Sunday Fun-Day Turbo Fall Classic MEGASTACK (100K) Deep Stack Friday Night Turbo Black Chip Bounty Deep Stack Friday Night Turbo Sunday Fun-Day Turbo DPT Spring Championship MEGASTACK (100K) Cactus Jacks Open Main Event Cactus Jacks Open Friday Night Turbo Buckskin Deep Stack Buckskin Friday Night Turbo Pour Decisions Deep Stack L.i.s.t.e.n. Inc Monster Stack Friday Night Turbo Buffalo City Showdown Deep Stack Angry Beaver Deep Stack Phat Stacks Watford City Eagles Monster Stack Deep Stack Friday Night Turbo RPT Casino State Championship Flight D Flight C Flight B Flight A RPT/DPT Main Event Dream Chaser Deepstack Friday Night Turbo Black Chip Bounty Phat Stacks at the Phat Fish Hagge's Fall Classic - Deepstack Friday Night Turbo City Brew Hall Black Chip Bounty DPT Spring Championship MEGASTACK (100K) Friday Night Turbo Black Chip Bounty Monster Stack Main Event Friday Night Turbo Pour Decisions Hole in One Main Event Phat Fish Main Event Watford City Eagles Club Monster Stack Buckskin Shootout Main Event Buckskin Friday Turbo Main Event Friday Night Turbo Eagle Eye Main Event Event 1 \"RPT Season Premiere\" RPT Casino State Championship RPT Casino State Championship Flight D RPT Casino State Championship Flight C RPT Casino State Championship Flight B RPT Casino State Championship Main Event RPT Casino State Championship Flight A $315 Championship No Limit Hold'em $1,000 Dream Chaser No Limit Hold'em $250 No Limit Hold'em Monster Stack $215 Big O-No Limit (5 Card Omaha Hi-Lo) $165 No Limit Hold'em Turbo Main Event Friday Night Turbo Poker Brat BOUNTY Tournament Mandan Eagles Club Mega Stack Hagge's Deep Stack Hagge's - Super Satellite RPT Summer Main Event RPT Summer Main Event Flight C RPT Summer Main Event Flight B RPT Summer Main Event Flight A DPT Season 2022-23 Player Appreciation Freeroll DPT Season 2022-23 Tournament of Champions Black Chip Bounty Speedway Main Event Friday Night Turbo Buffalo City Showdown Pour Decisions Tioga Eagle Eye Hole in one Main Event Phat Stacks at the Phat Fish Buckskin Shootout MAIN EVENT Buckskin Super Satellite Amvets Satellite # 2 Champs Satellite #2 Buckskin Satellite Seat # 2 Amvets Satellite #1 Alibis Seat Champs Satellite #1 Last Chance Satellite # 2 Buckskin Satellite Seat # 1 Last Chance Satellite #1 Dead Money Open Main Event Dead Money Open - Super Satellite Bar Nine Dead Money Open Super Satellite Bison Turf Satellite Bordertown Super Satellite Slammers $40 Satellite Lotta's $165 RPT Seat Poker Brat Bounty Tournament Monster Stack Main Event Monster Stack Super Satellite EGF Legion Super Satellite Seat #3 Southgate Seat EGF Legion Super Satellite Seat #2 Southgate Super Satellite Seat # 2 Bar Nine $225 Seat EGF Legion Super Satellite Seat #1 Southgate Super Satellite Seat # 1 Casselton Vets Deepstack Casselton Vets Super Satellite Bar Nine $150 DPT Seat Casselton Vets Free Super Satellite Seat #5 Bordertown Bar and Grill Super Satellite Seat Bar Nine Super Satellite Seat Bison Turf - Thursday League DPT Super Satellite #2 Casselton Vets Free Super Satellite Seat #4 Mills Lounge Super Satellite Seat Casselton Vets Super Satellite Seat Jamestown Elks Satellite Seat #2 Bison Turf - Thursday League DPT Super Satellite #1 Casselton Vets Free Super Satellite Seat #3 Jamestown Elks Freeroll to Casselton Vets Super Satellite Casselton Vets Free Super Satellite Seat #2 Mandan Eagles DPT Deepstack Mandan Eagles - Friday Super Satellite Bismarck Amvets DPT Super Satellite Seat #4 of 4 Champs DPT Super Satellite Seat #2 Casselton Vets Free Super Satellite Seat #1 Bismarck Amvets DPT Super Satellite Seat #3 of 4 Champs DPT Super Satellite Seat #1 Last Chance Ranch $150 DPT Seat The Pipe $150 DPT Seat Bismarck Amvets DPT Super Satellite Seat #2 of 4 Bismarck Amvets DPT Super Satellite Seat #1 of 4 Season 2022-23 Kickoff Tournament Hagge's Super Satellite 2022-23 Kickoff Event Bar Nine Freeroll $150 DPT Seat-Hagge's Sept 17th Casselton Vets - DPT Super Satellite (Hagges) VC Eagles Wed League - DPT Super Satellite (Hagges) Terrace Lanes Shorewood Pub - DPT Super Satellite East Grand Forks American Legion - $40 DPT Satellite Seat Bordertown - DPT Super Satellite Seat @ Hagges Slammers - Monday League DPT Su"
+  },
+  {
+    "path": "/players",
+    "url": "https://dakotapokertour.com/players",
+    "status": 200,
+    "title": "Players | Dakota Poker Tour",
+    "headings": [
+      "Players",
+      "Players",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 53,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/player/awesome-basim",
+      "https://dakotapokertour.com/player/awesome-basim",
+      "https://dakotapokertour.com/player/lester-hauglid-2",
+      "https://dakotapokertour.com/player/lester-hauglid-2",
+      "https://dakotapokertour.com/player/wade-kyser",
+      "https://dakotapokertour.com/player/wade-kyser",
+      "https://dakotapokertour.com/player/ron-james",
+      "https://dakotapokertour.com/player/ron-james",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/player/chase-lardy-2",
+      "https://dakotapokertour.com/player/mark-britton",
+      "https://dakotapokertour.com/player/mark-britton",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/eric-kassa",
+      "https://dakotapokertour.com/player/niles-short",
+      "https://dakotapokertour.com/player/niles-short",
+      "https://dakotapokertour.com/player/vu-truong",
+      "https://dakotapokertour.com/player/vu-truong",
+      "https://dakotapokertour.com/player/jon-christensen-2",
+      "https://dakotapokertour.com/player/jon-christensen-2",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/players"
+    ],
+    "text": "Players | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Players PLAYER OF THE YEAR Rank 1 Basim Habib 1536 Points Rank 2 LESTER HAUGLID 1265 Points Rank 3 Wade Kyser 1164 Points Rank 4 Ron James 1153 Points Rank 5 Chase Lardy 1125 Points Rank 6 Mark Britton 1118 Points Rank 7 Eric Kassa 1073 Points Rank 8 Niles Short 1037 Points Rank 9 Vu Truong 1014 Points Rank 10 Jon Christensen 966 Points Players All Seasons 2026 2025 2023-24 2022-23 Season XI Player POY Winnings Cashes Final Table Titles Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/tournament-of-champions",
+    "url": "https://dakotapokertour.com/tournament-of-champions",
+    "status": 200,
+    "title": "Tournament of Champions | Dakota Poker Tour",
+    "headings": [
+      "DPT Champions",
+      "Tournament Winners Qualify for End of Season Tournament of Champions",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 32,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/tournament-of-champions"
+    ],
+    "text": "Tournament of Champions | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login DPT Champions Tournament Winners Qualify for End of Season Tournament of Champions All Seasons Season XI 2022-23 2023-24 2025 2026 Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  },
+  {
+    "path": "/liveTournaments",
+    "url": "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+    "status": 200,
+    "title": "Black Chip Bounty | Dakota Poker Tour",
+    "headings": [
+      "Black Chip Bounty",
+      "Pre-Registration Details",
+      "Description",
+      "Rules",
+      "Tournament Results",
+      "Prize Pool: $23,880",
+      "Payouts",
+      "Venue",
+      "News",
+      "Dakota Poker Tour",
+      "About DPT",
+      "Events",
+      "Quick Links"
+    ],
+    "forms": [
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "/logout",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "action": "https://dakotapokertour.com/tournaments/346/preRegisteredPlayer",
+        "method": "POST",
+        "inputs": [
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "_token",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "dealer_fee",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "initial_buyin",
+            "placeholder": "Buy In"
+          },
+          {
+            "tag": "input",
+            "type": "number",
+            "name": "initial_buyin_visible",
+            "placeholder": "Buy In"
+          },
+          {
+            "tag": "input",
+            "type": "number",
+            "name": "initial_chips_count",
+            "placeholder": "Chips Count"
+          },
+          {
+            "tag": "input",
+            "type": "radio",
+            "name": "include_addons",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "radio",
+            "name": "include_addons",
+            "placeholder": ""
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "no_of_addons",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "total_addon_buyin",
+            "placeholder": "Total Addon BuyIn"
+          },
+          {
+            "tag": "input",
+            "type": "number",
+            "name": "total_addon_buyin_visible",
+            "placeholder": "Total Addon BuyIn"
+          },
+          {
+            "tag": "input",
+            "type": "number",
+            "name": "total_addon_chips",
+            "placeholder": "Total Addon Chips Count"
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "rebuy_fee",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "user_id",
+            "placeholder": ""
+          },
+          {
+            "tag": "input",
+            "type": "hidden",
+            "name": "tournament_type_id",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "linkCount": 50,
+    "sampleLinks": [
+      "https://dakotapokertour.com",
+      "https://dakotapokertour.com/events",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/login",
+      "https://dakotapokertour.com/event/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results#info",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results#updates",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results#results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results#payouts",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/final-table-of-the-black-chip-bounty",
+      "https://dakotapokertour.com/articles/registration-closed-in-the-black-chip-bounty-with-97-players",
+      "https://dakotapokertour.com/articles/8-tables-in-the-windbreak-black-chip-bounty",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-has-arrived-at-the-windbreak",
+      "https://dakotapokertour.com/venues/windbreak",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/congratulations-to-bob-barker-of-perham-mn-the-black-chip-bounty-champion",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-spring-championship-winner-eric-kassa-of-wahpeton-north-dakota",
+      "https://dakotapokertour.com/articles/dakota-poker-tour-spring-championship-winner-eric-kassa-of-wahpeton-north-dakota",
+      "https://dakotapokertour.com/articles/black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota",
+      "https://dakotapokertour.com/articles/black-chip-bounty-champion-jason-mcclellan-of-perham-minnesota",
+      "https://old.dakotapokertour.com/",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/news",
+      "https://dakotapokertour.com/videos",
+      "https://dakotapokertour.com/venues",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/upcomingEvents",
+      "https://dakotapokertour.com/pastEvents",
+      "https://dakotapokertour.com/calendar",
+      "https://dakotapokertour.com/leaderboard",
+      "https://dakotapokertour.com/players",
+      "https://dakotapokertour.com/tournament-of-champions",
+      "https://dakotapokertour.com/liveTournaments",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results",
+      "https://dakotapokertour.com/tournament/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026?flag=results"
+    ],
+    "text": "Black Chip Bounty | Dakota Poker Tour Events Upcoming Events Past Events Calendar News Videos Venues Leaderboard Players Champions Join/Login Live Updates Join/Login Poker Brat Black Chip BOUNTY Tournament Black Chip Bounty Pre-Registration Details Poker Brat Black Chip BOUNTY Tournament | Black Chip Bounty Buy In * $ Chips Count * Add Rebuy/Add-on? Yes No Rebuys 100 $ How Many Addons? * Select How Many Addons 1 Total Addon BuyIn $ Total Addon Chips Count Total Buy In $ Total Chips Count Dealer Appreciation Fee $ Cancel Pre-Register Tournament Info Live Updates Results Payouts Date Jun 07, 2026 11:00 AM Buy In $200 Total Chips 3,820,000 Avg. Chips 3,820,000 Prize Pool $23,880 Registered Players 97 Description The Windbreak will feature a 1-day Bounty Tournament! Single Day Event Registration opens at 11am, cards will be in the air at NOON! Buy-in is $200 (20,000 chips). One-time add-on for $100 (20,000 chips) is available until registration closes. (must have chips to add on) For each player you take out, you earn a $100 bounty! Late registration, & add-ons are open through dinner break. (Approximately 4:30 pm) Suggested Dealer appreciation $20 - Tips are appreciated but not mandatory to play Rules *Late entries will receive a full stack. *Ante is posted by the player in the Big Blind only. *If a player does not have enough chips to cover both the BB and Ante the B.B. is posted first, then any remaining chips to the Ante. *Final table will redraw for seats and sit 9-handed. *Blind structure is subject to change at the Tournament Director's discretion. *Blinds are subject to reaching a blind cap. *DPT follows WSOP rulings *Top 10% + 1 additional placed paid based on unique entries \u2660\ufe0f\ud83c\udfc6 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion\ud83c\udfc6\u2660\ufe0f Jun 07, 2026 11:13 PM What an incredible day of poker at the Black Chip Bounty Tournament! Congratulations to all of our p... Final Table of the Black Chip Bounty Jun 07, 2026 8:00 PM \ud83c\udfc6 Congratulations to Our Final Table! \ud83c\udfc6 After an incredible turnout of 97 players, we have offi... Registration closed in the black Chip bounty with 97 players Jun 07, 2026 6:00 PM \ud83d\udea8 REGISTRATION IS CLOSED! \ud83d\udea8 What an incredible turnout today! We officially closed registration... 8 Tables in the Windbreak Black Chip Bounty Jun 07, 2026 1:30 PM \u2660\ufe0f CARDS ARE IN THE AIR! \u2660\ufe0f The Dakota Poker Tour Bounty Tournament is officially u... Dakota Poker Tour has Arrived at the Windbreak Jun 07, 2026 11:00 AM \u2660\ufe0f\u2666\ufe0f ATTENTION POKER FRIENDS! \u2666\ufe0f\u2660\ufe0f The Dakota Poker Tour has officially... Tournament Results Prize Pool: $23,880 Tournament Players Rank POY Winnings Cashes Final Table Payouts Paid/Standings Winnings Points Venue Windbreak 3150 39th St S, Fargo, ND, 58104 News View All \u2660\ufe0f\ud83c\udfc6 Congratulations to Bob Barker of Perham MN the Black Chip Bounty Champion\ud83c\udfc6\u2660\ufe0f Jun 07, 2026 11:13 PM Dakota Poker Tour Spring Championship winner, Eric Kassa of Wahpeton, North Dakota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 11:00 PM Black Chip Bounty Champion, Jason McClellan of Perham, Minnesota! \ud83c\udfc6\u2660\ufe0f May 17, 2026 10:00 PM Dakota Poker Tour The Dakota Poker Tour is brought to you by FPN Gaming, Inc. Licensed Charitable Gaming Distributor FPNGaming.com Old Website About DPT About Us News Videos Venues Careers Events Upcoming Events Past Events Calendar Quick Links Leaderboard Players Champions Live Updates Policy Terms Cookies Help Browser Copyright \u00a9 2026 DPT Enterprises, Inc"
+  }
+]

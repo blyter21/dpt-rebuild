@@ -1,0 +1,308 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/users",
+    "headings":  [
+                     "Players List"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/users/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2787/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2787"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2786/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2786"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2785/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2785"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2784/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2784"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2783/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2783"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2782/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2782"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2781/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2781"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2780/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2780"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2779/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2779"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/users/2778/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/users/2778"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "260",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/users#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "placeholder":  "",
+                                         "label":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Reset",
+                    "Copy",
+                    "CSV",
+                    "Print",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View",
+                    "Edit",
+                    "View"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "#",
+                                       "Profile Picture",
+                                       "First Name",
+                                       "Last Name",
+                                       "Nick Name",
+                                       "Email",
+                                       "mobile",
+                                       "Roles",
+                                       "Created By",
+                                       "Created Date",
+                                       "Action",
+                                       "2787",
+                                       "Pedro",
+                                       "Hermes",
+                                       "pedro@fpngaming.com",
+                                       "Administrator User",
+                                       "Brook Lyter",
+                                       "Jun 27 2026",
+                                       "Edit View"
+                                   ],
+                       "rows":  11,
+                       "sampleRows":  [
+                                          [
+                                              "#",
+                                              "Profile Picture",
+                                              "First Name",
+                                              "Last Name",
+                                              "Nick Name",
+                                              "Email",
+                                              "mobile",
+                                              "Roles",
+                                              "Created By",
+                                              "Created Date",
+                                              "Action"
+                                          ],
+                                          [
+                                              "2787",
+                                              "Pedro",
+                                              "Hermes",
+                                              "pedro@fpngaming.com",
+                                              "Administrator User",
+                                              "Brook Lyter",
+                                              "Jun 27 2026",
+                                              "Edit View"
+                                          ],
+                                          [
+                                              "2786",
+                                              "Brad",
+                                              "Magnus",
+                                              "bradfordmagnus@gmail.com",
+                                              "7012021436",
+                                              "User",
+                                              "-",
+                                              "Jun 17 2026",
+                                              "Edit View"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Players List All Notification Preferences DPT Newsletter Receive All Notifications Choose Venues Pour Decisions Windbreak Phat Fish Valley City Eagles Hagge\u0027s Bar \u0026 Grill Playmaker\u0027s All American Lounge M \u0026 J Saloon Dakota Skies Bingo Buff Bar \u0026 Lounge Old 10 Saloon Casselton Vets Club Bismarck Amvets Speedway Event Center Champs Paragon Bowl Bar Nine Bordertown Bar \u0026 Grill The Bison Turf Pit Stop Portland Liquor Store Southgate Casino Bar \u0026 Grill Slammers Sports Bar Terrace Lanes Alibis Lounge Cando Bar Last Chance Ranch Steakhouse The Pipe City Limits Bar \u0026 Bottle Shop The Dougout Bar \u0026 Grill EGF Legion Fergus Falls VFW Mills Lounge Morris Eagles Club Mc Kinney\u0027s On Southside Muddy Cow Bar Playtime Sports Bar \u0026 Ballroom Billy\u0027s Corner Bar \u0026 Grill Cedar Inn Route 47 Pub \u0026 Grub Route 65 Pub \u0026 Grub Ace of Spades Danny\u0027s Dugout Brothers Bar \u0026 Grill Buddies Bar \u0026 Grill Bubba\u0027s Bar \u0026 Grill Dawn\u0027s Corner Bar \u0026 Grill Jumpin\u0027 Jacks Knuckleheads Bar \u0026 Grill Redwood Falls Legion Wow! Zone Back Door Pub Thirsty Duck The Hay Shed Red Rock Bar \u0026 Grill The Beer Garden 2 Brickhouse Lounge Country Pub Fort Saloon Czech\u0027ers Sports Bar No Name Bar \u0026 Grill Shorewood Pub Mandan Eagles Bison Turf Jamestown Elks Lodge #995 Buckskin Spirit Lake Casino \u0026 Resort Lotta\u0027s Fanatics Sports Bar Angry Beaver Lodge TBD Bismarck Hotel Harvey Eagles Club Watford City Eagles Club Red River Valley Fairgrounds - Hartl Building City Brew Hall Cactus Jacks Dakota Magic Casino Double Tree - West Fargo All Events Pour Decisions - Tioga ND Poker Brat Classic Season XI Kickoff Tournament - Hagge\u0027s L.i.s.t.e.n. Inc Monster Stack Phat Stacks at the Phat Fish Dead Money Open Eagle Eye Buffalo City Showdown Speedway Full Throttle Poker Open Pour Decisions March 26 DPT Season XI Championship L.i.s.t.e.n. Inc Monster Stack Season 2022-2023 Kickoff Mandan Eagles Casselton Vets Poker Brat BOUNTY Tournament Buckskin Shootout Dead Money Open RPT Casino State Championship Pour Decisions Tioga Black Gold Deep Stack - Beulah ND Eagle Eye Hole In One - Oakes, ND DPT Championship Phat Stacks at the Phat Fish Buffalo City Showdown DPT Championship Bonus Freerolls RPT Summer Main Event Poker Brat BOUNTY Tournament Hagge\u0027s Deep Stack Mandan Eagles Club Mega Stack Phat Stacks at the Phat Fish Dakota Jim Dandy Poker Festival Casselton Vets Club Dead Money Open \"RPT Casino State Championship\"-BRACELET EVENT! Eagle Eye Hole in one Main Event DPT Spring Championship L.I.S.T.E.N. INC Monster Stack Buckskin Shootout Watford City Eagles Club Monster Stack Pour Decisions City Brew Hall Hagge\u0027s Fall Classic Poker Brat Black Chip BOUNTY Tournament Operation Poker: Red White \u0026 Bluff Hole in One Deepstack Dead Money Open Phat Stacks at the Phat Fish DPT Spring Championship Dakota Jim Dandy Poker Festival ! RPT/DPT Season Championship L.I.S.T.E.N. INC Monster Stack RPT Casino State Championship 2024/2025 Cactus Jacks Open Buffalo City Showdown Watford City Eagles Club Monster Stack Phat Stacks at the Phat Fish Buckskin Shootout Pour Decisions Casselton Vets The Poker Brat at the Windbreak Operation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets City Brew Hall Poker Brat Black Chip BOUNTY Tournament Hagge\u0027s Fall Classic Dead Money Open Hole in One Deepstack The Tri-State Poker Championship Eagle Eye The Buckskin Shootout L.I.S.T.E.N. INC Monster Stack L.I.S.T.E.N. INC Monster Stack 10/31/2025 Dakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \"Dream Chaser V\" Tournament! $5,000 Player of the Series package up for grabs! The Buffalo City Showdown Pour Decisions Deep Stack Casselton Vets Spring Championship Poker Brat Black Chip BOUNTY Tournament All Tournaments Pour Decisions Poker Brat Classic Hagge\u0027s Bar \u0026 Grill Friday Night Super Satellite Monster Stack Dead Money Open Phat Stacks Eagle Eye Friday Night Super Satellite Buffalo City Showdown FREEROLL @ Old 10 Saloon FREEROLL @ Valley City Eagles FREEROLL @ Casselton Vets Club FREEROLL @ Bismarck Amvets Full Throttle Poker Open *Super Satellite* Speedway Full Throttle Poker Open Main Event Pour Decisions Mar 26th DPT Season XI Tournament of Champions DPT Season XI Player Appreciation Freeroll FREEROLL @ Bar Nine FREEROLL @ BorderTown Bar \u0026 Grill FREEROLL @ Slammers FREEROLL @ The Bison Turf FREEROLL @ Bismark Amvets FREEROLL @ Casselton Vets Club FREEROLL @ Country Pub FREEROLL @ Old 10 Saloon FREEROLL @ Pit Stop FREEROLL @ Portland Liquor Store (Mon) FREEROLL @ Porland Liquor Store (Thurs) FREEROLL @ Southgate Casino Bar \u0026 Grill FREEROLL @ Valley City Eagles (Sun) FREEROLL @ Valley City Eagles (Wed) FREEROLL @ Fergus Falls VFW FREEROLL @ Billy\u0027s Corner Bar \u0026 Grill FREEROLL @ Cedar Inn FREEROLL @ Ace of Spades (Tues) FREEROLL @ Ace of Spades (Wed) FREEROLL @ Route 47 Pub \u0026 Grub (Tues) FREEROLL @ Route 47 Pub \u0026 Grub (Wed) FREEROLL @ route 65 Pub \u0026 Grub FREEROLL @ Danny\u0027s Dugout (Sun) FREEROLL @ Danny\u0027s Dugout (Tues) FREEROLL @ Back Door Pub FREEROLL @ Woody\u0027s FREEROLL @ Terrace Lanes (Tues) FREEROLL @ Terrace Lanes (Thurs) FREEROLL @ Alibi\u0027s Lounge FREEROLL @ Cando Bar FREEROLL @ Champs Paragon Bowl (Mon) FREEROLL @ Champs Paragon Bowl (Wed) FREEROLL @ Last Chance Ranch Steakhouse FREEROLL @ The Pipe FREEROLL @ City Limits Bar \u0026 Bottle Shop FREEROLL @ The Dougout Bar \u0026 Grill FREEROLL @ EGF Legion FREEROLL @ Mills Lounge FREEROLL @ Morris Eagles Club FREEROLL @ Mc Kinney\u0027s On Southside FREEROLL @ Muddy Cow Bar FREEROLL @ Playtime Sports Bar \u0026 Ballroom FREEROLL @ \u0027Czech\u0027ers Sports Bar FREEROLL @ Brothers Bar \u0026 Grill FREEROLL @ Bubba\u0027s Bar \u0026 Grill FREEROLL @ Dawn\u0027s Corner Bar \u0026 Grill FREEROLL @ Jumpin\u0027 Jacks (Mon) FREEROLL @ Jumpin\u0027 Jacks (Sun) FREEROLL @ Knuckleheads FREEROLL @ Redwood Falls Legiou FREEROLL @ Wow! Zone FREEROLL @ The Hay Shed FREEROLL @ Red Rock Bar \u0026 Grill FREEROLL @ The Beer Garden 2 FREEROLL @ Brickhouse Lounge FREEROLL @ City Limits Bar FREEROLL @ Shorewood Pub FREEROLL @ No Name Bar \u0026 Grill FREEROLL @ VC Eagles FREEROLL @ Portland Liquor Store (Thurs) Bounty Tournament FREEROLL @ Thirsty Duck Super Satellite Bonus @ Bar Nine FREEROLL @ Thirsty Duck (Sun) Season 2022-23 Kickoff Tournament Hagge\u0027s Super Satellite 2022-23 Kickoff Event Bar Nine Freeroll $150 DPT Seat-Hagge\u0027s Sept 17th Bar Nine Thursday League - DPT Super Satellite Seat @ Hagge\u0027s Bordertown - DPT Super Satellite Seat @ Hagges Casselton Vets - DPT Super Satellite (Hagges) Slammers - Monday League DPT Super Satellite (Hagges) VC Eagles Sunday League - DPT Super Satellite (Hagges) VC Eagles Wed League - DPT Super Satellite (Hagges) Billy\u0027s Corner Bar Terrace Lanes Shorewood Pub - DPT Super Satellite M \u0026 J Saloon DPT Super Satellite Bison Turf - Thursday League DPT Super Satellite #1 South Gate $150 DPT Seat East Grand Forks American",
+    "navText":  "Players"
+}

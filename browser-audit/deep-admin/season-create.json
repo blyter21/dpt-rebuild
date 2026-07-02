@@ -1,0 +1,480 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/seasons/create",
+    "headings":  [
+                     "Season Create",
+                     "Status *",
+                     "Choose League *",
+                     "Name *",
+                     "Description *",
+                     "Default *",
+                     "Yes",
+                     "No",
+                     "Logo",
+                     "Banner Image",
+                     "Start Date *",
+                     "End Date *"
+                 ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/seasons/create#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Cut\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Copy\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Undo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Redo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Link\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Unlink\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Anchor\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Image\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Table\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Maximize\u0027)"
+                  },
+                  {
+                      "text":  "Source",
+                      "href":  "javascript:void(\u0027Source\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Bold\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Italic\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Remove Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Block Quote\u0027)"
+                  },
+                  {
+                      "text":  "Styles",
+                      "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                  },
+                  {
+                      "text":  "Format",
+                      "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  }
+              ],
+    "forms":  [
+                  {
+                      "index":  0,
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "index":  1,
+                      "action":  "https://dakotapokertour.com/admin/seasons",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "tag":  "input",
+                                         "type":  "hidden",
+                                         "name":  "_token",
+                                         "id":  "",
+                                         "placeholder":  "",
+                                         "value":  "[hidden]",
+                                         "label":  ""
+                                     },
+                                     {
+                                         "tag":  "select",
+                                         "type":  "select-one",
+                                         "name":  "status",
+                                         "id":  "status",
+                                         "placeholder":  "",
+                                         "value":  "1",
+                                         "label":  "Status *"
+                                     },
+                                     {
+                                         "tag":  "select",
+                                         "type":  "select-one",
+                                         "name":  "league_id",
+                                         "id":  "league_id",
+                                         "placeholder":  "",
+                                         "value":  "",
+                                         "label":  "Choose League *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "name",
+                                         "id":  "name",
+                                         "placeholder":  "Name",
+                                         "value":  "",
+                                         "label":  "Name *"
+                                     },
+                                     {
+                                         "tag":  "textarea",
+                                         "type":  "textarea",
+                                         "name":  "description",
+                                         "id":  "description",
+                                         "placeholder":  "Description",
+                                         "value":  "",
+                                         "label":  "Description *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "radio",
+                                         "name":  "default",
+                                         "id":  "featured1",
+                                         "placeholder":  "",
+                                         "value":  "1",
+                                         "label":  "Yes"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "radio",
+                                         "name":  "default",
+                                         "id":  "featured2",
+                                         "placeholder":  "",
+                                         "value":  "0",
+                                         "label":  "No"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "file",
+                                         "name":  "logo",
+                                         "id":  "logo",
+                                         "placeholder":  "",
+                                         "value":  "",
+                                         "label":  "Logo"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "file",
+                                         "name":  "banner_image",
+                                         "id":  "banner_image",
+                                         "placeholder":  "",
+                                         "value":  "",
+                                         "label":  "Banner Image"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "start_date",
+                                         "id":  "start_date",
+                                         "placeholder":  "Start Date",
+                                         "value":  "",
+                                         "label":  "Start Date *"
+                                     },
+                                     {
+                                         "tag":  "input",
+                                         "type":  "text",
+                                         "name":  "end_date",
+                                         "id":  "end_date",
+                                         "placeholder":  "End Date",
+                                         "value":  "",
+                                         "label":  "End Date *"
+                                     }
+                                 ]
+                  }
+              ],
+    "buttons":  [
+                    "Create",
+                    "Create",
+                    "Save Selected",
+                    "Save Selected"
+                ],
+    "tables":  [
+                   {
+                       "index":  0,
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat",
+                                       "31",
+                                       "1",
+                                       "2",
+                                       "3",
+                                       "4",
+                                       "5",
+                                       "6"
+                                   ],
+                       "rows":  6,
+                       "sampleRows":  [
+                                          [
+                                              "Sun",
+                                              "Mon",
+                                              "Tue",
+                                              "Wed",
+                                              "Thu",
+                                              "Fri",
+                                              "Sat"
+                                          ],
+                                          [
+                                              "31",
+                                              "1",
+                                              "2",
+                                              "3",
+                                              "4",
+                                              "5",
+                                              "6"
+                                          ],
+                                          [
+                                              "7",
+                                              "8",
+                                              "9",
+                                              "10",
+                                              "11",
+                                              "12",
+                                              "13"
+                                          ],
+                                          [
+                                              "14",
+                                              "15",
+                                              "16",
+                                              "17",
+                                              "18",
+                                              "19",
+                                              "20"
+                                          ],
+                                          [
+                                              "21",
+                                              "22",
+                                              "23",
+                                              "24",
+                                              "25",
+                                              "26",
+                                              "27"
+                                          ]
+                                      ]
+                   },
+                   {
+                       "index":  1,
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat",
+                                       "31",
+                                       "1",
+                                       "2",
+                                       "3",
+                                       "4",
+                                       "5",
+                                       "6"
+                                   ],
+                       "rows":  6,
+                       "sampleRows":  [
+                                          [
+                                              "Sun",
+                                              "Mon",
+                                              "Tue",
+                                              "Wed",
+                                              "Thu",
+                                              "Fri",
+                                              "Sat"
+                                          ],
+                                          [
+                                              "31",
+                                              "1",
+                                              "2",
+                                              "3",
+                                              "4",
+                                              "5",
+                                              "6"
+                                          ],
+                                          [
+                                              "7",
+                                              "8",
+                                              "9",
+                                              "10",
+                                              "11",
+                                              "12",
+                                              "13"
+                                          ],
+                                          [
+                                              "14",
+                                              "15",
+                                              "16",
+                                              "17",
+                                              "18",
+                                              "19",
+                                              "20"
+                                          ],
+                                          [
+                                              "21",
+                                              "22",
+                                              "23",
+                                              "24",
+                                              "25",
+                                              "26",
+                                              "27"
+                                          ]
+                                      ]
+                   }
+               ],
+    "text":  "View Site Sign Out Dashboard Tournament Management Tournaments Payout Distributions Template Blind Structures Live Updates Events Seasons Leagues Venues Article Management Articles User Management Players Fix Duplicate Players Notifications Season Create Create Status * Published Unpublished Choose League * - Choose League - Dakota Poker Tour FPN Name * Description * Source Styles Format ◢ Default * Yes No Logo Banner Image Start Date * End Date * Create Dashboard Seasons Create",
+    "targetName":  "season-create"
+}
