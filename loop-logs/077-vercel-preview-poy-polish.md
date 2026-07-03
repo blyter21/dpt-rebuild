@@ -54,10 +54,40 @@ Screenshot:
 proc_d5c451e127de
 ```
 
-## Pending
+## Live Vercel verification
+
+Pushed commit:
 
 ```text
-Commit and push to GitHub.
-Wait for Vercel auto-deploy.
-Verify https://dpt-rebuild-site.vercel.app after redeploy.
+f692ada Fix public preview POY strip overflow
+```
+
+Verified live URL:
+
+```text
+https://dpt-rebuild-site.vercel.app/?verify=poy-fix
+```
+
+Live browser DOM:
+
+```text
+tileCount: 5
+allTilesVisible: true
+hasBasim: true
+hasRob: false
+localImages: 28
+remoteStorageImages: 0
+```
+
+Live screenshot:
+
+```text
+/home/hermes/.hermes/cache/screenshots/browser_screenshot_7c0775589b7c4bb5839ea2bec8c57238.png
+```
+
+Result:
+
+```text
+Vercel auto-deploy succeeded.
+Homepage POY strip now displays clean top-5 cards with no clipped sixth card.
 ```
