@@ -116,6 +116,7 @@ Each loop should end with:
 - [x] Prepare Vercel preview package/preflight without deploying
 - [ ] Execute Supabase public schema/seed against a local Docker/Postgres runtime
 - [ ] Connect admin prototype to local Supabase only after Docker/local DB is available
+- [x] Prepare admin simulator Vercel preview package in mock-data/not-production mode
 
 ## Constraints
 

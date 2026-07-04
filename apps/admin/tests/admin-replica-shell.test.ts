@@ -31,7 +31,8 @@ const css = readFileSync(join(process.cwd(), 'app/globals.css'), 'utf8');
 describe('DPT replica shell UI content', () => {
   it('exposes the browser-backed admin/public modules Brook expects to see', () => {
     for (const label of [
-      'DPT Admin/Public Replica Shell',
+      'DPT Admin Simulator',
+      'Mock Data / Not Production',
       'Dashboard',
       'Public Site Preview',
       'Tournaments',

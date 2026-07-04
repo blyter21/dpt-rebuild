@@ -116,6 +116,7 @@ Primary docs:
 | `loop-logs/075-media-storage-migration-plan.md` | Final media storage migration plan: bucket/object mapping, upload command manifest, CDN-base helper. |
 | `loop-logs/076-vercel-preview-preflight.md` | Vercel preview package/preflight: app-local vercel config, env docs, final smoke report. |
 | `loop-logs/077-vercel-preview-poy-polish.md` | Public preview polish for Player of the Year strip overflow/clipping. |
+| `loop-logs/078-admin-simulator-preview-package.md` | Admin simulator preview package: mock-only labels, Vercel settings, workflow QA. |
 | `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |
 | `reports/dpt-supabase-public-migration-path.md` | Supabase public schema/seed/repository migration path report and validation notes. |
 | `reports/dpt-local-postgres-supabase-repository-validation.md` | Local embedded Postgres validation and SupabaseRepository implementation report. |
@@ -123,6 +124,7 @@ Primary docs:
 | `reports/dpt-media-storage-plan-verification.md` | Final no-upload media storage migration verification report. |
 | `reports/dpt-vercel-preview-preflight-report.md` | First Vercel preview approval/preflight report. |
 | `reports/dpt-vercel-preview-live-verification.md` | Live Vercel preview route/media/browser verification report. |
+| `reports/dpt-admin-simulator-preview-readiness.md` | Admin simulator mock-only preview readiness and local QA report. |
 | `reports/dpt-vercel-preview-route-media-smoke.json` | Machine-readable final route/media smoke output for preview approval. |
 | `docs/DPT_VERCEL_PREVIEW_PACKAGE.md` | Vercel preview project/root/env/checklist notes. |
 | `docs/DPT_VERCEL_ENV_VARS.md` | Vercel env var matrix for JSON fallback and future Supabase mode. |

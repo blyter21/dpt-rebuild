@@ -423,10 +423,14 @@ export default function AdminSimulator() {
     <main className="shell replica-shell">
       <section className="desk-hero replica-hero">
         <div>
-          <div className="eyebrow">Dakota Poker Tour modern-stack replica POC</div>
-          <h1>DPT Admin/Public Replica Shell</h1>
+          <div className="eyebrow">Internal Admin Simulator · Mock Data · Not Production</div>
+          <h1>DPT Admin Simulator</h1>
+          <div className="mock-production-warning" role="note" aria-label="Admin simulator safety warning">
+            <strong>Mock Data / Not Production</strong>
+            <span>No real users, payouts, notifications, tournament writes, Supabase calls, or production data mutations happen in this preview.</span>
+          </div>
           <p>
-            Browser-backed rebuild target based on the live public site and authenticated admin dashboard. This version adds the missing player database → tournament flow and selected-player elimination workflow.
+            Internal workflow simulator based on the live DPT admin feature map. Use it to test tournament desk concepts, registration, player lists, payouts, structures, notifications, reports, and live-manager flows before any real backend connection.
           </p>
           <div className="view-toggle" aria-label="public/admin view toggle">
             <button className={activeView === 'admin' ? 'active' : ''} type="button" onClick={() => setActiveView('admin')}>Admin View</button>

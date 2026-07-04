@@ -235,3 +235,8 @@ p { color: var(--muted); line-height: 1.55; }
 .duplicate-merge-preview { margin-top: 14px; border: 1px solid rgba(248,193,74,.25); border-radius: 16px; padding: 14px; background: rgba(113,63,18,.13); display: grid; gap: 7px; }
 .duplicate-merge-preview strong { color: var(--gold); }
 .duplicate-merge-preview span { color: var(--muted); font-size: 13px; }
+
+.mock-production-warning { display: grid; gap: 4px; max-width: 780px; margin: 14px 0 12px; padding: 13px 15px; border: 1px solid rgba(255,107,107,.45); border-radius: 18px; background: linear-gradient(135deg, rgba(127,29,29,.32), rgba(88,28,135,.18)); color: #fecaca; box-shadow: 0 12px 32px rgba(127,29,29,.16); }
+.mock-production-warning strong { color: #fff; text-transform: uppercase; letter-spacing: .08em; font-size: 13px; }
+.mock-production-warning span { color: #fecaca; font-size: 13px; line-height: 1.45; }
+.admin-nav::after { content: 'Mock data only · Not production'; display: block; margin: 14px 6px 4px; padding: 10px; border: 1px solid rgba(255,107,107,.28); border-radius: 14px; color: #fecaca; background: rgba(127,29,29,.16); font-size: 12px; font-weight: 850; text-align: center; }
