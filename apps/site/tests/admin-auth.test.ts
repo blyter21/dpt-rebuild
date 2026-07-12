@@ -156,15 +156,16 @@ describe('DPT admin login route', () => {
 });
 
 describe('DPT admin middleware', () => {
-  it('allows the explicit read-only review mode without contacting Supabase', async () => {
+  it('rejects the retired read-only review environment flag', async () => {
+    configureAuth();
     process.env.DPT_ADMIN_REVIEW_MODE = 'enabled';
     const fetchMock = vi.fn();
     vi.stubGlobal('fetch', fetchMock);
 
     const response = await middleware(adminRequest('/admin/events'));
 
-    expect(response.status).toBe(200);
-    expect(response.headers.get('x-middleware-next')).toBe('1');
+    expect(response.status).toBe(307);
+    expect(response.headers.get('location')).toBe('https://dpt.example.test/admin/login?next=%2Fadmin%2Fevents');
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
