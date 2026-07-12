@@ -11,6 +11,7 @@ const migrationFiles = [
   'supabase/migrations/20260712070000_staging_deploy_marker.sql',
   'supabase/migrations/20260712073000_add_pedro_staging_admin.sql',
   'supabase/migrations/20260712074500_fix_security_lints.sql',
+  'supabase/migrations/20260712090000_seed_public_snapshot.sql',
 ];
 
 const db = new PGlite();
