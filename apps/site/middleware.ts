@@ -4,7 +4,7 @@ import { buildSupabaseHeaders } from './lib/supabase-http';
 const ACCESS_COOKIE = 'dpt_admin_access_token';
 
 function readOnlyAdminReviewEnabled() {
-  return process.env.DPT_ADMIN_REVIEW_MODE === 'public' || process.env.DPT_DATA_SOURCE !== 'supabase';
+  return process.env.DPT_ADMIN_REVIEW_MODE !== 'disabled';
 }
 
 function adminLoginRedirect(request: NextRequest) {

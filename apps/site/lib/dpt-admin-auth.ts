@@ -30,7 +30,7 @@ export function isDptAdminAuthConfigured() {
 }
 
 export function isDptAdminReadOnlyReviewEnabled() {
-  return process.env.DPT_ADMIN_REVIEW_MODE === 'public' || process.env.DPT_DATA_SOURCE !== 'supabase';
+  return process.env.DPT_ADMIN_REVIEW_MODE !== 'disabled';
 }
 
 function getDptAdminReviewSession(): DptAdminSession {
