@@ -115,11 +115,13 @@ Each loop should end with:
 - [x] Create final media storage migration plan and CDN-base media path abstraction
 - [x] Prepare Vercel preview package/preflight without deploying
 - [ ] Execute Supabase public schema/seed against a local Docker/Postgres runtime
-- [ ] Create/connect a Supabase staging project for the real DPT replacement database
+- [x] Create/connect a Supabase staging project for the real DPT replacement database
 - [x] Integrate read-only production-derived admin routes into `apps/site` under `/admin` in the same Next.js/Vercel project
 - [x] Implement fail-closed Supabase admin Auth foundation, protected route group, and server-side `view_admin` role contract
 - [x] Audit full Supabase migration chain for production-role parity, Auth identity linkage, RLS, and grants
-- [ ] Connect Supabase staging, import/map authorized admin users, and verify real admin login
+- [x] Map the Pedro staging account to the `administrator` role and `view_admin` authorization
+- [ ] Configure staging app environment and verify real admin login
+- [ ] Rotate all staging/admin passwords and credentials before production go-live; staging rotation is not a development blocker
 - [ ] Rebuild real admin mutations from live production workflows and production-derived schema/data
 - [ ] Replace JSON fallback with Supabase-backed reads/writes after staging validation
 - [x] Preserve `apps/admin` simulator only as historical workflow/reference material (not a deployment target)

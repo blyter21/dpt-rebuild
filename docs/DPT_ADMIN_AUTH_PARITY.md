@@ -94,6 +94,20 @@ RLS policy allowing an authenticated admin to read only their own active authori
 
 No service-role key is used by the browser/web login flow.
 
+## Pre-production security gate
+
+The current Supabase project is a sandbox/staging environment. Password rotation is not a blocker for staging development. Before any production launch or traffic cutover:
+
+```text
+rotate every staging/admin password and credential
+revoke temporary credentials
+verify only intended production administrators remain active
+rerun Supabase Security Advisor
+complete authenticated and non-admin access tests
+```
+
+No current password or credential value is stored in this document or repository.
+
 ## Current status
 
 ```text
