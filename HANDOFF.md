@@ -1,6 +1,6 @@
 # DPT Rebuild Lab — Handoff Summary
 
-Last updated: `2026-07-12T02:03:06Z`
+Last updated: `2026-07-12T21:32:45Z`
 
 This is the current working handoff for the Dakota Poker Tour rebuild lab. It is intended for Pedro/future agents picking up the local rebuild without rereading every loop log.
 
@@ -70,7 +70,7 @@ Vercel root:
 apps/site
 ```
 
-Current deployment mode is production-derived JSON/local media fallback while Supabase staging is not connected. There is no approved real admin preview yet. The next admin work belongs inside `apps/site/app/admin`, not in a separate Vercel project.
+The current live deployment includes public routes and a passwordless read-only `/admin` review mode so Brook can evaluate admin screens without Supabase password friction. It is intentionally no-write/no-secrets. Real Supabase-authenticated admin remains the production direction and can be restored by setting `DPT_ADMIN_REVIEW_MODE=disabled`. The next admin work belongs inside `apps/site/app/admin`, not in a separate Vercel project.
 
 Local dev when needed:
 
@@ -118,6 +118,7 @@ Primary docs:
 | `loop-logs/080-integrated-real-data-admin-foundation.md` | Integrated read-only `/admin` routes in apps/site using production-derived SQL data. |
 | `loop-logs/081-faithful-admin-auth-foundation.md` | Legacy-auth parity audit plus fail-closed Supabase email/password admin login and role gate. |
 | `loop-logs/082-supabase-migration-safety-audit.md` | Full migration-chain audit and embedded Postgres/RLS/grant validation before remote apply. |
+| `loop-logs/083-admin-preview-supabase-team-access-checkpoint.md` | Current checkpoint: live passwordless read-only `/admin`, pushed commit, Supabase Fastball Productions invite accepted, restart-ready handoff. |
 | `reports/dpt-supabase-migration-audit.md` | Corrected role/Auth/RLS/grant issues and full validation evidence. |
 | `docs/DPT_ADMIN_AUTH_PARITY.md` | Exact public-vs-admin login behavior, production role inventory, and replacement auth contract. |
 | `reports/dpt-integrated-admin-foundation-verification.md` | Tests/build/HTTP/browser evidence for integrated real-data admin foundation. |
@@ -194,9 +195,35 @@ Even then, `admin-api-supabase.ts` is only a disabled/testable placeholder unles
 
 ## Current verification status
 
+### Restart checkpoint — 2026-07-12T21:32:45Z
+
+- Future Hermes sessions are configured for model `gpt-5.6-sol`; this session remained on GPT-5.5 until the checkpoint was written.
+- Latest pushed DPT commit: `d945544 Default admin preview to read-only review mode`.
+- Remote branch verified with `git ls-remote origin refs/heads/main`: `d9455446056681b5767db442911c63b71ae71bcb`.
+- Live admin preview: `https://dpt-rebuild-site.vercel.app/admin`.
+- Current admin preview is passwordless/read-only for owner review; no production writes, private user rows, passwords, OTPs, or tokens are exposed.
+- Brook confirmed Pedro accepted the Supabase Fastball Productions team invitation for project `dpt-rebuild-staging`.
+- Local remote-tracking branch may look stale because `.git/refs/remotes/origin` is owned by `dingo`; use `git ls-remote` as the authoritative push check.
+
 ### Current test totals
 
-Latest verified commands:
+Latest verified `apps/site` commands for the live integrated public/admin app:
+
+```bash
+npm --workspace apps/site run test
+npm --workspace apps/site run typecheck
+npm --workspace apps/site run build
+```
+
+Latest observed site output:
+
+```text
+Vitest: 2 test files passed, 12 tests passed
+TypeScript: tsc --noEmit passed
+Next.js production build: compiled successfully; 20 pages generated; admin routes are dynamic
+```
+
+Historical simulator/engine output retained for reference:
 
 ```bash
 npm --workspace apps/admin test

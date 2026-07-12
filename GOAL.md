@@ -120,7 +120,9 @@ Each loop should end with:
 - [x] Implement fail-closed Supabase admin Auth foundation, protected route group, and server-side `view_admin` role contract
 - [x] Audit full Supabase migration chain for production-role parity, Auth identity linkage, RLS, and grants
 - [x] Map the Pedro staging account to the `administrator` role and `view_admin` authorization
-- [ ] Configure staging app environment and verify real admin login
+- [x] Configure staging app environment enough for the current no-password read-only admin review mode and verify live `/admin` owner access
+- [ ] Verify real Supabase-authenticated admin login when staging auth is intentionally re-enabled with `DPT_ADMIN_REVIEW_MODE=disabled`
+- [x] Accept Pedro's Supabase team invite for Fastball Productions / `dpt-rebuild-staging`
 - [ ] Rotate all staging/admin passwords and credentials before production go-live; staging rotation is not a development blocker
 - [ ] Rebuild real admin mutations from live production workflows and production-derived schema/data
 - [ ] Replace JSON fallback with Supabase-backed reads/writes after staging validation
