@@ -11,11 +11,15 @@ from datetime import datetime
 from html import unescape
 from pathlib import Path
 import json
+import os
 import re
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-SQL_PATH = Path('/home/hermes/.hermes/cache/documents/doc_731785475368_prod_dakotapokertour.sql')
+SQL_PATH = Path(os.environ.get(
+    'DPT_PRODUCTION_SQL_PATH',
+    '/home/hermes/.hermes/private/dpt/prod_dakotapokertour.sql',
+))
 OUT_PATH = ROOT / 'apps/site/data/dpt-public.json'
 
 TABLES = {

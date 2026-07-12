@@ -116,6 +116,7 @@ Primary docs:
 | `loop-logs/078-admin-simulator-preview-package.md` | Historical admin simulator preview packaging; superseded as product direction by loop 079. |
 | `loop-logs/079-correct-integrated-product-architecture.md` | Authoritative correction: single apps/site project, integrated real-data `/admin`, no mock product path. |
 | `docs/DPT_INTEGRATED_PRODUCT_DIRECTION.md` | Authoritative public/admin/Supabase architecture and migration direction. |
+| `docs/DPT_PRODUCTION_SQL_SOURCE.md` | Protected durable SQL source location, checksum, permissions, and extraction behavior. |
 | `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |
 | `reports/dpt-supabase-public-migration-path.md` | Supabase public schema/seed/repository migration path report and validation notes. |
 | `reports/dpt-local-postgres-supabase-repository-validation.md` | Local embedded Postgres validation and SupabaseRepository implementation report. |
