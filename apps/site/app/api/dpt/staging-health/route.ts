@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { getDptRepository } from '../../../../lib/dpt-repository';
 import { buildSupabaseHeaders } from '../../../../lib/supabase-http';
 
 export const dynamic = 'force-dynamic';
@@ -37,6 +38,7 @@ export async function GET() {
     return NextResponse.json({
       ok: true,
       source: 'supabase-staging',
+      activeRepositoryMode: getDptRepository().mode,
       project: 'ucxdoetoennartsavnut',
       counts: Object.fromEntries(entries),
     }, { headers: { 'cache-control': 'no-store' } });

@@ -9,6 +9,7 @@ describe('Supabase staging health route', () => {
       expect(route).toContain(table);
     }
     expect(route).toContain("source: 'supabase-staging'");
+    expect(route).toContain('activeRepositoryMode: getDptRepository().mode');
     expect(route).not.toContain('service_role');
     expect(route).not.toContain('dpt_admin_accounts');
     expect(route).not.toContain('auth.users');
