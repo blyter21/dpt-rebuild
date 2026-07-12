@@ -9,6 +9,8 @@ const migrationFiles = [
   'supabase/migrations/20260701171500_dpt_public_schema.sql',
   'supabase/migrations/20260712033000_dpt_admin_auth.sql',
   'supabase/migrations/20260712070000_staging_deploy_marker.sql',
+  'supabase/migrations/20260712073000_add_pedro_staging_admin.sql',
+  'supabase/migrations/20260712074500_fix_security_lints.sql',
 ];
 
 const db = new PGlite();
@@ -27,6 +29,8 @@ await db.exec(`
   language sql
   stable
   as $$ select null::uuid $$;
+  insert into auth.users (id, email, encrypted_password)
+  values ('00000000-0000-4000-8000-000000000001', 'pedro@fpngaming.com', '[REDACTED-TEST-HASH]');
 `);
 
 for (const file of migrationFiles) {
@@ -75,6 +79,26 @@ const privilegeResult = await db.query(`
 `);
 const privileges = privilegeResult.rows[0];
 
+const securityResult = await db.query(`
+  select
+    (select bool_and('security_invoker=true' = any(coalesce(reloptions, array[]::text[])))
+       from pg_class where relname in ('dpt_public_event_cards','dpt_public_tournament_details','dpt_public_homepage')) as public_views_security_invoker,
+    not has_function_privilege('anon', 'private.has_app_role(public.app_role)', 'execute') as anon_cannot_execute_role_helper,
+    has_function_privilege('authenticated', 'private.has_app_role(public.app_role)', 'execute') as authenticated_can_execute_role_helper,
+    not exists (
+      select 1 from pg_proc join pg_namespace on pg_namespace.oid = pg_proc.pronamespace
+      where pg_namespace.nspname = 'public'
+        and pg_proc.proname in ('has_app_role','has_any_app_role','is_admin_operator','is_super_admin','dpt_current_user_can_view_admin')
+    ) as no_auth_helpers_in_public,
+    exists (
+      select 1 from pg_proc join pg_namespace on pg_namespace.oid = pg_proc.pronamespace
+      where pg_namespace.nspname = 'public'
+        and pg_proc.proname = 'set_updated_at'
+        and array_to_string(pg_proc.proconfig, ',') like '%search_path=pg_catalog, public%'
+    ) as trigger_search_path_fixed
+`);
+const security = securityResult.rows[0];
+
 const countResult = await db.query(`
   select
     (select count(*)::int from public.dpt_public_events) as events,
@@ -91,6 +115,8 @@ if (JSON.stringify(appRoles) !== JSON.stringify(expectedRoles)) throw new Error(
 if (privileges.anon_profiles_select || privileges.anon_entries_select) throw new Error('Anon can read a core private table');
 if (!privileges.anon_public_events_select) throw new Error('Anon cannot read curated public events');
 if (!privileges.authenticated_admin_account_select) throw new Error('Authenticated role cannot read own admin authorization');
+if (!Object.values(security).every(Boolean)) throw new Error(`Security lint assertion failed: ${JSON.stringify(security)}`);
+if (Number(counts.admin_accounts) !== 1) throw new Error(`Expected one staging admin mapping, found ${counts.admin_accounts}`);
 if (policies.some((row) => ['profiles', 'tournament_entries', 'tournament_payouts'].includes(row.tablename) && /public/i.test(row.policyname))) {
   throw new Error('Core private table still has a public policy');
 }
@@ -100,6 +126,7 @@ console.log(JSON.stringify({
   publicTableCount: tables.length,
   appRoles,
   privileges,
+  security,
   counts,
   policyCount: policies.length,
 }, null, 2));
