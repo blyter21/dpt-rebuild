@@ -1,6 +1,6 @@
 # DPT Rebuild Lab — Handoff Summary
 
-Last updated: `2026-06-27T11:51:26Z`
+Last updated: `2026-07-12T02:03:06Z`
 
 This is the current working handoff for the Dakota Poker Tour rebuild lab. It is intended for Pedro/future agents picking up the local rebuild without rereading every loop log.
 
@@ -14,74 +14,71 @@ This is the current working handoff for the Dakota Poker Tour rebuild lab. It is
 - Do **not** use production credentials in this lab.
 - Treat the Laravel repo as read-only reference except local reports/spec files.
 
-## Current architecture
+## Authoritative product architecture
 
 ```text
-apps/admin Next.js UI
-  -> apps/admin/lib/admin-api-client.ts
-  -> apps/admin/lib/admin-api-config.ts
-  -> apps/admin/lib/admin-api-contracts.ts
-  -> apps/admin/lib/admin-api-mock-route.ts
-  -> /api/dpt and /api/dpt/[rpc]
-  -> apps/admin/lib/mock-dpt-rpc.ts
-  -> apps/admin/lib/mock-dpt-services.ts
-  -> packages/tournament-engine
+apps/site — single Next.js/Vercel replacement application
+  ├── public routes (`/`, `/events`, `/venues`, `/leaderboard`, ...)
+  ├── authenticated admin routes (`/admin`, `/admin/...`)
+  ├── shared domain/data repository layer
+  └── Supabase Postgres/Auth/Storage staging backend → eventual production cutover
 ```
 
-Future disabled path:
+Source of truth:
 
 ```text
-apps/admin/lib/admin-api-supabase.ts
-  -> future Supabase rpc()/Edge/server transaction transport
+Live DakotaPokerTour.com public site
+Authenticated production admin workflows
+Production SQL-derived schema/data
+Production media/content
+Legacy Laravel business rules and route behavior
 ```
 
-The active/default transport remains:
+Non-target historical path:
 
 ```text
-mock-route
+apps/admin
+  -> mock simulator/prototype/reference only
+  -> useful for workflow notes and UI concepts
+  -> must not be deployed or treated as the final admin architecture
 ```
 
-Supabase is not connected.
+The required end state is one product, one Vercel project, and one integrated public/admin application. Mock data is not the product direction. Supabase staging is not yet connected.
 
 ## Current packages/apps
 
 | Path | Purpose |
 |---|---|
-| `packages/tournament-engine` | Pure tested TypeScript domain logic extracted from Laravel behavior. |
-| `apps/admin` | Mock-data Next.js Tournament Desk prototype. |
-| `supabase` | Draft migrations, seed data, RLS helpers, RPC signatures, local setup docs, replacement plan. |
+| `apps/site` | Authoritative integrated replacement app: public site today, real authenticated `/admin` next. |
+| `apps/admin` | Historical mock simulator/reference only; not a deployment or product target. |
+| `packages/tournament-engine` | Tested TypeScript domain logic extracted from Laravel behavior; reuse where it matches production rules. |
+| `supabase` | Draft public schema/seed/RLS work that must become the real staging backend and expand to authenticated admin workflows. |
 | `DPT_REBUILD_SPEC` | Entity maps, business rules, schema drafts, migration/RLS/API/test plans. |
 | `loop-logs` | Evidence logs for each loop. |
 
-## Current local app
+## Current deployed app
 
-Run:
+Public replacement preview:
+
+```text
+https://dpt-rebuild-site.vercel.app
+```
+
+Vercel root:
+
+```text
+apps/site
+```
+
+Current deployment mode is production-derived JSON/local media fallback while Supabase staging is not connected. There is no approved real admin preview yet. The next admin work belongs inside `apps/site/app/admin`, not in a separate Vercel project.
+
+Local dev when needed:
 
 ```bash
-npm --workspace apps/admin run dev
+npm --workspace apps/site run dev -- --hostname 0.0.0.0
 ```
 
-Current dev server process at handoff:
-
-```text
-proc_9a934ecd4b94
-```
-
-URL:
-
-```text
-http://127.0.0.1:3000
-```
-
-Expected UI indicators:
-
-```text
-Tournament Desk Command Center
-Transport: mock-route
-Safe local mode
-Supabase disconnected
-Transport Diagnostics
-```
+Do not present the `apps/admin` mock simulator as the backend preview or final admin.
 
 ## API/docs map
 
@@ -116,7 +113,9 @@ Primary docs:
 | `loop-logs/075-media-storage-migration-plan.md` | Final media storage migration plan: bucket/object mapping, upload command manifest, CDN-base helper. |
 | `loop-logs/076-vercel-preview-preflight.md` | Vercel preview package/preflight: app-local vercel config, env docs, final smoke report. |
 | `loop-logs/077-vercel-preview-poy-polish.md` | Public preview polish for Player of the Year strip overflow/clipping. |
-| `loop-logs/078-admin-simulator-preview-package.md` | Admin simulator preview package: mock-only labels, Vercel settings, workflow QA. |
+| `loop-logs/078-admin-simulator-preview-package.md` | Historical admin simulator preview packaging; superseded as product direction by loop 079. |
+| `loop-logs/079-correct-integrated-product-architecture.md` | Authoritative correction: single apps/site project, integrated real-data `/admin`, no mock product path. |
+| `docs/DPT_INTEGRATED_PRODUCT_DIRECTION.md` | Authoritative public/admin/Supabase architecture and migration direction. |
 | `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |
 | `reports/dpt-supabase-public-migration-path.md` | Supabase public schema/seed/repository migration path report and validation notes. |
 | `reports/dpt-local-postgres-supabase-repository-validation.md` | Local embedded Postgres validation and SupabaseRepository implementation report. |
@@ -124,7 +123,7 @@ Primary docs:
 | `reports/dpt-media-storage-plan-verification.md` | Final no-upload media storage migration verification report. |
 | `reports/dpt-vercel-preview-preflight-report.md` | First Vercel preview approval/preflight report. |
 | `reports/dpt-vercel-preview-live-verification.md` | Live Vercel preview route/media/browser verification report. |
-| `reports/dpt-admin-simulator-preview-readiness.md` | Admin simulator mock-only preview readiness and local QA report. |
+| `reports/dpt-admin-simulator-preview-readiness.md` | Historical mock simulator QA only; superseded by integrated real-data `/admin` direction. |
 | `reports/dpt-vercel-preview-route-media-smoke.json` | Machine-readable final route/media smoke output for preview approval. |
 | `docs/DPT_VERCEL_PREVIEW_PACKAGE.md` | Vercel preview project/root/env/checklist notes. |
 | `docs/DPT_VERCEL_ENV_VARS.md` | Vercel env var matrix for JSON fallback and future Supabase mode. |

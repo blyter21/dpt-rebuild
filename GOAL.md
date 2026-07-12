@@ -115,12 +115,28 @@ Each loop should end with:
 - [x] Create final media storage migration plan and CDN-base media path abstraction
 - [x] Prepare Vercel preview package/preflight without deploying
 - [ ] Execute Supabase public schema/seed against a local Docker/Postgres runtime
-- [ ] Connect admin prototype to local Supabase only after Docker/local DB is available
-- [x] Prepare admin simulator Vercel preview package in mock-data/not-production mode
+- [ ] Create/connect a Supabase staging project for the real DPT replacement database
+- [ ] Integrate authenticated admin routes into `apps/site` under `/admin` in the same Next.js/Vercel project
+- [ ] Rebuild admin workflows from the live production admin and production-derived schema/data
+- [ ] Replace JSON fallback with Supabase-backed reads/writes after staging validation
+- [x] Preserve `apps/admin` simulator only as historical workflow/reference material (not a deployment target)
+
+## Authoritative product direction
+
+- One replacement application and one Vercel project: `apps/site`.
+- Public routes and authenticated admin routes live in the same Next.js application.
+- Admin target route: `/admin` within `apps/site`.
+- The live production Laravel/AWS site, production SQL, media, and authenticated admin workflows are the source of truth.
+- The final product must use real production-derived data and business rules; mock data is not an acceptable product path.
+- `apps/admin` is reference/prototyping material only and must not be deployed as the target admin.
+- Supabase Postgres/Auth/Storage is the intended new backend, introduced first through a staging project and validated before cutover.
 
 ## Constraints
 
 - Keep Laravel repo as reference, not build target.
 - Work in `/home/hermes/projects/dpt-rebuild-lab`.
+- Use production SQL/live-site content and workflows as the source of truth.
+- Keep public and admin in the same `apps/site` Next.js/Vercel project.
+- Do not advance mock data or `apps/admin` as the product architecture.
 - Prefer tests before UI.
-- Avoid production services until Brook explicitly approves.
+- Avoid production mutations until Brook explicitly approves staging-to-production cutover steps.
