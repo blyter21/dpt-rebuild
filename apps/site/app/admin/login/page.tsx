@@ -7,6 +7,8 @@ const errors: Record<string, string> = {
   configuration: 'Admin authentication is not configured yet.',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function AdminLoginPage({ searchParams }: { searchParams?: { error?: string; next?: string } }) {
   const configured = isDptAdminAuthConfigured();
   const error = searchParams?.error ? errors[searchParams.error] || 'Unable to sign in.' : '';
