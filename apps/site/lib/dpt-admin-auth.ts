@@ -6,7 +6,7 @@ export const DPT_ADMIN_ACCESS_COOKIE = 'dpt_admin_access_token';
 export const DPT_ADMIN_REFRESH_COOKIE = 'dpt_admin_refresh_token';
 
 export type DptAdminAccount = {
-  legacy_user_id: number;
+  legacy_user_id: number | null;
   role_name: 'super admin' | 'administrator' | 'host' | 'venue';
   can_view_admin: boolean;
   is_active: boolean;

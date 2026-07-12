@@ -1,6 +1,6 @@
 # DPT Rebuild Lab — Handoff Summary
 
-Last updated: `2026-07-12T21:32:45Z`
+Last updated: `2026-07-12T21:42:13Z`
 
 This is the current working handoff for the Dakota Poker Tour rebuild lab. It is intended for Pedro/future agents picking up the local rebuild without rereading every loop log.
 
@@ -43,16 +43,16 @@ apps/admin
   -> must not be deployed or treated as the final admin architecture
 ```
 
-The required end state is one product, one Vercel project, and one integrated public/admin application. Mock data is not the product direction. Supabase staging is not yet connected.
+The required end state is one product, one Vercel project, and one integrated public/admin application. Mock data is not the product direction. Supabase staging is connected and currently serves the live public replacement data; real authenticated admin access is implemented but has not yet been owner-login verified with review mode disabled.
 
 ## Current packages/apps
 
 | Path | Purpose |
 |---|---|
-| `apps/site` | Authoritative integrated replacement app: public site today, real authenticated `/admin` next. |
+| `apps/site` | Authoritative integrated replacement app: Supabase-backed public site plus integrated `/admin`; current live admin preview is read-only review mode. |
 | `apps/admin` | Historical mock simulator/reference only; not a deployment or product target. |
 | `packages/tournament-engine` | Tested TypeScript domain logic extracted from Laravel behavior; reuse where it matches production rules. |
-| `supabase` | Draft public schema/seed/RLS work that must become the real staging backend and expand to authenticated admin workflows. |
+| `supabase` | Audited migration chain and production-derived public snapshot applied to staging; remaining work is real authenticated admin verification and later mutation workflows. |
 | `DPT_REBUILD_SPEC` | Entity maps, business rules, schema drafts, migration/RLS/API/test plans. |
 | `loop-logs` | Evidence logs for each loop. |
 
@@ -119,6 +119,7 @@ Primary docs:
 | `loop-logs/081-faithful-admin-auth-foundation.md` | Legacy-auth parity audit plus fail-closed Supabase email/password admin login and role gate. |
 | `loop-logs/082-supabase-migration-safety-audit.md` | Full migration-chain audit and embedded Postgres/RLS/grant validation before remote apply. |
 | `loop-logs/083-admin-preview-supabase-team-access-checkpoint.md` | Current checkpoint: live passwordless read-only `/admin`, pushed commit, Supabase Fastball Productions invite accepted, restart-ready handoff. |
+| `loop-logs/084-real-admin-auth-transition-preflight.md` | GPT-5.6 resume checkpoint: live Supabase/public/admin health reconfirmed and nine executable real-auth transition tests added. |
 | `reports/dpt-supabase-migration-audit.md` | Corrected role/Auth/RLS/grant issues and full validation evidence. |
 | `docs/DPT_ADMIN_AUTH_PARITY.md` | Exact public-vs-admin login behavior, production role inventory, and replacement auth contract. |
 | `reports/dpt-integrated-admin-foundation-verification.md` | Tests/build/HTTP/browser evidence for integrated real-data admin foundation. |
@@ -205,6 +206,14 @@ Even then, `admin-api-supabase.ts` is only a disabled/testable placeholder unles
 - Brook confirmed Pedro accepted the Supabase Fastball Productions team invitation for project `dpt-rebuild-staging`.
 - Local remote-tracking branch may look stale because `.git/refs/remotes/origin` is owned by `dingo`; use `git ls-remote` as the authoritative push check.
 
+### GPT-5.6 resume verification — 2026-07-12T21:42:13Z
+
+- Current session model is `gpt-5.6-sol`.
+- Live `GET /api/dpt/staging-health` returned `ok: true`, `activeRepositoryMode: supabase`, and exact counts: 60 events, 80 tournaments, 77 venues, 80 articles, and 25 players.
+- Live `/admin`, `/admin/events`, `/admin/tournaments`, `/admin/venues`, `/admin/articles`, and `/admin/login` returned HTTP 200 in the intentional read-only review mode.
+- Supabase CLI is available through `npx supabase` (verified version 2.109.1), but this Linux user has no Supabase access token. The browser and Vercel CLI are also signed out; do not ask Brook to repeat invite setup or paste credentials.
+- Added `apps/site/tests/admin-auth.test.ts` with nine behavior tests covering fail-closed configuration, invalid credentials, unauthorized users, secure cookie issuance, redirect sanitization, review-mode bypass, missing-cookie redirects, authorized middleware access, and inactive/missing authorization redirects.
+
 ### Current test totals
 
 Latest verified `apps/site` commands for the live integrated public/admin app:
@@ -215,10 +224,10 @@ npm --workspace apps/site run typecheck
 npm --workspace apps/site run build
 ```
 
-Latest observed site output:
+Latest observed site output after the GPT-5.6 auth-transition preflight:
 
 ```text
-Vitest: 2 test files passed, 12 tests passed
+Vitest: 3 test files passed, 21 tests passed
 TypeScript: tsc --noEmit passed
 Next.js production build: compiled successfully; 20 pages generated; admin routes are dynamic
 ```
@@ -252,16 +261,15 @@ Test Files  6 passed (6)
 Tests       31 passed (31)
 ```
 
-## Current known blockers before real Supabase
+## Current known blockers before real admin mutation work
 
-1. Docker/local Supabase is unavailable in the current environment.
-2. `psql` is unavailable in the current environment.
-3. Supabase migrations/RLS/seed have not yet been executed against a real local DB.
-4. Seed profiles are not linked to real `auth.users` rows yet.
-5. Host/manager tournament assignment model is not designed yet.
-6. Audit/tournament-update process needs final shape before production-like admin mutation logging.
-7. Next/PostCSS audit advisories remain unresolved; `npm audit --omit=dev` reports 2 vulnerabilities and suggests a breaking Next 16 upgrade.
-8. Browser screenshot tooling is blocked by missing Chromium dependency `libnspr4.so`; use build output, HTTP status, and content checks until fixed.
+1. Real Supabase-authenticated owner login has not yet been verified with `DPT_ADMIN_REVIEW_MODE=disabled`.
+2. This Hermes Linux user is not authenticated to Supabase or Vercel CLI, so it cannot inspect private project metadata or change deployment environment variables without a future approved credential/session handoff.
+3. Docker/local Supabase and `psql` remain unavailable, although the full migration chain was validated with embedded Postgres and applied to the real staging project through the existing integration.
+4. Host/manager tournament assignment model is not designed yet.
+5. Audit/tournament-update process needs final shape before production-like admin mutation logging.
+6. Next/PostCSS audit advisories remain unresolved; `npm audit --omit=dev` reports 2 vulnerabilities and suggests a breaking Next 16 upgrade.
+7. Local Chromium screenshot tooling remains blocked by missing `libnspr4.so`; live HTTP and browser-stack checks are available.
 
 ## Common commands
 
@@ -295,9 +303,4 @@ After adding/changing route files, the Next dev server has sometimes returned fa
 
 ## Next recommended loop
 
-A good next loop is one of:
-
-1. Add or maintain `PROJECT_STATUS.md` if Brook/Nacho need a fresh executive summary.
-2. Add initial Supabase contract implementation stubs in SQL/TypeScript for the simplest read-only query path.
-3. Prepare Docker/local Supabase execution steps, but only if Docker becomes available.
-4. Start a public-site mock prototype after the admin/API boundary stabilizes.
+The next staging boundary is to temporarily set `DPT_ADMIN_REVIEW_MODE=disabled`, verify Pedro's real Supabase-authenticated `/admin` login and authorization, then decide whether to leave real auth enabled or restore review mode. This requires an authenticated Vercel/Supabase owner session and must not be attempted by asking Brook to paste credentials. Until that boundary is available, continue safe local fidelity work on integrated `apps/site` admin screens without adding writes.

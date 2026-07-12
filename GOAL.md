@@ -121,6 +121,7 @@ Each loop should end with:
 - [x] Audit full Supabase migration chain for production-role parity, Auth identity linkage, RLS, and grants
 - [x] Map the Pedro staging account to the `administrator` role and `view_admin` authorization
 - [x] Configure staging app environment enough for the current no-password read-only admin review mode and verify live `/admin` owner access
+- [x] Add executable real-admin-auth transition tests for fail-closed config, credentials, authorization, cookies, redirects, and middleware gating
 - [ ] Verify real Supabase-authenticated admin login when staging auth is intentionally re-enabled with `DPT_ADMIN_REVIEW_MODE=disabled`
 - [x] Accept Pedro's Supabase team invite for Fastball Productions / `dpt-rebuild-staging`
 - [ ] Rotate all staging/admin passwords and credentials before production go-live; staging rotation is not a development blocker
@@ -133,8 +134,8 @@ Each loop should end with:
 - One replacement application and one Vercel project: `apps/site`.
 - Public routes and authenticated admin routes live in the same Next.js application.
 - Admin target route: `/admin` within `apps/site`.
-- `/admin` is never anonymously/publicly accessible: login is mandatory and only authorized admin-role users may access admin routes or APIs.
-- Do not deploy any admin route until authentication and server-side admin authorization are enforced.
+- The production end state requires login and an authorized admin role for `/admin` and admin APIs.
+- The current staging-only exception is an explicit read-only review mode exposing curated production-derived display data only, with no private rows, secrets, or writes; disable it before real authenticated staging validation and production use.
 - The live production Laravel/AWS site, production SQL, media, and authenticated admin workflows are the source of truth.
 - The final product must use real production-derived data and business rules; mock data is not an acceptable product path.
 - `apps/admin` is reference/prototyping material only and must not be deployed as the target admin.
