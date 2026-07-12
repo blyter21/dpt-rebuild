@@ -127,6 +127,8 @@ Each loop should end with:
 - One replacement application and one Vercel project: `apps/site`.
 - Public routes and authenticated admin routes live in the same Next.js application.
 - Admin target route: `/admin` within `apps/site`.
+- `/admin` is never anonymously/publicly accessible: login is mandatory and only authorized admin-role users may access admin routes or APIs.
+- Do not deploy any admin route until authentication and server-side admin authorization are enforced.
 - The live production Laravel/AWS site, production SQL, media, and authenticated admin workflows are the source of truth.
 - The final product must use real production-derived data and business rules; mock data is not an acceptable product path.
 - `apps/admin` is reference/prototyping material only and must not be deployed as the target admin.

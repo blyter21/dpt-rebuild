@@ -54,6 +54,17 @@ apps/site/app/admin/**
 
 Admin must share the same application, repository/domain layer, deployment, and Supabase backend as the public site.
 
+Hard security requirement:
+
+```text
+No /admin route is anonymously accessible.
+Every admin request requires an authenticated session.
+Only users with an authorized admin role may access admin routes or admin APIs.
+Unauthenticated users are redirected to the login flow.
+Authenticated non-admin users receive no admin access.
+Do not deploy an unprotected admin preview, even if it is read-only.
+```
+
 Expected capabilities eventually include:
 
 ```text
