@@ -1,0 +1,26 @@
+{
+  "source": "prod_dakotapokertour.sql",
+  "outputStoredOutsideGit": true,
+  "counts": {
+    "profiles": 2591,
+    "profile_roles": 2606,
+    "leagues": 2,
+    "seasons": 5,
+    "venues": 78,
+    "events": 82,
+    "tournament_types": 4,
+    "blind_structures": 8,
+    "tournaments": 271,
+    "tournament_entries": 11019,
+    "tournament_entry_addons": 7832,
+    "tournament_updates": 24
+  },
+  "skipped": {
+    "addons_ambiguous_entry_preserved_by_pair": 2
+  },
+  "excludedSensitiveFields": [
+    "archived_details",
+    "password",
+    "remember_token"
+  ]
+}

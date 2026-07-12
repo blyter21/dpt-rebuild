@@ -12,6 +12,7 @@ const migrationFiles = [
   'supabase/migrations/20260712073000_add_pedro_staging_admin.sql',
   'supabase/migrations/20260712074500_fix_security_lints.sql',
   'supabase/migrations/20260712090000_seed_public_snapshot.sql',
+  'supabase/migrations/20260712173000_separate_profiles_auth_identity.sql',
 ];
 
 const db = new PGlite();
@@ -42,9 +43,29 @@ for (const file of migrationFiles) {
   console.log(`applied ${file}`);
 }
 
-const seed = await readFile(new URL('supabase/seed/dpt_public_seed.sql', root), 'utf8');
-await db.exec(seed);
+const seedSql = await readFile(new URL('supabase/seed/dpt_public_seed.sql', root), 'utf8');
+await db.exec(seedSql);
 console.log('applied supabase/seed/dpt_public_seed.sql');
+
+let coreImportCounts = null;
+if (process.env.DPT_VALIDATE_PRIVATE_IMPORT === '1') {
+  const privateImportPath = process.env.DPT_PRIVATE_IMPORT_PATH || '/home/hermes/.hermes/private/dpt/dpt_core_production_import.sql';
+  const privateImportSql = await readFile(privateImportPath, 'utf8');
+  await db.exec(privateImportSql);
+  console.log(`applied protected core import (${privateImportPath})`);
+  const coreResult = await db.query(`
+    select
+      (select count(*)::int from public.profiles) as profiles,
+      (select count(*)::int from public.profile_roles) as profile_roles,
+      (select count(*)::int from public.venues) as venues,
+      (select count(*)::int from public.events) as events,
+      (select count(*)::int from public.tournaments) as tournaments,
+      (select count(*)::int from public.tournament_entries) as tournament_entries,
+      (select count(*)::int from public.tournament_entry_addons) as tournament_entry_addons,
+      (select count(*)::int from public.tournament_updates) as tournament_updates
+  `);
+  coreImportCounts = coreResult.rows[0];
+}
 
 const tableResult = await db.query(`
   select tablename
@@ -100,6 +121,25 @@ const securityResult = await db.query(`
 `);
 const security = securityResult.rows[0];
 
+const profileAuthResult = await db.query(`
+  select
+    exists (
+      select 1 from information_schema.columns
+      where table_schema = 'public' and table_name = 'profiles' and column_name = 'auth_user_id'
+    ) as has_auth_user_id,
+    not exists (
+      select 1 from pg_constraint
+      where conrelid = 'public.profiles'::regclass
+        and conname = 'profiles_id_fkey'
+    ) as profile_id_is_domain_identity,
+    exists (
+      select 1 from public.profiles profile
+      join auth.users auth_user on auth_user.id = profile.auth_user_id
+      where lower(auth_user.email) = 'pedro@fpngaming.com'
+    ) as pedro_auth_link_preserved
+`);
+const profileAuth = profileAuthResult.rows[0];
+
 const countResult = await db.query(`
   select
     (select count(*)::int from public.dpt_public_events) as events,
@@ -117,9 +157,25 @@ if (privileges.anon_profiles_select || privileges.anon_entries_select) throw new
 if (!privileges.anon_public_events_select) throw new Error('Anon cannot read curated public events');
 if (!privileges.authenticated_admin_account_select) throw new Error('Authenticated role cannot read own admin authorization');
 if (!Object.values(security).every(Boolean)) throw new Error(`Security lint assertion failed: ${JSON.stringify(security)}`);
+if (!Object.values(profileAuth).every(Boolean)) throw new Error(`Profile/Auth separation assertion failed: ${JSON.stringify(profileAuth)}`);
 if (Number(counts.admin_accounts) !== 1) throw new Error(`Expected one staging admin mapping, found ${counts.admin_accounts}`);
 if (policies.some((row) => ['profiles', 'tournament_entries', 'tournament_payouts'].includes(row.tablename) && /public/i.test(row.policyname))) {
   throw new Error('Core private table still has a public policy');
+}
+if (coreImportCounts) {
+  const expectedCoreCounts = {
+    profiles: 2591,
+    profile_roles: 2606,
+    venues: 78,
+    events: 82,
+    tournaments: 271,
+    tournament_entries: 11019,
+    tournament_entry_addons: 7832,
+    tournament_updates: 24,
+  };
+  for (const [key, expected] of Object.entries(expectedCoreCounts)) {
+    if (Number(coreImportCounts[key]) !== expected) throw new Error(`Core import count mismatch for ${key}: ${coreImportCounts[key]} != ${expected}`);
+  }
 }
 
 console.log(JSON.stringify({
@@ -128,7 +184,9 @@ console.log(JSON.stringify({
   appRoles,
   privileges,
   security,
+  profileAuth,
   counts,
+  coreImportCounts,
   policyCount: policies.length,
 }, null, 2));
 
