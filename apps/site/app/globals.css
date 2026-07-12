@@ -179,8 +179,11 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-nav { max-width: 1480px; margin: 0 auto 18px; display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border: 1px solid #dbe1ea; border-radius: 14px; background: #fff; }
 .dpt-admin-nav a { padding: 10px 14px; border-radius: 9px; color: #334155; font-size: 13px; font-weight: 900; }
 .dpt-admin-nav a:hover, .dpt-admin-nav a.active { background: #172033; color: #fff; }
-.dpt-admin-nav a:last-child { margin-left: auto; color: var(--red); }
-.dpt-admin-nav a:last-child:hover { color: #fff; background: var(--red); }
+.dpt-admin-nav .dpt-admin-public-link { margin-left: auto; color: var(--red); }
+.dpt-admin-nav .dpt-admin-public-link:hover { color: #fff; background: var(--red); }
+.dpt-admin-logout { margin: 0; }
+.dpt-admin-logout button { height: 100%; padding: 10px 14px; border: 0; border-radius: 9px; background: #e2e8f0; color: #334155; font: inherit; font-size: 13px; font-weight: 900; cursor: pointer; }
+.dpt-admin-logout button:hover { background: #334155; color: #fff; }
 .dpt-admin-content { max-width: 1480px; margin: 0 auto; }
 .dpt-admin-section-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; margin: 26px 0 18px; }
 .dpt-admin-section-head span, .dpt-admin-panel-label { color: #64748b; text-transform: uppercase; letter-spacing: .09em; font-size: 11px; font-weight: 900; }
@@ -207,6 +210,23 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-table td strong, .dpt-admin-table td small { display: block; }
 .dpt-admin-table td small { max-width: 420px; margin-top: 4px; color: #64748b; overflow-wrap: anywhere; }
 .dpt-admin-table td a { color: var(--red); font-weight: 900; }
+.dpt-admin-login-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top left, #334155, #0f172a 58%); }
+.dpt-admin-login-card { width: min(460px, 100%); padding: 30px; border-radius: 22px; background: #fff; box-shadow: 0 24px 70px rgba(0,0,0,.35); }
+.dpt-admin-login-card h1 { margin: 8px 0 8px; color: #172033; font-size: 38px; line-height: 1; text-transform: none; }
+.dpt-admin-login-card > p { margin: 0 0 20px; color: #64748b; }
+.dpt-admin-login-locked, .dpt-admin-login-error, .dpt-admin-login-notes { display: grid; gap: 4px; margin: 15px 0; padding: 13px; border-radius: 11px; font-size: 13px; line-height: 1.45; }
+.dpt-admin-login-locked { border: 1px solid #f2c86b; background: #fff8e6; color: #6b4b05; }
+.dpt-admin-login-error { border: 1px solid #f3a6a6; background: #fff0f0; color: #991b1b; }
+.dpt-admin-login-notes { border: 1px solid #cbd5e1; background: #f8fafc; color: #475569; }
+.dpt-admin-login-form { display: grid; gap: 9px; }
+.dpt-admin-login-form label { color: #334155; font-size: 13px; font-weight: 900; }
+.dpt-admin-login-form input[type='email'], .dpt-admin-login-form input[type='password'] { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 9px; font: inherit; }
+.dpt-admin-login-form input:focus { outline: 3px solid rgba(237,28,36,.18); border-color: var(--red); }
+.dpt-admin-login-form input:disabled { background: #e2e8f0; cursor: not-allowed; }
+.dpt-admin-remember { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-weight: 700 !important; }
+.dpt-admin-login-form button { min-height: 48px; border: 0; border-radius: 9px; background: var(--red); color: #fff; font: inherit; font-weight: 900; cursor: pointer; }
+.dpt-admin-login-form button:disabled { background: #94a3b8; cursor: not-allowed; }
+.dpt-admin-login-card > a { display: inline-block; margin-top: 10px; color: var(--red); font-weight: 900; }
 @media (max-width: 900px) {
   .dpt-admin-app { padding: 12px; }
   .dpt-admin-header, .dpt-admin-section-head, .dpt-admin-safety { display: block; }

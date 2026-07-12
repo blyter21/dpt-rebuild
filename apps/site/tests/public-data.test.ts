@@ -138,27 +138,51 @@ describe('DPT public replacement data extract', () => {
     expect(read('../../package.json')).toContain('dpt:media:storage-plan');
   });
 
-  it('integrates read-only production-data administration into apps/site', () => {
-    const routes = [
-      'app/admin/page.tsx',
-      'app/admin/layout.tsx',
-      'app/admin/events/page.tsx',
-      'app/admin/tournaments/page.tsx',
-      'app/admin/venues/page.tsx',
-      'app/admin/articles/page.tsx',
+  it('integrates authenticated production-data administration into apps/site', () => {
+    const protectedRoutes = [
+      'app/admin/(protected)/page.tsx',
+      'app/admin/(protected)/layout.tsx',
+      'app/admin/(protected)/events/page.tsx',
+      'app/admin/(protected)/tournaments/page.tsx',
+      'app/admin/(protected)/venues/page.tsx',
+      'app/admin/(protected)/articles/page.tsx',
     ];
-    for (const route of routes) expect(existsSync(join(process.cwd(), route))).toBe(true);
+    const authRoutes = [
+      'app/admin/login/page.tsx',
+      'app/api/admin/auth/login/route.ts',
+      'app/api/admin/auth/logout/route.ts',
+    ];
+    for (const route of [...protectedRoutes, ...authRoutes, 'app/admin/layout.tsx']) {
+      expect(existsSync(join(process.cwd(), route))).toBe(true);
+    }
 
-    const adminSource = routes.map(read).join('\n') + read('components/admin.tsx') + read('lib/dpt-admin-repository.ts');
+    const adminSource = protectedRoutes.map(read).join('\n') + read('components/admin.tsx') + read('lib/dpt-admin-repository.ts');
+    const authSource = authRoutes.map(read).join('\n') + read('lib/dpt-admin-auth.ts');
+    const authMigration = read('../../supabase/migrations/20260712033000_dpt_admin_auth.sql');
+
     expect(adminSource).toContain('Production-derived data');
     expect(adminSource).toContain('getDptAdminSnapshot');
     expect(adminSource).toContain('dpt_tournament_players');
-    expect(adminSource).toContain('Supabase Auth and write operations are not connected yet');
     expect(adminSource).not.toContain('mock-route');
     expect(adminSource).not.toContain('mockPlayers');
     expect(adminSource).not.toContain('password_resets');
     expect(adminSource).not.toContain('users_otp_auth');
     expect(adminSource).not.toContain('personal_access_tokens');
+
+    expect(read('app/admin/(protected)/layout.tsx')).toContain('requireDptAdminSession');
+    expect(read('app/admin/(protected)/layout.tsx')).toContain("dynamic = 'force-dynamic'");
+    expect(authSource).toContain("type=\"email\"");
+    expect(authSource).toContain("type=\"password\"");
+    expect(authSource).toContain('/auth/v1/token?grant_type=password');
+    expect(authSource).toContain('can_view_admin');
+    expect(authSource).toContain("redirect('/admin/login?next=/admin')");
+    expect(authSource).not.toContain('SUPABASE_SERVICE_ROLE_KEY');
+
+    expect(authMigration).toContain('create table if not exists public.dpt_admin_accounts');
+    expect(authMigration).toContain("'super admin', 'administrator', 'host', 'venue'");
+    expect(authMigration).toContain('enable row level security');
+    expect(authMigration).toContain('auth_user_id = auth.uid()');
+    expect(authMigration).toContain('dpt_current_user_can_view_admin');
     expect(read('app/admin/layout.tsx')).toContain('index: false');
     expect(data.events[0].name).toContain('Poker Brat Black Chip BOUNTY Tournament');
     expect(data.tournaments[0].name).toBe('Black Chip Bounty');

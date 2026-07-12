@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { AdminSectionHeader, AdminShell } from '../../../components/admin';
-import { getDptAdminSnapshot } from '../../../lib/dpt-admin-repository';
+import { AdminSectionHeader, AdminShell } from '../../../../components/admin';
+import { getDptAdminSnapshot } from '../../../../lib/dpt-admin-repository';
 
 export default async function AdminVenuesPage() {
   const snapshot = await getDptAdminSnapshot();

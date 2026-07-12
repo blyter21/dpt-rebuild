@@ -49,7 +49,10 @@ export function AdminShell({
             {item.label}
           </Link>
         ))}
-        <Link href="/">View public site</Link>
+        <Link href="/" className="dpt-admin-public-link">View public site</Link>
+        <form action="/api/admin/auth/logout" method="post" className="dpt-admin-logout">
+          <button type="submit">Sign out</button>
+        </form>
       </nav>
 
       <section className="dpt-admin-content">{children}</section>

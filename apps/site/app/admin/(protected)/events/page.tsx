@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { AdminSectionHeader, AdminShell } from '../../../components/admin';
-import { displayText, formatDateRange } from '../../../lib/dpt-data';
-import { getDptAdminSnapshot } from '../../../lib/dpt-admin-repository';
+import { AdminSectionHeader, AdminShell } from '../../../../components/admin';
+import { displayText, formatDateRange } from '../../../../lib/dpt-data';
+import { getDptAdminSnapshot } from '../../../../lib/dpt-admin-repository';
 
 export default async function AdminEventsPage() {
   const snapshot = await getDptAdminSnapshot();

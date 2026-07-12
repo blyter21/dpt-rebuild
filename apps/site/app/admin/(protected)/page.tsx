@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { AdminMetric, AdminSectionHeader, AdminShell } from '../../components/admin';
-import { getDptAdminSnapshot } from '../../lib/dpt-admin-repository';
+import { AdminMetric, AdminSectionHeader, AdminShell } from '../../../components/admin';
+import { getDptAdminSnapshot } from '../../../lib/dpt-admin-repository';
 
 export default async function AdminDashboardPage() {
   const snapshot = await getDptAdminSnapshot();
