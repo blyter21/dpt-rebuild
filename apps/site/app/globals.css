@@ -227,6 +227,7 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-login-form button { min-height: 48px; border: 0; border-radius: 9px; background: var(--red); color: #fff; font: inherit; font-weight: 900; cursor: pointer; }
 .dpt-admin-login-form button:disabled { background: #94a3b8; cursor: not-allowed; }
 .dpt-admin-login-card > a { display: inline-block; margin-top: 10px; color: var(--red); font-weight: 900; }
+.dpt-admin-preview-link { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; margin-top: 8px; padding: 10px 14px; border-radius: 9px; background: var(--red); color: #fff; font-weight: 900; text-decoration: none; }
 @media (max-width: 900px) {
   .dpt-admin-app { padding: 12px; }
   .dpt-admin-header, .dpt-admin-section-head, .dpt-admin-safety { display: block; }

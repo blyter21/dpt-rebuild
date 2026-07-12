@@ -15,6 +15,7 @@ export type DptAdminAccount = {
 export type DptAdminSession = {
   user: { id: string; email?: string };
   account: DptAdminAccount;
+  mode: 'authenticated' | 'read-only-review';
 };
 
 export function getDptAdminAuthConfig() {
@@ -28,7 +29,26 @@ export function isDptAdminAuthConfigured() {
   return Boolean(getDptAdminAuthConfig());
 }
 
+export function isDptAdminReadOnlyReviewEnabled() {
+  return process.env.DPT_ADMIN_REVIEW_MODE === 'public' || process.env.DPT_DATA_SOURCE !== 'supabase';
+}
+
+function getDptAdminReviewSession(): DptAdminSession {
+  return {
+    user: { id: 'read-only-review', email: 'review@dakotapokertour.local' },
+    account: {
+      legacy_user_id: 0,
+      role_name: 'administrator',
+      can_view_admin: true,
+      is_active: true,
+    },
+    mode: 'read-only-review',
+  };
+}
+
 export async function getDptAdminSession(): Promise<DptAdminSession | null> {
+  if (isDptAdminReadOnlyReviewEnabled()) return getDptAdminReviewSession();
+
   const config = getDptAdminAuthConfig();
   const accessToken = cookies().get(DPT_ADMIN_ACCESS_COOKIE)?.value;
   if (!config || !accessToken) return null;
@@ -56,7 +76,7 @@ export async function getDptAdminSession(): Promise<DptAdminSession | null> {
   const accounts = (await accountResponse.json()) as DptAdminAccount[];
   if (!accounts[0]?.can_view_admin || !accounts[0].is_active) return null;
 
-  return { user: { id: user.id, email: user.email }, account: accounts[0] };
+  return { user: { id: user.id, email: user.email }, account: accounts[0], mode: 'authenticated' };
 }
 
 export async function requireDptAdminSession() {

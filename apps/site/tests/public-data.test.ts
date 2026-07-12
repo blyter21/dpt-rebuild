@@ -175,6 +175,8 @@ describe('DPT public replacement data extract', () => {
     expect(authSource).toContain("type=\"password\"");
     expect(authSource).toContain('/auth/v1/token?grant_type=password');
     expect(authSource).toContain('can_view_admin');
+    expect(authSource).toContain('isDptAdminReadOnlyReviewEnabled');
+    expect(authSource).toContain('Read-only review mode');
     expect(authSource).toContain("redirect('/admin/login?next=/admin')");
     expect(authSource).not.toContain('SUPABASE_SERVICE_ROLE_KEY');
 

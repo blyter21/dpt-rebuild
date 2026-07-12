@@ -3,6 +3,10 @@ import { buildSupabaseHeaders } from './lib/supabase-http';
 
 const ACCESS_COOKIE = 'dpt_admin_access_token';
 
+function readOnlyAdminReviewEnabled() {
+  return process.env.DPT_ADMIN_REVIEW_MODE === 'public' || process.env.DPT_DATA_SOURCE !== 'supabase';
+}
+
 function adminLoginRedirect(request: NextRequest) {
   const login = new URL('/admin/login', request.url);
   login.searchParams.set('next', request.nextUrl.pathname);
@@ -12,6 +16,7 @@ function adminLoginRedirect(request: NextRequest) {
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   if (pathname === '/admin/login') return NextResponse.next();
+  if (readOnlyAdminReviewEnabled()) return NextResponse.next();
 
   const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
