@@ -115,6 +115,8 @@ Primary docs:
 | `loop-logs/077-vercel-preview-poy-polish.md` | Public preview polish for Player of the Year strip overflow/clipping. |
 | `loop-logs/078-admin-simulator-preview-package.md` | Historical admin simulator preview packaging; superseded as product direction by loop 079. |
 | `loop-logs/079-correct-integrated-product-architecture.md` | Authoritative correction: single apps/site project, integrated real-data `/admin`, no mock product path. |
+| `loop-logs/080-integrated-real-data-admin-foundation.md` | Integrated read-only `/admin` routes in apps/site using production-derived SQL data. |
+| `reports/dpt-integrated-admin-foundation-verification.md` | Tests/build/HTTP/browser evidence for integrated real-data admin foundation. |
 | `docs/DPT_INTEGRATED_PRODUCT_DIRECTION.md` | Authoritative public/admin/Supabase architecture and migration direction. |
 | `docs/DPT_PRODUCTION_SQL_SOURCE.md` | Protected durable SQL source location, checksum, permissions, and extraction behavior. |
 | `reports/dpt-public-interactive-qa.md` | Interactive QA report for homepage, public routes, video links, icons, and console state. |

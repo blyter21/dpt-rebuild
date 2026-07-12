@@ -163,3 +163,57 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .poy-scroll::-webkit-scrollbar-thumb { background: rgba(237, 28, 36, .35); border-radius: 999px; }
 @media (min-width: 801px) and (max-width: 1259px) { .poy-strip { margin-inline: 18px; } }
 @media (max-width: 520px) { .poy-tile { flex-basis: 190px; grid-template-columns: 32px 44px minmax(0, 1fr); padding: 10px 9px; } .leader-avatar { width: 44px; height: 44px; } }
+
+/* Integrated production-data administration */
+.dpt-admin-app { min-height: 100vh; padding: 28px; background: #f1f4f7; color: #172033; }
+.dpt-admin-header { max-width: 1480px; margin: 0 auto; display: flex; justify-content: space-between; gap: 30px; align-items: flex-start; padding: 28px; border-radius: 22px; background: linear-gradient(135deg, #111827, #26344f); color: #fff; box-shadow: 0 18px 48px rgba(15,23,42,.18); }
+.dpt-admin-header h1 { margin: 7px 0 8px; font-size: clamp(32px, 4vw, 52px); line-height: 1; text-transform: none; }
+.dpt-admin-header p { max-width: 680px; margin: 0; color: #cbd5e1; line-height: 1.5; }
+.dpt-admin-eyebrow { color: #fbbf24; text-transform: uppercase; letter-spacing: .13em; font-size: 12px; font-weight: 900; }
+.dpt-admin-source { min-width: 270px; display: grid; gap: 5px; padding: 15px; border: 1px solid rgba(255,255,255,.16); border-radius: 14px; background: rgba(255,255,255,.07); }
+.dpt-admin-source strong { color: #86efac; }
+.dpt-admin-source span { color: #cbd5e1; font-size: 12px; }
+.dpt-admin-safety { max-width: 1480px; margin: 16px auto; display: flex; gap: 12px; align-items: center; padding: 13px 16px; border: 1px solid #f7c873; border-radius: 13px; background: #fff8e6; color: #6b4b05; }
+.dpt-admin-safety strong { white-space: nowrap; }
+.dpt-admin-safety span { font-size: 13px; }
+.dpt-admin-nav { max-width: 1480px; margin: 0 auto 18px; display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border: 1px solid #dbe1ea; border-radius: 14px; background: #fff; }
+.dpt-admin-nav a { padding: 10px 14px; border-radius: 9px; color: #334155; font-size: 13px; font-weight: 900; }
+.dpt-admin-nav a:hover, .dpt-admin-nav a.active { background: #172033; color: #fff; }
+.dpt-admin-nav a:last-child { margin-left: auto; color: var(--red); }
+.dpt-admin-nav a:last-child:hover { color: #fff; background: var(--red); }
+.dpt-admin-content { max-width: 1480px; margin: 0 auto; }
+.dpt-admin-section-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; margin: 26px 0 18px; }
+.dpt-admin-section-head span, .dpt-admin-panel-label { color: #64748b; text-transform: uppercase; letter-spacing: .09em; font-size: 11px; font-weight: 900; }
+.dpt-admin-section-head h2 { margin: 5px 0 0; font-size: 30px; }
+.dpt-admin-section-head p { margin: 7px 0 0; color: #64748b; }
+.dpt-admin-section-head > strong { color: #475569; }
+.dpt-admin-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.dpt-admin-metric, .dpt-admin-panel { border: 1px solid #dbe1ea; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(15,23,42,.06); }
+.dpt-admin-metric { padding: 18px; }
+.dpt-admin-metric span { color: #64748b; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; }
+.dpt-admin-metric strong { display: block; margin: 8px 0 5px; color: #172033; font-size: 30px; }
+.dpt-admin-metric p, .dpt-admin-panel p, .dpt-admin-panel li { color: #64748b; font-size: 13px; line-height: 1.5; }
+.dpt-admin-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+.dpt-admin-panel { padding: 20px; }
+.dpt-admin-panel h3 { margin: 7px 0 10px; font-size: 22px; }
+.dpt-admin-module-links { display: grid; gap: 8px; margin-top: 14px; }
+.dpt-admin-module-links a { display: flex; justify-content: space-between; gap: 20px; padding: 12px; border-radius: 10px; background: #f1f5f9; font-weight: 900; }
+.dpt-admin-module-links a:hover { color: var(--red); }
+.dpt-admin-table-wrap { overflow-x: auto; border: 1px solid #dbe1ea; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(15,23,42,.06); }
+.dpt-admin-table { width: 100%; min-width: 920px; border-collapse: collapse; }
+.dpt-admin-table th, .dpt-admin-table td { padding: 12px 14px; border-bottom: 1px solid #e7ebf0; text-align: left; vertical-align: top; font-size: 13px; }
+.dpt-admin-table th { position: sticky; top: 0; background: #172033; color: #fff; text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
+.dpt-admin-table tbody tr:hover { background: #f8fafc; }
+.dpt-admin-table td strong, .dpt-admin-table td small { display: block; }
+.dpt-admin-table td small { max-width: 420px; margin-top: 4px; color: #64748b; overflow-wrap: anywhere; }
+.dpt-admin-table td a { color: var(--red); font-weight: 900; }
+@media (max-width: 900px) {
+  .dpt-admin-app { padding: 12px; }
+  .dpt-admin-header, .dpt-admin-section-head, .dpt-admin-safety { display: block; }
+  .dpt-admin-source { margin-top: 18px; min-width: 0; }
+  .dpt-admin-safety strong, .dpt-admin-safety span { display: block; }
+  .dpt-admin-safety span { margin-top: 5px; }
+  .dpt-admin-nav a:last-child { margin-left: 0; }
+  .dpt-admin-metrics, .dpt-admin-grid { grid-template-columns: 1fr; }
+  .dpt-admin-section-head > strong { display: block; margin-top: 8px; }
+}

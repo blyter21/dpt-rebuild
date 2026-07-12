@@ -137,4 +137,30 @@ describe('DPT public replacement data extract', () => {
     expect(read('../../reports/dpt-media-storage-migration-plan.md')).toContain('No upload performed');
     expect(read('../../package.json')).toContain('dpt:media:storage-plan');
   });
+
+  it('integrates read-only production-data administration into apps/site', () => {
+    const routes = [
+      'app/admin/page.tsx',
+      'app/admin/layout.tsx',
+      'app/admin/events/page.tsx',
+      'app/admin/tournaments/page.tsx',
+      'app/admin/venues/page.tsx',
+      'app/admin/articles/page.tsx',
+    ];
+    for (const route of routes) expect(existsSync(join(process.cwd(), route))).toBe(true);
+
+    const adminSource = routes.map(read).join('\n') + read('components/admin.tsx') + read('lib/dpt-admin-repository.ts');
+    expect(adminSource).toContain('Production-derived data');
+    expect(adminSource).toContain('getDptAdminSnapshot');
+    expect(adminSource).toContain('dpt_tournament_players');
+    expect(adminSource).toContain('Supabase Auth and write operations are not connected yet');
+    expect(adminSource).not.toContain('mock-route');
+    expect(adminSource).not.toContain('mockPlayers');
+    expect(adminSource).not.toContain('password_resets');
+    expect(adminSource).not.toContain('users_otp_auth');
+    expect(adminSource).not.toContain('personal_access_tokens');
+    expect(read('app/admin/layout.tsx')).toContain('index: false');
+    expect(data.events[0].name).toContain('Poker Brat Black Chip BOUNTY Tournament');
+    expect(data.tournaments[0].name).toBe('Black Chip Bounty');
+  });
 });

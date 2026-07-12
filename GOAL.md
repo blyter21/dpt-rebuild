@@ -116,8 +116,9 @@ Each loop should end with:
 - [x] Prepare Vercel preview package/preflight without deploying
 - [ ] Execute Supabase public schema/seed against a local Docker/Postgres runtime
 - [ ] Create/connect a Supabase staging project for the real DPT replacement database
-- [ ] Integrate authenticated admin routes into `apps/site` under `/admin` in the same Next.js/Vercel project
-- [ ] Rebuild admin workflows from the live production admin and production-derived schema/data
+- [x] Integrate read-only production-derived admin routes into `apps/site` under `/admin` in the same Next.js/Vercel project
+- [ ] Add Supabase Auth and protected admin roles to the integrated `/admin` routes
+- [ ] Rebuild real admin mutations from live production workflows and production-derived schema/data
 - [ ] Replace JSON fallback with Supabase-backed reads/writes after staging validation
 - [x] Preserve `apps/admin` simulator only as historical workflow/reference material (not a deployment target)
 
