@@ -117,6 +117,8 @@ Primary docs:
 | `loop-logs/079-correct-integrated-product-architecture.md` | Authoritative correction: single apps/site project, integrated real-data `/admin`, no mock product path. |
 | `loop-logs/080-integrated-real-data-admin-foundation.md` | Integrated read-only `/admin` routes in apps/site using production-derived SQL data. |
 | `loop-logs/081-faithful-admin-auth-foundation.md` | Legacy-auth parity audit plus fail-closed Supabase email/password admin login and role gate. |
+| `loop-logs/082-supabase-migration-safety-audit.md` | Full migration-chain audit and embedded Postgres/RLS/grant validation before remote apply. |
+| `reports/dpt-supabase-migration-audit.md` | Corrected role/Auth/RLS/grant issues and full validation evidence. |
 | `docs/DPT_ADMIN_AUTH_PARITY.md` | Exact public-vs-admin login behavior, production role inventory, and replacement auth contract. |
 | `reports/dpt-integrated-admin-foundation-verification.md` | Tests/build/HTTP/browser evidence for integrated real-data admin foundation. |
 | `docs/DPT_INTEGRATED_PRODUCT_DIRECTION.md` | Authoritative public/admin/Supabase architecture and migration direction. |

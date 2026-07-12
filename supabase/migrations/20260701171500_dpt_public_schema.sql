@@ -216,3 +216,18 @@ begin
     create policy "dpt public read media" on public.dpt_media_assets for select using (true);
   end if;
 end $$;
+
+grant select on table
+  public.dpt_public_venues,
+  public.dpt_public_events,
+  public.dpt_public_tournaments,
+  public.dpt_public_articles,
+  public.dpt_public_players,
+  public.dpt_public_leaderboard_entries,
+  public.dpt_public_champions,
+  public.dpt_public_videos,
+  public.dpt_media_assets,
+  public.dpt_public_event_cards,
+  public.dpt_public_tournament_details,
+  public.dpt_public_homepage
+to anon, authenticated;

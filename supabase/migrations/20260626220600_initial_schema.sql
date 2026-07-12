@@ -5,7 +5,7 @@ create extension if not exists pgcrypto;
 
 create type public.tournament_type_code as enum ('dpt_standard', 'satellite', 'freeroll', 'flight');
 create type public.chip_carryover_mode as enum ('highest', 'sum');
-create type public.app_role as enum ('super_admin', 'admin', 'manager', 'host', 'player');
+create type public.app_role as enum ('super_admin', 'administrator', 'host', 'venue', 'user');
 
 create or replace function public.set_updated_at()
 returns trigger
@@ -18,7 +18,8 @@ end;
 $$;
 
 create table public.profiles (
-  id uuid primary key default gen_random_uuid(),
+  id uuid primary key references auth.users(id) on delete cascade,
+  legacy_user_id bigint unique,
   first_name text,
   last_name text,
   nick_name text,
