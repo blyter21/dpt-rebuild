@@ -8,6 +8,7 @@ const migrationFiles = [
   'supabase/migrations/20260626221000_rls_helpers_and_policies.sql',
   'supabase/migrations/20260701171500_dpt_public_schema.sql',
   'supabase/migrations/20260712033000_dpt_admin_auth.sql',
+  'supabase/migrations/20260712070000_staging_deploy_marker.sql',
 ];
 
 const db = new PGlite();
