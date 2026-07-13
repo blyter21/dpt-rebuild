@@ -76,9 +76,9 @@ Production `/admin/blinds` includes:
 - Edit and View actions
 - Seven current blind structures
 
-## Role boundary discovered
+## Full-access reference-session blocker
 
-The current authenticated administrator receives `403 — YOU DON'T HAVE ENOUGH PERMISSIONS` for `/admin/payoutdistributions`, while `/admin/blinds` is permitted. The rebuild must model this permission difference explicitly rather than treating all administrators as unrestricted.
+The current authenticated production session receives `403 — YOU DON'T HAVE ENOUGH PERMISSIONS` for `/admin/payoutdistributions`. This is **not accepted as intended behavior** for the replication account. The local production-derived role data shows Pedro has `administrator` + `user`, while `super admin` is a separate role; Pedro also lacks at least `delete_tournaments`. A full-access owner/super-admin production session is required before backend inventory can be considered complete. No production permission changes will be made by the agent.
 
 ## Backend acceptance gates
 
