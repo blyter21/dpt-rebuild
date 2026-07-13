@@ -45,7 +45,14 @@ export function Header() {
           <span className="brand-logo-block"><img className="brand-logo" src={mediaUrl("https://dakotapokertour.com/images/logo.png")} alt="Dakota Poker Tour" /></span>
         </Link>
         <nav className="main-nav" aria-label="Dakota Poker Tour navigation">
-          <Link href="/events">Events</Link>
+          <div className="nav-dropdown">
+            <Link href="/upcomingEvents">Events <span aria-hidden="true">⌄</span></Link>
+            <div className="nav-dropdown-menu">
+              <Link href="/upcomingEvents">Upcoming Events</Link>
+              <Link href="/pastEvents">Past Events</Link>
+              <Link href="/calendar">Calendar</Link>
+            </div>
+          </div>
           <Link href="/news">News</Link>
           <Link href="/videos">Videos</Link>
           <Link href="/venues">Venues</Link>

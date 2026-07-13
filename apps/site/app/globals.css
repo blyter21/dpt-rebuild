@@ -25,6 +25,12 @@ img { max-width: 100%; }
 .main-nav { display: flex; align-items: center; gap: 15px; flex-wrap: nowrap; justify-content: flex-start; font-size: 12px; font-weight: 900; text-transform: uppercase; color: #222; }
 .main-nav a { padding: 34px 0 30px; border-bottom: 3px solid transparent; }
 .main-nav a:hover { color: var(--red); border-color: var(--red); }
+.nav-dropdown { position: relative; align-self: stretch; display: flex; align-items: center; }
+.nav-dropdown > a { display: flex; align-items: center; gap: 4px; }
+.nav-dropdown-menu { position: absolute; top: calc(100% - 1px); left: -18px; min-width: 190px; padding: 8px; border: 1px solid #eadfd0; border-radius: 0 0 10px 10px; background: var(--cream); box-shadow: 0 14px 30px rgba(0,0,0,.14); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .16s ease, transform .16s ease, visibility .16s; }
+.nav-dropdown-menu a { display: block; padding: 11px 12px; border: 0; border-radius: 6px; white-space: nowrap; }
+.nav-dropdown-menu a:hover, .nav-dropdown-menu a:focus-visible { background: #fff; color: var(--red); }
+.nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .join-btn, .updates-btn { display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; border-radius: 6px; padding: 10px 13px; font-size: 12px; font-weight: 900; text-transform: none; }
 .join-btn { background: var(--red); color: #fff; box-shadow: 0 5px 12px rgba(237,28,36,.32); }
