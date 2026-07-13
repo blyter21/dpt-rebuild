@@ -3,6 +3,7 @@ import mediaManifest from '../data/dpt-media-manifest.json';
 
 export type DptData = typeof data;
 export type LeaderboardPlayer = DptData['leaderboard'][number];
+export type PublicPlayer = DptData['players'][number];
 export type PublicEvent = DptData['events'][number];
 export type PublicTournament = DptData['tournaments'][number];
 export type PublicArticle = DptData['articles'][number];

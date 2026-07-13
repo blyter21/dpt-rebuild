@@ -210,6 +210,31 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-table td strong, .dpt-admin-table td small { display: block; }
 .dpt-admin-table td small { max-width: 420px; margin-top: 4px; color: #64748b; overflow-wrap: anywhere; }
 .dpt-admin-table td a { color: var(--red); font-weight: 900; }
+.players-directory { display: grid; gap: 16px; }
+.players-directory-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; padding: 15px; border: 1px solid #dbe1ea; border-radius: 12px; background: #fff; }
+.players-directory-controls label { display: grid; gap: 5px; color: #475569; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }
+.players-directory-controls input, .players-directory-controls select { min-height: 42px; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; font: inherit; }
+.players-directory-controls input { width: min(320px, 75vw); }
+.players-directory-controls > strong { margin-left: auto; padding-bottom: 11px; color: #475569; }
+.table-scroll { overflow-x: auto; }
+.players-table { min-width: 760px; }
+.players-table td:first-child strong, .players-table td:first-child small { display: block; }
+.players-table td:first-child a { color: var(--red); }
+.players-table td:first-child small { margin-top: 3px; color: #64748b; }
+.players-pagination { display: flex; justify-content: center; align-items: center; gap: 14px; }
+.players-pagination button { padding: 9px 15px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: #172033; font-weight: 900; cursor: pointer; }
+.players-pagination button:disabled { opacity: .45; cursor: not-allowed; }
+.player-profile { display: grid; gap: 20px; }
+.player-profile-card { display: flex; align-items: center; gap: 20px; padding: 22px; border: 1px solid #dbe1ea; border-radius: 16px; background: #fff; }
+.player-profile-card img, .player-profile-placeholder { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; }
+.player-profile-placeholder { display: grid; place-items: center; background: #172033; color: #fff; font-size: 44px; font-weight: 900; }
+.player-profile-card h2 { margin: 5px 0; }
+.player-profile-card p { margin: 0; color: #64748b; }
+.player-profile-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.player-profile-stats > div { padding: 17px; border: 1px solid #dbe1ea; border-radius: 12px; background: #fff; }
+.player-profile-stats span, .player-profile-stats strong { display: block; }
+.player-profile-stats span { color: #64748b; font-size: 11px; font-weight: 900; text-transform: uppercase; }
+.player-profile-stats strong { margin-top: 8px; color: #172033; font-size: 24px; }
 .dpt-admin-login-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top left, #334155, #0f172a 58%); }
 .dpt-admin-login-card { width: min(460px, 100%); padding: 30px; border-radius: 22px; background: #fff; box-shadow: 0 24px 70px rgba(0,0,0,.35); }
 .dpt-admin-login-card h1 { margin: 8px 0 8px; color: #172033; font-size: 38px; line-height: 1; text-transform: none; }
@@ -229,6 +254,9 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-login-card > a { display: inline-block; margin-top: 10px; color: var(--red); font-weight: 900; }
 .dpt-admin-preview-link { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; margin-top: 8px; padding: 10px 14px; border-radius: 9px; background: var(--red); color: #fff; font-weight: 900; text-decoration: none; }
 @media (max-width: 900px) {
+  .players-directory-controls > strong { width: 100%; margin-left: 0; padding-bottom: 0; }
+  .player-profile-card { align-items: flex-start; }
+  .player-profile-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dpt-admin-app { padding: 12px; }
   .dpt-admin-header, .dpt-admin-section-head, .dpt-admin-safety { display: block; }
   .dpt-admin-source { margin-top: 18px; min-width: 0; }

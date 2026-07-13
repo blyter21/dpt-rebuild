@@ -13,6 +13,8 @@ const migrationFiles = [
   'supabase/migrations/20260712074500_fix_security_lints.sql',
   'supabase/migrations/20260712090000_seed_public_snapshot.sql',
   'supabase/migrations/20260712173000_separate_profiles_auth_identity.sql',
+  'supabase/migrations/20260712192000_add_public_player_alias.sql',
+  'supabase/migrations/20260712193000_refresh_full_public_dataset.sql',
 ];
 
 const db = new PGlite();
@@ -159,6 +161,10 @@ if (!privileges.authenticated_admin_account_select) throw new Error('Authenticat
 if (!Object.values(security).every(Boolean)) throw new Error(`Security lint assertion failed: ${JSON.stringify(security)}`);
 if (!Object.values(profileAuth).every(Boolean)) throw new Error(`Profile/Auth separation assertion failed: ${JSON.stringify(profileAuth)}`);
 if (Number(counts.admin_accounts) !== 1) throw new Error(`Expected one staging admin mapping, found ${counts.admin_accounts}`);
+const expectedPublicCounts = { events: 80, tournaments: 261, venues: 78, articles: 383, players: 2369 };
+for (const [key, expected] of Object.entries(expectedPublicCounts)) {
+  if (Number(counts[key]) !== expected) throw new Error(`Public data count mismatch for ${key}: ${counts[key]} != ${expected}`);
+}
 if (policies.some((row) => ['profiles', 'tournament_entries', 'tournament_payouts'].includes(row.tablename) && /public/i.test(row.policyname))) {
   throw new Error('Core private table still has a public policy');
 }

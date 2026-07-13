@@ -1,4 +1,5 @@
 import { data, type DptData, videoArticles } from './dpt-data';
+import { buildSupabaseHeaders } from './supabase-http';
 
 type MaybePromise<T> = T | Promise<T>;
 
@@ -15,6 +16,8 @@ export type DptPublicRepository = {
   getArticles(): MaybePromise<DptData['articles']>;
   getArticlesForTournament(alias: string): MaybePromise<DptData['articles']>;
   getVenues(): MaybePromise<DptData['venues']>;
+  getPlayers(): MaybePromise<DptData['players']>;
+  getPlayerByAlias(alias: string): MaybePromise<DptData['players'][number] | undefined>;
   getLeaderboard(): MaybePromise<DptData['leaderboard']>;
   getChampions(): MaybePromise<DptData['champions']>;
   getVideos(): MaybePromise<NonNullable<DptData['videos']>>;
@@ -49,6 +52,12 @@ export const localDptRepository: DptPublicRepository = {
   },
   getVenues() {
     return data.venues;
+  },
+  getPlayers() {
+    return data.players;
+  },
+  getPlayerByAlias(alias: string) {
+    return data.players.find((player) => player.alias === alias || String(player.playerId) === alias);
   },
   getLeaderboard() {
     return data.leaderboard;
@@ -125,6 +134,25 @@ function leaderboardFromRow(row: Record<string, unknown>): DptData['leaderboard'
   };
 }
 
+function playerFromRow(row: Record<string, unknown>): DptData['players'][number] {
+  const item = raw<DptData['players'][number]>(row);
+  return {
+    ...item,
+    playerId: Number(row.legacy_id ?? item.playerId),
+    alias: String(row.alias ?? item.alias ?? ''),
+    name: String(row.display_name ?? item.name ?? ''),
+    city: String(row.city ?? item.city ?? ''),
+    state: String(row.state ?? item.state ?? ''),
+    avatarUrl: String(row.avatar_url ?? item.avatarUrl ?? ''),
+    points: Number(item.points ?? 0),
+    winnings: Number(item.winnings ?? 0),
+    cashes: Number(item.cashes ?? 0),
+    finalTables: Number(item.finalTables ?? 0),
+    titles: Number(item.titles ?? 0),
+    tournaments: Number(item.tournaments ?? 0),
+  };
+}
+
 function videoFromRow(row: Record<string, unknown>): NonNullable<DptData['videos']>[number] {
   const item = raw<NonNullable<DptData['videos']>[number]>(row);
   return {
@@ -141,20 +169,28 @@ export class SupabaseDptRepository implements DptPublicRepository {
   mode = 'supabase' as const;
   constructor(private readonly config: { url: string; key: string }) {}
 
-  private async select(table: string, query = 'select=*') {
+  private async select(table: string, query = 'select=*', range?: { from: number; to: number }) {
     const url = `${this.config.url}/rest/v1/${table}?${query}`;
+    const headers = buildSupabaseHeaders(this.config.key, this.config.key);
+    if (range) headers.set('range', `${range.from}-${range.to}`);
     const response = await fetch(url, {
-      headers: {
-        apikey: this.config.key,
-        Authorization: ['Bearer', this.config.key].join(' '),
-        accept: 'application/json',
-      },
+      headers,
       cache: 'no-store',
     });
     if (!response.ok) {
       throw new Error(`Supabase read failed for ${table}: ${response.status} ${await response.text()}`);
     }
     return (await response.json()) as Array<Record<string, unknown>>;
+  }
+
+  private async selectAll(table: string, query = 'select=*') {
+    const pageSize = 1000;
+    const rows: Array<Record<string, unknown>> = [];
+    for (let from = 0; ; from += pageSize) {
+      const page = await this.select(table, query, { from, to: from + pageSize - 1 });
+      rows.push(...page);
+      if (page.length < pageSize) return rows;
+    }
   }
 
   async getHomepageData() {
@@ -210,8 +246,21 @@ export class SupabaseDptRepository implements DptPublicRepository {
     return rows.map((row) => raw<DptData['venues'][number]>(row));
   }
 
+  async getPlayers() {
+    const rows = await this.selectAll('dpt_public_players', 'select=*&order=display_name.asc');
+    return rows.map(playerFromRow);
+  }
+
+  async getPlayerByAlias(alias: string) {
+    const rows = await this.select('dpt_public_players', `select=*&alias=eq.${encodeURIComponent(alias)}&limit=1`);
+    if (rows[0]) return playerFromRow(rows[0]);
+    if (!/^\d+$/.test(alias)) return undefined;
+    const byId = await this.select('dpt_public_players', `select=*&legacy_id=eq.${encodeURIComponent(alias)}&limit=1`);
+    return byId[0] ? playerFromRow(byId[0]) : undefined;
+  }
+
   async getLeaderboard() {
-    const rows = await this.select('dpt_public_leaderboard_entries', 'select=*&order=rank.asc');
+    const rows = await this.selectAll('dpt_public_leaderboard_entries', 'select=*&order=rank.asc');
     return rows.map(leaderboardFromRow);
   }
 

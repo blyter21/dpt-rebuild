@@ -1,23 +1,15 @@
 import { PageHero, SiteShell } from '../../components/site';
+import { PlayersDirectory } from '../../components/players-directory';
 import { getDptRepository } from '../../lib/dpt-repository';
 
 export default async function PlayersPage() {
   const repo = getDptRepository();
-  const leaderboard = await repo.getLeaderboard();
+  const players = await repo.getPlayers();
   return (
     <SiteShell>
-      <PageHero title="Players">Public player leaderboard tiles from production scoring data.</PageHero>
-      <section className="section">
-        <div className="players-grid">
-          {leaderboard.map((player) => (
-            <div className="player-tile" key={player.playerId}>
-              <strong>{player.name}</strong>
-              <span>Rank #{player.rank}</span>
-              <span>{player.points.toLocaleString()} points</span>
-              <span>{[player.city, player.state].filter(Boolean).join(', ') || 'Dakota Poker Tour player'}</span>
-            </div>
-          ))}
-        </div>
+      <PageHero title="Players">Search and compare Dakota Poker Tour player results from production tournament history.</PageHero>
+      <section className="section table-page">
+        <PlayersDirectory players={players} />
       </section>
     </SiteShell>
   );

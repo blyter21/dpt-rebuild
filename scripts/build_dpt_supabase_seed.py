@@ -118,20 +118,19 @@ def main() -> None:
         ])
     lines.append(insert('dpt_public_articles', ['legacy_id','alias','title','excerpt','published_at','event_alias','tournament_alias','image_url','local_image_path','video_url','raw'], article_rows))
 
-    player_seen = set()
     player_rows = []
+    for player in data.get('players', []):
+        player_rows.append([
+            q(player.get('playerId')), q(player.get('alias')), q(player.get('name')), q(player.get('city')), q(player.get('state')), q(player.get('avatarUrl')), q(local_for(media_by_source, player.get('avatarUrl'))), qjson(player)
+        ])
+
     leaderboard_rows = []
     for l in data.get('leaderboard', []):
         pid = l.get('playerId')
-        if pid not in player_seen:
-            player_seen.add(pid)
-            player_rows.append([
-                q(pid), q(l.get('name')), q(l.get('city')), q(l.get('state')), q(l.get('avatarUrl')), q(local_for(media_by_source, l.get('avatarUrl'))), qjson(l)
-            ])
         leaderboard_rows.append([
             q(l.get('rank')), q(pid), q(l.get('name')), q(l.get('points')), q(l.get('wins')), q(l.get('cashes')), q(l.get('city')), q(l.get('state')), qjson(l)
         ])
-    lines.append(insert('dpt_public_players', ['legacy_id','display_name','city','state','avatar_url','local_avatar_path','raw'], player_rows))
+    lines.append(insert('dpt_public_players', ['legacy_id','alias','display_name','city','state','avatar_url','local_avatar_path','raw'], player_rows))
     lines.append(insert('dpt_public_leaderboard_entries', ['rank','player_legacy_id','display_name','points','wins','cashes','city','state','raw'], leaderboard_rows))
 
     champion_rows = []

@@ -51,37 +51,37 @@ ${NEXT_PUBLIC_DPT_MEDIA_BASE_URL}/event/example.png
 ## Summary
 
 ```text
-totalFiles: 312
-totalBytes: 15,992,956
+totalFiles: 1338
+totalBytes: 55,027,580
 ```
 
 | Type | Files | Bytes |
 |---|---:|---:|
-| `article` | 78 | 203,189 |
-| `event` | 59 | 5,185,507 |
+| `article` | 384 | 21,295,850 |
+| `event` | 79 | 6,493,496 |
 | `logo` | 1 | 16,196 |
-| `profile` | 25 | 523,529 |
+| `profile` | 556 | 8,518,594 |
 | `slider` | 1 | 22,569 |
-| `tournament` | 72 | 6,328,440 |
-| `venue` | 74 | 3,655,101 |
+| `tournament` | 240 | 14,895,836 |
+| `venue` | 75 | 3,726,614 |
 | `video` | 2 | 58,425 |
 
 ## Sample mappings
 
 | Local public path | Bucket | Object path |
 |---|---|---|
-| `/media/dpt/article/5895-2ZFJwJk1.jpg` | `dpt-public-media` | `article/5895-2ZFJwJk1.jpg` |
-| `/media/dpt/article/624097261_1557797323014007_6731439949156077435_n-4ImSBlPS.jpg` | `dpt-public-media` | `article/624097261_1557797323014007_6731439949156077435_n-4ImSBlPS.jpg` |
-| `/media/dpt/article/625345834_1557684043025335_6356642423505752983_n-xdasf0Pk.jpg` | `dpt-public-media` | `article/625345834_1557684043025335_6356642423505752983_n-xdasf0Pk.jpg` |
-| `/media/dpt/article/641636097_1584189320374807_8541594968132913524_n-wgHglL1W.jpg` | `dpt-public-media` | `article/641636097_1584189320374807_8541594968132913524_n-wgHglL1W.jpg` |
-| `/media/dpt/article/650535334_1594158749377864_936456110948628482_n-5C99VGDa.jpg` | `dpt-public-media` | `article/650535334_1594158749377864_936456110948628482_n-5C99VGDa.jpg` |
-| `/media/dpt/article/651233183_1595244512602621_8432823892227840256_n-GJW9DuMV.jpg` | `dpt-public-media` | `article/651233183_1595244512602621_8432823892227840256_n-GJW9DuMV.jpg` |
-| `/media/dpt/article/651439665_1595899975870408_1131605283142510705_n-YGejH793.jpg` | `dpt-public-media` | `article/651439665_1595899975870408_1131605283142510705_n-YGejH793.jpg` |
-| `/media/dpt/article/653499935_1602101801916892_6979512571715754921_n-Ce4c0voQ.jpg` | `dpt-public-media` | `article/653499935_1602101801916892_6979512571715754921_n-Ce4c0voQ.jpg` |
-| `/media/dpt/article/674434535_1626215662838839_3101149415253439377_n-OjBpK678.jpg` | `dpt-public-media` | `article/674434535_1626215662838839_3101149415253439377_n-OjBpK678.jpg` |
-| `/media/dpt/article/ALI-lR0p9Bjn.jpg` | `dpt-public-media` | `article/ALI-lR0p9Bjn.jpg` |
-| `/media/dpt/article/D52AE449-8145-4578-B156-12DAD8CAA542-hZsiZcH6.jpg` | `dpt-public-media` | `article/D52AE449-8145-4578-B156-12DAD8CAA542-hZsiZcH6.jpg` |
-| `/media/dpt/article/IMG_3343-ObrssFBD.jpg` | `dpt-public-media` | `article/IMG_3343-ObrssFBD.jpg` |
+| `/media/dpt/article/02F5E6EA-87AE-4A14-8986-CE8DFA03F852-38tNPuVp.jpg` | `dpt-public-media` | `article/02F5E6EA-87AE-4A14-8986-CE8DFA03F852-38tNPuVp.jpg` |
+| `/media/dpt/article/03MqTehEjXv2udYinlCiVuxwU2ZJ68Ea8d6kba3Z.jpg` | `dpt-public-media` | `article/03MqTehEjXv2udYinlCiVuxwU2ZJ68Ea8d6kba3Z.jpg` |
+| `/media/dpt/article/0P938YrG0lDSFIBidcjjxaaHXv8LZBR8dPnlMffw.jpg` | `dpt-public-media` | `article/0P938YrG0lDSFIBidcjjxaaHXv8LZBR8dPnlMffw.jpg` |
+| `/media/dpt/article/0l1wcBawchyLQju5MsAWlvLp3FExViDUxDSl8aUB.jpg` | `dpt-public-media` | `article/0l1wcBawchyLQju5MsAWlvLp3FExViDUxDSl8aUB.jpg` |
+| `/media/dpt/article/1000009645-DQhgVS71.jpg` | `dpt-public-media` | `article/1000009645-DQhgVS71.jpg` |
+| `/media/dpt/article/1000010529-AcCsJmae.jpg` | `dpt-public-media` | `article/1000010529-AcCsJmae.jpg` |
+| `/media/dpt/article/1288B9D9-277C-4648-AA14-A928DCCCF1B6-29pTVY6F.jpg` | `dpt-public-media` | `article/1288B9D9-277C-4648-AA14-A928DCCCF1B6-29pTVY6F.jpg` |
+| `/media/dpt/article/12AB3E88-DC1D-4BCE-9414-1CD9FCDB4C6E-HMptV7ZT.jpg` | `dpt-public-media` | `article/12AB3E88-DC1D-4BCE-9414-1CD9FCDB4C6E-HMptV7ZT.jpg` |
+| `/media/dpt/article/14D65D73-8A7F-41E7-B265-55E5D60BB7E7-uju3fKto.jpg` | `dpt-public-media` | `article/14D65D73-8A7F-41E7-B265-55E5D60BB7E7-uju3fKto.jpg` |
+| `/media/dpt/article/16652488850273720979211254261633-Bzl9Xxuv.jpg` | `dpt-public-media` | `article/16652488850273720979211254261633-Bzl9Xxuv.jpg` |
+| `/media/dpt/article/199E8651-0849-476C-844F-FCA4C60DD9F3-RbZ83G3s.jpg` | `dpt-public-media` | `article/199E8651-0849-476C-844F-FCA4C60DD9F3-RbZ83G3s.jpg` |
+| `/media/dpt/article/1DfTtMloSEUTwxhXxaA99LGmXUlk2YmuWJGQqE6d.jpg` | `dpt-public-media` | `article/1DfTtMloSEUTwxhXxaA99LGmXUlk2YmuWJGQqE6d.jpg` |
 
 ## Upload commands
 

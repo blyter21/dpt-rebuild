@@ -183,6 +183,7 @@ def main() -> None:
                 'skipped': True,
                 'reason': f'SQL source not found at {SQL_PATH}; reused existing generated public data.',
                 'leaderboard': len(existing.get('leaderboard', [])),
+                'players': len(existing.get('players', [])),
                 'events': len(existing.get('events', [])),
                 'tournaments': len(existing.get('tournaments', [])),
                 'venues': len(existing.get('venues', [])),
@@ -254,7 +255,7 @@ def main() -> None:
                 cashes[uid] = cashes.get(uid, 0) + 1
 
     leaderboard = []
-    for rank, (uid, points) in enumerate(sorted(scores.items(), key=lambda item: item[1], reverse=True)[:25], start=1):
+    for rank, (uid, points) in enumerate(sorted(scores.items(), key=lambda item: item[1], reverse=True), start=1):
         user = users[uid]
         leaderboard.append({
             'rank': rank,
@@ -269,19 +270,58 @@ def main() -> None:
             'cashes': cashes.get(uid, 0),
         })
 
+    player_stats: dict[int, dict[str, Any]] = {}
+    for entry in tables['dpt_tournament_players']:
+        if not is_live(entry):
+            continue
+        uid = int(entry.get('user_id') or 0)
+        if uid not in users:
+            continue
+        stat = player_stats.setdefault(uid, {
+            'points': 0,
+            'winnings': 0,
+            'cashes': 0,
+            'finalTables': 0,
+            'titles': 0,
+            'tournaments': 0,
+        })
+        stat['points'] += int(entry.get('score') or 0)
+        stat['winnings'] += int(entry.get('winnings') or 0)
+        stat['tournaments'] += 1
+        rank_value = int(entry.get('rank') or 0)
+        if rank_value > 0:
+            stat['cashes'] += 1
+        if int(entry.get('final_table') or 0) == 1:
+            stat['finalTables'] += 1
+        if rank_value == 1:
+            stat['titles'] += 1
+
+    public_players = []
+    for uid, stat in sorted(player_stats.items(), key=lambda item: (-item[1]['points'], public_user_name(users[item[0]]).lower())):
+        user = users[uid]
+        public_players.append({
+            'playerId': uid,
+            'alias': user.get('alias') or '',
+            'name': public_user_name(user),
+            'city': user.get('city') or '',
+            'state': user.get('state') or '',
+            'avatar': user.get('avatar') or '',
+            'avatarUrl': asset_url('profile', user.get('avatar'), 'medium'),
+            **stat,
+        })
+
     public_venues = []
     for row in sorted(venues.values(), key=lambda v: v.get('name') or ''):
-        if int(row.get('status') or 0) != 1:
-            continue
         public_venues.append({
             'id': row['id'], 'name': row.get('name'), 'alias': row.get('alias'),
+            'status': int(row.get('status') or 0),
             'city': row.get('city'), 'state': row.get('state'), 'zip': row.get('zip'),
             'logo': row.get('logo'), 'bannerImage': row.get('banner_image'), 'website': row.get('website'),
             'imageUrl': asset_url('venue', row.get('logo'), 'medium'), 'bannerUrl': asset_url('venue', row.get('banner_image'), 'medium'),
         })
 
     public_events = []
-    for row in events_raw[:60]:
+    for row in events_raw:
         venue = venues.get(row.get('venue_id'), {})
         public_events.append({
             'id': row['id'], 'name': row.get('name'), 'alias': row.get('alias'),
@@ -293,7 +333,7 @@ def main() -> None:
         })
 
     public_tournaments = []
-    for row in tournaments_raw[:80]:
+    for row in tournaments_raw:
         event = events_by_id.get(row.get('event_id'), {})
         venue = venues.get(row.get('venue_id'), {})
         public_tournaments.append({
@@ -330,7 +370,7 @@ def main() -> None:
     champions.sort(key=lambda row: dt(row.get('date')), reverse=True)
 
     public_articles = []
-    for row in articles_raw[:80]:
+    for row in articles_raw:
         tournament = tournaments_by_id.get(row.get('tournament_id'), {})
         public_articles.append({
             'id': row['id'], 'title': row.get('title'), 'alias': row.get('alias'),
@@ -364,17 +404,19 @@ def main() -> None:
             },
         ],
         'leaderboard': leaderboard,
+        'players': public_players,
         'events': public_events,
         'tournaments': public_tournaments,
         'venues': public_venues,
         'articles': public_articles,
-        'champions': champions[:40],
+        'champions': champions,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
     print(json.dumps({
         'out': str(OUT_PATH),
         'leaderboard': len(leaderboard),
+        'players': len(public_players),
         'events': len(public_events),
         'tournaments': len(public_tournaments),
         'venues': len(public_venues),
