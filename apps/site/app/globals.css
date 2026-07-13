@@ -235,6 +235,13 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .player-profile-stats span, .player-profile-stats strong { display: block; }
 .player-profile-stats span { color: #64748b; font-size: 11px; font-weight: 900; text-transform: uppercase; }
 .player-profile-stats strong { margin-top: 8px; color: #172033; font-size: 24px; }
+.article-content { color: #334155; font-size: 16px; line-height: 1.8; white-space: pre-line; }
+.calendar-list { display: grid; gap: 20px; }
+.calendar-month { overflow: hidden; border: 1px solid #dbe1ea; border-radius: 14px; background: #fff; }
+.calendar-month > h2 { margin: 0; padding: 14px 18px; background: #172033; color: #fff; }
+.calendar-event { display: grid; grid-template-columns: 180px minmax(0, 1fr) 240px; gap: 14px; align-items: center; padding: 13px 18px; border-top: 1px solid #e7ebf0; }
+.calendar-event a { color: var(--red); }
+.calendar-event span, .calendar-event small { color: #64748b; }
 .dpt-admin-login-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top left, #334155, #0f172a 58%); }
 .dpt-admin-login-card { width: min(460px, 100%); padding: 30px; border-radius: 22px; background: #fff; box-shadow: 0 24px 70px rgba(0,0,0,.35); }
 .dpt-admin-login-card h1 { margin: 8px 0 8px; color: #172033; font-size: 38px; line-height: 1; text-transform: none; }
@@ -257,6 +264,7 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
   .players-directory-controls > strong { width: 100%; margin-left: 0; padding-bottom: 0; }
   .player-profile-card { align-items: flex-start; }
   .player-profile-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .calendar-event { grid-template-columns: 1fr; gap: 4px; }
   .dpt-admin-app { padding: 12px; }
   .dpt-admin-header, .dpt-admin-section-head, .dpt-admin-safety { display: block; }
   .dpt-admin-source { margin-top: 18px; min-width: 0; }

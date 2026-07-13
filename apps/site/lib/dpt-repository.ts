@@ -14,8 +14,10 @@ export type DptPublicRepository = {
   getTournamentByAlias(alias: string): MaybePromise<DptData['tournaments'][number] | undefined>;
   getTournamentsForEvent(alias: string): MaybePromise<DptData['tournaments']>;
   getArticles(): MaybePromise<DptData['articles']>;
+  getArticleByAlias(alias: string): MaybePromise<DptData['articles'][number] | undefined>;
   getArticlesForTournament(alias: string): MaybePromise<DptData['articles']>;
   getVenues(): MaybePromise<DptData['venues']>;
+  getVenueByAlias(alias: string): MaybePromise<DptData['venues'][number] | undefined>;
   getPlayers(): MaybePromise<DptData['players']>;
   getPlayerByAlias(alias: string): MaybePromise<DptData['players'][number] | undefined>;
   getLeaderboard(): MaybePromise<DptData['leaderboard']>;
@@ -47,11 +49,17 @@ export const localDptRepository: DptPublicRepository = {
   getArticles() {
     return data.articles;
   },
+  getArticleByAlias(alias: string) {
+    return data.articles.find((article) => article.alias === alias);
+  },
   getArticlesForTournament(alias: string) {
     return data.articles.filter((article) => article.tournament?.alias === alias);
   },
   getVenues() {
     return data.venues;
+  },
+  getVenueByAlias(alias: string) {
+    return data.venues.find((venue) => venue.alias === alias);
   },
   getPlayers() {
     return data.players;
@@ -236,6 +244,11 @@ export class SupabaseDptRepository implements DptPublicRepository {
     return rows.map(articleFromRow);
   }
 
+  async getArticleByAlias(alias: string) {
+    const rows = await this.select('dpt_public_articles', `select=*&alias=eq.${encodeURIComponent(alias)}&limit=1`);
+    return rows[0] ? articleFromRow(rows[0]) : undefined;
+  }
+
   async getArticlesForTournament(alias: string) {
     const rows = await this.select('dpt_public_articles', `select=*&tournament_alias=eq.${encodeURIComponent(alias)}&order=published_at.desc.nullslast`);
     return rows.map(articleFromRow);
@@ -244,6 +257,11 @@ export class SupabaseDptRepository implements DptPublicRepository {
   async getVenues() {
     const rows = await this.select('dpt_public_venues', 'select=*&order=name.asc');
     return rows.map((row) => raw<DptData['venues'][number]>(row));
+  }
+
+  async getVenueByAlias(alias: string) {
+    const rows = await this.select('dpt_public_venues', `select=*&alias=eq.${encodeURIComponent(alias)}&limit=1`);
+    return rows[0] ? raw<DptData['venues'][number]>(rows[0]) : undefined;
   }
 
   async getPlayers() {

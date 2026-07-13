@@ -15,6 +15,7 @@ const migrationFiles = [
   'supabase/migrations/20260712173000_separate_profiles_auth_identity.sql',
   'supabase/migrations/20260712192000_add_public_player_alias.sql',
   'supabase/migrations/20260712193000_refresh_full_public_dataset.sql',
+  'supabase/migrations/20260713010000_enrich_public_details.sql',
 ];
 
 const db = new PGlite();

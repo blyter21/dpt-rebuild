@@ -315,7 +315,8 @@ def main() -> None:
         public_venues.append({
             'id': row['id'], 'name': row.get('name'), 'alias': row.get('alias'),
             'status': int(row.get('status') or 0),
-            'city': row.get('city'), 'state': row.get('state'), 'zip': row.get('zip'),
+            'address': row.get('address'), 'city': row.get('city'), 'state': row.get('state'), 'zip': row.get('zip'),
+            'phone': row.get('phone'),
             'logo': row.get('logo'), 'bannerImage': row.get('banner_image'), 'website': row.get('website'),
             'imageUrl': asset_url('venue', row.get('logo'), 'medium'), 'bannerUrl': asset_url('venue', row.get('banner_image'), 'medium'),
         })
@@ -375,6 +376,7 @@ def main() -> None:
         public_articles.append({
             'id': row['id'], 'title': row.get('title'), 'alias': row.get('alias'),
             'excerpt': clean_html(row.get('introtext') or row.get('fulltext'), 240),
+            'content': clean_html(row.get('fulltext') or row.get('introtext'), 12000),
             'publishedAt': row.get('published_at'), 'featured': bool(row.get('featured')),
             'logo': row.get('logo'), 'banner': row.get('banner'), 'videoUrl': row.get('video_url'),
             'imageUrl': asset_url('article', row.get('logo'), 'thumb'), 'bannerUrl': asset_url('article', row.get('banner'), 'medium'),

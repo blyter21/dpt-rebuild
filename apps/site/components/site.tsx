@@ -55,7 +55,7 @@ export function Header() {
         </nav>
         <div className="header-actions">
           <Link className="join-btn" href="/login">Join/Login</Link>
-          <Link className="updates-btn" href="/news">Live Updates</Link>
+          <Link className="updates-btn" href="/liveTournaments">Live Updates</Link>
           {socialIconLinks()}
         </div>
       </div>
@@ -73,8 +73,8 @@ export function Footer() {
           <div className="footer-socials">{socialIconLinks()}<a href="https://dakotapokertour.com">Old Website</a></div>
         </div>
         <div><h3>About DPT</h3><Link href="/news">News</Link><Link href="/videos">Videos</Link><Link href="/venues">Venues</Link><Link href="/players">Players</Link></div>
-        <div><h3>Events</h3><Link href="/events">Upcoming Events</Link><Link href="/events">Past Events</Link><Link href="/events">Calendar</Link></div>
-        <div><h3>Quick Links</h3><Link href="/leaderboard">Leaderboard</Link><Link href="/champions">Champions</Link><Link href="/news">Live Updates</Link></div>
+        <div><h3>Events</h3><Link href="/upcomingEvents">Upcoming Events</Link><Link href="/pastEvents">Past Events</Link><Link href="/calendar">Calendar</Link></div>
+        <div><h3>Quick Links</h3><Link href="/leaderboard">Leaderboard</Link><Link href="/tournament-of-champions">Champions</Link><Link href="/liveTournaments">Live Updates</Link></div>
       </div>
       <div className="footer-bottom"><span>Policy · Terms · Cookies · Help</span><span>Copyright © 2026 DPT Enterprises, Inc.</span></div>
     </footer>
@@ -149,7 +149,7 @@ export function ArticleItem({ item }: { item: PublicArticle }) {
     <article className="news-item">
       {image ? <img className="news-thumb image" src={image} alt={displayText(item.title) || 'Dakota Poker Tour news'} /> : <div className="news-thumb">DPT</div>}
       <div>
-        <strong>{displayText(item.title)}</strong>
+        {item.alias ? <Link href={`/articles/${item.alias}`}><strong>{displayText(item.title)}</strong></Link> : <strong>{displayText(item.title)}</strong>}
         <span>{item.publishedAt ? formatDateRange(item.publishedAt) : 'News'}</span>
       </div>
     </article>
@@ -158,7 +158,7 @@ export function ArticleItem({ item }: { item: PublicArticle }) {
 
 export function VenueCard({ venue }: { venue: PublicVenue }) {
   const image = mediaUrl(venue.imageUrl);
-  return <div className="venue-card">{image ? <img className="venue-logo" src={image} alt={displayText(venue.name) || 'DPT venue'} /> : null}<strong>{displayText(venue.name)}</strong><span>{venue.city}, {venue.state}</span></div>;
+  return <div className="venue-card">{image ? <img className="venue-logo" src={image} alt={displayText(venue.name) || 'DPT venue'} /> : null}{venue.alias ? <Link href={`/venues/${venue.alias}`}><strong>{displayText(venue.name)}</strong></Link> : <strong>{displayText(venue.name)}</strong>}<span>{venue.city}, {venue.state}</span></div>;
 }
 
 export function ChampionRow({ champion }: { champion: PublicChampion }) {
