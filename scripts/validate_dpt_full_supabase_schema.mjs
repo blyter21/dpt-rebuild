@@ -17,6 +17,7 @@ const migrationFiles = [
   'supabase/migrations/20260712193000_refresh_full_public_dataset.sql',
   'supabase/migrations/20260713010000_enrich_public_details.sql',
   'supabase/migrations/20260713130000_admin_tournament_checkin_rpc.sql',
+  'supabase/migrations/20260713150000_admin_tournament_registration_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -166,7 +167,17 @@ const workflowSecurityResult = await db.query(`
       'authenticated',
       'public.dpt_admin_check_in_entry(bigint,bigint,integer,integer,integer,integer,integer,integer)',
       'execute'
-    ) as authenticated_can_call_check_in
+    ) as authenticated_can_call_check_in,
+    not has_function_privilege(
+      'anon',
+      'public.dpt_admin_register_entry(bigint,uuid,boolean)',
+      'execute'
+    ) as anon_cannot_register,
+    has_function_privilege(
+      'authenticated',
+      'public.dpt_admin_register_entry(bigint,uuid,boolean)',
+      'execute'
+    ) as authenticated_can_call_register
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
