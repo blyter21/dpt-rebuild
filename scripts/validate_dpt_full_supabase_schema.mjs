@@ -16,6 +16,7 @@ const migrationFiles = [
   'supabase/migrations/20260712192000_add_public_player_alias.sql',
   'supabase/migrations/20260712193000_refresh_full_public_dataset.sql',
   'supabase/migrations/20260713010000_enrich_public_details.sql',
+  'supabase/migrations/20260713130000_admin_tournament_checkin_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -143,6 +144,32 @@ const profileAuthResult = await db.query(`
 `);
 const profileAuth = profileAuthResult.rows[0];
 
+const workflowSecurityResult = await db.query(`
+  select
+    exists (
+      select 1 from pg_class
+      where oid = 'public.dpt_admin_audit_log'::regclass
+        and relrowsecurity = true
+    ) as audit_log_has_rls,
+    exists (
+      select 1 from pg_policies
+      where schemaname = 'public'
+        and tablename = 'dpt_admin_audit_log'
+        and policyname = 'dpt admin audit readable by operators'
+    ) as audit_log_has_admin_policy,
+    not has_function_privilege(
+      'anon',
+      'public.dpt_admin_check_in_entry(bigint,bigint,integer,integer,integer,integer,integer,integer)',
+      'execute'
+    ) as anon_cannot_check_in,
+    has_function_privilege(
+      'authenticated',
+      'public.dpt_admin_check_in_entry(bigint,bigint,integer,integer,integer,integer,integer,integer)',
+      'execute'
+    ) as authenticated_can_call_check_in
+`);
+const workflowSecurity = workflowSecurityResult.rows[0];
+
 const countResult = await db.query(`
   select
     (select count(*)::int from public.dpt_public_events) as events,
@@ -161,6 +188,7 @@ if (!privileges.anon_public_events_select) throw new Error('Anon cannot read cur
 if (!privileges.authenticated_admin_account_select) throw new Error('Authenticated role cannot read own admin authorization');
 if (!Object.values(security).every(Boolean)) throw new Error(`Security lint assertion failed: ${JSON.stringify(security)}`);
 if (!Object.values(profileAuth).every(Boolean)) throw new Error(`Profile/Auth separation assertion failed: ${JSON.stringify(profileAuth)}`);
+if (!Object.values(workflowSecurity).every(Boolean)) throw new Error(`Tournament workflow security assertion failed: ${JSON.stringify(workflowSecurity)}`);
 if (Number(counts.admin_accounts) !== 1) throw new Error(`Expected one staging admin mapping, found ${counts.admin_accounts}`);
 const expectedPublicCounts = { events: 80, tournaments: 261, venues: 78, articles: 383, players: 2369 };
 for (const [key, expected] of Object.entries(expectedPublicCounts)) {
@@ -192,6 +220,7 @@ console.log(JSON.stringify({
   privileges,
   security,
   profileAuth,
+  workflowSecurity,
   counts,
   coreImportCounts,
   policyCount: policies.length,

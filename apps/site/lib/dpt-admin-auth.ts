@@ -14,6 +14,7 @@ export type DptAdminAccount = {
 
 export type DptAdminSession = {
   user: { id: string; email?: string };
+  profileId: string;
   account: DptAdminAccount;
   mode: 'authenticated';
 };
@@ -57,7 +58,25 @@ export async function getDptAdminSession(): Promise<DptAdminSession | null> {
   const accounts = (await accountResponse.json()) as DptAdminAccount[];
   if (!accounts[0]?.can_view_admin || !accounts[0].is_active) return null;
 
-  return { user: { id: user.id, email: user.email }, account: accounts[0], mode: 'authenticated' };
+  const profileQuery = new URLSearchParams({
+    select: 'id',
+    auth_user_id: `eq.${user.id}`,
+    limit: '1',
+  });
+  const profileResponse = await fetch(`${config.url}/rest/v1/profiles?${profileQuery}`, {
+    headers: buildSupabaseHeaders(config.anonKey, accessToken),
+    cache: 'no-store',
+  });
+  if (!profileResponse.ok) return null;
+  const profiles = (await profileResponse.json()) as Array<{ id?: string }>;
+  if (!profiles[0]?.id) return null;
+
+  return {
+    user: { id: user.id, email: user.email },
+    profileId: profiles[0].id,
+    account: accounts[0],
+    mode: 'authenticated',
+  };
 }
 
 export async function requireDptAdminSession() {
