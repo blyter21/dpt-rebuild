@@ -10,7 +10,7 @@ export default async function AdminTournamentsPage() {
       <AdminSectionHeader title="Tournaments" count={snapshot.tournaments.length}>Real tournament records extracted from the production database.</AdminSectionHeader>
       <div className="dpt-admin-table-wrap">
         <table className="dpt-admin-table">
-          <thead><tr><th>ID</th><th>Tournament</th><th>Event / Venue</th><th>Date</th><th>Players</th><th>Buy-in</th><th>Public page</th></tr></thead>
+          <thead><tr><th>ID</th><th>Tournament</th><th>Event / Venue</th><th>Date</th><th>Players</th><th>Buy-in</th><th>Actions</th></tr></thead>
           <tbody>{snapshot.tournaments.map((tournament) => (
             <tr key={tournament.id}>
               <td>{tournament.id}</td>
@@ -19,7 +19,7 @@ export default async function AdminTournamentsPage() {
               <td>{formatDateRange(tournament.startDate, tournament.endDate)}</td>
               <td>{Number(tournament.totalPlayers || 0).toLocaleString()}</td>
               <td>{money(tournament.minimumBuyIn)}</td>
-              <td><Link href={`/tournaments/${tournament.alias}`}>View</Link></td>
+              <td><Link href={`/admin/tournaments/${tournament.id}`}>Manage</Link> · <Link href={`/tournaments/${tournament.alias}`}>Public</Link></td>
             </tr>
           ))}</tbody>
         </table>

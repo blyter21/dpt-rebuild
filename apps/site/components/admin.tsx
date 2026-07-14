@@ -28,7 +28,7 @@ export function AdminShell({
         <div>
           <span className="dpt-admin-eyebrow">Dakota Poker Tour</span>
           <h1>Administration</h1>
-          <p>Integrated read-only administration using the recovered production SQL snapshot.</p>
+          <p>Integrated administration backed by Supabase staging and production-derived reference data.</p>
         </div>
         <div className="dpt-admin-source">
           <strong>Production-derived data</strong>
@@ -39,8 +39,8 @@ export function AdminShell({
       </header>
 
       <div className="dpt-admin-safety" role="note">
-        <strong>Read-only foundation</strong>
-        <span>Supabase Auth and write operations are not connected yet. No production mutation is possible from these screens.</span>
+        <strong>Staging operations</strong>
+        <span>Authenticated tournament actions write only to Supabase staging. Production remains read-only.</span>
       </div>
 
       <nav className="dpt-admin-nav" aria-label="DPT administration">
