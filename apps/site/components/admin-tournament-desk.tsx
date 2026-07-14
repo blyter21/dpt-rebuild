@@ -78,7 +78,7 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [playerResults, setPlayerResults] = useState<DeskPlayer[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState<DeskPlayer | null>(null);
   const [activeEntry, setActiveEntry] = useState<DeskEntry | null>(null);
-  const [actionMode, setActionMode] = useState<'check-in' | 'addon' | 'eliminate' | null>(null);
+  const [actionMode, setActionMode] = useState<'check-in' | 'addon' | 'eliminate' | 'undo' | null>(null);
   const [initialBuyIn, setInitialBuyIn] = useState('');
   const [initialChips, setInitialChips] = useState('');
   const [checkInAddonCount, setCheckInAddonCount] = useState('0');
@@ -124,7 +124,7 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     setMessage('Player registered.'); setSelectedPlayer(null); setPlayerResults([]); setPlayerQuery(''); await reload();
   };
 
-  const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate') => {
+  const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate' | 'undo') => {
     setActiveEntry(entry); setActionMode(mode); setMessage('');
     setInitialBuyIn(String(desk?.tournament.minimum_buy_in || 0));
     setInitialChips(String(desk?.tournament.initial_chips_count || 0));
@@ -152,8 +152,10 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     } else if (actionMode === 'addon') {
       path = `${base}/addons`;
       body = { addonBuyInAmount: Number(addonBuyIn), noOfAddons: Number(addonCount) };
-    } else {
+    } else if (actionMode === 'eliminate') {
       path = `${base}/eliminate`;
+    } else {
+      path = `${base}/undo`;
     }
     const response = await fetch(path, {
       method: 'POST',
@@ -163,7 +165,7 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     const payload = await response.json() as { error?: string };
     setBusy(false);
     if (!response.ok) { setMessage(payload.error || 'Tournament action failed'); return; }
-    setMessage(actionMode === 'check-in' ? 'Player checked in.' : actionMode === 'addon' ? 'Add-on saved.' : 'Player eliminated.');
+    setMessage(actionMode === 'check-in' ? 'Player checked in.' : actionMode === 'addon' ? 'Add-on saved.' : actionMode === 'eliminate' ? 'Player eliminated.' : 'Player result restored.');
     closeAction(); await reload();
   };
 
@@ -232,7 +234,7 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
                     {!entry.checked_in ? <button type="button" onClick={() => openAction(entry, 'check-in')}>Check in</button> : null}
                     {entry.checked_in && !entry.eliminated ? <button type="button" onClick={() => openAction(entry, 'addon')}>Add-on</button> : null}
                     {entry.checked_in && !entry.eliminated ? <button type="button" className="danger" onClick={() => openAction(entry, 'eliminate')}>Eliminate</button> : null}
-                    {entry.eliminated ? <span>Completed</span> : null}
+                    {entry.eliminated ? <button type="button" onClick={() => openAction(entry, 'undo')}>Undo result</button> : null}
                   </div></td>
                 </tr>
               ))}</tbody>
@@ -251,7 +253,8 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
               <label>Total add-on buy-in<input type="number" min="0" value={addonBuyIn} onChange={(event) => setAddonBuyIn(event.target.value)} required /></label>
             </div> : null}
             {actionMode === 'eliminate' ? <p>This assigns the next finishing rank, payout, score, sequence and final-table status. Confirm the correct player before continuing.</p> : null}
-            <button className={actionMode === 'eliminate' ? 'danger' : ''} type="submit" disabled={busy}>{busy ? 'Saving…' : actionMode === 'check-in' ? 'Check in player' : actionMode === 'addon' ? 'Save add-on' : 'Eliminate player'}</button>
+            {actionMode === 'undo' ? <p>This clears rank, payout, score, elimination sequence and final-table status. The change is recorded in the audit trail.</p> : null}
+            <button className={actionMode === 'eliminate' ? 'danger' : ''} type="submit" disabled={busy}>{busy ? 'Saving…' : actionMode === 'check-in' ? 'Check in player' : actionMode === 'addon' ? 'Save add-on' : actionMode === 'eliminate' ? 'Eliminate player' : 'Undo player result'}</button>
           </form> : null}
         </article>
 
@@ -269,6 +272,10 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
           <article className="dpt-desk-panel">
             <header><div><span>Prize structure</span><h3>Payouts</h3></div><strong>{desk.payouts.length}</strong></header>
             {desk.payouts.length ? <ol className="dpt-desk-payouts">{desk.payouts.map((payout) => <li key={payout.id}><span>#{payout.standing}</span><strong>{money(payout.payout_amount)}</strong></li>)}</ol> : <p>No tournament payouts have been materialized.</p>}
+          </article>
+          <article className="dpt-desk-panel">
+            <header><div><span>Corrections</span><h3>Audit history</h3></div><strong>{desk.audit.length}</strong></header>
+            {desk.audit.length ? <ol className="dpt-desk-audit">{desk.audit.map((item) => <li key={item.id}><strong>{item.action.replaceAll('.', ' ')}</strong><span>Entry {item.entity_id} · {new Date(item.created_at).toLocaleString('en-US')}</span></li>)}</ol> : <p>No staging mutations have been recorded.</p>}
           </article>
         </aside>
       </section>
