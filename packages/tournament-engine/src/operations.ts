@@ -1,6 +1,6 @@
-import { calculateDptStoredScore, calculateFreerollScore } from './calculations.js';
-import { applyFinalTableFlags, payoutForStanding } from './elimination.js';
-import type { PayoutRow, TournamentEntry, TournamentType } from './types.js';
+import { calculateDptStoredScore, calculateFreerollScore } from './calculations';
+import { applyFinalTableFlags, payoutForStanding } from './elimination';
+import type { PayoutRow, TournamentEntry, TournamentType } from './types';
 
 export interface UndoPlayerStatInput {
   playerId: string;

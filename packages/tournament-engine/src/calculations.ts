@@ -7,7 +7,7 @@ import type {
   FreerollScoreInput,
   PrizePoolInput,
   SatelliteRankInput
-} from './types.js';
+} from './types';
 
 export function calculateInitialBuyIn(
   tournamentType: CheckInInput['tournamentType'],

@@ -1,4 +1,4 @@
-import type { ChipCarryoverMode, FlightAdvancement, FlightEntry, MainEntry } from './types.js';
+import type { ChipCarryoverMode, FlightAdvancement, FlightEntry, MainEntry } from './types';
 
 export interface AdvanceFlightInput {
   flightEntries: FlightEntry[];

@@ -1,5 +1,5 @@
-import { calculateDptStoredScore, calculateFreerollScore, calculateSatelliteRank } from './calculations.js';
-import type { PayoutRow, TournamentEntry } from './types.js';
+import { calculateDptStoredScore, calculateFreerollScore, calculateSatelliteRank } from './calculations';
+import type { PayoutRow, TournamentEntry } from './types';
 
 export interface EliminatePlayerInput {
   playerId: string;

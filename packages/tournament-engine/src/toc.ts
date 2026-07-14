@@ -1,4 +1,4 @@
-import type { TournamentType } from './types.js';
+import type { TournamentType } from './types';
 
 export interface TocTournament {
   id: string;
