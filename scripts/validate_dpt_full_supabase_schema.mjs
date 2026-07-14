@@ -19,6 +19,7 @@ const migrationFiles = [
   'supabase/migrations/20260713130000_admin_tournament_checkin_rpc.sql',
   'supabase/migrations/20260713150000_admin_tournament_registration_rpc.sql',
   'supabase/migrations/20260713160000_admin_tournament_addon_rpc.sql',
+  'supabase/migrations/20260713170000_admin_tournament_elimination_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -188,7 +189,17 @@ const workflowSecurityResult = await db.query(`
       'authenticated',
       'public.dpt_admin_add_entry_addon(bigint,bigint,integer,integer,integer,integer,integer,integer)',
       'execute'
-    ) as authenticated_can_call_addon
+    ) as authenticated_can_call_addon,
+    not has_function_privilege(
+      'anon',
+      'public.dpt_admin_eliminate_entry(bigint,bigint,integer,integer,integer,integer,boolean)',
+      'execute'
+    ) as anon_cannot_eliminate,
+    has_function_privilege(
+      'authenticated',
+      'public.dpt_admin_eliminate_entry(bigint,bigint,integer,integer,integer,integer,boolean)',
+      'execute'
+    ) as authenticated_can_call_eliminate
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
