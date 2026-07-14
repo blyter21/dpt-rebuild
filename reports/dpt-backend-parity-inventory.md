@@ -76,9 +76,9 @@ Production `/admin/blinds` includes:
 - Edit and View actions
 - Seven current blind structures
 
-## Full-access reference-session blocker
+## Full-access production reference session
 
-The current authenticated production session receives `403 — YOU DON'T HAVE ENOUGH PERMISSIONS` for `/admin/payoutdistributions`. This is **not accepted as intended behavior** for the replication account. The local production-derived role data shows Pedro has `administrator` + `user`, while `super admin` is a separate role; Pedro also lacks at least `delete_tournaments`. A full-access owner/super-admin production session is required before backend inventory can be considered complete. No production permission changes will be made by the agent.
+The dedicated `PedroChromeDebug` session now uses the owner/super-admin account. Browser verification passed all 15 tested admin modules with zero login redirects and zero `403` pages, including payout distributions, blind structures, roles, duplicate-player repair, notifications, and email templates. This full-access session is the production backend reference for replication. Production remains read-only during inventory.
 
 ## Backend acceptance gates
 
