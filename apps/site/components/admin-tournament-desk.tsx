@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { type FormEvent, useCallback, useEffect, useState } from 'react';
 
 export type DeskPlayer = {
   id: string;
@@ -54,10 +54,14 @@ type DeskData = {
   metrics: { registered: number; checkedIn: number; remaining: number; eliminated: number; totalBuyIn: number; addonCount: number };
 };
 
+function profileName(player: DeskPlayer) {
+  return [player.first_name, player.last_name].filter(Boolean).join(' ') || player.nick_name || `Player ${player.legacy_user_id ?? player.id}`;
+}
+
 function playerName(entry: DeskEntry) {
   const player = entry.player;
   if (!player) return `Entry ${entry.id}`;
-  return [player.first_name, player.last_name].filter(Boolean).join(' ') || player.nick_name || `Player ${player.legacy_user_id ?? entry.id}`;
+  return profileName(player);
 }
 
 function money(value: number | null | undefined) {
@@ -68,6 +72,19 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [desk, setDesk] = useState<DeskData | null>(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState('');
+  const [playerQuery, setPlayerQuery] = useState('');
+  const [playerResults, setPlayerResults] = useState<DeskPlayer[]>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<DeskPlayer | null>(null);
+  const [activeEntry, setActiveEntry] = useState<DeskEntry | null>(null);
+  const [actionMode, setActionMode] = useState<'check-in' | 'addon' | 'eliminate' | null>(null);
+  const [initialBuyIn, setInitialBuyIn] = useState('');
+  const [initialChips, setInitialChips] = useState('');
+  const [checkInAddonCount, setCheckInAddonCount] = useState('0');
+  const [checkInAddonBuyIn, setCheckInAddonBuyIn] = useState('0');
+  const [addonCount, setAddonCount] = useState('1');
+  const [addonBuyIn, setAddonBuyIn] = useState('');
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -84,6 +101,71 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
       setLoading(false);
     }
   }, [tournamentId]);
+
+  const searchPlayers = async (event: FormEvent) => {
+    event.preventDefault();
+    setMessage('');
+    const response = await fetch(`/api/admin/players/search?q=${encodeURIComponent(playerQuery)}`, { cache: 'no-store' });
+    const payload = await response.json() as { players?: DeskPlayer[]; error?: string };
+    if (!response.ok) { setMessage(payload.error || 'Player search failed'); return; }
+    setPlayerResults(payload.players || []);
+  };
+
+  const registerPlayer = async () => {
+    if (!selectedPlayer) return;
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/entries`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ playerId: selectedPlayer.id, preRegistered: true }),
+    });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Player registration failed'); return; }
+    setMessage('Player registered.'); setSelectedPlayer(null); setPlayerResults([]); setPlayerQuery(''); await reload();
+  };
+
+  const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate') => {
+    setActiveEntry(entry); setActionMode(mode); setMessage('');
+    setInitialBuyIn(String(desk?.tournament.minimum_buy_in || 0));
+    setInitialChips(String(desk?.tournament.initial_chips_count || 0));
+    setCheckInAddonCount('0'); setCheckInAddonBuyIn('0');
+    setAddonCount('1'); setAddonBuyIn(String(desk?.tournament.rebuy_amount || 0));
+  };
+
+  const closeAction = () => { setActiveEntry(null); setActionMode(null); };
+
+  const submitEntryAction = async (event: FormEvent) => {
+    event.preventDefault();
+    if (!activeEntry || !actionMode) return;
+    setBusy(true); setMessage('');
+    const base = `/api/admin/tournaments/${tournamentId}/entries/${activeEntry.id}`;
+    let path = '';
+    let body: Record<string, number> | undefined;
+    if (actionMode === 'check-in') {
+      path = `${base}/check-in`;
+      body = {
+        submittedInitialBuyIn: Number(initialBuyIn),
+        initialChipsCount: Number(initialChips),
+        noOfAddons: Number(checkInAddonCount),
+        submittedTotalAddonBuyIn: Number(checkInAddonBuyIn),
+      };
+    } else if (actionMode === 'addon') {
+      path = `${base}/addons`;
+      body = { addonBuyInAmount: Number(addonBuyIn), noOfAddons: Number(addonCount) };
+    } else {
+      path = `${base}/eliminate`;
+    }
+    const response = await fetch(path, {
+      method: 'POST',
+      headers: body ? { 'content-type': 'application/json' } : undefined,
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Tournament action failed'); return; }
+    setMessage(actionMode === 'check-in' ? 'Player checked in.' : actionMode === 'addon' ? 'Add-on saved.' : 'Player eliminated.');
+    closeAction(); await reload();
+  };
 
   useEffect(() => { void reload(); }, [reload]);
 
@@ -113,6 +195,24 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
         <article><span>Add-ons</span><strong>{desk.metrics.addonCount}</strong></article>
       </section>
 
+      {message ? <div className="dpt-admin-action-message">{message}</div> : null}
+
+      <section className="dpt-desk-panel dpt-desk-registration-panel">
+        <header><div><span>Registration</span><h3>Add player</h3></div></header>
+        <div className="dpt-desk-register-body">
+          <form onSubmit={searchPlayers} className="dpt-desk-search-form">
+            <label>Player name<input value={playerQuery} onChange={(event) => setPlayerQuery(event.target.value)} placeholder="Search first, last or nickname" minLength={2} required /></label>
+            <button type="submit" disabled={busy}>Search</button>
+          </form>
+          {playerResults.length ? <div className="dpt-desk-search-results">{playerResults.map((player) => (
+            <button key={player.id} type="button" className={selectedPlayer?.id === player.id ? 'selected' : ''} onClick={() => setSelectedPlayer(player)}>
+              <strong>{profileName(player)}</strong><span>{player.nick_name || `Legacy #${player.legacy_user_id ?? '—'}`}</span>
+            </button>
+          ))}</div> : null}
+          {selectedPlayer ? <div className="dpt-desk-selected-player"><span>Selected</span><strong>{profileName(selectedPlayer)}</strong><button type="button" onClick={() => void registerPlayer()} disabled={busy}>{busy ? 'Registering…' : 'Register player'}</button></div> : null}
+        </div>
+      </section>
+
       <section className="dpt-desk-grid">
         <article className="dpt-desk-panel dpt-desk-players">
           <header><div><span>Operations</span><h3>Registered players</h3></div><strong>{desk.entries.length} entries</strong></header>
@@ -128,11 +228,31 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
                   <td>{entry.rank ?? '—'}</td>
                   <td>{money(entry.winnings)}</td>
                   <td>{Number(entry.score || 0).toLocaleString()}</td>
-                  <td><span className="dpt-desk-action-placeholder">Actions in Loop 088</span></td>
+                  <td><div className="dpt-desk-row-actions">
+                    {!entry.checked_in ? <button type="button" onClick={() => openAction(entry, 'check-in')}>Check in</button> : null}
+                    {entry.checked_in && !entry.eliminated ? <button type="button" onClick={() => openAction(entry, 'addon')}>Add-on</button> : null}
+                    {entry.checked_in && !entry.eliminated ? <button type="button" className="danger" onClick={() => openAction(entry, 'eliminate')}>Eliminate</button> : null}
+                    {entry.eliminated ? <span>Completed</span> : null}
+                  </div></td>
                 </tr>
               ))}</tbody>
             </table>
           </div>
+          {activeEntry && actionMode ? <form className="dpt-desk-action-form" onSubmit={submitEntryAction}>
+            <header><div><span>{actionMode}</span><strong>{playerName(activeEntry)}</strong></div><button type="button" onClick={closeAction}>Close</button></header>
+            {actionMode === 'check-in' ? <div className="dpt-desk-form-grid">
+              <label>Initial buy-in<input type="number" min="0" value={initialBuyIn} onChange={(event) => setInitialBuyIn(event.target.value)} required /></label>
+              <label>Initial chips<input type="number" min="0" value={initialChips} onChange={(event) => setInitialChips(event.target.value)} required /></label>
+              <label>Add-on count<input type="number" min="0" value={checkInAddonCount} onChange={(event) => setCheckInAddonCount(event.target.value)} required /></label>
+              <label>Total add-on buy-in<input type="number" min="0" value={checkInAddonBuyIn} onChange={(event) => setCheckInAddonBuyIn(event.target.value)} required /></label>
+            </div> : null}
+            {actionMode === 'addon' ? <div className="dpt-desk-form-grid">
+              <label>Add-on count<input type="number" min="1" value={addonCount} onChange={(event) => setAddonCount(event.target.value)} required /></label>
+              <label>Total add-on buy-in<input type="number" min="0" value={addonBuyIn} onChange={(event) => setAddonBuyIn(event.target.value)} required /></label>
+            </div> : null}
+            {actionMode === 'eliminate' ? <p>This assigns the next finishing rank, payout, score, sequence and final-table status. Confirm the correct player before continuing.</p> : null}
+            <button className={actionMode === 'eliminate' ? 'danger' : ''} type="submit" disabled={busy}>{busy ? 'Saving…' : actionMode === 'check-in' ? 'Check in player' : actionMode === 'addon' ? 'Save add-on' : 'Eliminate player'}</button>
+          </form> : null}
         </article>
 
         <aside className="dpt-desk-side">

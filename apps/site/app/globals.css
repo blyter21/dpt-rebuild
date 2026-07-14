@@ -159,6 +159,32 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-desk-payouts { list-style: none; margin: 0; padding: 8px 17px 16px; }
 .dpt-desk-payouts li { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid #f1f5f9; }
 .dpt-desk-action-placeholder { color: #94a3b8; font-size: 11px; white-space: nowrap; }
+.dpt-desk-register-body { padding: 16px 17px; display: grid; gap: 14px; }
+.dpt-desk-search-form { display: flex; align-items: flex-end; gap: 10px; }
+.dpt-desk-search-form label, .dpt-desk-action-form label { display: grid; gap: 5px; color: #475569; font-size: 11px; font-weight: 900; text-transform: uppercase; }
+.dpt-desk-search-form label { flex: 1; }
+.dpt-desk-search-form input, .dpt-desk-action-form input { min-height: 40px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; padding: 8px 10px; color: #172033; font: inherit; }
+.dpt-desk-search-form button, .dpt-desk-selected-player button, .dpt-desk-action-form > button { min-height: 40px; border: 0; border-radius: 8px; background: #172033; color: #fff; padding: 8px 14px; font-weight: 900; cursor: pointer; }
+.dpt-desk-search-form button:disabled, .dpt-desk-selected-player button:disabled, .dpt-desk-action-form button:disabled { opacity: .55; cursor: wait; }
+.dpt-desk-search-results { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.dpt-desk-search-results button { display: grid; gap: 3px; border: 1px solid #d8e1ec; border-radius: 9px; background: #fff; padding: 10px; text-align: left; cursor: pointer; }
+.dpt-desk-search-results button.selected { border-color: #2563eb; background: #eff6ff; }
+.dpt-desk-search-results span { color: #64748b; font-size: 11px; }
+.dpt-desk-selected-player { display: flex; align-items: center; gap: 12px; border-radius: 10px; background: #f1f5f9; padding: 11px 12px; }
+.dpt-desk-selected-player > span { color: #64748b; font-size: 11px; font-weight: 900; text-transform: uppercase; }
+.dpt-desk-selected-player button { margin-left: auto; background: #166534; }
+.dpt-desk-row-actions { display: flex; gap: 5px; flex-wrap: wrap; }
+.dpt-desk-row-actions button { border: 1px solid #94a3b8; border-radius: 6px; background: #fff; color: #172033; padding: 6px 8px; font-size: 11px; font-weight: 800; cursor: pointer; }
+.dpt-desk-row-actions button.danger, .dpt-desk-action-form button.danger { border-color: #fecaca; background: #b91c1c; color: #fff; }
+.dpt-desk-row-actions span { color: #64748b; font-size: 11px; }
+.dpt-desk-action-form { margin: 14px; border: 1px solid #bfdbfe; border-radius: 12px; background: #eff6ff; padding: 14px; display: grid; gap: 13px; }
+.dpt-desk-action-form > header { display: flex; justify-content: space-between; gap: 12px; }
+.dpt-desk-action-form > header div { display: grid; gap: 3px; }
+.dpt-desk-action-form > header span { color: #2563eb; font-size: 10px; font-weight: 900; text-transform: uppercase; }
+.dpt-desk-action-form > header button { border: 0; background: none; color: #475569; font-weight: 800; cursor: pointer; }
+.dpt-desk-action-form p { margin: 0; color: #7f1d1d; }
+.dpt-desk-form-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 9px; }
+.dpt-admin-action-message { border-radius: 9px; background: #ecfdf5; color: #166534; padding: 10px 13px; font-weight: 800; }
 
 @media (max-width: 1100px) {
   .header-inner { grid-template-columns: 150px 1fr; }
@@ -301,6 +327,12 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-login-card > a { display: inline-block; margin-top: 10px; color: var(--red); font-weight: 900; }
 .dpt-admin-preview-link { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; margin-top: 8px; padding: 10px 14px; border-radius: 9px; background: var(--red); color: #fff; font-weight: 900; text-decoration: none; }
 @media (max-width: 900px) {
+  .dpt-desk-banner { align-items: flex-start; flex-direction: column; }
+  .dpt-desk-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .dpt-desk-search-results { grid-template-columns: 1fr; }
+  .dpt-desk-search-form, .dpt-desk-selected-player { align-items: stretch; flex-direction: column; }
+  .dpt-desk-selected-player button { margin-left: 0; }
+  .dpt-desk-form-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .players-directory-controls > strong { width: 100%; margin-left: 0; padding-bottom: 0; }
   .player-profile-card { align-items: flex-start; }
   .player-profile-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
