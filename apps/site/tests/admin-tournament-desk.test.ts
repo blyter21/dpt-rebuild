@@ -46,6 +46,7 @@ describe('authenticated tournament desk API', () => {
       ]))
       .mockResolvedValueOnce(response([{ id: 1, addon_count: 2 }]))
       .mockResolvedValueOnce(response([{ id: 1, standing: 1, payout_amount: 500 }]))
+      .mockResolvedValueOnce(response([{ id: 1, name: 'DPT Standard Payout' }]))
       .mockResolvedValueOnce(response([]))
       .mockResolvedValueOnce(response([{ id: 1, action: 'tournament_entry.check_in' }]));
 
@@ -53,7 +54,7 @@ describe('authenticated tournament desk API', () => {
     const payload = await result.json();
 
     expect(result.status).toBe(200);
-    expect(adminFetch).toHaveBeenCalledTimes(6);
+    expect(adminFetch).toHaveBeenCalledTimes(7);
     expect(payload.metrics).toEqual({
       registered: 3,
       checkedIn: 2,

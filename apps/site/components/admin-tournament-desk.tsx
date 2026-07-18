@@ -43,12 +43,17 @@ type DeskData = {
     rebuy_amount: number;
     rebuy_fee: number;
     rebuy_chips_count: number;
+    payout_template_id: number | null;
+    total_registered_players: number | null;
+    total_payout_players: number | null;
+    total_payout_distribution_amount: number | null;
     event: { id: number; name: string } | null;
     venue: { id: number; name: string; city: string | null; state: string | null } | null;
     tournament_type: { id: number; code: string; name: string } | null;
   };
   entries: DeskEntry[];
   payouts: Array<{ id: number; standing: number; payout_amount: number; points: number | null; prize_description: string | null }>;
+  payoutTemplates: Array<{ id: number; name: string; tournament_type_id: number | null; type: string }>;
   updates: Array<{ id: number; title: string; published_at: string | null; featured: boolean; status: boolean }>;
   audit: Array<{ id: number; action: string; entity_type: string; entity_id: string; created_at: string }>;
   metrics: { registered: number; checkedIn: number; remaining: number; eliminated: number; totalBuyIn: number; addonCount: number };
@@ -85,6 +90,8 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [checkInAddonBuyIn, setCheckInAddonBuyIn] = useState('0');
   const [addonCount, setAddonCount] = useState('1');
   const [addonBuyIn, setAddonBuyIn] = useState('');
+  const [payoutTemplateId, setPayoutTemplateId] = useState('');
+  const [distributionAmount, setDistributionAmount] = useState('');
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -94,6 +101,9 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
       const payload = await response.json() as DeskData & { error?: string };
       if (!response.ok) throw new Error(payload.error || 'Unable to load tournament desk');
       setDesk(payload);
+      const matchingTemplates = (payload.payoutTemplates || []).filter((template) => !template.tournament_type_id || template.tournament_type_id === payload.tournament.tournament_type?.id);
+      setPayoutTemplateId(String(payload.tournament.payout_template_id || matchingTemplates[0]?.id || ''));
+      setDistributionAmount(String(payload.tournament.total_payout_distribution_amount ?? payload.metrics.totalBuyIn ?? 0));
     } catch (reason) {
       setDesk(null);
       setError(reason instanceof Error ? reason.message : 'Unable to load tournament desk');
@@ -134,6 +144,20 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     setBusy(false);
     if (!response.ok) { setMessage(payload.error || 'Registration state update failed'); return; }
     setMessage(closed ? 'Registration closed.' : 'Registration reopened.');
+    await reload();
+  };
+
+  const materializeTournamentPayouts = async (event: FormEvent) => {
+    event.preventDefault();
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/payouts/materialize`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ payoutTemplateId: Number(payoutTemplateId), totalDistributionAmount: Number(distributionAmount) }),
+    });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Payout materialization failed'); return; }
+    setMessage('Payouts materialized and ranked-player scores refreshed.');
     await reload();
   };
 
@@ -289,6 +313,15 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
           </article>
           <article className="dpt-desk-panel">
             <header><div><span>Prize structure</span><h3>Payouts</h3></div><strong>{desk.payouts.length}</strong></header>
+            <form className="dpt-desk-payout-form" onSubmit={materializeTournamentPayouts}>
+              <label>Template<select value={payoutTemplateId} onChange={(event) => setPayoutTemplateId(event.target.value)} required>
+                <option value="">Select template</option>
+                {desk.payoutTemplates.filter((template) => !template.tournament_type_id || template.tournament_type_id === desk.tournament.tournament_type?.id).map((template) => <option key={template.id} value={template.id}>{template.name}</option>)}
+              </select></label>
+              <label>Distribution amount<input type="number" min="0" step="0.01" value={distributionAmount} onChange={(event) => setDistributionAmount(event.target.value)} required /></label>
+              <button type="submit" disabled={busy || !desk.tournament.registration_closed}>{busy ? 'Saving…' : 'Materialize payouts'}</button>
+              {!desk.tournament.registration_closed ? <small>Close registration before materializing payouts.</small> : null}
+            </form>
             {desk.payouts.length ? <ol className="dpt-desk-payouts">{desk.payouts.map((payout) => <li key={payout.id}><span>#{payout.standing}</span><strong>{money(payout.payout_amount)}</strong></li>)}</ol> : <p>No tournament payouts have been materialized.</p>}
           </article>
           <article className="dpt-desk-panel">

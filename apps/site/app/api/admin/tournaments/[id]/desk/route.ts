@@ -16,7 +16,7 @@ export async function GET(
   }
 
   const tournamentQuery = new URLSearchParams({
-    select: 'id,name,starts_at,ends_at,registration_closed,minimum_buy_in,initial_chips_count,rebuy_amount,rebuy_fee,rebuy_chips_count,players_at_final_table,points_multiplier_enabled,points_multiplier_value,participation_bonus_points,event:events(id,name),venue:venues(id,name,city,state),tournament_type:tournament_types(id,code,name)',
+    select: 'id,name,starts_at,ends_at,registration_closed,minimum_buy_in,initial_chips_count,rebuy_amount,rebuy_fee,rebuy_chips_count,players_at_final_table,points_multiplier_enabled,points_multiplier_value,participation_bonus_points,payout_template_id,total_registered_players,total_payout_players,total_payout_distribution_amount,event:events(id,name),venue:venues(id,name,city,state),tournament_type:tournament_types(id,code,name)',
     id: `eq.${tournamentId}`,
     deleted_at: 'is.null',
     limit: '1',
@@ -37,6 +37,11 @@ export async function GET(
     tournament_id: `eq.${tournamentId}`,
     order: 'standing.asc',
   });
+  const payoutTemplatesQuery = new URLSearchParams({
+    select: 'id,name,tournament_type_id,type',
+    deleted_at: 'is.null',
+    order: 'name.asc',
+  });
   const updatesQuery = new URLSearchParams({
     select: 'id,title,published_at,featured,status',
     tournament_id: `eq.${tournamentId}`,
@@ -50,15 +55,16 @@ export async function GET(
     limit: '50',
   });
 
-  const [tournamentResponse, entriesResponse, addonsResponse, payoutsResponse, updatesResponse, auditResponse] = await Promise.all([
+  const [tournamentResponse, entriesResponse, addonsResponse, payoutsResponse, payoutTemplatesResponse, updatesResponse, auditResponse] = await Promise.all([
     dptAdminSupabaseFetch(context, `/rest/v1/tournaments?${tournamentQuery}`),
     dptAdminSupabaseFetch(context, `/rest/v1/tournament_entries?${entriesQuery}`),
     dptAdminSupabaseFetch(context, `/rest/v1/tournament_entry_addons?${addonsQuery}`),
     dptAdminSupabaseFetch(context, `/rest/v1/tournament_payouts?${payoutsQuery}`),
+    dptAdminSupabaseFetch(context, `/rest/v1/payout_templates?${payoutTemplatesQuery}`),
     dptAdminSupabaseFetch(context, `/rest/v1/tournament_updates?${updatesQuery}`),
     dptAdminSupabaseFetch(context, `/rest/v1/dpt_admin_audit_log?${auditQuery}`),
   ]);
-  const responses = [tournamentResponse, entriesResponse, addonsResponse, payoutsResponse, updatesResponse, auditResponse];
+  const responses = [tournamentResponse, entriesResponse, addonsResponse, payoutsResponse, payoutTemplatesResponse, updatesResponse, auditResponse];
   if (responses.some((response) => !response.ok)) {
     return NextResponse.json({ error: 'Unable to load tournament desk' }, { status: 502 });
   }
@@ -69,6 +75,7 @@ export async function GET(
   const entries = await entriesResponse.json() as Array<Record<string, unknown>>;
   const addons = await addonsResponse.json() as Array<Record<string, unknown>>;
   const payouts = await payoutsResponse.json() as Array<Record<string, unknown>>;
+  const payoutTemplates = await payoutTemplatesResponse.json() as Array<Record<string, unknown>>;
   const updates = await updatesResponse.json() as Array<Record<string, unknown>>;
   const audit = await auditResponse.json() as Array<Record<string, unknown>>;
 
@@ -77,6 +84,7 @@ export async function GET(
     entries,
     addons,
     payouts,
+    payoutTemplates,
     updates,
     audit,
     metrics: {

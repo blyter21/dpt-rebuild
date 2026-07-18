@@ -14,6 +14,7 @@ describe('tournament desk operator controls', () => {
       '/eliminate',
       '/undo',
       '/registration',
+      '/payouts/materialize',
       'Register player',
       'Check in player',
       'Save add-on',
@@ -21,6 +22,7 @@ describe('tournament desk operator controls', () => {
       'Undo player result',
       'Close registration',
       'Reopen registration',
+      'Materialize payouts',
       'Audit history',
     ]) {
       expect(source).toContain(expected);

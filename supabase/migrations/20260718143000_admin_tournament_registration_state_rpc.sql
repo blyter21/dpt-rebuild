@@ -51,8 +51,9 @@ begin
   returning * into after_row;
 
   insert into public.dpt_admin_audit_log (
-    actor_user_id, action, entity_type, entity_id, tournament_id, before_data, after_data
+    actor_auth_user_id, actor_profile_id, action, entity_type, entity_id, tournament_id, before_data, after_data
   ) values (
+    auth.uid(),
     actor_profile_id,
     case when p_closed then 'registration_closed' else 'registration_opened' end,
     'tournament',

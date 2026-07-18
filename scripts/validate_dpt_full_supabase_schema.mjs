@@ -23,6 +23,7 @@ const migrationFiles = [
   'supabase/migrations/20260713180000_admin_tournament_undo_rpc.sql',
   'supabase/migrations/20260718130000_preserve_payout_legacy_data.sql',
   'supabase/migrations/20260718143000_admin_tournament_registration_state_rpc.sql',
+  'supabase/migrations/20260718163000_admin_tournament_payout_materialization_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -225,7 +226,17 @@ const workflowSecurityResult = await db.query(`
       'authenticated',
       'public.dpt_admin_set_registration_state(bigint,boolean)',
       'execute'
-    ) as authenticated_can_set_registration_state
+    ) as authenticated_can_set_registration_state,
+    not has_function_privilege(
+      'anon',
+      'public.dpt_admin_materialize_payouts(bigint,bigint,numeric)',
+      'execute'
+    ) as anon_cannot_materialize_payouts,
+    has_function_privilege(
+      'authenticated',
+      'public.dpt_admin_materialize_payouts(bigint,bigint,numeric)',
+      'execute'
+    ) as authenticated_can_materialize_payouts
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
