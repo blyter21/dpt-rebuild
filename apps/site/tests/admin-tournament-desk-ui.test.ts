@@ -13,11 +13,14 @@ describe('tournament desk operator controls', () => {
       '/addons',
       '/eliminate',
       '/undo',
+      '/registration',
       'Register player',
       'Check in player',
       'Save add-on',
       'Eliminate player',
       'Undo player result',
+      'Close registration',
+      'Reopen registration',
       'Audit history',
     ]) {
       expect(source).toContain(expected);

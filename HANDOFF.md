@@ -16,13 +16,13 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Pedro remains the only Supabase Auth-linked profile; production legacy user 2787 retains `administrator` and `user` roles.
 - Tournament 346 is the representative desk fixture with 97 entries, 94 add-ons and 12 payouts.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
-- Real staging tournament operations exist for player registration, check-in, add-ons/rebuys, DPT/freeroll elimination, undo/correction and audit logging.
+- Real staging tournament operations exist for player registration, check-in, registration open/close, add-ons/rebuys, DPT/freeroll elimination, undo/correction and audit logging.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, undo, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 42 integrated site tests, 31 tournament-engine tests and the complete 18-migration PGlite/RLS/privilege chain pass; the payout-aware protected import also passes exact embedded-Postgres counts.
+- Current verified gates: 45 integrated site tests, 31 tournament-engine tests and the complete 19-migration PGlite/RLS/privilege chain pass; the payout-aware protected import also passes exact embedded-Postgres counts.
 - Production remains read-only and untouched.
 - No authenticated staging browser mutation/read-back has been completed yet. The next owner-only action is signing `pedro@fpngaming.com` into the Vercel staging admin in the dedicated `PedroChromeDebug` profile; never send the password or recovery code in chat.
 - After browser login: test tournament 346 read-only first, then perform a controlled staging-only register/check-in/add-on/eliminate/undo round trip and verify audit/database read-back.
-- Remaining tournament workflows: registration close, payout materialization, satellite winners, flight advancement, bulk rank editing and full reset.
+- Remaining tournament workflows: payout materialization, satellite winners, flight advancement, bulk rank editing and full reset.
 
 ## Safety boundaries
 

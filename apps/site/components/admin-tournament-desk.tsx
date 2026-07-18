@@ -124,6 +124,19 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     setMessage('Player registered.'); setSelectedPlayer(null); setPlayerResults([]); setPlayerQuery(''); await reload();
   };
 
+  const setRegistrationState = async (closed: boolean) => {
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/registration`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ closed }),
+    });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Registration state update failed'); return; }
+    setMessage(closed ? 'Registration closed.' : 'Registration reopened.');
+    await reload();
+  };
+
   const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate' | 'undo') => {
     setActiveEntry(entry); setActionMode(mode); setMessage('');
     setInitialBuyIn(String(desk?.tournament.minimum_buy_in || 0));
@@ -183,8 +196,13 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
           <h2>{desk.tournament.name}</h2>
           <p>{desk.tournament.venue ? `${desk.tournament.venue.name} · ${desk.tournament.venue.city || ''}, ${desk.tournament.venue.state || ''}` : 'Venue not assigned'}</p>
         </div>
-        <div className={`dpt-desk-registration ${desk.tournament.registration_closed ? 'closed' : 'open'}`}>
-          Registration {desk.tournament.registration_closed ? 'closed' : 'open'}
+        <div className="dpt-desk-registration-controls">
+          <div className={`dpt-desk-registration ${desk.tournament.registration_closed ? 'closed' : 'open'}`}>
+            Registration {desk.tournament.registration_closed ? 'closed' : 'open'}
+          </div>
+          <button type="button" disabled={busy} onClick={() => void setRegistrationState(!desk.tournament.registration_closed)}>
+            {busy ? 'Saving…' : desk.tournament.registration_closed ? 'Reopen registration' : 'Close registration'}
+          </button>
         </div>
       </section>
 
