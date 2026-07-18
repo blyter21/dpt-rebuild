@@ -10,12 +10,17 @@
     "events": 82,
     "tournament_types": 4,
     "blind_structures": 8,
+    "payout_templates": 5,
+    "payout_template_rows": 2461,
     "tournaments": 271,
+    "tournament_payouts": 1940,
     "tournament_entries": 11019,
     "tournament_entry_addons": 7832,
     "tournament_updates": 24
   },
   "skipped": {
+    "orphan_payout_structures": 1,
+    "orphan_payout_structure_rows": 23,
     "addons_ambiguous_entry_preserved_by_pair": 2
   },
   "excludedSensitiveFields": [

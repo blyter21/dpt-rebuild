@@ -21,6 +21,7 @@ const migrationFiles = [
   'supabase/migrations/20260713160000_admin_tournament_addon_rpc.sql',
   'supabase/migrations/20260713170000_admin_tournament_elimination_rpc.sql',
   'supabase/migrations/20260713180000_admin_tournament_undo_rpc.sql',
+  'supabase/migrations/20260718130000_preserve_payout_legacy_data.sql',
 ];
 
 const db = new PGlite();
@@ -68,6 +69,9 @@ if (process.env.DPT_VALIDATE_PRIVATE_IMPORT === '1') {
       (select count(*)::int from public.venues) as venues,
       (select count(*)::int from public.events) as events,
       (select count(*)::int from public.tournaments) as tournaments,
+      (select count(*)::int from public.payout_templates) as payout_templates,
+      (select count(*)::int from public.payout_template_rows) as payout_template_rows,
+      (select count(*)::int from public.tournament_payouts) as tournament_payouts,
       (select count(*)::int from public.tournament_entries) as tournament_entries,
       (select count(*)::int from public.tournament_entry_addons) as tournament_entry_addons,
       (select count(*)::int from public.tournament_updates) as tournament_updates
@@ -248,6 +252,9 @@ if (coreImportCounts) {
     venues: 78,
     events: 82,
     tournaments: 271,
+    payout_templates: 5,
+    payout_template_rows: 2461,
+    tournament_payouts: 1940,
     tournament_entries: 11019,
     tournament_entry_addons: 7832,
     tournament_updates: 24,

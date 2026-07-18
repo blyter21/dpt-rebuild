@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import json
 import os
@@ -11,6 +12,7 @@ from typing import Any, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path(os.environ.get('DPT_PRODUCTION_SQL_PATH', '/home/hermes/.hermes/private/dpt/prod_dakotapokertour.sql'))
 OUTPUT = Path(os.environ.get('DPT_PRIVATE_IMPORT_PATH', '/home/hermes/.hermes/private/dpt/dpt_core_production_import.sql'))
+CHUNK_DIR = Path(os.environ.get('DPT_PRIVATE_IMPORT_CHUNK_DIR', '/home/hermes/.hermes/private/dpt/import-chunks'))
 REPORT = ROOT / 'reports' / 'dpt-core-import-summary.json'
 PARSER_PATH = ROOT / 'scripts' / 'extract_public_dpt_data.py'
 NAMESPACE = uuid.UUID('f9dfb9c5-0a16-4b89-9ef9-1f010d74ce30')
@@ -19,6 +21,7 @@ TABLES = {
     'users', 'roles', 'model_has_roles',
     'dpt_leagues', 'dpt_seasons', 'dpt_venues', 'dpt_events',
     'dpt_tournament_types', 'dpt_blind_structures', 'dpt_tournaments',
+    'dpt_payout_distributions', 'dpt_payout_structures', 'dpt_tournament_payout_distributions',
     'dpt_tournament_players', 'dpt_tournament_players_addon', 'dpt_tournament_updates',
 }
 SENSITIVE_USER_FIELDS = {'password', 'remember_token', 'archived_details'}
@@ -105,7 +108,10 @@ def parse_json(value: Any, fallback: Any) -> Any:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        return fallback
+        try:
+            return json.loads(text.replace('\\"', '"'))
+        except json.JSONDecodeError:
+            return fallback
 
 
 def profile_uuid(legacy_user_id: Any) -> str:
@@ -134,6 +140,52 @@ def insert_batches(table: str, columns: list[str], records: Iterable[list[Any]],
             + f"\n{conflict};"
         )
     return statements, len(rows)
+
+
+def write_api_chunks(statements: list[str], max_bytes: int = 800_000) -> list[dict[str, Any]]:
+    """Write ordered, idempotent transaction chunks below the Management API body limit."""
+    body_statements = [
+        statement for statement in statements
+        if statement.strip().lower() not in {'begin;', 'commit;', 'set statement_timeout = 0;'}
+    ]
+    chunks: list[list[str]] = []
+    current: list[str] = []
+    current_bytes = 0
+    for statement in body_statements:
+        size = len(statement.encode('utf-8')) + 2
+        if size > max_bytes:
+            raise RuntimeError(f'Private import statement exceeds chunk limit: {size} bytes')
+        if current and current_bytes + size > max_bytes:
+            chunks.append(current)
+            current = []
+            current_bytes = 0
+        current.append(statement)
+        current_bytes += size
+    if current:
+        chunks.append(current)
+
+    CHUNK_DIR.mkdir(parents=True, exist_ok=True)
+    os.chmod(CHUNK_DIR, 0o700)
+    for old_file in CHUNK_DIR.glob('*.sql'):
+        old_file.unlink()
+
+    manifest: list[dict[str, Any]] = []
+    for index, chunk in enumerate(chunks, start=1):
+        content = 'begin;\nset statement_timeout = 0;\n\n' + '\n\n'.join(chunk) + '\n\ncommit;\n'
+        path = CHUNK_DIR / f'{index:03d}.sql'
+        path.write_text(content)
+        os.chmod(path, 0o600)
+        manifest.append({
+            'index': index,
+            'file': path.name,
+            'bytes': path.stat().st_size,
+            'statements': len(chunk),
+            'sha256': hashlib.sha256(content.encode('utf-8')).hexdigest(),
+        })
+    manifest_path = CHUNK_DIR / 'manifest.json'
+    manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
+    os.chmod(manifest_path, 0o600)
+    return manifest
 
 
 def main() -> None:
@@ -200,6 +252,68 @@ def main() -> None:
     sql, counts['blind_structures'] = insert_batches('blind_structures', blind_columns, blind_records, 'on conflict (id) do nothing')
     statements.extend(sql)
 
+    payout_template_columns = ['id','name','tournament_type_id','type','created_at','updated_at','deleted_at','legacy_data']
+    payout_template_records = [[
+        integer(r['id']), clean_text(r.get('name')), integer(r.get('tournament_type_id')) or None,
+        clean_text(r.get('type')) or 'range', required_timestamp(r.get('created_at'), r.get('updated_at')),
+        required_timestamp(r.get('updated_at'), r.get('created_at')), clean_date(r.get('deleted_at')), r,
+    ] for r in tables['dpt_payout_distributions']]
+    payout_template_ids = {record[0] for record in payout_template_records}
+    sql, counts['payout_templates'] = insert_batches(
+        'payout_templates', payout_template_columns, payout_template_records,
+        'on conflict (id) do update set name=excluded.name,tournament_type_id=excluded.tournament_type_id,type=excluded.type,created_at=excluded.created_at,updated_at=excluded.updated_at,deleted_at=excluded.deleted_at,legacy_data=excluded.legacy_data',
+    )
+    statements.extend(sql)
+
+    payout_row_columns = ['id','payout_template_id','player_count_start','player_count_end','winners_count','standing','payout_percentage','payout_amount','prize_description','points','created_at','legacy_data']
+    payout_row_records = []
+    payout_row_ids: set[int] = set()
+    payout_row_lookup: dict[tuple[int, int], int] = {}
+    payout_row_occurrences: dict[tuple[int, int], int] = {}
+    for structure in tables['dpt_payout_structures']:
+        structure_id = integer(structure['id'])
+        payout_template_id = integer(structure.get('payout_id'))
+        rows = parse_json(structure.get('structures'), [])
+        if not isinstance(rows, list):
+            continue
+        if payout_template_id not in payout_template_ids:
+            skipped['orphan_payout_structures'] = skipped.get('orphan_payout_structures', 0) + 1
+            skipped['orphan_payout_structure_rows'] = skipped.get('orphan_payout_structure_rows', 0) + len(rows)
+            continue
+        for source_row in rows:
+            if not isinstance(source_row, dict):
+                continue
+            rank_start = max(1, integer(source_row.get('rank_start')))
+            rank_end = max(rank_start, integer(source_row.get('rank_end')) or rank_start)
+            for standing in range(rank_start, rank_end + 1):
+                lookup_key = (structure_id, standing)
+                occurrence = payout_row_occurrences.get(lookup_key, 0) + 1
+                payout_row_occurrences[lookup_key] = occurrence
+                row_id = structure_id * 1_000_000 + standing * 100 + occurrence
+                payout_row_ids.add(row_id)
+                payout_row_lookup.setdefault(lookup_key, row_id)
+                payout_row_records.append([
+                    row_id, payout_template_id, integer(structure.get('player_count_start')) or None,
+                    integer(structure.get('player_count_end')) or None, integer(structure.get('winners_count')) or None,
+                    standing, number(source_row.get('percentage')) or None, number(source_row.get('amount')) or None,
+                    clean_text(source_row.get('prize_description')), integer(source_row.get('points')) or None,
+                    required_timestamp(structure.get('created_at'), structure.get('updated_at')),
+                    {
+                        'source_structure_id': structure_id,
+                        'source_payout_id': integer(structure.get('payout_id')),
+                        'source_player_count_start': integer(structure.get('player_count_start')) or None,
+                        'source_player_count_end': integer(structure.get('player_count_end')) or None,
+                        'source_winners_count': integer(structure.get('winners_count')) or None,
+                        'source_occurrence': occurrence,
+                        'source_row': source_row,
+                    },
+                ])
+    sql, counts['payout_template_rows'] = insert_batches(
+        'payout_template_rows', payout_row_columns, payout_row_records,
+        'on conflict (id) do update set payout_template_id=excluded.payout_template_id,player_count_start=excluded.player_count_start,player_count_end=excluded.player_count_end,winners_count=excluded.winners_count,standing=excluded.standing,payout_percentage=excluded.payout_percentage,payout_amount=excluded.payout_amount,prize_description=excluded.prize_description,points=excluded.points,created_at=excluded.created_at,legacy_data=excluded.legacy_data', 100,
+    )
+    statements.extend(sql)
+
     tournament_columns = ['id','event_id','venue_id','tournament_type_id','blind_structure_id','name','alias','short_description','long_description','rules_description','starts_at','ends_at','registration_starts_at','registration_ends_at','registration_closed','registration_closed_by','registration_closed_at','dealer_fee','minimum_buyin','maximum_buyin','allow_rebuy','rebuy_amount','rebuy_fee','rebuy_chips_count','initial_chips_count','players_at_final_table','points_multiplier_enabled','points_multiplier_value','participation_bonus_points','allow_search_registration','status','created_at','updated_at','deleted_at','legacy_data']
     tournament_records = []
     for r in tables['dpt_tournaments']:
@@ -213,6 +327,25 @@ def main() -> None:
             clean_date(r.get('created_at')),clean_date(r.get('updated_at')),clean_date(r.get('deleted_at')),r,
         ])
     sql, counts['tournaments'] = insert_batches('tournaments', tournament_columns, tournament_records, 'on conflict (id) do nothing', 150)
+    statements.extend(sql)
+
+    tournament_payout_columns = ['id','tournament_id','payout_template_row_id','standing','payout_percentage','payout_amount','prize_description','points','created_at','updated_at','legacy_data']
+    tournament_payout_records = []
+    for payout in tables['dpt_tournament_payout_distributions']:
+        standing = max(1, integer(payout.get('standing')))
+        structure_id = integer(payout.get('structure_id'))
+        row_id = payout_row_lookup.get((structure_id, standing)) if structure_id else None
+        tournament_payout_records.append([
+            integer(payout['id']), integer(payout.get('tournament_id')), row_id if row_id in payout_row_ids else None,
+            standing, number(payout.get('payout_percentage')) or None, number(payout.get('payout_amount')),
+            clean_text(payout.get('prize_description')), integer(payout.get('points')) or None,
+            required_timestamp(payout.get('created_at'), payout.get('updated_at')),
+            required_timestamp(payout.get('updated_at'), payout.get('created_at')), payout,
+        ])
+    sql, counts['tournament_payouts'] = insert_batches(
+        'tournament_payouts', tournament_payout_columns, tournament_payout_records,
+        'on conflict (id) do update set tournament_id=excluded.tournament_id,payout_template_row_id=excluded.payout_template_row_id,standing=excluded.standing,payout_percentage=excluded.payout_percentage,payout_amount=excluded.payout_amount,prize_description=excluded.prize_description,points=excluded.points,created_at=excluded.created_at,updated_at=excluded.updated_at,legacy_data=excluded.legacy_data', 250,
+    )
     statements.extend(sql)
 
     entry_columns = ['id','tournament_id','player_id','legacy_user_id','pre_registered','checked_in','checked_in_by','initial_buyin','initial_chips_count','total_buy_in_amount','no_of_addons_buy','total_addon_chips','total_chips','rank','winnings','score','bounty','eliminated','elimination_sequence','final_table','duplicate_status','qualified_flight_player','created_at','updated_at','deleted_at','legacy_data']
@@ -249,16 +382,17 @@ def main() -> None:
     sql, counts['tournament_updates'] = insert_batches('tournament_updates', update_columns, update_records, 'on conflict (id) do nothing')
     statements.extend(sql)
 
-    for table in ['leagues','seasons','venues','events','tournament_types','blind_structures','tournaments','tournament_entries','tournament_entry_addons','tournament_updates']:
+    for table in ['leagues','seasons','venues','events','tournament_types','blind_structures','payout_templates','payout_template_rows','tournaments','tournament_payouts','tournament_entries','tournament_entry_addons','tournament_updates']:
         statements.append(f"select setval(pg_get_serial_sequence('public.{table}','id'), coalesce((select max(id) from public.{table}),1), true);")
     statements.append('commit;')
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text('\n\n'.join(statements) + '\n')
     os.chmod(OUTPUT, 0o600)
+    chunk_manifest = write_api_chunks(statements)
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps({'source': SOURCE.name, 'outputStoredOutsideGit': True, 'counts': counts, 'skipped': skipped, 'excludedSensitiveFields': sorted(SENSITIVE_USER_FIELDS)}, indent=2) + '\n')
-    print(json.dumps({'output': str(OUTPUT), 'bytes': OUTPUT.stat().st_size, 'counts': counts, 'skipped': skipped, 'report': str(REPORT)}, indent=2))
+    print(json.dumps({'output': str(OUTPUT), 'bytes': OUTPUT.stat().st_size, 'chunks': {'directory': str(CHUNK_DIR), 'count': len(chunk_manifest), 'maxBytes': max(item['bytes'] for item in chunk_manifest)}, 'counts': counts, 'skipped': skipped, 'report': str(REPORT)}, indent=2))
 
 
 if __name__ == '__main__':
