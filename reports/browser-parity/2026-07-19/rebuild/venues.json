@@ -1,0 +1,129 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/venues",
+    "headings":  [
+                     "Administration",
+                     "Venues",
+                     "Venues List"
+                 ],
+    "buttons":  [
+                    "Sign out",
+                    "＋ Create venue",
+                    "# ▼",
+                    "NAME",
+                    "ADDRESS",
+                    "CITY",
+                    "STATE",
+                    "ZIP",
+                    "STATUS",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Previous",
+                    "Next"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "# ▼",
+                                       "NAME",
+                                       "ADDRESS",
+                                       "CITY",
+                                       "STATE",
+                                       "ZIP",
+                                       "STATUS",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  10
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nVenues\n\nProduction-equivalent venue list with safe, authenticated configuration actions.\n\n78 records\nVenues List\n＋ Create venue\nShow\n10\nentries\nSearch:\n# ▼\tNAME\tADDRESS\tCITY\tSTATE\tZIP\tSTATUS\tACTIONS\n91\tDouble Tree - West Fargo\t825 E Beaton Drive\tWest Fargo\tND\t58078\tPublished\tEditViewUnpublishDelete\n90\tDakota Magic Casino\t16849 102nd St SE\tHankinson\tND\t58041\tPublished\tEditViewUnpublishDelete\n89\tCactus Jacks\t3402 Interstate Blvd S\tFargo\tND\t58103\tPublished\tEditViewUnpublishDelete\n88\tCity Brew Hall\t120 4th St N, Suite A\tWahpeton\tND\t58075\tPublished\tEditViewUnpublishDelete\n87\tRed River Valley Fairgrounds - Hartl Building\t1805 Main Ave W\tWest Fargo\tNorth Dakota\t58078\tPublished\tEditViewUnpublishDelete\n86\tWatford City Eagles Club\t1904 Main St\tWatford City\tNorth Dakota\t58854\tPublished\tEditViewUnpublishDelete\n85\tHarvey Eagles Club\t931 US-52 Bus\tHarvey\tND\t58341\tPublished\tEditViewUnpublishDelete\n83\tBismarck Hotel\t800 S 3rd St\tBismarck\tND\t58504\tPublished\tEditViewUnpublishDelete\n82\tTBD\tTBD\tTBD\tND\t00000\tPublished\tEditViewUnpublishDelete\n81\tAngry Beaver Lodge\t404 Main Ave\tOakes\tND\t58474\tPublished\tEditViewUnpublishDelete\nShowing 1 to 10 of 78 entries\nPrevious\n1\nNext"
+}

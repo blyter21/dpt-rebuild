@@ -1,0 +1,107 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/seasons",
+    "headings":  [
+                     "Administration",
+                     "Seasons",
+                     "Seasons List"
+                 ],
+    "buttons":  [
+                    "Sign out",
+                    "＋ Create season",
+                    "# ▼",
+                    "NAME",
+                    "LEAGUE",
+                    "START DATE",
+                    "END DATE",
+                    "STATUS",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Previous",
+                    "Next"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "# ▼",
+                                       "NAME",
+                                       "LEAGUE",
+                                       "START DATE",
+                                       "END DATE",
+                                       "STATUS",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  5
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nSeasons\n\nProduction columns: Name, League, Start Date, End Date, Status, Actions.\n\nSeasons List\n＋ Create season\nShow\n10\nentries\nSearch:\n# ▼\tNAME\tLEAGUE\tSTART DATE\tEND DATE\tSTATUS\tACTIONS\n8\t2026\tDakota Poker Tour\t2026-01-01\t2026-12-31\tPublished\tEditViewUnpublishDelete\n7\t2025\tDakota Poker Tour\t2025-01-01\t2025-12-31\tPublished\tEditViewUnpublishDelete\n6\t2023-24\tDakota Poker Tour\t2023-07-17\t2024-05-24\tPublished\tEditViewUnpublishDelete\n4\t2022-23\tDakota Poker Tour\t2022-06-15\t2023-05-31\tPublished\tEditViewUnpublishDelete\n2\tSeason XI\tDakota Poker Tour\t2020-01-01\t2021-12-31\tPublished\tEditViewUnpublishDelete\nShowing 1 to 5 of 5 entries\nPrevious\n1\nNext"
+}

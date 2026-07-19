@@ -1,0 +1,89 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/leagues",
+    "headings":  [
+                     "Administration",
+                     "Leagues",
+                     "Leagues List"
+                 ],
+    "buttons":  [
+                    "Sign out",
+                    "＋ Create league",
+                    "# ▼",
+                    "NAME",
+                    "STATUS",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Previous",
+                    "Next"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "# ▼",
+                                       "NAME",
+                                       "STATUS",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  2
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nLeagues\n\nProduction columns: Name, Status, Actions.\n\nLeagues List\n＋ Create league\nShow\n10\nentries\nSearch:\n# ▼\tNAME\tSTATUS\tACTIONS\n3\tFPN\tPublished\tEditViewUnpublishDelete\n2\tDakota Poker Tour\tPublished\tEditViewUnpublishDelete\nShowing 1 to 2 of 2 entries\nPrevious\n1\nNext"
+}

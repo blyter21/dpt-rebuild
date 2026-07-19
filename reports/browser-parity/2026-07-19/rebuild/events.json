@@ -1,0 +1,127 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/events",
+    "headings":  [
+                     "Administration",
+                     "Events",
+                     "Events List"
+                 ],
+    "buttons":  [
+                    "Sign out",
+                    "＋ Create event",
+                    "# ▼",
+                    "NAME",
+                    "SEASON",
+                    "START DATE",
+                    "END DATE",
+                    "STATUS",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Publish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Unpublish",
+                    "Delete",
+                    "Previous",
+                    "Next"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "# ▼",
+                                       "NAME",
+                                       "SEASON",
+                                       "START DATE",
+                                       "END DATE",
+                                       "STATUS",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  10
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nEvents\n\nProduction-equivalent event administration: search, sorting, pagination, and audited actions.\n\n80 records\nEvents List\n＋ Create event\nShow\n10\nentries\nSearch:\n# ▼\tNAME\tSEASON\tSTART DATE\tEND DATE\tSTATUS\tACTIONS\n89\tPoker Brat Black Chip BOUNTY Tournament\t2026\t2026-06-07\t2026-06-07\tPublished\tEditViewUnpublishDelete\n88\tSpring Championship\t2026\t2026-05-15\t2026-05-17\tPublished\tEditViewUnpublishDelete\n87\tCasselton Vets\t2026\t2026-04-17\t2026-04-18\tPublished\tEditViewUnpublishDelete\n86\tPour Decisions Deep Stack\t2026\t2026-03-21\t2026-03-21\tPublished\tEditViewUnpublishDelete\n85\tThe Buffalo City Showdown\t2026\t2026-02-07\t2026-02-07\tPublished\tEditViewUnpublishDelete\n84\tCasino State Championship\\\"-LIVE REPORTED BY POKERNEWS!! $10,700 WSOP Main Event Seat Package ON TOP of 1st place! $250 Buy-in. $710 Buy Backs on double bags! SIX flights this year! $300,000+ Est. Prize Pool\t2025\t2025-12-31\t2026-01-04\tDraft\tEditViewPublishDelete\n83\tDakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \\\"Dream Chaser V\\\" Tournament! $5,000 Player of the Series package up for grabs!\t2025\t2025-11-20\t2025-11-23\tPublished\tEditViewUnpublishDelete\n82\tL.I.S.T.E.N. INC Monster Stack 10/31/2025\t2025\t2025-10-31\t2025-11-01\tPublished\tEditViewUnpublishDelete\n81\tL.I.S.T.E.N. INC Monster Stack\t2026\t2026-03-13\t2026-03-14\tPublished\tEditViewUnpublishDelete\n80\tThe Buckskin Shootout\t2026\t2026-03-27\t2026-03-28\tPublished\tEditViewUnpublishDelete\nShowing 1 to 10 of 82 entries\nPrevious\n1\nNext"
+}

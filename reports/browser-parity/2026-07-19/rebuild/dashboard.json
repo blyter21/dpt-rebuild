@@ -1,0 +1,84 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin",
+    "headings":  [
+                     "Administration",
+                     "Production Data Dashboard",
+                     "Read-only production views",
+                     "Supabase staging + authentication"
+                 ],
+    "buttons":  [
+                    "Sign out"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  },
+                  {
+                      "text":  "Events\n80",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Tournaments\n261",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Venues\n78",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles\n383",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  }
+              ],
+    "tables":  [
+
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nProduction Data Dashboard\n\nThis dashboard uses records extracted from the live Dakota Poker Tour production database—not sample or mock records.\n\nPRODUCTION USERS\n2,591\n\nCount only; private user rows are not exposed in this preview.\n\nTOURNAMENT ENTRIES\n11,019\n\nHistorical production tournament-player records.\n\nPRODUCTION TOURNAMENTS\n271\n\n261 curated records currently available to the integrated repository.\n\nPRODUCTION EVENTS\n82\n\n80 curated records currently available to the integrated repository.\n\nPRODUCTION VENUES\n78\n\n78 production-derived venue records available.\n\nPRODUCTION ARTICLES\n392\n\n383 production-derived articles available.\n\nINTEGRATED MODULES\nRead-only production views\nEvents\n80\nTournaments\n261\nVenues\n78\nArticles\n383\nNEXT BACKEND MILESTONE\nSupabase staging + authentication\n\nThe next phase replaces the local production snapshot transport with Supabase staging, adds admin login/roles, and then enables audited writes one module at a time.\n\nNo fake records\nNo production writes\nNo private user fields in this deployment\nSame Next.js/Vercel project as the public site"
+}

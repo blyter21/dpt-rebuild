@@ -1,0 +1,121 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/blinds",
+    "headings":  [
+                     "Administration",
+                     "Blinds List",
+                     "Blinds List"
+                 ],
+    "buttons":  [
+                    "Sign out",
+                    "＋ Create",
+                    "#",
+                    "NAME",
+                    "STATUS",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Copy",
+                    "Unpublish",
+                    "Delete",
+                    "Previous",
+                    "Next"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "#",
+                                       "NAME",
+                                       "STATUS",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  8
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nBlinds List\n\nProduction-matched blind structures, levels and breaks.\n\nBlinds List\n＋ Create\nShow\n10\nentries\nSearch:\n#\tNAME\tSTATUS\tACTIONS\n9\tRPT Summer Main Event Structure - RPT Casino State Championship - Main Event\tPublished\tEditViewCopyUnpublishDelete\n8\t$315 Championship\tPublished\tEditViewCopyUnpublishDelete\n7\t$1,000 Dream Chaser\tPublished\tEditViewCopyUnpublishDelete\n6\t$250 Monster Stack\tPublished\tEditViewCopyUnpublishDelete\n5\tBig O No Limit\tPublished\tEditViewCopyUnpublishDelete\n4\t$165 No Limit Hold\u0027em Turbo\tPublished\tEditViewCopyUnpublishDelete\n3\tRPT Summer Main Event Structure\tPublished\tEditViewCopyUnpublishDelete\n1\tMonster Stack Main Event Blind Structure\tPublished\tEditViewCopyUnpublishDelete\nShowing 1 to 8 of 8 entries\nPrevious\n1\nNext"
+}

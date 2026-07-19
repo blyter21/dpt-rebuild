@@ -1,0 +1,517 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/tournaments",
+    "headings":  [
+                     "Administration",
+                     "Tournaments"
+                 ],
+    "buttons":  [
+                    "Sign out"
+                ],
+    "links":  [
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/leagues"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/blinds"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/venues"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/articles"
+                  },
+                  {
+                      "text":  "View public site",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/346"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/345"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/344"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-spring-championship-spring-championship-megastack-100k-05-16-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/343"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-spring-championship-friday-night-turbo-05-15-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/342"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/341"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-casselton-vets-friday-night-turbo-04-17-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/340"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-the-buckskin-shootout-buckskin-deep-stack-03-28-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/339"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-the-buckskin-shootout-buckskin-friday-night-turbo-03-27-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/338"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-pour-decisions-deep-stack-pour-decisions-deep-stack-03-21-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/337"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-l-i-s-t-e-n-inc-monster-stack-monster-stack-03-14-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/336"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-l-i-s-t-e-n-inc-monster-stack-friday-night-turbo-03-13-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/335"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-hole-in-one-deepstack-main-event-02-28-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/334"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-the-buffalo-city-showdown-buffalo-city-showdown-02-07-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/333"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-dead-money-open-deep-stack-01-31-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/332"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-dead-money-open-friday-night-turbo-01-30-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/331"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2026-eagle-eye-eagle-eye-01-24-2026"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/330"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-operation-poker-red-white-bluff-honoring-heroes-for-veteran-s-day-at-the-casselton-vets-operation-red-white-bluff-11-15-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/329"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-operation-poker-red-white-bluff-honoring-heroes-for-veteran-s-day-at-the-casselton-vets-friday-night-turbo-11-14-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/328"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-l-i-s-t-e-n-inc-listen-inc-monster-stack-11-01-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/327"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-l-i-s-t-e-n-inc-friday-night-turbo-10-31-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/326"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-poker-brat-black-chip-bounty-tournament-black-chip-bounty-10-19-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/325"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-the-tri-state-poker-championship-sunday-second-chance-10-05-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/322"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-2025-10-03-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/324"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-flight-b-09-06-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/323"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-flight-a-09-05-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/321"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-hagge-s-fall-classic-sunday-fun-day-turbo-09-28-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/320"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-hagge-s-fall-classic-fall-classic-megastack-100k-09-27-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/319"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-city-brew-hall-deep-stack-09-20-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/318"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-city-brew-hall-friday-night-turbo-09-19-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/317"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-the-poker-brat-at-the-windbreak-black-chip-bounty-06-08-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/315"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-casselton-vets-deep-stack-05-03-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/314"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-casselton-vets-friday-night-turbo-05-02-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/313"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-dakota-poker-tour-spring-championship-sunday-fun-day-turbo-04-27-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/312"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-dakota-poker-tour-spring-championship-dpt-spring-championship-megastack-100k-04-26-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/311"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-cactus-jacks-open-cactus-jacks-open-main-event-04-12-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/310"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-cactus-jacks-open-cactus-jacks-open-friday-night-turbo-04-11-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/308"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-buckskin-shootout-buckskin-deep-stack-04-05-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/307"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-buckskin-shootout-buckskin-friday-night-turbo-04-04-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/306"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-pour-decisions-pour-decisions-deep-stack-03-29-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/288"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-l-i-s-t-e-n-inc-saturday-monster-stack-03-22-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/287"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-l-i-s-t-e-n-inc-friday-night-turbo-03-21-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/305"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-buffalo-city-showdown-buffalo-city-showdown-deep-stack-03-09-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/302"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-hole-in-one-deepstack-angry-beaver-deep-stack-03-01-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/299"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-phat-stacks-at-the-phat-fish-phat-stacks-02-23-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/298"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-watford-city-eagles-club-monster-stack-watford-city-eagles-monster-stack-02-22-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/297"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-dead-money-open-deep-stack-02-01-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/296"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2025-dead-money-open-friday-night-turbo-01-31-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/291"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/295"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-5"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/294"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-4"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/292"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-2"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/293"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-3"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/289"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-rpt-dpt-main-event-300-buy-in-wsop-main-event-blind-structure-10-000-estimated-1st-place-prize-rpt-dpt-main-event-12-07-2024"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/286"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-dakota-jim-dandy-poker-festival-2-dream-chaser-11-23-2024"
+                  },
+                  {
+                      "text":  "Manage",
+                      "href":  "https://dpt-rebuild-site.vercel.app/admin/tournaments/284"
+                  },
+                  {
+                      "text":  "Public",
+                      "href":  "https://dpt-rebuild-site.vercel.app/tournaments/dakota-poker-tour-2023-24-operation-poker-red-white-bluff-honoring-heroes-for-veteran-s-day-at-the-casselton-vets-single-day-deep-stack-11-16-2024"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "ID",
+                                       "TOURNAMENT",
+                                       "EVENT / VENUE",
+                                       "DATE",
+                                       "PLAYERS",
+                                       "BUY-IN",
+                                       "ACTIONS"
+                                   ],
+                       "rows":  261
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/logout",
+                      "method":  "post",
+                      "inputs":  [
+
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdministration\n\nIntegrated administration backed by Supabase staging and production-derived reference data.\n\nProduction-derived data\nSource: prod_dakotapokertour.sql\nRepository: supabase\nSnapshot: 7/13/2026, 1:41:27 AM\nStaging operations\nAuthenticated tournament actions write only to Supabase staging. Production remains read-only.\nDashboard\nEvents\nSeasons\nLeagues\nTournaments\nPayout Distributions Template\nBlind Structures\nVenues\nArticles\nView public site\nSign out\nPRODUCTION SQL SNAPSHOT\nTournaments\n\nReal tournament records extracted from the production database.\n\n261 records\nID\tTOURNAMENT\tEVENT / VENUE\tDATE\tPLAYERS\tBUY-IN\tACTIONS\n346\t\nBlack Chip Bounty\ndakota-poker-tour-2026-poker-brat-black-chip-bounty-tournament-black-chip-bounty-06-07-2026\n\tPoker Brat Black Chip BOUNTY Tournament\nWindbreak · Fargo, ND\n\tJun 07, 2026\t97\t$200\tManage · Public\n345\t\nBlack Chip Bounty\ndakota-poker-tour-2026-spring-championship-black-chip-bounty-05-17-2026\n\tSpring Championship\nDouble Tree - West Fargo · West Fargo, ND\n\tMay 17, 2026\t61\t$200\tManage · Public\n344\t\nSpring Championship MEGASTACK (100K)\ndakota-poker-tour-2026-spring-championship-spring-championship-megastack-100k-05-16-2026\n\tSpring Championship\nDouble Tree - West Fargo · West Fargo, ND\n\tMay 16, 2026\t134\t$300\tManage · Public\n343\t\nFriday Night Turbo\ndakota-poker-tour-2026-spring-championship-friday-night-turbo-05-15-2026\n\tSpring Championship\nDouble Tree - West Fargo · West Fargo, ND\n\tMay 15, 2026\t58\t$100\tManage · Public\n342\t\nDeep Stack\ndakota-poker-tour-2026-casselton-vets-deep-stack-04-18-2026\n\tCasselton Vets\nCasselton Vets Club · Casselton, ND\n\tApr 18, 2026\t80\t$150\tManage · Public\n341\t\nFriday Night Turbo\ndakota-poker-tour-2026-casselton-vets-friday-night-turbo-04-17-2026\n\tCasselton Vets\nCasselton Vets Club · Casselton, ND\n\tApr 17, 2026\t36\t$100\tManage · Public\n340\t\nBuckskin Deep Stack\ndakota-poker-tour-2026-the-buckskin-shootout-buckskin-deep-stack-03-28-2026\n\tThe Buckskin Shootout\nBuckskin · Kildeer, ND\n\tMar 28, 2026\t56\t$150\tManage · Public\n339\t\nBuckskin Friday Night Turbo\ndakota-poker-tour-2026-the-buckskin-shootout-buckskin-friday-night-turbo-03-27-2026\n\tThe Buckskin Shootout\nBuckskin · Kildeer, ND\n\tMar 27, 2026\t40\t$100\tManage · Public\n338\t\nPour Decisions Deep Stack\ndakota-poker-tour-2026-pour-decisions-deep-stack-pour-decisions-deep-stack-03-21-2026\n\tPour Decisions Deep Stack\nPour Decisions · Tioga, ND\n\tMar 21, 2026\t24\t$150\tManage · Public\n337\t\nMonster Stack\ndakota-poker-tour-2026-l-i-s-t-e-n-inc-monster-stack-monster-stack-03-14-2026\n\tL.I.S.T.E.N. INC Monster Stack\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tMar 14, 2026\t77\t$300\tManage · Public\n336\t\nFriday Night Turbo\ndakota-poker-tour-2026-l-i-s-t-e-n-inc-monster-stack-friday-night-turbo-03-13-2026\n\tL.I.S.T.E.N. INC Monster Stack\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tMar 13, 2026\t62\t$100\tManage · Public\n335\t\nMain Event\ndakota-poker-tour-2026-hole-in-one-deepstack-main-event-02-28-2026\n\tHole in One Deepstack\nAngry Beaver Lodge · Oakes, ND\n\tFeb 28, 2026\t93\t$150\tManage · Public\n334\t\nBuffalo City Showdown\ndakota-poker-tour-2026-the-buffalo-city-showdown-buffalo-city-showdown-02-07-2026\n\tThe Buffalo City Showdown\nBuff Bar \u0026 Lounge · Jamestown, ND\n\tFeb 07, 2026\t61\t$150\tManage · Public\n333\t\nDeep Stack\ndakota-poker-tour-2026-dead-money-open-deep-stack-01-31-2026\n\tDead Money Open\nM \u0026 J Saloon · West Fargo, ND\n\tJan 31, 2026\t85\t$150\tManage · Public\n332\t\nFriday Night Turbo\ndakota-poker-tour-2026-dead-money-open-friday-night-turbo-01-30-2026\n\tDead Money Open\nM \u0026 J Saloon · West Fargo, ND\n\tJan 30, 2026\t52\t$100\tManage · Public\n331\t\nEagle Eye\ndakota-poker-tour-2026-eagle-eye-eagle-eye-01-24-2026\n\tEagle Eye\nValley City Eagles · Valley City, ND\n\tJan 24, 2026\t63\t$150\tManage · Public\n330\t\nOperation Red White \u0026 Bluff\ndakota-poker-tour-2025-operation-poker-red-white-bluff-honoring-heroes-for-veteran-s-day-at-the-casselton-vets-operation-red-white-bluff-11-15-2025\n\tOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nCasselton Vets Club · Casselton, ND\n\tNov 15, 2025\t58\t$150\tManage · Public\n329\t\nFriday Night Turbo\ndakota-poker-tour-2025-operation-poker-red-white-bluff-honoring-heroes-for-veteran-s-day-at-the-casselton-vets-friday-night-turbo-11-14-2025\n\tOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nCasselton Vets Club · Casselton, ND\n\tNov 14, 2025\t47\t$100\tManage · Public\n328\t\nLISTEN INC MONSTER STACK\ndakota-poker-tour-2025-l-i-s-t-e-n-inc-listen-inc-monster-stack-11-01-2025\n\tL.I.S.T.E.N. INC Monster Stack 10/31/2025\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tNov 01, 2025\t80\t$300\tManage · Public\n327\t\nFriday Night Turbo\ndakota-poker-tour-2025-l-i-s-t-e-n-inc-friday-night-turbo-10-31-2025\n\tL.I.S.T.E.N. INC Monster Stack 10/31/2025\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tOct 31, 2025\t21\t$100\tManage · Public\n326\t\nBlack Chip Bounty\ndakota-poker-tour-2023-24-poker-brat-black-chip-bounty-tournament-black-chip-bounty-10-19-2025\n\tPoker Brat Black Chip BOUNTY Tournament\nWindbreak · Fargo, ND\n\tOct 19, 2025\t46\t$200\tManage · Public\n325\t\nSunday Second Chance\ndakota-poker-tour-2025-the-tri-state-poker-championship-sunday-second-chance-10-05-2025\n\tThe Tri-State Poker Championship\nDakota Magic Casino · Hankinson, ND\n\tOct 05, 2025\t42\t$250\tManage · Public\n322\t\nThe Tri-State Poker Championship 2025\ndakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-2025-10-03-2025\n\tThe Tri-State Poker Championship\nDakota Magic Casino · Hankinson, ND\n\tOct 05, 2025\t25\t$650\tManage · Public\n324\t\nThe Tri-State Poker Championship Flight B\ndakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-flight-b-09-06-2025\n\tThe Tri-State Poker Championship\nDakota Magic Casino · Hankinson, ND\n\tOct 04, 2025\t0\t$650\tManage · Public\n323\t\nThe Tri-State Poker Championship Flight A\ndakota-poker-tour-2025-the-tri-state-poker-championship-the-tri-state-poker-championship-flight-a-09-05-2025\n\tThe Tri-State Poker Championship\nDakota Magic Casino · Hankinson, ND\n\tOct 03, 2025\t0\t$650\tManage · Public\n321\t\nSunday Fun-Day Turbo\ndakota-poker-tour-2025-hagge-s-fall-classic-sunday-fun-day-turbo-09-28-2025\n\tHagge\u0027s Fall Classic\nHagge\u0027s Bar \u0026 Grill · Mapleton, ND\n\tSep 28, 2025\t16\t$100\tManage · Public\n320\t\nFall Classic MEGASTACK (100K)\ndakota-poker-tour-2025-hagge-s-fall-classic-fall-classic-megastack-100k-09-27-2025\n\tHagge\u0027s Fall Classic\nHagge\u0027s Bar \u0026 Grill · Mapleton, ND\n\tSep 27, 2025\t60\t$300\tManage · Public\n319\t\nDeep Stack\ndakota-poker-tour-2025-city-brew-hall-deep-stack-09-20-2025\n\tCity Brew Hall\nCity Brew Hall · Wahpeton, ND\n\tSep 20, 2025\t54\t$150\tManage · Public\n318\t\nFriday Night Turbo\ndakota-poker-tour-2025-city-brew-hall-friday-night-turbo-09-19-2025\n\tCity Brew Hall\nCity Brew Hall · Wahpeton, ND\n\tSep 19, 2025\t28\t$100\tManage · Public\n317\t\nBlack Chip Bounty\ndakota-poker-tour-2025-the-poker-brat-at-the-windbreak-black-chip-bounty-06-08-2025\n\tThe Poker Brat at the Windbreak\nWindbreak · Fargo, ND\n\tJun 08, 2025\t92\t$200\tManage · Public\n315\t\nDeep Stack\ndakota-poker-tour-2025-casselton-vets-deep-stack-05-03-2025\n\tCasselton Vets\nCasselton Vets Club · Casselton, ND\n\tMay 03, 2025\t44\t$150\tManage · Public\n314\t\nFriday Night Turbo\ndakota-poker-tour-2025-casselton-vets-friday-night-turbo-05-02-2025\n\tCasselton Vets\nCasselton Vets Club · Casselton, ND\n\tMay 02, 2025\t37\t$100\tManage · Public\n313\t\nSunday Fun-Day Turbo\ndakota-poker-tour-2025-dakota-poker-tour-spring-championship-sunday-fun-day-turbo-04-27-2025\n\tDPT Spring Championship\nHagge\u0027s Bar \u0026 Grill · Mapleton, ND\n\tApr 27, 2025\t26\t$100\tManage · Public\n312\t\nDPT Spring Championship MEGASTACK (100K)\ndakota-poker-tour-2025-dakota-poker-tour-spring-championship-dpt-spring-championship-megastack-100k-04-26-2025\n\tDPT Spring Championship\nHagge\u0027s Bar \u0026 Grill · Mapleton, ND\n\tApr 26, 2025\t85\t$300\tManage · Public\n311\t\nCactus Jacks Open Main Event\ndakota-poker-tour-2025-cactus-jacks-open-cactus-jacks-open-main-event-04-12-2025\n\tCactus Jacks Open\nCactus Jacks · Fargo, ND\n\tApr 12, 2025\t78\t$150\tManage · Public\n310\t\nCactus Jacks Open Friday Night Turbo\ndakota-poker-tour-2025-cactus-jacks-open-cactus-jacks-open-friday-night-turbo-04-11-2025\n\tCactus Jacks Open\nCactus Jacks · Fargo, ND\n\tApr 11, 2025\t47\t$100\tManage · Public\n308\t\nBuckskin Deep Stack\ndakota-poker-tour-2025-buckskin-shootout-buckskin-deep-stack-04-05-2025\n\tBuckskin Shootout\nBuckskin · Kildeer, ND\n\tApr 05, 2025\t65\t$150\tManage · Public\n307\t\nBuckskin Friday Night Turbo\ndakota-poker-tour-2025-buckskin-shootout-buckskin-friday-night-turbo-04-04-2025\n\tBuckskin Shootout\nBuckskin · Kildeer, ND\n\tApr 04, 2025\t34\t$100\tManage · Public\n306\t\nPour Decisions Deep Stack\ndakota-poker-tour-2025-pour-decisions-pour-decisions-deep-stack-03-29-2025\n\tPour Decisions\nPour Decisions · Tioga, ND\n\tMar 29, 2025\t37\t$150\tManage · Public\n288\t\nL.i.s.t.e.n. Inc Monster Stack\ndakota-poker-tour-2025-l-i-s-t-e-n-inc-saturday-monster-stack-03-22-2025\n\tL.I.S.T.E.N. INC Monster Stack\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tMar 22, 2025\t78\t$300\tManage · Public\n287\t\nFriday Night Turbo\ndakota-poker-tour-2025-l-i-s-t-e-n-inc-friday-night-turbo-03-21-2025\n\tL.I.S.T.E.N. INC Monster Stack\nPlaymaker\u0027s All American Lounge · Grand Forks, ND\n\tMar 21, 2025\t51\t$100\tManage · Public\n305\t\nBuffalo City Showdown Deep Stack\ndakota-poker-tour-2025-buffalo-city-showdown-buffalo-city-showdown-deep-stack-03-09-2025\n\tBuffalo City Showdown\nBuff Bar \u0026 Lounge · Jamestown, ND\n\tMar 09, 2025\t53\t$150\tManage · Public\n302\t\nAngry Beaver Deep Stack\ndakota-poker-tour-2025-hole-in-one-deepstack-angry-beaver-deep-stack-03-01-2025\n\tHole in One Deepstack\nAngry Beaver Lodge · Oakes, ND\n\tMar 01, 2025\t96\t$150\tManage · Public\n299\t\nPhat Stacks\ndakota-poker-tour-2025-phat-stacks-at-the-phat-fish-phat-stacks-02-23-2025\n\tPhat Stacks at the Phat Fish\nPhat Fish · Dickinson, ND\n\tFeb 23, 2025\t77\t$150\tManage · Public\n298\t\nWatford City Eagles Monster Stack\ndakota-poker-tour-2025-watford-city-eagles-club-monster-stack-watford-city-eagles-monster-stack-02-22-2025\n\tWatford City Eagles Club Monster Stack\nWatford City Eagles Club · Watford City, North Dakota\n\tFeb 22, 2025\t73\t$150\tManage · Public\n297\t\nDeep Stack\ndakota-poker-tour-2025-dead-money-open-deep-stack-02-01-2025\n\tDead Money Open\nM \u0026 J Saloon · West Fargo, ND\n\tFeb 01, 2025\t88\t$150\tManage · Public\n296\t\nFriday Night Turbo\ndakota-poker-tour-2025-dead-money-open-friday-night-turbo-01-31-2025\n\tDead Money Open\nM \u0026 J Saloon · West Fargo, ND\n\tJan 31, 2025\t55\t$100\tManage · Public\n291\t\nRPT Casino State Championship\ndakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025\n\tRPT Casino State Championship 2024/2025\nSpirit Lake Casino \u0026 Resort · St Michael, ND\n\tJan 01, 2025\t188\tPrize TBA\tManage · Public\n295\t\nFlight D\ndakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-5\n\t\\\"RPT Casino State Championship\\\"-BRACELET EVENT!\nSpirit Lake Casino \u0026 Resort · St Michael, ND\n\tDec 31, 2024\t0\t$200\tManage · Public\n294\t\nFlight C\ndakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-4\n\t\\\"RPT Casino State Championship\\\"-BRACELET EVENT!\nSpirit Lake Casino \u0026 Resort · St Michael, ND\n\tDec 31, 2024\t0\t$200\tManage · Public\n292\t\nFlight A\ndakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-2\n\t\\\"RPT Casino State Championship\\\"-BRACELET EVENT!\nSpirit Lake Casino \u0026 Resort · St Michael, ND\n\tDec 30, 2024\t0\t$200\tManage · Public\n293\t\nFlight B\ndakota-poker-tour-2023-24-rpt-casino-state-championship-bracelet-event-live-from-spirit-lake-casino-resort-rpt-casino-state-championship-01-01-2025-3\n\t\\\"RPT Casino State Championship\\\"-BRACELET EVENT!\nSpirit Lake Casino \u0026 Resort · St Michael, ND\n\tDec 3"
+}
