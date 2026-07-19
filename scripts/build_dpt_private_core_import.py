@@ -99,6 +99,22 @@ def truthy(value: Any) -> bool:
     return str(value).strip().lower() in {'1', 'true', 't', 'yes'}
 
 
+def legacy_ids(value: Any) -> list[int]:
+    """Normalize Laravel checkbox arrays stored as JSON, CSV, or delimiter text."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        parts = value
+    else:
+        text = str(value).strip()
+        try:
+            decoded = json.loads(text)
+            parts = decoded if isinstance(decoded, list) else [decoded]
+        except (TypeError, ValueError, json.JSONDecodeError):
+            parts = text.replace('|', ',').replace(';', ',').split(',')
+    return sorted({integer(part) for part in parts if integer(part) > 0})
+
+
 def parse_json(value: Any, fallback: Any) -> Any:
     if isinstance(value, (dict, list)):
         return value
@@ -326,7 +342,7 @@ def main() -> None:
     )
     statements.extend(sql)
 
-    tournament_columns = ['id','event_id','venue_id','tournament_type_id','main_tournament_id','blind_structure_id','name','alias','short_description','long_description','rules_description','starts_at','ends_at','registration_starts_at','registration_ends_at','registration_closed','registration_closed_by','registration_closed_at','dealer_fee','minimum_buyin','maximum_buyin','allow_rebuy','rebuy_amount','rebuy_fee','rebuy_chips_count','initial_chips_count','players_at_final_table','points_multiplier_enabled','points_multiplier_value','participation_bonus_points','chip_carryover','allow_search_registration','payout_template_id','total_registered_players','total_payout_players','total_payout_distribution_amount','status','featured','multi_day','logo_url','banner_url','live_stream_url','point_distribution_id','qualifier_tournament','advancing_to_flight_tournaments','allowed_rebuys_limit','allow_rebuy_chips','title_count','blind_intervals','tournament_fee_percent','created_at','updated_at','deleted_at','legacy_data']
+    tournament_columns = ['id','event_id','venue_id','tournament_type_id','main_tournament_id','blind_structure_id','name','alias','short_description','long_description','rules_description','starts_at','ends_at','registration_starts_at','registration_ends_at','registration_closed','registration_closed_by','registration_closed_at','dealer_fee','minimum_buyin','maximum_buyin','allow_rebuy','rebuy_amount','rebuy_fee','rebuy_chips_count','initial_chips_count','players_at_final_table','points_multiplier_enabled','points_multiplier_value','participation_bonus_points','chip_carryover','allow_search_registration','payout_template_id','total_registered_players','total_payout_players','total_payout_distribution_amount','status','featured','multi_day','logo_url','banner_url','live_stream_url','point_distribution_id','qualifier_tournament','advancing_to_flight_tournaments','allowed_rebuys_limit','allow_rebuy_chips','title_count','blind_intervals','tournament_fee_percent','toc_all_types','created_at','updated_at','deleted_at','legacy_data']
     tournament_records = []
     for r in tables['dpt_tournaments']:
         tournament_records.append([
@@ -340,10 +356,32 @@ def main() -> None:
             integer(r.get('payout_distribution_id')) if integer(r.get('payout_distribution_id')) in payout_template_ids else None,
             integer(r.get('total_no_of_players')) or None,integer(r.get('total_payout_players')) or None,number(r.get('total_payout_distribution_amount')) or None,truthy(r.get('status')),
             truthy(r.get('featured')),truthy(r.get('multi_day')),clean_text(r.get('logo')),clean_text(r.get('banner_image')),clean_text(r.get('live_stream_url')),
-            integer(r.get('point_distribution_id')) if integer(r.get('point_distribution_id')) in payout_template_ids else None,truthy(r.get('qualifier_tournament')),truthy(r.get('advancing_to_flight_tournaments')),integer(r.get('allowed_rebuys_limit')) or None,truthy(r.get('allow_rebuy_chips')),truthy(r.get('title_count')),integer(r.get('blind_intervals')) or None,number(r.get('tournament_fee')),
+            integer(r.get('point_distribution_id')) if integer(r.get('point_distribution_id')) in payout_template_ids else None,truthy(r.get('qualifier_tournament')),truthy(r.get('advancing_to_flight_tournaments')),integer(r.get('allowed_rebuys_limit')) or None,truthy(r.get('allow_rebuy_chips')),truthy(r.get('title_count')),integer(r.get('blind_intervals')) or None,number(r.get('tournament_fee')),0 in legacy_ids(r.get('toc_qualified_type_ids')),
             clean_date(r.get('created_at')),clean_date(r.get('updated_at')),clean_date(r.get('deleted_at')),r,
         ])
-    sql, counts['tournaments'] = insert_batches('tournaments', tournament_columns, tournament_records, 'on conflict (id) do update set main_tournament_id=excluded.main_tournament_id,chip_carryover=excluded.chip_carryover,payout_template_id=excluded.payout_template_id,total_registered_players=excluded.total_registered_players,total_payout_players=excluded.total_payout_players,total_payout_distribution_amount=excluded.total_payout_distribution_amount,featured=excluded.featured,multi_day=excluded.multi_day,logo_url=excluded.logo_url,banner_url=excluded.banner_url,live_stream_url=excluded.live_stream_url,point_distribution_id=excluded.point_distribution_id,qualifier_tournament=excluded.qualifier_tournament,advancing_to_flight_tournaments=excluded.advancing_to_flight_tournaments,allowed_rebuys_limit=excluded.allowed_rebuys_limit,allow_rebuy_chips=excluded.allow_rebuy_chips,title_count=excluded.title_count,blind_intervals=excluded.blind_intervals,tournament_fee_percent=excluded.tournament_fee_percent', 150)
+    sql, counts['tournaments'] = insert_batches('tournaments', tournament_columns, tournament_records, 'on conflict (id) do update set main_tournament_id=excluded.main_tournament_id,chip_carryover=excluded.chip_carryover,payout_template_id=excluded.payout_template_id,total_registered_players=excluded.total_registered_players,total_payout_players=excluded.total_payout_players,total_payout_distribution_amount=excluded.total_payout_distribution_amount,featured=excluded.featured,multi_day=excluded.multi_day,logo_url=excluded.logo_url,banner_url=excluded.banner_url,live_stream_url=excluded.live_stream_url,point_distribution_id=excluded.point_distribution_id,qualifier_tournament=excluded.qualifier_tournament,advancing_to_flight_tournaments=excluded.advancing_to_flight_tournaments,allowed_rebuys_limit=excluded.allowed_rebuys_limit,allow_rebuy_chips=excluded.allow_rebuy_chips,title_count=excluded.title_count,blind_intervals=excluded.blind_intervals,tournament_fee_percent=excluded.tournament_fee_percent,toc_all_types=excluded.toc_all_types', 150)
+    statements.extend(sql)
+
+    # Normalize production's legacy checkbox payloads into relational selectors.
+    tournament_ids = {integer(row.get('id')) for row in tables['dpt_tournaments']}
+    tournament_type_ids = {integer(row.get('id')) for row in tables['dpt_tournament_types']}
+    qualifier_records, toc_type_records, toc_tournament_records = [], [], []
+    for row in tables['dpt_tournaments']:
+        tournament_id = integer(row.get('id'))
+        for qualifier_id in legacy_ids(row.get('qualifier_tournament_ids')):
+            if qualifier_id in tournament_ids and qualifier_id != tournament_id:
+                qualifier_records.append([tournament_id, qualifier_id, clean_text(row.get('qualifier_prize'))])
+        for type_id in legacy_ids(row.get('toc_qualified_type_ids')):
+            if type_id in tournament_type_ids:
+                toc_type_records.append([tournament_id, type_id])
+        for qualified_id in legacy_ids(row.get('toc_qualified_tournament_ids')):
+            if qualified_id in tournament_ids and qualified_id != tournament_id:
+                toc_tournament_records.append([tournament_id, qualified_id])
+    sql, counts['tournament_qualifiers'] = insert_batches('tournament_qualifiers', ['tournament_id','qualifier_tournament_id','qualifier_prize'], qualifier_records, 'on conflict (tournament_id,qualifier_tournament_id) do update set qualifier_prize=excluded.qualifier_prize')
+    statements.extend(sql)
+    sql, counts['toc_qualified_types'] = insert_batches('toc_qualified_types', ['tournament_id','tournament_type_id'], toc_type_records, 'on conflict do nothing')
+    statements.extend(sql)
+    sql, counts['toc_qualified_tournaments'] = insert_batches('toc_qualified_tournaments', ['tournament_id','qualified_tournament_id'], toc_tournament_records, 'on conflict do nothing')
     statements.extend(sql)
 
     tournament_payout_columns = ['id','tournament_id','payout_template_row_id','standing','payout_percentage','payout_amount','prize_description','points','created_at','updated_at','legacy_data']
