@@ -161,6 +161,18 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     await reload();
   };
 
+  const makeSatelliteWinners = async () => {
+    if (!desk || desk.tournament.tournament_type?.code !== 'satellite') return;
+    if (!window.confirm('Finalize every remaining checked-in satellite entry? This assigns ranks, winnings and scores, and records an audit entry.')) return;
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/satellite-winners`, { method: 'POST' });
+    const payload = await response.json() as { error?: string; result?: { winner_count?: number } };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Satellite winner assignment failed'); return; }
+    setMessage(`${payload.result?.winner_count ?? 0} satellite winner${payload.result?.winner_count === 1 ? '' : 's'} assigned.`);
+    await reload();
+  };
+
   const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate' | 'undo') => {
     setActiveEntry(entry); setActionMode(mode); setMessage('');
     setInitialBuyIn(String(desk?.tournament.minimum_buy_in || 0));
@@ -324,6 +336,15 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
             </form>
             {desk.payouts.length ? <ol className="dpt-desk-payouts">{desk.payouts.map((payout) => <li key={payout.id}><span>#{payout.standing}</span><strong>{money(payout.payout_amount)}</strong></li>)}</ol> : <p>No tournament payouts have been materialized.</p>}
           </article>
+          {desk.tournament.tournament_type?.code === 'satellite' ? <article className="dpt-desk-panel">
+            <header><div><span>Satellite completion</span><h3>Assign remaining winners</h3></div></header>
+            <p>Marks every remaining checked-in player as a winner using the materialized satellite payout rows, including any remainder prize.</p>
+            <button type="button" className="danger" disabled={busy || !desk.tournament.registration_closed || desk.payouts.length === 0 || desk.metrics.remaining === 0} onClick={() => void makeSatelliteWinners()}>
+              {busy ? 'Saving…' : 'Make satellite winners'}
+            </button>
+            {!desk.tournament.registration_closed ? <small>Close registration before assigning satellite winners.</small> : null}
+            {desk.payouts.length === 0 ? <small>Materialize satellite payouts before assigning winners.</small> : null}
+          </article> : null}
           <article className="dpt-desk-panel">
             <header><div><span>Corrections</span><h3>Audit history</h3></div><strong>{desk.audit.length}</strong></header>
             {desk.audit.length ? <ol className="dpt-desk-audit">{desk.audit.map((item) => <li key={item.id}><strong>{item.action.replaceAll('.', ' ')}</strong><span>Entry {item.entity_id} · {new Date(item.created_at).toLocaleString('en-US')}</span></li>)}</ol> : <p>No staging mutations have been recorded.</p>}

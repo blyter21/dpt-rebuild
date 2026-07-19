@@ -23,10 +23,14 @@ describe('tournament desk operator controls', () => {
       'Close registration',
       'Reopen registration',
       'Materialize payouts',
+      '/satellite-winners',
+      'Make satellite winners',
       'Audit history',
     ]) {
       expect(source).toContain(expected);
     }
     expect(source).toContain('Confirm the correct player');
+    expect(source).toContain("desk.tournament.tournament_type?.code === 'satellite'");
+    expect(source).toContain('window.confirm');
   });
 });
