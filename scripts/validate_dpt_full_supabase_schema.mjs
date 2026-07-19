@@ -32,6 +32,7 @@ const migrationFiles = [
   'supabase/migrations/20260719133000_admin_configuration_rpc.sql',
   'supabase/migrations/20260719150000_admin_blinds_payouts_rpc.sql',
   'supabase/migrations/20260719170000_admin_tournament_setup_rpc.sql',
+  'supabase/migrations/20260719190000_players_permissions_duplicate_merge.sql',
 ];
 
 const db = new PGlite();
@@ -324,7 +325,18 @@ const workflowSecurityResult = await db.query(`
     not has_function_privilege('anon','public.dpt_admin_set_tournament_status(bigint,boolean)','execute') as anon_cannot_status_tournaments,
     has_function_privilege('authenticated','public.dpt_admin_set_tournament_status(bigint,boolean)','execute') as authenticated_can_status_tournaments,
     not has_function_privilege('anon','public.dpt_admin_soft_delete_tournament(bigint)','execute') as anon_cannot_delete_tournaments,
-    has_function_privilege('authenticated','public.dpt_admin_soft_delete_tournament(bigint)','execute') as authenticated_can_delete_tournaments
+    has_function_privilege('authenticated','public.dpt_admin_soft_delete_tournament(bigint)','execute') as authenticated_can_delete_tournaments,
+    not has_function_privilege('anon','public.dpt_admin_save_player(uuid,jsonb)','execute') as anon_cannot_save_players,
+    has_function_privilege('authenticated','public.dpt_admin_save_player(uuid,jsonb)','execute') as authenticated_can_save_players,
+    not has_function_privilege('anon','public.dpt_admin_archive_player(uuid)','execute') as anon_cannot_archive_players,
+    has_function_privilege('authenticated','public.dpt_admin_archive_player(uuid)','execute') as authenticated_can_archive_players,
+    not has_function_privilege('anon','public.dpt_admin_save_role(bigint,jsonb)','execute') as anon_cannot_save_roles,
+    has_function_privilege('authenticated','public.dpt_admin_save_role(bigint,jsonb)','execute') as authenticated_can_save_roles,
+    not has_function_privilege('anon','public.dpt_admin_delete_role(bigint)','execute') as anon_cannot_delete_roles,
+    has_function_privilege('authenticated','public.dpt_admin_delete_role(bigint)','execute') as authenticated_can_delete_roles,
+    not has_function_privilege('anon','public.dpt_admin_merge_players(uuid,uuid[],uuid,boolean)','execute') as anon_cannot_merge_players,
+    has_function_privilege('authenticated','public.dpt_admin_merge_players(uuid,uuid[],uuid,boolean)','execute') as authenticated_can_merge_players,
+    (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('admin_roles','admin_permissions','admin_role_permissions','profile_admin_roles','profile_notification_preferences','notifications','player_merges','player_merge_sources','player_merge_pending_references')) as player_security_tables_have_rls
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 

@@ -18,11 +18,11 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
 - Real staging operations exist for tournament create/edit/copy/status/soft-delete and desk workflows plus audited Events, Seasons, Leagues, Venues, Blind Structures and Payout Templates administration. Tournament setup includes production list filters, named selectors, media, dates, buy-ins/rebuys, chips, scoring, qualifier/flight flags, copy-without-runtime-data, and runtime delete protection.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 88 integrated site tests, 31 tournament-engine tests and the complete 28-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts.
+- Current verified gates: 96 integrated site tests, 31 tournament-engine tests and the complete 29-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts.
 - Production remains read-only and untouched.
 - The dedicated Windows `PedroChromeDebug` profile is authenticated to both production and the rebuild. The rebuild session is established autonomously through a one-time Supabase admin authentication exchange; no password reset or user-entered credential is required.
 - Matched 1440×1000 production/rebuild screenshots, DOM inventories, side-by-side images and the gap report are under `reports/browser-parity/2026-07-19/`.
-- Current three-loop batch: Loop 1 tournament setup is complete and rollback-tested; Loop 2 Players/Roles/Duplicate Merge is next; Loop 3 Content/Notifications/Email follows.
+- Current three-loop batch: Loop 1 tournament setup and Loop 2 Players/Roles/Duplicate Merge are complete and rollback-tested; Loop 3 Content/Notifications/Email is next.
 
 ## Safety boundaries
 
