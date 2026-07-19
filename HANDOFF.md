@@ -22,7 +22,7 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Production remains read-only and untouched.
 - The dedicated Windows `PedroChromeDebug` profile is authenticated to both production and the rebuild. The rebuild session is established autonomously through a one-time Supabase admin authentication exchange; no password reset or user-entered credential is required.
 - Matched 1440×1000 production/rebuild screenshots, DOM inventories, side-by-side images and the gap report are under `reports/browser-parity/2026-07-19/`.
-- Current three-loop batch is complete: tournament setup, Players/Roles/Duplicate Merge, and Content/Notifications/Email Templates are implemented and rollback-tested. Final authenticated Chrome comparison is the remaining batch acceptance step.
+- Current three-loop batch is complete and authenticated-browser accepted: tournament setup, Players/Roles/Duplicate Merge, and Content/Notifications/Email Templates. Evidence and remaining gaps are recorded in `reports/browser-parity/2026-07-19/THREE-LOOP-ACCEPTANCE.md`.
 
 ## Safety boundaries
 
