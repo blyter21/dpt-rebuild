@@ -1,0 +1,52 @@
+﻿{
+    "title":  "DPT Administration",
+    "url":  "https://dpt-rebuild-site.vercel.app/admin/login?next=%2Fadmin",
+    "headings":  [
+                     "Admin Login"
+                 ],
+    "buttons":  [
+                    "Sign in to administration"
+                ],
+    "links":  [
+                  {
+                      "text":  "Return to Dakota Poker Tour",
+                      "href":  "https://dpt-rebuild-site.vercel.app/"
+                  }
+              ],
+    "tables":  [
+
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dpt-rebuild-site.vercel.app/api/admin/auth/login",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "next",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "email",
+                                         "type":  "email",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "password",
+                                         "type":  "password",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "remember",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "DAKOTA POKER TOUR\nAdmin Login\n\nSign in with an authorized DPT administrator account.\n\nEmail address\nPassword\nKeep me signed in\nSign in to administration\nRestricted access\nAuthentication alone is not sufficient. The account must also have the production-equivalent view_admin permission.\nReturn to Dakota Poker Tour"
+}

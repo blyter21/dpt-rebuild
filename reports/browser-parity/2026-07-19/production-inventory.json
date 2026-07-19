@@ -1,0 +1,322 @@
+{
+  "dashboard": {
+    "url": "https://dakotapokertour.com/admin/dashboard",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [],
+    "tables": [],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      }
+    ]
+  },
+  "tournaments": {
+    "url": "https://dakotapokertour.com/admin/tournaments",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Save as Copy"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "",
+          "#",
+          "Name",
+          "Event",
+          "Type",
+          "Start Date",
+          "End Date",
+          "Status",
+          "Actions"
+        ],
+        "rows": 1
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      },
+      {
+        "action": "https://dakotapokertour.com/admin/tournaments/saveCopy",
+        "method": "post",
+        "inputNames": [
+          "seasons ",
+          "events",
+          "tournament_type",
+          "status",
+          "tournaments",
+          "datatable_length"
+        ]
+      }
+    ]
+  },
+  "events": {
+    "url": "https://dakotapokertour.com/admin/events",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Name",
+          "Season",
+          "Start Date",
+          "End Date",
+          "Status",
+          "Actions"
+        ],
+        "rows": 10
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      }
+    ]
+  },
+  "seasons": {
+    "url": "https://dakotapokertour.com/admin/seasons",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Name",
+          "League",
+          "Start Date",
+          "End Date",
+          "Status",
+          "Actions"
+        ],
+        "rows": 6
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      }
+    ]
+  },
+  "leagues": {
+    "url": "https://dakotapokertour.com/admin/leagues",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Name",
+          "Status",
+          "Actions"
+        ],
+        "rows": 2
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      }
+    ]
+  },
+  "venues": {
+    "url": "https://dakotapokertour.com/admin/venues",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "#",
+          "Name",
+          "Address",
+          "City",
+          "State",
+          "Zip",
+          "Status",
+          "Actions"
+        ],
+        "rows": 10
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      }
+    ]
+  },
+  "blinds": {
+    "url": "https://dakotapokertour.com/admin/blinds",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Save as Copy",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View",
+      "Delete",
+      "Edit",
+      "View"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "",
+          "#",
+          "Name",
+          "Status",
+          "Actions"
+        ],
+        "rows": 7
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      },
+      {
+        "action": "https://dakotapokertour.com/admin/blinds/saveCopy",
+        "method": "post",
+        "inputNames": [
+          "blind_type",
+          "datatable_length",
+          "bid[]",
+          "bid[]",
+          "bid[]",
+          "bid[]",
+          "bid[]",
+          "bid[]",
+          "bid[]"
+        ]
+      }
+    ]
+  },
+  "payouts": {
+    "url": "https://dakotapokertour.com/admin/payoutdistributions",
+    "title": "Dakota Poker Tour",
+    "headings": [],
+    "buttons": [
+      "Save as Copy",
+      "Edit",
+      "View Structure",
+      "Edit",
+      "View Structure",
+      "Edit",
+      "View Structure"
+    ],
+    "tables": [
+      {
+        "headers": [
+          "",
+          "#",
+          "Name",
+          "Type",
+          "Assigned Tournament",
+          "Actions"
+        ],
+        "rows": 5
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://dakotapokertour.com/logout",
+        "method": "post",
+        "inputNames": []
+      },
+      {
+        "action": "https://dakotapokertour.com/admin/payoutdistributions/saveCopy",
+        "method": "post",
+        "inputNames": [
+          "datatable_length",
+          "pid[]",
+          "pid[]",
+          "pid[]",
+          "pid[]",
+          "pid[]"
+        ]
+      }
+    ]
+  }
+}

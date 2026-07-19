@@ -16,12 +16,13 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Pedro remains the only Supabase Auth-linked profile; production legacy user 2787 retains `administrator` and `user` roles.
 - Tournament 346 is the representative desk fixture with 97 entries, 94 add-ons and 12 payouts.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
-- Real staging tournament operations exist for player registration, check-in, registration open/close, add-ons/rebuys, DPT/freeroll elimination, payout materialization, satellite winner assignment, flight advancement/undo with `highest` or `sum` chip carryover, bulk rank correction/recalculation, full tournament reset with recoverable snapshots, live-update create/edit/publish/feature/unpublish/delete, undo/correction and audit logging.
+- Real staging operations exist for tournament desk workflows plus audited Events, Seasons, Leagues and Venues create/edit/status/soft-delete administration with active-child protection and imported production media/social fields.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 68 integrated site tests, 31 tournament-engine tests and the complete 25-migration PGlite/RLS/privilege chain pass; the live-update-aware protected import also passes exact embedded-Postgres counts.
+- Current verified gates: 74 integrated site tests, 31 tournament-engine tests and the complete 26-migration PGlite/RLS/privilege chain pass; the configuration-aware protected import also passes exact embedded-Postgres counts.
 - Production remains read-only and untouched.
-- Browser QA is deferred until the remaining tournament workflows are complete; Brook is not required to perform setup or login work while backend implementation continues.
-- The current three-loop batch is complete. Recommended next milestone: authenticated browser QA of the full tournament desk, followed by events/seasons/leagues/venues configuration workflows.
+- The dedicated Windows `PedroChromeDebug` profile is authenticated to production. Matched 1440×1000 screenshots and DOM inventories for dashboard, tournaments, Events, Seasons, Leagues, Venues, Blind Structures, Payout Templates and the four production Create forms are under `reports/browser-parity/2026-07-19/production/`.
+- The rebuild tab is fail-closed at `/admin/login`; authenticated rebuild screenshot comparison waits only for Brook to sign `pedro@fpngaming.com` into that existing tab without sharing the password/code.
+- Events/Seasons/Leagues/Venues configuration implementation is complete and rollback-tested. Next local loop is Blind Structures and Payout Templates administration; actual rebuild browser comparison resumes immediately after login.
 
 ## Safety boundaries
 

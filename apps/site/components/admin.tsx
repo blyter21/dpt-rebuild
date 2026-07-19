@@ -4,6 +4,8 @@ import type { ReactNode } from 'react';
 const adminNavigation = [
   { href: '/admin', label: 'Dashboard' },
   { href: '/admin/events', label: 'Events' },
+  { href: '/admin/seasons', label: 'Seasons' },
+  { href: '/admin/leagues', label: 'Leagues' },
   { href: '/admin/tournaments', label: 'Tournaments' },
   { href: '/admin/venues', label: 'Venues' },
   { href: '/admin/articles', label: 'Articles' },

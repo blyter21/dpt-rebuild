@@ -289,6 +289,27 @@ h1 { font-size: clamp(34px, 5.5vw, 68px); margin: 8px 0 10px; line-height: .96; 
 .dpt-admin-table td strong, .dpt-admin-table td small { display: block; }
 .dpt-admin-table td small { max-width: 420px; margin-top: 4px; color: #64748b; overflow-wrap: anywhere; }
 .dpt-admin-table td a { color: var(--red); font-weight: 900; }
+.configuration-manager { display: grid; gap: 14px; }
+.configuration-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid #dbe1ea; }
+.configuration-toolbar h3 { margin-right: auto; font-size: 21px; }
+.configuration-toolbar label, .configuration-form label { display: grid; gap: 5px; color: #475569; font-size: 12px; font-weight: 800; }
+.configuration-toolbar input, .configuration-toolbar select, .configuration-form input, .configuration-form select, .configuration-form textarea { min-height: 34px; padding: 7px 9px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; font: inherit; }
+.configuration-form textarea { min-height: 88px; resize: vertical; }
+.configuration-toolbar button, .configuration-form button, .configuration-actions button { border: 0; border-radius: 4px; padding: 8px 10px; background: #64748b; color: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+.configuration-toolbar button.primary, .configuration-form button.primary { background: #28b76b; }
+.configuration-actions { white-space: nowrap; }
+.configuration-actions button { margin: 0 3px 3px 0; padding: 6px 8px; font-size: 12px; background: #64748b; }
+.configuration-actions button.edit { background: #2d8bd5; }
+.configuration-actions button.view { background: #28b76b; }
+.configuration-actions button.danger { background: #df3f3f; }
+.dpt-admin-table th button { border: 0; background: transparent; color: inherit; font: inherit; font-weight: inherit; text-transform: inherit; cursor: pointer; }
+.configuration-form { padding: 18px; border: 1px solid #dbe1ea; border-radius: 5px; background: #f8fafc; }
+.configuration-form header { display: flex; align-items: center; justify-content: space-between; }
+.configuration-form header span { display: block; color: #64748b; font-size: 11px; font-weight: 900; text-transform: uppercase; }
+.configuration-form header h3 { margin: 2px 0 0; }
+.configuration-form-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; margin: 12px 0; }
+.configuration-message { padding: 10px; border-radius: 5px; background: #eff6ff; color: #1e3a8a; font-weight: 700; }
+@media (max-width: 900px) { .configuration-form-grid { grid-template-columns: 1fr; } }
 .players-directory { display: grid; gap: 16px; }
 .players-directory-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; padding: 15px; border: 1px solid #dbe1ea; border-radius: 12px; background: #fff; }
 .players-directory-controls label { display: grid; gap: 5px; color: #475569; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }

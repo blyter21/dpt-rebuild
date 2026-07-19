@@ -1,0 +1,330 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/blinds",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "Save as Copy",
+                    "",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete"
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/blinds#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/blinds/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/7/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/7"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/7"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/6/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/6"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/6"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/5/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/5"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/5"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/4/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/4"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/4"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/3/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/3"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/3"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/blinds/1/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/blinds/1"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/1"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/blinds#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/blinds#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/blinds#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "",
+                                       "#",
+                                       "Name",
+                                       "Status",
+                                       "Actions"
+                                   ],
+                       "rows":  7
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "action":  "https://dakotapokertour.com/admin/blinds/saveCopy",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_type",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "datatable_length",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "",
+                                         "type":  "search",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "bid[]",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Blinds List\n Save as Copy \n-All Blinds-\nMaster Blinds\nCopy Blind\nShow \n10\n25\n50\n100\n entries\nSearch:\n\t#\tName\tStatus\tActions\n\t8\t$315 Championship\tPublished\t\n Edit  View  Delete\n\n\n\t7\t$1,000 Dream Chaser\tPublished\t\n Edit  View  Delete\n\n\n\t6\t$250 Monster Stack\tPublished\t\n Edit  View  Delete\n\n\n\t5\tBig O No Limit\tPublished\t\n Edit  View  Delete\n\n\n\t4\t$165 No Limit Hold\u0027em Turbo\tPublished\t\n Edit  View  Delete\n\n\n\t3\tRPT Summer Main Event Structure\tPublished\t\n Edit  View  Delete\n\n\n\t1\tMonster Stack Main Event Blind Structure\tPublished\t\n Edit  View  Delete\n\nShowing 1 to 7 of 7 entries\nPrevious\n1\nNext\n \n Dashboard\n Blinds\n "
+}

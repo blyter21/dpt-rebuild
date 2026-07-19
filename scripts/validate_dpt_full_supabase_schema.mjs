@@ -29,6 +29,7 @@ const migrationFiles = [
   'supabase/migrations/20260719100000_admin_bulk_rank_corrections_rpc.sql',
   'supabase/migrations/20260719113000_admin_tournament_reset_rpc.sql',
   'supabase/migrations/20260719123000_admin_tournament_live_updates_rpc.sql',
+  'supabase/migrations/20260719133000_admin_configuration_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -291,7 +292,13 @@ const workflowSecurityResult = await db.query(`
     has_function_privilege('authenticated', 'public.dpt_admin_save_tournament_update(bigint,bigint,text,text,timestamptz,text,text)', 'execute') as authenticated_can_save_live_update,
     not has_function_privilege('anon', 'public.dpt_admin_set_tournament_update_state(bigint,bigint,text)', 'execute') as anon_cannot_change_live_update_state,
     has_function_privilege('authenticated', 'public.dpt_admin_set_tournament_update_state(bigint,bigint,text)', 'execute') as authenticated_can_change_live_update_state,
-    has_table_privilege('anon', 'public.dpt_public_tournament_updates', 'select') as anon_can_read_published_live_updates
+    has_table_privilege('anon', 'public.dpt_public_tournament_updates', 'select') as anon_can_read_published_live_updates,
+    not has_function_privilege('anon', 'public.dpt_admin_save_configuration(text,bigint,jsonb)', 'execute') as anon_cannot_save_configuration,
+    has_function_privilege('authenticated', 'public.dpt_admin_save_configuration(text,bigint,jsonb)', 'execute') as authenticated_can_save_configuration,
+    not has_function_privilege('anon', 'public.dpt_admin_set_configuration_status(text,bigint,boolean)', 'execute') as anon_cannot_set_configuration_status,
+    has_function_privilege('authenticated', 'public.dpt_admin_set_configuration_status(text,bigint,boolean)', 'execute') as authenticated_can_set_configuration_status,
+    not has_function_privilege('anon', 'public.dpt_admin_soft_delete_configuration(text,bigint)', 'execute') as anon_cannot_delete_configuration,
+    has_function_privilege('authenticated', 'public.dpt_admin_soft_delete_configuration(text,bigint)', 'execute') as authenticated_can_delete_configuration
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 

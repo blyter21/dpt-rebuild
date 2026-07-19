@@ -1,0 +1,219 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/tournaments",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "Save as Copy",
+                    ""
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/tournaments#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/tournaments/create"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/tournaments#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/tournaments#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "",
+                                       "#",
+                                       "Name",
+                                       "Event",
+                                       "Type",
+                                       "Start Date",
+                                       "End Date",
+                                       "Status",
+                                       "Actions"
+                                   ],
+                       "rows":  1
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "action":  "https://dakotapokertour.com/admin/tournaments/saveCopy",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "hidden_seasons_id1",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "seasons ",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "events",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "tournament_type",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "status",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "tournaments",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "datatable_length",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "",
+                                         "type":  "search",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "tour_id",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Tournaments List\n Save as Copy \nAll Seasons\n2027\n2026\n2025\n2023-24\n2022-23\nSeason XI\nEvent\nDead Money Open\nCasselton Vets\nDead Money Open\nEagle Eye\nEagle Eye\nFall Championship\nHole in One Deepstack\nL.I.S.T.E.N. INC Monster Stack\nL.I.S.T.E.N. INC Monster Stack\nOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nPoker Brat Black Chip Bounty\nPoker Brat Black Chip BOUNTY Tournament\nPour Decisions Deep Stack\nSpring Championship\nThe Buckskin Shootout\nThe Buffalo City Showdown\n🃏 Summer Showdown at Hagge\u0027s\nBuckskin Shootout\nBuffalo City Showdown\nCactus Jacks Open\nCasselton Vets\nCity Brew Hall\nDakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \"Dream Chaser V\" Tournament! $5,000 Player of the Series package up for grabs!\nDead Money Open\nDPT Spring Championship\nHagge\u0027s Fall Classic\nHole in One Deepstack\nL.I.S.T.E.N. INC Monster Stack\nL.I.S.T.E.N. INC Monster Stack 10/31/2025\nOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nPhat Stacks at the Phat Fish\nPoker Brat Black Chip BOUNTY Tournament\nPour Decisions\nThe Poker Brat at the Windbreak\nThe Tri-State Poker Championship\nWatford City Eagles Club Monster Stack\n\"RPT Casino State Championship\"-BRACELET EVENT!\nBuckskin Shootout\nCasselton Vets Club\nCity Brew Hall\nDakota Jim Dandy Poker Festival\nDakota Jim Dandy Poker Festival !\nDead Money Open\nDPT Spring Championship\nEagle Eye\nHagge\u0027s Deep Stack\nHagge\u0027s Fall Classic\nHole in one Main Event\nL.I.S.T.E.N. INC Monster Stack\nMandan Eagles Club Mega Stack\nOperation Poker: Red White \u0026 Bluff\nPhat Stacks at the Phat Fish\nPhat Stacks at the Phat Fish\nPoker Brat Black Chip BOUNTY Tournament\nPoker Brat BOUNTY Tournament\nPour Decisions\nRPT Casino State Championship 2024/2025\nRPT Summer Main Event\nRPT/DPT Season Championship\nWatford City Eagles Club Monster Stack\nBlack Gold Deep Stack - Beulah ND\nBuckskin Shootout\nBuffalo City Showdown\nCasselton Vets\nDead Money Open\nDPT Championship\nDPT Championship Bonus Freerolls\nEagle Eye\nHole In One - Oakes, ND\nL.i.s.t.e.n. Inc Monster Stack\nMandan Eagles\nPhat Stacks at the Phat Fish\nPoker Brat BOUNTY Tournament\nPour Decisions Tioga\nRPT Casino State Championship\nSeason 2022-2023 Kickoff\nBuffalo City Showdown\nDead Money Open\nDPT Season XI Championship\nEagle Eye\nL.i.s.t.e.n. Inc Monster Stack\nPhat Stacks at the Phat Fish\nPoker Brat Classic\nPour Decisions - Tioga ND\nPour Decisions March 26\nSeason XI Kickoff Tournament - Hagge\u0027s\nSpeedway Full Throttle Poker Open\nTournament Type\nDPT Standard\nSatellite\nFreeroll\nFlight\nStatus\nPublished\nUnpublished\nAll Tournaments\nUpcoming Tournaments\nPast Tournaments\n Reset\nShow \n10\n25\n50\n100\n entries\nSearch:\n\t#\tName\tEvent\tType\tStart Date\tEnd Date\tStatus\tActions\nNo data available in table\nShowing 0 to 0 of 0 entries\nPrevious\nNext\n \n Dashboard\n Tournaments\n "
+}

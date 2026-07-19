@@ -1,0 +1,328 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/events",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete",
+                    "Edit",
+                    "View",
+                    "Delete"
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin/events/create"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/96/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/96"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/96"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/95/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/95"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/95"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/94/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/94"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/94"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/93/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/93"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/93"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/92/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/92"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/92"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/91/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/91"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/91"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/90/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/90"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/90"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/89/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/89"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/89"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/88/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/88"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/88"
+                  },
+                  {
+                      "text":  "Edit",
+                      "href":  "https://dakotapokertour.com/admin/events/87/edit"
+                  },
+                  {
+                      "text":  "View",
+                      "href":  "https://dakotapokertour.com/admin/events/87"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/events/87"
+                  },
+                  {
+                      "text":  "Previous",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "2",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "3",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "4",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "5",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "…",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "9",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Next",
+                      "href":  "https://dakotapokertour.com/admin/events#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "#",
+                                       "Name",
+                                       "Season",
+                                       "Start Date",
+                                       "End Date",
+                                       "Status",
+                                       "Actions"
+                                   ],
+                       "rows":  10
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Events List\nShow \n10\n25\n50\n100\n entries\nSearch:\n#\tName\tSeason\tStart Date\tEnd Date\tStatus\tActions\n96\tPoker Brat Black Chip Bounty\t2026\t2026-10-11\t2026-10-11\tPublished\t\n Edit  View  Delete\n\n\n95\tEagle Eye\t2026\t2026-09-12\t2026-09-12\tPublished\t\n Edit  View  Delete\n\n\n94\tOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\t2026\t2026-11-13\t2026-11-14\tPublished\t\n Edit  View  Delete\n\n\n93\tL.I.S.T.E.N. INC Monster Stack\t2026\t2026-10-23\t2026-10-24\tPublished\t\n Edit  View  Delete\n\n\n92\tDead Money Open\t2027\t2027-02-05\t2027-02-06\tPublished\t\n Edit  View  Delete\n\n\n91\t🃏 Summer Showdown at Hagge\u0027s\t2026\t2026-08-14\t2026-08-16\tPublished\t\n Edit  View  Delete\n\n\n90\tFall Championship\t2026\t2026-09-25\t2026-09-27\tPublished\t\n Edit  View  Delete\n\n\n89\tPoker Brat Black Chip BOUNTY Tournament\t2026\t2026-06-07\t2026-06-07\tPublished\t\n Edit  View  Delete\n\n\n88\tSpring Championship\t2026\t2026-05-15\t2026-05-17\tPublished\t\n Edit  View  Delete\n\n\n87\tCasselton Vets\t2026\t2026-04-17\t2026-04-18\tPublished\t\n Edit  View  Delete\n\nShowing 1 to 10 of 89 entries\nPrevious\n1\n2\n3\n4\n5\n…\n9\nNext\n \n Dashboard\n Events\n "
+}
