@@ -380,8 +380,14 @@ def main() -> None:
     sql, counts['tournament_entry_addons'] = insert_batches('tournament_entry_addons', addon_columns, addon_records, 'on conflict (id) do nothing', 300)
     statements.extend(sql)
 
-    update_columns=['id','tournament_id','title','description','update_at','image_url','video_url','featured','status','created_at','updated_at','legacy_data']
-    update_records=[[integer(r['id']),integer(r.get('tournament_id')) or None,clean_text(r.get('title')),clean_text(r.get('description')),clean_date(r.get('update_date')),clean_text(r.get('image')),clean_text(r.get('video_url')),truthy(r.get('featured')),truthy(r.get('status')),clean_date(r.get('created_at')),clean_date(r.get('updated_at')),r] for r in tables['dpt_tournament_updates']]
+    update_columns=['id','tournament_id','title','description','update_at','image_url','video_url','featured','status','published_at','created_by','updated_by','created_at','updated_at','legacy_data']
+    update_records=[[
+        integer(r['id']),integer(r.get('tournament_id')) or None,clean_text(r.get('title')),clean_text(r.get('description')),
+        clean_date(r.get('update_date')),clean_text(r.get('image')),clean_text(r.get('video_url')),truthy(r.get('featured')),truthy(r.get('status')),
+        required_timestamp(r.get('update_date'), r.get('updated_at') or r.get('created_at')) if truthy(r.get('status')) else None,
+        user_reference(r.get('created_by'),known_users),user_reference(r.get('updated_by'),known_users),
+        clean_date(r.get('created_at')),clean_date(r.get('updated_at')),r,
+    ] for r in tables['dpt_tournament_updates']]
     sql, counts['tournament_updates'] = insert_batches('tournament_updates', update_columns, update_records, 'on conflict (id) do nothing')
     statements.extend(sql)
 

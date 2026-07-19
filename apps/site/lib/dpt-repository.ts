@@ -4,6 +4,7 @@ import { buildSupabaseHeaders } from './supabase-http';
 type MaybePromise<T> = T | Promise<T>;
 
 type VideoArticle = ReturnType<typeof videoArticles>[number];
+export type TournamentLiveUpdate = { id: number; title: string | null; description: string | null; update_at: string | null; image_url: string | null; video_url: string | null; featured: boolean; published_at: string };
 
 export type DptPublicRepository = {
   mode: 'json' | 'supabase';
@@ -16,6 +17,7 @@ export type DptPublicRepository = {
   getArticles(): MaybePromise<DptData['articles']>;
   getArticleByAlias(alias: string): MaybePromise<DptData['articles'][number] | undefined>;
   getArticlesForTournament(alias: string): MaybePromise<DptData['articles']>;
+  getLiveUpdatesForTournament(alias: string): MaybePromise<TournamentLiveUpdate[]>;
   getVenues(): MaybePromise<DptData['venues']>;
   getVenueByAlias(alias: string): MaybePromise<DptData['venues'][number] | undefined>;
   getPlayers(): MaybePromise<DptData['players']>;
@@ -54,6 +56,9 @@ export const localDptRepository: DptPublicRepository = {
   },
   getArticlesForTournament(alias: string) {
     return data.articles.filter((article) => article.tournament?.alias === alias);
+  },
+  getLiveUpdatesForTournament() {
+    return [];
   },
   getVenues() {
     return data.venues;
@@ -252,6 +257,11 @@ export class SupabaseDptRepository implements DptPublicRepository {
   async getArticlesForTournament(alias: string) {
     const rows = await this.select('dpt_public_articles', `select=*&tournament_alias=eq.${encodeURIComponent(alias)}&order=published_at.desc.nullslast`);
     return rows.map(articleFromRow);
+  }
+
+  async getLiveUpdatesForTournament(alias: string) {
+    const rows = await this.select('dpt_public_tournament_updates', `select=*&tournament_alias=eq.${encodeURIComponent(alias)}&order=featured.desc,published_at.desc`);
+    return rows as TournamentLiveUpdate[];
   }
 
   async getVenues() {

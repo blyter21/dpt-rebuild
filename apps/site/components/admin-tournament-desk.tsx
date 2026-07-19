@@ -57,7 +57,7 @@ type DeskData = {
   entries: DeskEntry[];
   payouts: Array<{ id: number; standing: number; payout_amount: number; points: number | null; prize_description: string | null }>;
   payoutTemplates: Array<{ id: number; name: string; tournament_type_id: number | null; type: string }>;
-  updates: Array<{ id: number; title: string; published_at: string | null; featured: boolean; status: boolean }>;
+  updates: Array<{ id: number; title: string; description: string | null; update_at: string | null; image_url: string | null; video_url: string | null; published_at: string | null; featured: boolean; status: boolean }>;
   audit: Array<{ id: number; action: string; entity_type: string; entity_id: string; created_at: string }>;
   metrics: { registered: number; checkedIn: number; remaining: number; eliminated: number; totalBuyIn: number; addonCount: number };
 };
@@ -101,6 +101,11 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [showRankEditor, setShowRankEditor] = useState(false);
   const [resetPreview, setResetPreview] = useState<ResetPreview | null>(null);
   const [resetTyping, setResetTyping] = useState('');
+  const [editingUpdate, setEditingUpdate] = useState<DeskData['updates'][number] | null>(null);
+  const [updateEditorOpen, setUpdateEditorOpen] = useState(false);
+  const [updateTitle, setUpdateTitle] = useState('');
+  const [updateDescription, setUpdateDescription] = useState('');
+  const [updateAt, setUpdateAt] = useState('');
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -285,6 +290,25 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     closeAction(); await reload();
   };
 
+  const openUpdateEditor = (update?: DeskData['updates'][number]) => {
+    setEditingUpdate(update || null); setUpdateEditorOpen(true); setUpdateTitle(update?.title || ''); setUpdateDescription(update?.description || '');
+    setUpdateAt(update?.update_at ? update.update_at.slice(0, 16) : new Date().toISOString().slice(0, 16)); setMessage('');
+  };
+  const saveUpdate = async (event: FormEvent) => {
+    event.preventDefault(); setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/updates`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ updateId: editingUpdate?.id, title: updateTitle, description: updateDescription, updateAt }) });
+    const payload = await response.json() as { error?: string }; setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Live update save failed'); return; }
+    setEditingUpdate(null); setUpdateEditorOpen(false); setMessage('Live update saved.'); await reload();
+  };
+  const changeUpdateState = async (update: DeskData['updates'][number], action: 'publish' | 'unpublish' | 'feature' | 'unfeature' | 'delete') => {
+    if ((action === 'delete' || action === 'unpublish') && !window.confirm(`${action === 'delete' ? 'Delete' : 'Unpublish'} “${update.title}”? This change is recorded in the audit trail.`)) return;
+    setBusy(true); setMessage(''); const response = await fetch(`/api/admin/tournaments/${tournamentId}/updates/${update.id}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action }) });
+    const payload = await response.json() as { error?: string }; setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Live update state change failed'); return; }
+    setMessage(`Live update ${action}d.`); await reload();
+  };
+
   useEffect(() => { void reload(); }, [reload]);
 
   if (loading) return <div className="dpt-desk-state">Loading tournament desk…</div>;
@@ -389,6 +413,11 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
         </article>
 
         <aside className="dpt-desk-side">
+          <article className="dpt-desk-panel">
+            <header><div><span>Public coverage</span><h3>Live updates</h3></div><button type="button" onClick={() => openUpdateEditor()}>New update</button></header>
+            {updateEditorOpen ? <form className="dpt-desk-action-form" onSubmit={saveUpdate}><label>Title<input value={updateTitle} maxLength={255} onChange={(event) => setUpdateTitle(event.target.value)} required /></label><label>Update time<input type="datetime-local" value={updateAt} onChange={(event) => setUpdateAt(event.target.value)} required /></label><label>Description<textarea value={updateDescription} maxLength={20000} onChange={(event) => setUpdateDescription(event.target.value)} /></label><div className="dpt-desk-row-actions"><button type="button" onClick={() => { setEditingUpdate(null); setUpdateEditorOpen(false); }}>Cancel</button><button type="submit" disabled={busy}>{busy ? 'Saving…' : 'Save draft'}</button></div></form> : null}
+            {desk.updates.length ? <ol className="dpt-desk-audit">{desk.updates.map((update) => <li key={update.id}><strong>{update.featured ? '★ ' : ''}{update.title}</strong><span>{update.status ? `Published ${update.published_at ? new Date(update.published_at).toLocaleString('en-US') : ''}` : 'Draft'} · {update.update_at ? new Date(update.update_at).toLocaleString('en-US') : 'No date'}</span><div className="dpt-desk-row-actions"><button type="button" onClick={() => openUpdateEditor(update)}>Edit</button>{update.status ? <button type="button" onClick={() => void changeUpdateState(update, 'unpublish')}>Unpublish</button> : <button type="button" onClick={() => void changeUpdateState(update, 'publish')}>Publish</button>}{update.status ? <button type="button" onClick={() => void changeUpdateState(update, update.featured ? 'unfeature' : 'feature')}>{update.featured ? 'Unfeature' : 'Feature'}</button> : null}<button type="button" className="danger" onClick={() => void changeUpdateState(update, 'delete')}>Delete</button></div></li>)}</ol> : <p>No live updates yet.</p>}
+          </article>
           <article className="dpt-desk-panel">
             <header><div><span>Configuration</span><h3>Desk settings</h3></div></header>
             <dl className="dpt-desk-definition">

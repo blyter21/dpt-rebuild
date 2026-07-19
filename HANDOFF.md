@@ -16,12 +16,12 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Pedro remains the only Supabase Auth-linked profile; production legacy user 2787 retains `administrator` and `user` roles.
 - Tournament 346 is the representative desk fixture with 97 entries, 94 add-ons and 12 payouts.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
-- Real staging tournament operations exist for player registration, check-in, registration open/close, add-ons/rebuys, DPT/freeroll elimination, payout materialization, satellite winner assignment, flight advancement/undo with `highest` or `sum` chip carryover, bulk rank correction/recalculation, full tournament reset with recoverable snapshots, undo/correction and audit logging.
-- The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 63 integrated site tests, 31 tournament-engine tests and the complete 24-migration PGlite/RLS/privilege chain pass; the flight-aware protected import also passes exact embedded-Postgres counts.
+- Real staging tournament operations exist for player registration, check-in, registration open/close, add-ons/rebuys, DPT/freeroll elimination, payout materialization, satellite winner assignment, flight advancement/undo with `highest` or `sum` chip carryover, bulk rank correction/recalculation, full tournament reset with recoverable snapshots, live-update create/edit/publish/feature/unpublish/delete, undo/correction and audit logging.
+- The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
+- Current verified gates: 68 integrated site tests, 31 tournament-engine tests and the complete 25-migration PGlite/RLS/privilege chain pass; the live-update-aware protected import also passes exact embedded-Postgres counts.
 - Production remains read-only and untouched.
 - Browser QA is deferred until the remaining tournament workflows are complete; Brook is not required to perform setup or login work while backend implementation continues.
-- Remaining queued workflow in the current three-loop batch: live updates/publication.
+- The current three-loop batch is complete. Recommended next milestone: authenticated browser QA of the full tournament desk, followed by events/seasons/leagues/venues configuration workflows.
 
 ## Safety boundaries
 

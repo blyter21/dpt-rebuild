@@ -11,6 +11,7 @@ export default async function TournamentDetailPage({ params }: { params: { alias
   const tournament = await repo.getTournamentByAlias(params.alias);
   if (!tournament) notFound();
   const articles = await repo.getArticlesForTournament(tournament.alias || '');
+  const liveUpdates = await repo.getLiveUpdatesForTournament(tournament.alias || '');
   const tournamentImage = mediaUrl(tournament.imageUrl);
   const champion = (await repo.getChampions()).find((row) => row.tournamentAlias === tournament.alias);
   return (
@@ -36,6 +37,8 @@ export default async function TournamentDetailPage({ params }: { params: { alias
           <div className="eyebrow">Results</div>
           <h2>{champion ? 'Champion' : 'Results Pending'}</h2>
           {champion ? <div className="news-item"><div className="news-thumb">#1</div><div><strong>{champion.player}</strong><span>{money(champion.winnings)} · {champion.score || 0} points</span></div></div> : <p className="excerpt">No champion row is linked in the extracted result data yet.</p>}
+          <h3>Live Updates</h3>
+          {liveUpdates.length ? liveUpdates.map((update) => <article className="news-item" key={update.id}><div className="news-thumb">{update.featured ? '★' : 'LIVE'}</div><div><strong>{update.title}</strong><span>{update.description || ''}</span><small>{new Date(update.published_at).toLocaleString('en-US')}</small></div></article>) : null}
           <h3>Related Updates</h3>
           {articles.length ? articles.map((article) => <ArticleItem key={article.id} item={article} />) : <p className="excerpt">No related live updates found in the extracted SQL data.</p>}
         </aside>

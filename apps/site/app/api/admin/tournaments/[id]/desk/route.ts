@@ -43,10 +43,10 @@ export async function GET(
     order: 'name.asc',
   });
   const updatesQuery = new URLSearchParams({
-    select: 'id,title,published_at,featured,status',
+    select: 'id,title,description,update_at,image_url,video_url,published_at,featured,status',
     tournament_id: `eq.${tournamentId}`,
     deleted_at: 'is.null',
-    order: 'published_at.desc.nullslast',
+    order: 'featured.desc,published_at.desc.nullslast,update_at.desc.nullslast,id.desc',
   });
   const auditQuery = new URLSearchParams({
     select: 'id,action,entity_type,entity_id,actor_profile_id,before_data,after_data,created_at',
