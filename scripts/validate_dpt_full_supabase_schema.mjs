@@ -27,6 +27,7 @@ const migrationFiles = [
   'supabase/migrations/20260718180000_admin_satellite_winners_rpc.sql',
   'supabase/migrations/20260718190000_admin_flight_advancement_rpc.sql',
   'supabase/migrations/20260719100000_admin_bulk_rank_corrections_rpc.sql',
+  'supabase/migrations/20260719113000_admin_tournament_reset_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -275,6 +276,11 @@ const workflowSecurityResult = await db.query(`
       'public.dpt_admin_bulk_correct_ranks(bigint,jsonb)',
       'execute'
     ) as anon_cannot_bulk_correct_ranks,
+    not has_function_privilege('anon', 'public.dpt_admin_tournament_reset_preview(bigint)', 'execute') as anon_cannot_preview_reset,
+    has_function_privilege('authenticated', 'public.dpt_admin_tournament_reset_preview(bigint)', 'execute') as authenticated_can_preview_reset,
+    not has_function_privilege('anon', 'public.dpt_admin_reset_tournament(bigint,text)', 'execute') as anon_cannot_reset,
+    has_function_privilege('authenticated', 'public.dpt_admin_reset_tournament(bigint,text)', 'execute') as authenticated_can_reset,
+    not has_table_privilege('anon', 'public.dpt_tournament_reset_snapshots', 'select') as anon_cannot_read_reset_snapshots,
     has_function_privilege(
       'authenticated',
       'public.dpt_admin_bulk_correct_ranks(bigint,jsonb)',

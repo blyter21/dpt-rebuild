@@ -62,6 +62,8 @@ type DeskData = {
   metrics: { registered: number; checkedIn: number; remaining: number; eliminated: number; totalBuyIn: number; addonCount: number };
 };
 
+type ResetPreview = { confirmation_token: string; counts: Record<string, number> };
+
 function profileName(player: DeskPlayer) {
   return [player.first_name, player.last_name].filter(Boolean).join(' ') || player.nick_name || `Player ${player.legacy_user_id ?? player.id}`;
 }
@@ -97,6 +99,8 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [distributionAmount, setDistributionAmount] = useState('');
   const [rankCorrections, setRankCorrections] = useState<Array<{ entry_id: number; rank: string; total_buy_in_amount: string; bounty: string }>>([]);
   const [showRankEditor, setShowRankEditor] = useState(false);
+  const [resetPreview, setResetPreview] = useState<ResetPreview | null>(null);
+  const [resetTyping, setResetTyping] = useState('');
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -215,6 +219,25 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     if (!response.ok) { setMessage(payload.error || 'Flight advancement update failed'); return; }
     setMessage(undo ? `${payload.result?.undone_count ?? 0} flight advancement${payload.result?.undone_count === 1 ? '' : 's'} undone.` : `${payload.result?.advanced_count ?? 0} player${payload.result?.advanced_count === 1 ? '' : 's'} advanced.`);
     await reload();
+  };
+
+  const previewTournamentReset = async () => {
+    setBusy(true); setMessage(''); setResetPreview(null); setResetTyping('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/reset/preview`, { cache: 'no-store' });
+    const payload = await response.json() as { preview?: ResetPreview; error?: string };
+    setBusy(false);
+    if (!response.ok || !payload.preview) { setMessage(payload.error || 'Tournament reset preview failed'); return; }
+    setResetPreview(payload.preview);
+  };
+
+  const executeTournamentReset = async () => {
+    if (!resetPreview || resetTyping !== 'RESET') return;
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/reset`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ confirmationToken: resetPreview.confirmation_token, confirmation: 'RESET' }) });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setResetPreview(null); setResetTyping(''); setMessage(payload.error || 'Tournament reset failed; preview again before retrying.'); return; }
+    setResetPreview(null); setResetTyping(''); setMessage('Tournament reset, registration reopened, and a recoverable audit snapshot was recorded.'); await reload();
   };
 
   const openAction = (entry: DeskEntry, mode: 'check-in' | 'addon' | 'eliminate' | 'undo') => {
@@ -405,6 +428,16 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
             <button type="button" disabled={busy || !desk.entries.some((entry) => entry.qualified_flight_player)} onClick={() => void changeFlightAdvancement(true)}>Undo flight advancement</button>
             {!desk.tournament.registration_closed ? <small>Close registration before advancing flight players.</small> : null}
           </article> : null}
+          <article className="dpt-desk-panel dpt-desk-reset">
+            <header><div><span>Danger zone</span><h3>Full tournament reset</h3></div></header>
+            {!resetPreview ? <><p>Preview the exact operational records that will be reset. Configuration, profiles, roles, source identities, add-ons, payouts, updates, and audit history are preserved.</p><button type="button" className="danger" disabled={busy} onClick={() => void previewTournamentReset()}>{busy ? 'Loading…' : 'Preview full reset'}</button></> : <div className="dpt-desk-action-form" aria-label="Full tournament reset confirmation">
+              <p><strong>Preview token:</strong> <code>{resetPreview.confirmation_token}</code></p>
+              <ul>{Object.entries(resetPreview.counts).map(([key, count]) => <li key={key}>{key.replaceAll('_', ' ')}: <strong>{count}</strong></li>)}</ul>
+              <p>Type <strong>RESET</strong> to confirm this exact preview. Any tournament change invalidates the token.</p>
+              <label>Confirmation<input aria-label="Type RESET to confirm full tournament reset" value={resetTyping} onChange={(event) => setResetTyping(event.target.value)} autoComplete="off" /></label>
+              <div className="dpt-desk-row-actions"><button type="button" onClick={() => { setResetPreview(null); setResetTyping(''); }} disabled={busy}>Cancel</button><button type="button" className="danger" disabled={busy || resetTyping !== 'RESET'} onClick={() => void executeTournamentReset()}>{busy ? 'Resetting…' : 'Reset tournament'}</button></div>
+            </div>}
+          </article>
           <article className="dpt-desk-panel">
             <header><div><span>Corrections</span><h3>Audit history</h3></div><strong>{desk.audit.length}</strong></header>
             {desk.audit.length ? <ol className="dpt-desk-audit">{desk.audit.map((item) => <li key={item.id}><strong>{item.action.replaceAll('.', ' ')}</strong><span>Entry {item.entity_id} · {new Date(item.created_at).toLocaleString('en-US')}</span></li>)}</ol> : <p>No staging mutations have been recorded.</p>}

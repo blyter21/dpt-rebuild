@@ -31,6 +31,11 @@ describe('tournament desk operator controls', () => {
       '/flight-advance',
       'Advance flight players',
       'Undo flight advancement',
+      '/reset/preview',
+      'Preview full reset',
+      'Full tournament reset',
+      'Type RESET',
+      'confirmationToken',
       'Audit history',
     ]) {
       expect(source).toContain(expected);
