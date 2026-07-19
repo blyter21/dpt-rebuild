@@ -1,0 +1,737 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/blinds/8/edit",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "Save as Copy",
+                    "Save",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Add Break",
+                    "",
+                    "Delete",
+                    "Save",
+                    "Cancel"
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8/edit#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "Save as Copy",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8/edit_SaveCopy"
+                  },
+                  {
+                      "text":  "Delete",
+                      "href":  "https://dakotapokertour.com/admin/blinds/8"
+                  },
+                  {
+                      "text":  "Cancel",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Blinds",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+
+                                   ],
+                       "rows":  31
+                   },
+                   {
+                       "headers":  [
+
+                                   ],
+                       "rows":  1
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "action":  "https://dakotapokertour.com/admin/blinds/8",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_method",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "status",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "name",
+                                         "type":  "text",
+                                         "placeholder":  "Name",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "description",
+                                         "type":  "textarea",
+                                         "placeholder":  "Description",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_intervals",
+                                         "type":  "number",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[0][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[0][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[0][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[1][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[1][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[1][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[2][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[2][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[2][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[3][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[3][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[4][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[4][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[4][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[5][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[5][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[5][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[6][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[6][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[6][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[7][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[7][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[8][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[8][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[8][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[9][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[9][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[9][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[10][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[10][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[10][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[11][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[11][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[12][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[12][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[12][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[13][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[13][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[13][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[14][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[14][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[14][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[15][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[15][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[16][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[16][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[16][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[17][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[17][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[17][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[18][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[18][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[18][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[19][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[19][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[20][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[20][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[20][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[21][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[21][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[21][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[22][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[22][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[22][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[23][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[23][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[23][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[24][addbreak]",
+                                         "type":  "text",
+                                         "placeholder":  "Break info",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[24][blind_interval]",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[25][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[25][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[25][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[26][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[26][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[26][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[27][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[27][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[27][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[28][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[28][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[28][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[29][small_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Small Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[29][big_blind]",
+                                         "type":  "text",
+                                         "placeholder":  "Big Blind",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_info[29][bbante]",
+                                         "type":  "text",
+                                         "placeholder":  "BB Ante",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Blind Edit\n Save as Copy  Save\nStatus *\nPublished\nUnpublished\nName *\nDescription\nBlind Intervals\nMins\nBlind Info\nSmall Blind\tBig Blind\tBB Ante\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\nMins\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\n\n\t\n\t\n\t\nAdd Break  \n Delete\n Save  Cancel\n \n Dashboard\n Blinds\nSave\n "
+}

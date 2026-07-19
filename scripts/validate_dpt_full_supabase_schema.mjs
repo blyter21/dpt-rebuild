@@ -30,6 +30,7 @@ const migrationFiles = [
   'supabase/migrations/20260719113000_admin_tournament_reset_rpc.sql',
   'supabase/migrations/20260719123000_admin_tournament_live_updates_rpc.sql',
   'supabase/migrations/20260719133000_admin_configuration_rpc.sql',
+  'supabase/migrations/20260719150000_admin_blinds_payouts_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -77,6 +78,8 @@ if (process.env.DPT_VALIDATE_PRIVATE_IMPORT === '1') {
       (select count(*)::int from public.venues) as venues,
       (select count(*)::int from public.events) as events,
       (select count(*)::int from public.tournaments) as tournaments,
+      (select count(*)::int from public.blind_structures) as blind_structures,
+      (select count(*)::int from public.blind_structures where jsonb_array_length(blind_info) > 0) as blind_structures_with_levels,
       (select count(*)::int from public.payout_templates) as payout_templates,
       (select count(*)::int from public.payout_template_rows) as payout_template_rows,
       (select count(*)::int from public.tournament_payouts) as tournament_payouts,
@@ -298,7 +301,21 @@ const workflowSecurityResult = await db.query(`
     not has_function_privilege('anon', 'public.dpt_admin_set_configuration_status(text,bigint,boolean)', 'execute') as anon_cannot_set_configuration_status,
     has_function_privilege('authenticated', 'public.dpt_admin_set_configuration_status(text,bigint,boolean)', 'execute') as authenticated_can_set_configuration_status,
     not has_function_privilege('anon', 'public.dpt_admin_soft_delete_configuration(text,bigint)', 'execute') as anon_cannot_delete_configuration,
-    has_function_privilege('authenticated', 'public.dpt_admin_soft_delete_configuration(text,bigint)', 'execute') as authenticated_can_delete_configuration
+    has_function_privilege('authenticated', 'public.dpt_admin_soft_delete_configuration(text,bigint)', 'execute') as authenticated_can_delete_configuration,
+    not has_function_privilege('anon','public.dpt_admin_save_blind_structure(bigint,jsonb)','execute') as anon_cannot_save_blinds,
+    has_function_privilege('authenticated','public.dpt_admin_save_blind_structure(bigint,jsonb)','execute') as authenticated_can_save_blinds,
+    not has_function_privilege('anon','public.dpt_admin_status_blind_structure(bigint,boolean)','execute') as anon_cannot_status_blinds,
+    has_function_privilege('authenticated','public.dpt_admin_status_blind_structure(bigint,boolean)','execute') as authenticated_can_status_blinds,
+    not has_function_privilege('anon','public.dpt_admin_delete_blind_structure(bigint)','execute') as anon_cannot_delete_blinds,
+    has_function_privilege('authenticated','public.dpt_admin_delete_blind_structure(bigint)','execute') as authenticated_can_delete_blinds,
+    not has_function_privilege('anon','public.dpt_admin_copy_blind_structure(bigint)','execute') as anon_cannot_copy_blinds,
+    has_function_privilege('authenticated','public.dpt_admin_copy_blind_structure(bigint)','execute') as authenticated_can_copy_blinds,
+    not has_function_privilege('anon','public.dpt_admin_save_payout_template(bigint,jsonb)','execute') as anon_cannot_save_payout_templates,
+    has_function_privilege('authenticated','public.dpt_admin_save_payout_template(bigint,jsonb)','execute') as authenticated_can_save_payout_templates,
+    not has_function_privilege('anon','public.dpt_admin_delete_payout_template(bigint)','execute') as anon_cannot_delete_payout_templates,
+    has_function_privilege('authenticated','public.dpt_admin_delete_payout_template(bigint)','execute') as authenticated_can_delete_payout_templates,
+    not has_function_privilege('anon','public.dpt_admin_copy_payout_template(bigint)','execute') as anon_cannot_copy_payout_templates,
+    has_function_privilege('authenticated','public.dpt_admin_copy_payout_template(bigint)','execute') as authenticated_can_copy_payout_templates
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
@@ -336,6 +353,8 @@ if (coreImportCounts) {
     venues: 78,
     events: 82,
     tournaments: 271,
+    blind_structures: 8,
+    blind_structures_with_levels: 8,
     payout_templates: 5,
     payout_template_rows: 2461,
     tournament_payouts: 1940,

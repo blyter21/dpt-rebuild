@@ -7,6 +7,8 @@ const adminNavigation = [
   { href: '/admin/seasons', label: 'Seasons' },
   { href: '/admin/leagues', label: 'Leagues' },
   { href: '/admin/tournaments', label: 'Tournaments' },
+  { href: '/admin/payoutdistributions', label: 'Payout Distributions Template' },
+  { href: '/admin/blinds', label: 'Blind Structures' },
   { href: '/admin/venues', label: 'Venues' },
   { href: '/admin/articles', label: 'Articles' },
 ];

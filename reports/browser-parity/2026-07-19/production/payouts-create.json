@@ -1,0 +1,199 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/payoutdistributions/create",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "Expand All",
+                    "Add Structure",
+                    "",
+                    "",
+                    "Create",
+                    "Cancel"
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions/create#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "Cancel",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Points System",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+
+                                   ],
+                       "rows":  3
+                   },
+                   {
+                       "headers":  [
+
+                                   ],
+                       "rows":  1
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "action":  "https://dakotapokertour.com/admin/payoutdistributions",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "json_data",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "name",
+                                         "type":  "text",
+                                         "placeholder":  "Name",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "payout_distribution_template",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "player_count_start[0]",
+                                         "type":  "text",
+                                         "placeholder":  "Range Start",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "player_count_end[0]",
+                                         "type":  "text",
+                                         "placeholder":  "Range End",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "winner_count[0]",
+                                         "type":  "text",
+                                         "placeholder":  "No. of Winners",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Points System Create\n New structure will create in existing DPT Standard Payout Distribution Template\nName *\nPoints structure\nExpand All\nDPT Standard Payout\nFreeroll\nRange Start\tRange End\tNo. of Winners\t\n\n\t\n\t\n\tAdd Structure\t\n\n Create\n Cancel\n \n Dashboard\n Points System\nAdd\n "
+}

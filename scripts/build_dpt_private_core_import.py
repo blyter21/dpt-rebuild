@@ -114,6 +114,18 @@ def parse_json(value: Any, fallback: Any) -> Any:
             return fallback
 
 
+def normalize_blind_info(value: Any) -> list[Any]:
+    parsed = parse_json(value, [])
+    if isinstance(parsed, list):
+        return parsed
+    if isinstance(parsed, dict):
+        def sort_key(item: tuple[str, Any]) -> tuple[int, str]:
+            key = str(item[0])
+            return (int(key), key) if key.isdigit() else (10**9, key)
+        return [row for _, row in sorted(parsed.items(), key=sort_key)]
+    return []
+
+
 def profile_uuid(legacy_user_id: Any) -> str:
     return str(uuid.uuid5(NAMESPACE, f'dpt-user:{integer(legacy_user_id)}'))
 
@@ -248,8 +260,8 @@ def main() -> None:
     statements.extend(sql)
 
     blind_columns = ['id','name','blind_info','blind_intervals','is_copy','status','description','created_at','updated_at','deleted_at','legacy_data']
-    blind_records = [[integer(r['id']),clean_text(r.get('name')),parse_json(r.get('blind_info'),[]),integer(r.get('blind_intervals')) or None,truthy(r.get('copied_blind')),truthy(r.get('status')),clean_text(r.get('description')),clean_date(r.get('created_at')),clean_date(r.get('updated_at')),clean_date(r.get('deleted_at')),r] for r in tables['dpt_blind_structures']]
-    sql, counts['blind_structures'] = insert_batches('blind_structures', blind_columns, blind_records, 'on conflict (id) do nothing')
+    blind_records = [[integer(r['id']),clean_text(r.get('name')),normalize_blind_info(r.get('blind_info')),integer(r.get('blind_intervals')) or None,truthy(r.get('copied_blind')),truthy(r.get('status')),clean_text(r.get('description')),clean_date(r.get('created_at')),clean_date(r.get('updated_at')),clean_date(r.get('deleted_at')),r] for r in tables['dpt_blind_structures']]
+    sql, counts['blind_structures'] = insert_batches('blind_structures', blind_columns, blind_records, 'on conflict (id) do update set name=excluded.name,blind_info=excluded.blind_info,blind_intervals=excluded.blind_intervals,is_copy=excluded.is_copy,status=excluded.status,description=excluded.description,created_at=excluded.created_at,updated_at=excluded.updated_at,deleted_at=excluded.deleted_at,legacy_data=excluded.legacy_data')
     statements.extend(sql)
 
     payout_template_columns = ['id','name','tournament_type_id','type','created_at','updated_at','deleted_at','legacy_data']

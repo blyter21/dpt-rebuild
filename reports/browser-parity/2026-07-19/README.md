@@ -27,6 +27,8 @@ Viewport: `1440 × 1000` using the dedicated Windows Chrome profile `PedroChrome
 - `production/seasons-create.*`: status, league, name, description, default, logo, banner, dates.
 - `production/leagues-create.*`: status, name, description.
 - `production/venues-create.*`: status, name, address/city/state/zip/phone, logo/banner, social URLs, website, map location.
+- `production/blinds-create.*` / `production/blinds-edit.*`: status, name, description, interval, ordered small/big/BB ante rows and break rows.
+- `production/payouts-create.*` / `production/payouts-edit.*`: name, structure type, player-count ranges, winner counts, and expanded standing/points grids.
 
 ## Rebuild boundary capture
 
