@@ -33,6 +33,7 @@ const migrationFiles = [
   'supabase/migrations/20260719150000_admin_blinds_payouts_rpc.sql',
   'supabase/migrations/20260719170000_admin_tournament_setup_rpc.sql',
   'supabase/migrations/20260719190000_players_permissions_duplicate_merge.sql',
+  'supabase/migrations/20260719210000_articles_notifications_templates.sql',
 ];
 
 const db = new PGlite();
@@ -336,7 +337,23 @@ const workflowSecurityResult = await db.query(`
     has_function_privilege('authenticated','public.dpt_admin_delete_role(bigint)','execute') as authenticated_can_delete_roles,
     not has_function_privilege('anon','public.dpt_admin_merge_players(uuid,uuid[],uuid,boolean)','execute') as anon_cannot_merge_players,
     has_function_privilege('authenticated','public.dpt_admin_merge_players(uuid,uuid[],uuid,boolean)','execute') as authenticated_can_merge_players,
-    (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('admin_roles','admin_permissions','admin_role_permissions','profile_admin_roles','profile_notification_preferences','notifications','player_merges','player_merge_sources','player_merge_pending_references')) as player_security_tables_have_rls
+    (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('admin_roles','admin_permissions','admin_role_permissions','profile_admin_roles','profile_notification_preferences','notifications','player_merges','player_merge_sources','player_merge_pending_references')) as player_security_tables_have_rls,
+    not has_function_privilege('anon','public.dpt_admin_save_category(bigint,jsonb)','execute') as anon_cannot_save_categories,
+    has_function_privilege('authenticated','public.dpt_admin_save_category(bigint,jsonb)','execute') as authenticated_can_save_categories,
+    not has_function_privilege('anon','public.dpt_admin_save_article(bigint,jsonb)','execute') as anon_cannot_save_articles,
+    has_function_privilege('authenticated','public.dpt_admin_save_article(bigint,jsonb)','execute') as authenticated_can_save_articles,
+    not has_function_privilege('anon','public.dpt_admin_create_notification(jsonb,uuid)','execute') as anon_cannot_create_notifications,
+    has_function_privilege('authenticated','public.dpt_admin_create_notification(jsonb,uuid)','execute') as authenticated_can_create_notifications,
+    not has_function_privilege('anon','public.dpt_admin_mark_internal_notification_read(uuid)','execute') as anon_cannot_read_notifications,
+    has_function_privilege('authenticated','public.dpt_admin_mark_internal_notification_read(uuid)','execute') as authenticated_can_read_notifications,
+    not has_function_privilege('anon','public.dpt_admin_save_email_template(uuid,jsonb)','execute') as anon_cannot_save_templates,
+    has_function_privilege('authenticated','public.dpt_admin_save_email_template(uuid,jsonb)','execute') as authenticated_can_save_templates,
+    not has_function_privilege('anon','public.dpt_admin_archive_email_template(uuid)','execute') as anon_cannot_archive_templates,
+    has_function_privilege('authenticated','public.dpt_admin_archive_email_template(uuid)','execute') as authenticated_can_archive_templates,
+    (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('article_categories','articles','article_profiles','media_assets','notification_campaigns','notification_recipients','notification_deliveries','internal_notifications','email_templates','email_template_versions','email_template_attachments')) as content_tables_have_rls,
+    has_table_privilege('anon','public.dpt_public_published_articles','select') as anon_can_read_published_articles,
+    has_column_privilege('anon','public.articles','title','select') as anon_can_read_public_article_title,
+    not has_column_privilege('anon','public.articles','body_html','select') as anon_cannot_read_private_article_body
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 

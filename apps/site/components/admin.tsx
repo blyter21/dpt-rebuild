@@ -10,10 +10,13 @@ const adminNavigation = [
   { href: '/admin/payoutdistributions', label: 'Payout Distributions Template' },
   { href: '/admin/blinds', label: 'Blind Structures' },
   { href: '/admin/venues', label: 'Venues' },
+  { href: '/admin/categories', label: 'Categories' },
   { href: '/admin/articles', label: 'Articles' },
   { href: '/admin/players', label: 'Players' },
   { href: '/admin/roles', label: 'Roles' },
   { href: '/admin/duplicates/players', label: 'Fix Duplicate Players' },
+  { href: '/admin/send-notifications', label: 'Notifications' },
+  { href: '/admin/emailtemplates', label: 'Email Templates' },
 ];
 
 export function AdminShell({
