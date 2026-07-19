@@ -31,6 +31,7 @@ const migrationFiles = [
   'supabase/migrations/20260719123000_admin_tournament_live_updates_rpc.sql',
   'supabase/migrations/20260719133000_admin_configuration_rpc.sql',
   'supabase/migrations/20260719150000_admin_blinds_payouts_rpc.sql',
+  'supabase/migrations/20260719170000_admin_tournament_setup_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -315,7 +316,15 @@ const workflowSecurityResult = await db.query(`
     not has_function_privilege('anon','public.dpt_admin_delete_payout_template(bigint)','execute') as anon_cannot_delete_payout_templates,
     has_function_privilege('authenticated','public.dpt_admin_delete_payout_template(bigint)','execute') as authenticated_can_delete_payout_templates,
     not has_function_privilege('anon','public.dpt_admin_copy_payout_template(bigint)','execute') as anon_cannot_copy_payout_templates,
-    has_function_privilege('authenticated','public.dpt_admin_copy_payout_template(bigint)','execute') as authenticated_can_copy_payout_templates
+    has_function_privilege('authenticated','public.dpt_admin_copy_payout_template(bigint)','execute') as authenticated_can_copy_payout_templates,
+    not has_function_privilege('anon','public.dpt_admin_save_tournament(bigint,jsonb)','execute') as anon_cannot_save_tournaments,
+    has_function_privilege('authenticated','public.dpt_admin_save_tournament(bigint,jsonb)','execute') as authenticated_can_save_tournaments,
+    not has_function_privilege('anon','public.dpt_admin_copy_tournament(bigint)','execute') as anon_cannot_copy_tournaments,
+    has_function_privilege('authenticated','public.dpt_admin_copy_tournament(bigint)','execute') as authenticated_can_copy_tournaments,
+    not has_function_privilege('anon','public.dpt_admin_set_tournament_status(bigint,boolean)','execute') as anon_cannot_status_tournaments,
+    has_function_privilege('authenticated','public.dpt_admin_set_tournament_status(bigint,boolean)','execute') as authenticated_can_status_tournaments,
+    not has_function_privilege('anon','public.dpt_admin_soft_delete_tournament(bigint)','execute') as anon_cannot_delete_tournaments,
+    has_function_privilege('authenticated','public.dpt_admin_soft_delete_tournament(bigint)','execute') as authenticated_can_delete_tournaments
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 

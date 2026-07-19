@@ -16,13 +16,13 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Pedro remains the only Supabase Auth-linked profile; production legacy user 2787 retains `administrator` and `user` roles.
 - Tournament 346 is the representative desk fixture with 97 entries, 94 add-ons and 12 payouts.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
-- Real staging operations exist for tournament desk workflows plus audited Events, Seasons, Leagues, Venues, Blind Structures and Payout Templates administration, including active-assignment protection, copying, normalized range editing and imported production blind levels/media/social fields.
+- Real staging operations exist for tournament create/edit/copy/status/soft-delete and desk workflows plus audited Events, Seasons, Leagues, Venues, Blind Structures and Payout Templates administration. Tournament setup includes production list filters, named selectors, media, dates, buy-ins/rebuys, chips, scoring, qualifier/flight flags, copy-without-runtime-data, and runtime delete protection.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 81 integrated site tests, 31 tournament-engine tests and the complete 27-migration PGlite/RLS/privilege chain pass; the structure-aware protected import passes exact counts including 8/8 blind structures with 277 level/break rows and 2,461 payout rows.
+- Current verified gates: 88 integrated site tests, 31 tournament-engine tests and the complete 28-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts.
 - Production remains read-only and untouched.
 - The dedicated Windows `PedroChromeDebug` profile is authenticated to both production and the rebuild. The rebuild session is established autonomously through a one-time Supabase admin authentication exchange; no password reset or user-entered credential is required.
 - Matched 1440×1000 production/rebuild screenshots, DOM inventories, side-by-side images and the gap report are under `reports/browser-parity/2026-07-19/`.
-- The requested three-loop batch is implemented, rollback-tested and browser-compared. Highest-priority next loop: production-equivalent tournament create/edit/copy and list filters/columns.
+- Current three-loop batch: Loop 1 tournament setup is complete and rollback-tested; Loop 2 Players/Roles/Duplicate Merge is next; Loop 3 Content/Notifications/Email follows.
 
 ## Safety boundaries
 

@@ -1,0 +1,921 @@
+﻿{
+    "title":  "Dakota Poker Tour",
+    "url":  "https://dakotapokertour.com/admin/tournaments/create",
+    "headings":  [
+
+                 ],
+    "buttons":  [
+                    "",
+                    "",
+                    "Create",
+                    "",
+                    "",
+                    "Create",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Save Selected",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Save Selected",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Save Selected",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Save Selected",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Save Selected",
+                    "",
+                    ""
+                ],
+    "links":  [
+                  {
+                      "text":  "",
+                      "href":  "https://dakotapokertour.com/admin"
+                  },
+                  {
+                      "text":  "View Site",
+                      "href":  "https://dakotapokertour.com/"
+                  },
+                  {
+                      "text":  "1",
+                      "href":  "https://dakotapokertour.com/admin/internal-notifications"
+                  },
+                  {
+                      "text":  "Sign Out",
+                      "href":  "https://dakotapokertour.com/admin/tournaments/create#"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  },
+                  {
+                      "text":  "Payout Distributions Template",
+                      "href":  "https://dakotapokertour.com/admin/payoutdistributions"
+                  },
+                  {
+                      "text":  "Blind Structures",
+                      "href":  "https://dakotapokertour.com/admin/blinds"
+                  },
+                  {
+                      "text":  "Live Updates",
+                      "href":  "https://dakotapokertour.com/admin/articles?liveupdate=1"
+                  },
+                  {
+                      "text":  "Events",
+                      "href":  "https://dakotapokertour.com/admin/events"
+                  },
+                  {
+                      "text":  "Seasons",
+                      "href":  "https://dakotapokertour.com/admin/seasons"
+                  },
+                  {
+                      "text":  "Leagues",
+                      "href":  "https://dakotapokertour.com/admin/leagues"
+                  },
+                  {
+                      "text":  "Venues",
+                      "href":  "https://dakotapokertour.com/admin/venues"
+                  },
+                  {
+                      "text":  "Categories",
+                      "href":  "https://dakotapokertour.com/admin/categories"
+                  },
+                  {
+                      "text":  "Articles",
+                      "href":  "https://dakotapokertour.com/admin/articles"
+                  },
+                  {
+                      "text":  "Players",
+                      "href":  "https://dakotapokertour.com/admin/users"
+                  },
+                  {
+                      "text":  "Roles",
+                      "href":  "https://dakotapokertour.com/admin/roles"
+                  },
+                  {
+                      "text":  "Fix Duplicate Players",
+                      "href":  "https://dakotapokertour.com/admin/duplicates/players"
+                  },
+                  {
+                      "text":  "Notifications",
+                      "href":  "https://dakotapokertour.com/admin/send-notifications"
+                  },
+                  {
+                      "text":  "Email Templates",
+                      "href":  "https://dakotapokertour.com/admin/emailtemplates"
+                  },
+                  {
+                      "text":  "Configuration",
+                      "href":  "https://dakotapokertour.com/admin/configurations"
+                  },
+                  {
+                      "text":  "Backup Manager",
+                      "href":  "https://dakotapokertour.com/admin/backup-manager"
+                  },
+                  {
+                      "text":  "Log Viewer",
+                      "href":  "https://dakotapokertour.com/admin/log-viewer"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Cut\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Copy\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Undo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Redo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Link\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Unlink\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Anchor\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Image\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Table\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Maximize\u0027)"
+                  },
+                  {
+                      "text":  "Source",
+                      "href":  "javascript:void(\u0027Source\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Bold\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Italic\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Remove Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Block Quote\u0027)"
+                  },
+                  {
+                      "text":  "Styles",
+                      "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                  },
+                  {
+                      "text":  "Format",
+                      "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Cut\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Copy\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Undo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Redo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Link\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Unlink\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Anchor\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Image\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Table\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Maximize\u0027)"
+                  },
+                  {
+                      "text":  "Source",
+                      "href":  "javascript:void(\u0027Source\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Bold\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Italic\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Remove Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Block Quote\u0027)"
+                  },
+                  {
+                      "text":  "Styles",
+                      "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                  },
+                  {
+                      "text":  "Format",
+                      "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Cut\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Copy\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste as plain text\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Paste from Word\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Undo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Redo\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Spell Check As You Type\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Link\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Unlink\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Anchor\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Image\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Table\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Horizontal Line\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert Special Character\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Maximize\u0027)"
+                  },
+                  {
+                      "text":  "Source",
+                      "href":  "javascript:void(\u0027Source\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Bold\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Italic\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Strikethrough\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Remove Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Numbered List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Insert/Remove Bulleted List\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Decrease Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Increase Indent\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027Block Quote\u0027)"
+                  },
+                  {
+                      "text":  "Styles",
+                      "href":  "javascript:void(\u0027Formatting Styles\u0027)"
+                  },
+                  {
+                      "text":  "Format",
+                      "href":  "javascript:void(\u0027Paragraph Format\u0027)"
+                  },
+                  {
+                      "text":  "",
+                      "href":  "javascript:void(\u0027About CKEditor 4\u0027)"
+                  },
+                  {
+                      "text":  "Dashboard",
+                      "href":  "https://dakotapokertour.com/admin/dashboard"
+                  },
+                  {
+                      "text":  "Tournaments",
+                      "href":  "https://dakotapokertour.com/admin/tournaments"
+                  }
+              ],
+    "tables":  [
+                   {
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat"
+                                   ],
+                       "rows":  5
+                   },
+                   {
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat"
+                                   ],
+                       "rows":  5
+                   },
+                   {
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat"
+                                   ],
+                       "rows":  5
+                   },
+                   {
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat"
+                                   ],
+                       "rows":  5
+                   },
+                   {
+                       "headers":  [
+                                       "Sun",
+                                       "Mon",
+                                       "Tue",
+                                       "Wed",
+                                       "Thu",
+                                       "Fri",
+                                       "Sat"
+                                   ],
+                       "rows":  5
+                   }
+               ],
+    "forms":  [
+                  {
+                      "action":  "https://dakotapokertour.com/logout",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  },
+                  {
+                      "action":  "https://dakotapokertour.com/admin/tournaments",
+                      "method":  "post",
+                      "inputs":  [
+                                     {
+                                         "name":  "_token",
+                                         "type":  "hidden",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "status",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "featured",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "featured",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "tournament_type_id",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "point_distribution_id",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "advancing_to_flight_tournaments",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "advancing_to_flight_tournaments",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_search_registration",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_search_registration",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "chips_accumulator",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "chips_accumulator",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "flight[0][flight_name]",
+                                         "type":  "text",
+                                         "placeholder":  "Name",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "flight[0][flight_start_date]",
+                                         "type":  "text",
+                                         "placeholder":  "Start Date",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "flight[0][flight_minimum_buyin]",
+                                         "type":  "text",
+                                         "placeholder":  "Initial Buy In",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "flight[0][flight_tournament_fee]",
+                                         "type":  "text",
+                                         "placeholder":  "Charity Take",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "flight[0][flight_initial_chips_count]",
+                                         "type":  "text",
+                                         "placeholder":  "Initial Chips Count",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "qualifier_tournament",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "qualifier_tournament",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "advancing_tournaments_id",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "qualifier_tournament_ids",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "qualifier_prize",
+                                         "type":  "textarea",
+                                         "placeholder":  "Qualifier Prize",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "event_id",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "venue_id",
+                                         "type":  "select-one",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "name",
+                                         "type":  "text",
+                                         "placeholder":  "Name",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "short_description",
+                                         "type":  "textarea",
+                                         "placeholder":  "Short Description",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "long_description",
+                                         "type":  "textarea",
+                                         "placeholder":  "Long Description",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "live_stream_url",
+                                         "type":  "text",
+                                         "placeholder":  "Live Stream Youtube Video URL",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "logo",
+                                         "type":  "file",
+                                         "placeholder":  "Logo",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "banner_image",
+                                         "type":  "file",
+                                         "placeholder":  "Banner Image",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "multi_day",
+                                         "type":  "checkbox",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "start_date",
+                                         "type":  "text",
+                                         "placeholder":  "Start Date",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "end_date",
+                                         "type":  "text",
+                                         "placeholder":  "End Date",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "registration_start_date",
+                                         "type":  "text",
+                                         "placeholder":  "Registration Start Date",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "registration_end_date",
+                                         "type":  "text",
+                                         "placeholder":  "Registration End Date",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "minimum_buyin",
+                                         "type":  "text",
+                                         "placeholder":  "Initial Buy In",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "dealer_fee",
+                                         "type":  "text",
+                                         "placeholder":  "Dealer Appreciation Fee",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "initial_chips_count",
+                                         "type":  "text",
+                                         "placeholder":  "Initial Chips Count",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_rebuy",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_rebuy",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allowed_rebuys_limit",
+                                         "type":  "number",
+                                         "placeholder":  "Allowed Rebuys Limit",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "rebuy_amount",
+                                         "type":  "text",
+                                         "placeholder":  "Rebuys",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "rebuy_fee",
+                                         "type":  "text",
+                                         "placeholder":  "Rebuy Dealer Appreciation Fee",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_rebuy_chips",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "allow_rebuy_chips",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "rebuy_chips_count",
+                                         "type":  "text",
+                                         "placeholder":  "Rebuy Chips Count",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "title_count",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "title_count",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "participation_bonus_points",
+                                         "type":  "text",
+                                         "placeholder":  "Participation Bonus Points",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "points_multiplier",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "points_multiplier",
+                                         "type":  "radio",
+                                         "placeholder":  "",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "points_multiplier_value",
+                                         "type":  "text",
+                                         "placeholder":  "Points Multiplier Value",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "blind_intervals",
+                                         "type":  "text",
+                                         "placeholder":  "Blind Intervals",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "tournament_fee",
+                                         "type":  "number",
+                                         "placeholder":  "Charity Take",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "maximum_buyin",
+                                         "type":  "text",
+                                         "placeholder":  "Maximum BuyIn",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "players_at_final_table",
+                                         "type":  "number",
+                                         "placeholder":  "Players at Final Table",
+                                         "aria":  ""
+                                     },
+                                     {
+                                         "name":  "rules_description",
+                                         "type":  "textarea",
+                                         "placeholder":  "Rules Description",
+                                         "aria":  ""
+                                     }
+                                 ]
+                  }
+              ],
+    "bodyText":  "View Site \n1\nSign Out\n Dashboard\nTournament Management\n Tournaments\n Payout Distributions Template\n Blind Structures\n Live Updates\n Events\n Seasons\n Leagues\n Venues\nArticle Management\n Categories\n Articles\nUser Management\n Players\n Roles\n Fix Duplicate Players\n Notifications\nEmail Management\n Email Templates\nSettings\n Configuration\n Backup Manager\n Log Viewer\n \n Tournament Create\n Create \nStatus *\nPublished\nUnpublished\nFeatured *\nYes \nNo\nChoose Tournament Type *\n- Choose Tournament Type -\nDPT Standard\nSatellite\nFreeroll\nFlight\nChoose Event *\n- Choose Event -\nDead Money Open\nCasselton Vets\nDead Money Open\nEagle Eye\nEagle Eye\nFall Championship\nHole in One Deepstack\nL.I.S.T.E.N. INC Monster Stack\nL.I.S.T.E.N. INC Monster Stack\nOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nPoker Brat Black Chip Bounty\nPoker Brat Black Chip BOUNTY Tournament\nPour Decisions Deep Stack\nSpring Championship\nThe Buckskin Shootout\nThe Buffalo City Showdown\n🃏 Summer Showdown at Hagge\u0027s\nBuckskin Shootout\nBuffalo City Showdown\nCactus Jacks Open\nCasselton Vets\nCity Brew Hall\nDakota Jim Dandy Poker Festival-Featuring the $1,000 Buy In \"Dream Chaser V\" Tournament! $5,000 Player of the Series package up for grabs!\nDead Money Open\nDPT Spring Championship\nHagge\u0027s Fall Classic\nHole in One Deepstack\nL.I.S.T.E.N. INC Monster Stack\nL.I.S.T.E.N. INC Monster Stack 10/31/2025\nOperation Poker: Red White \u0026 Bluff - Honoring Heroes for Veteran\u0027s Day at the Casselton Vets\nPhat Stacks at the Phat Fish\nPoker Brat Black Chip BOUNTY Tournament\nPour Decisions\nThe Poker Brat at the Windbreak\nThe Tri-State Poker Championship\nWatford City Eagles Club Monster Stack\n\"RPT Casino State Championship\"-BRACELET EVENT!\nBuckskin Shootout\nCasselton Vets Club\nCity Brew Hall\nDakota Jim Dandy Poker Festival\nDakota Jim Dandy Poker Festival !\nDead Money Open\nDPT Spring Championship\nEagle Eye\nHagge\u0027s Deep Stack\nHagge\u0027s Fall Classic\nHole in one Main Event\nL.I.S.T.E.N. INC Monster Stack\nMandan Eagles Club Mega Stack\nOperation Poker: Red White \u0026 Bluff\nPhat Stacks at the Phat Fish\nPhat Stacks at the Phat Fish\nPoker Brat Black Chip BOUNTY Tournament\nPoker Brat BOUNTY Tournament\nPour Decisions\nRPT Casino State Championship 2024/2025\nRPT Summer Main Event\nRPT/DPT Season Championship\nWatford City Eagles Club Monster Stack\nBlack Gold Deep Stack - Beulah ND\nBuckskin Shootout\nBuffalo City Showdown\nCasselton Vets\nDead Money Open\nDPT Championship\nDPT Championship Bonus Freerolls\nEagle Eye\nHole In One - Oakes, ND\nL.i.s.t.e.n. Inc Monster Stack\nMandan Eagles\nPhat Stacks at the Phat Fish\nPoker Brat BOUNTY Tournament\nPour Decisions Tioga\nRPT Casino State Championship\nSeason 2022-2023 Kickoff\nBuffalo City Showdown\nDead Money Open\nDPT Season XI Championship\nEagle Eye\nL.i.s.t.e.n. Inc Monster Stack\nPhat Stacks at the Phat Fish\nPoker Brat Classic\nPour Decisions - Tioga ND\nPour Decisions March 26\nSeason XI Kickoff Tournament - Hagge\u0027s\nSpeedway Full Throttle Poker Open\nChoose Venue *\n- Choose Venue -\nAce of Spades\nAlibis Lounge\nAngry Beaver Lodge\nBack Door Pub\nBar Nine\nBilly\u0027s Corner Bar \u0026 Grill\nBismarck Amvets\nBismarck Hotel\nBison Turf\nBordertown Bar \u0026 Grill\nBrickhouse Lounge\nBrothers Bar \u0026 Grill\nBubba\u0027s Bar \u0026 Grill\nBuckskin\nBuddies Bar \u0026 Grill\nBuff Bar \u0026 Lounge\nCactus Jacks\nCando Bar\nCasselton Vets Club\nCedar Inn\nChamps Paragon Bowl\nCity Brew Hall\nCity Limits Bar \u0026 Bottle Shop\nCountry Pub\nCzech\u0027ers Sports Bar\nDakota Magic Casino\nDakota Skies Bingo\nDanny\u0027s Dugout\nDawn\u0027s Corner Bar \u0026 Grill\nDouble Tree - West Fargo\nEGF Legion\nFanatics Sports Bar\nFergus Falls VFW\nFort Saloon\nHagge\u0027s Bar \u0026 Grill\nHarvey Eagles Club\nJamestown Elks Lodge #995\nJumpin\u0027 Jacks\nKnuckleheads Bar \u0026 Grill\nLast Chance Ranch Steakhouse\nLotta\u0027s\nM \u0026 J Saloon\nMandan Eagles\nMc Kinney\u0027s On Southside\nMills Lounge\nMorris Eagles Club\nMuddy Cow Bar\nNo Name Bar \u0026 Grill\nOld 10 Saloon\nPhat Fish\nPit Stop\nPlaymaker\u0027s All American Lounge\nPlaytime Sports Bar \u0026 Ballroom\nPortland Liquor Store\nPour Decisions\nRed River Valley Fairgrounds - Hartl Building\nRed Rock Bar \u0026 Grill\nRedwood Falls Legion\nRoute 47 Pub \u0026 Grub\nRoute 65 Pub \u0026 Grub\nShorewood Pub\nSlammers Sports Bar\nSouthgate Casino Bar \u0026 Grill\nSpeedway Event Center\nSpirit Lake Casino \u0026 Resort\nTBD\nTerrace Lanes\nThe Beer Garden 2\nThe Bison Turf\nThe Dougout Bar \u0026 Grill\nThe Hay Shed\nThe Pipe\nThirsty Duck\nValley City Eagles\nWatford City Eagles Club\nWindbreak\nWow! Zone\nName *\nShort Description *\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nSource\n \n \n \n \n \n \n \n \n \nStyles\nFormat\n \n◢\n \nLong Description\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nSource\n \n \n \n \n \n \n \n \n \nStyles\nFormat\n \n◢\n \nLive Stream Video URL\nLogo\nBanner Image\nMulti Day\nStart Date *\nRegistration Start Date *\nRegistration End Date *\nInitial Buy In *\n$\nDealer Appreciation Fee *\n$\nInitial Chips Count *\nAllow Rebuy? *\nYes \nNo\nPoints Multiplier? *\nYes \nNo\nBlind Intervals\nMins.\nCharity Take *\n%\nMaximum BuyIn\n$\nPlayers at Final Table\nRules Description *\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nSource\n \n \n \n \n \n \n \n \n \nStyles\nFormat\n \n◢\n \n Create \n \n Dashboard\n Tournaments\nCreate\n "
+}
