@@ -95,6 +95,8 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
   const [addonBuyIn, setAddonBuyIn] = useState('');
   const [payoutTemplateId, setPayoutTemplateId] = useState('');
   const [distributionAmount, setDistributionAmount] = useState('');
+  const [rankCorrections, setRankCorrections] = useState<Array<{ entry_id: number; rank: string; total_buy_in_amount: string; bounty: string }>>([]);
+  const [showRankEditor, setShowRankEditor] = useState(false);
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -174,6 +176,32 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     if (!response.ok) { setMessage(payload.error || 'Satellite winner assignment failed'); return; }
     setMessage(`${payload.result?.winner_count ?? 0} satellite winner${payload.result?.winner_count === 1 ? '' : 's'} assigned.`);
     await reload();
+  };
+
+  const openRankEditor = () => {
+    if (!desk) return;
+    setRankCorrections(desk.entries.filter((entry) => entry.checked_in && !entry.pre_registered).map((entry) => ({
+      entry_id: entry.id, rank: String(entry.rank ?? ''), total_buy_in_amount: String(entry.total_buy_in_amount), bounty: String(entry.bounty),
+    })));
+    setShowRankEditor(true); setMessage('');
+  };
+
+  const updateRankCorrection = (entryId: number, field: 'rank' | 'total_buy_in_amount' | 'bounty', value: string) => {
+    setRankCorrections((current) => current.map((correction) => correction.entry_id === entryId ? { ...correction, [field]: value } : correction));
+  };
+
+  const saveRankCorrections = async () => {
+    const corrections = rankCorrections.map((correction) => ({ ...correction, rank: Number(correction.rank), total_buy_in_amount: Number(correction.total_buy_in_amount), bounty: Number(correction.bounty) }));
+    if (!corrections.length || corrections.some((correction) => !Number.isSafeInteger(correction.rank) || correction.rank <= 0 || !Number.isSafeInteger(correction.total_buy_in_amount) || correction.total_buy_in_amount < 0 || !Number.isSafeInteger(correction.bounty) || correction.bounty < 0)) {
+      setMessage('Every correction needs a positive integer rank and non-negative integer buy-in and bounty.'); return;
+    }
+    if (!window.confirm(`Save and recalculate ${corrections.length} ranked entries? This atomic correction recalculates winnings, points, and final-table flags.`)) return;
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/ranks/bulk`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ corrections }) });
+    const payload = await response.json() as { error?: string };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Bulk rank correction failed'); return; }
+    setShowRankEditor(false); setMessage('Bulk ranks saved; winnings, scores, and final-table flags recalculated.'); await reload();
   };
 
   const changeFlightAdvancement = async (undo = false) => {
@@ -287,7 +315,7 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
 
       <section className="dpt-desk-grid">
         <article className="dpt-desk-panel dpt-desk-players">
-          <header><div><span>Operations</span><h3>Registered players</h3></div><strong>{desk.entries.length} entries</strong></header>
+          <header><div><span>Operations</span><h3>Registered players</h3></div><div className="dpt-desk-row-actions"><strong>{desk.entries.length} entries</strong><button type="button" disabled={busy} onClick={openRankEditor}>Bulk edit ranks</button></div></header>
           <div className="dpt-admin-table-wrap">
             <table className="dpt-admin-table">
               <thead><tr><th>Player</th><th>Status</th><th>Buy-in</th><th>Chips</th><th>Rank</th><th>Winnings</th><th>Points</th><th>Actions</th></tr></thead>
@@ -310,6 +338,15 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
               ))}</tbody>
             </table>
           </div>
+          {showRankEditor ? <section className="dpt-desk-action-form" aria-label="Bulk rank correction preview">
+            <header><div><span>Preview and recalculate</span><strong>Bulk rank corrections</strong></div><button type="button" onClick={() => setShowRankEditor(false)}>Close</button></header>
+            <p>Only checked-in entries are included. Saving marks supplied ranks as eliminated, then recalculates payouts, scores, and final-table flags atomically.</p>
+            <div className="dpt-admin-table-wrap"><table className="dpt-admin-table"><thead><tr><th>Player</th><th>Rank</th><th>Buy-in</th><th>Bounty</th><th>Current score</th></tr></thead><tbody>{rankCorrections.map((correction) => {
+              const entry = desk.entries.find((candidate) => candidate.id === correction.entry_id);
+              return <tr key={correction.entry_id}><td>{entry ? playerName(entry) : `Entry ${correction.entry_id}`}</td><td><input aria-label={`Rank for entry ${correction.entry_id}`} type="number" min="1" value={correction.rank} onChange={(event) => updateRankCorrection(correction.entry_id, 'rank', event.target.value)} /></td><td><input aria-label={`Buy-in for entry ${correction.entry_id}`} type="number" min="0" value={correction.total_buy_in_amount} onChange={(event) => updateRankCorrection(correction.entry_id, 'total_buy_in_amount', event.target.value)} /></td><td><input aria-label={`Bounty for entry ${correction.entry_id}`} type="number" min="0" value={correction.bounty} onChange={(event) => updateRankCorrection(correction.entry_id, 'bounty', event.target.value)} /></td><td>{Number(entry?.score || 0).toLocaleString()}</td></tr>;
+            })}</tbody></table></div>
+            <button type="button" className="danger" disabled={busy} onClick={() => void saveRankCorrections()}>{busy ? 'Recalculating…' : 'Confirm and recalculate ranks'}</button>
+          </section> : null}
           {activeEntry && actionMode ? <form className="dpt-desk-action-form" onSubmit={submitEntryAction}>
             <header><div><span>{actionMode}</span><strong>{playerName(activeEntry)}</strong></div><button type="button" onClick={closeAction}>Close</button></header>
             {actionMode === 'check-in' ? <div className="dpt-desk-form-grid">

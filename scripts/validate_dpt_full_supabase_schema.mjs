@@ -26,6 +26,7 @@ const migrationFiles = [
   'supabase/migrations/20260718163000_admin_tournament_payout_materialization_rpc.sql',
   'supabase/migrations/20260718180000_admin_satellite_winners_rpc.sql',
   'supabase/migrations/20260718190000_admin_flight_advancement_rpc.sql',
+  'supabase/migrations/20260719100000_admin_bulk_rank_corrections_rpc.sql',
 ];
 
 const db = new PGlite();
@@ -268,7 +269,17 @@ const workflowSecurityResult = await db.query(`
       'authenticated',
       'public.dpt_admin_undo_flight_advancement(bigint)',
       'execute'
-    ) as authenticated_can_undo_flight
+    ) as authenticated_can_undo_flight,
+    not has_function_privilege(
+      'anon',
+      'public.dpt_admin_bulk_correct_ranks(bigint,jsonb)',
+      'execute'
+    ) as anon_cannot_bulk_correct_ranks,
+    has_function_privilege(
+      'authenticated',
+      'public.dpt_admin_bulk_correct_ranks(bigint,jsonb)',
+      'execute'
+    ) as authenticated_can_bulk_correct_ranks
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
