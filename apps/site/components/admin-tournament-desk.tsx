@@ -29,6 +29,7 @@ export type DeskEntry = {
   eliminated: boolean;
   elimination_sequence: number | null;
   final_table: boolean;
+  qualified_flight_player: boolean;
   player: DeskPlayer | null;
 };
 
@@ -38,6 +39,8 @@ type DeskData = {
     name: string;
     starts_at: string | null;
     registration_closed: boolean;
+    main_tournament_id: number | null;
+    chip_carryover: 'highest' | 'sum' | null;
     minimum_buy_in: number;
     initial_chips_count: number;
     rebuy_amount: number;
@@ -170,6 +173,19 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
     setBusy(false);
     if (!response.ok) { setMessage(payload.error || 'Satellite winner assignment failed'); return; }
     setMessage(`${payload.result?.winner_count ?? 0} satellite winner${payload.result?.winner_count === 1 ? '' : 's'} assigned.`);
+    await reload();
+  };
+
+  const changeFlightAdvancement = async (undo = false) => {
+    if (!desk || desk.tournament.tournament_type?.code !== 'flight') return;
+    const action = undo ? 'undo this flight advancement' : 'advance every remaining checked-in flight player into the linked main tournament';
+    if (!window.confirm(`Confirm: ${action}. This operation is atomic and recorded in the audit trail.`)) return;
+    setBusy(true); setMessage('');
+    const response = await fetch(`/api/admin/tournaments/${tournamentId}/flight-advance${undo ? '/undo' : ''}`, { method: 'POST' });
+    const payload = await response.json() as { error?: string; result?: { advanced_count?: number; undone_count?: number } };
+    setBusy(false);
+    if (!response.ok) { setMessage(payload.error || 'Flight advancement update failed'); return; }
+    setMessage(undo ? `${payload.result?.undone_count ?? 0} flight advancement${payload.result?.undone_count === 1 ? '' : 's'} undone.` : `${payload.result?.advanced_count ?? 0} player${payload.result?.advanced_count === 1 ? '' : 's'} advanced.`);
     await reload();
   };
 
@@ -344,6 +360,13 @@ export function AdminTournamentDesk({ tournamentId }: { tournamentId: number }) 
             </button>
             {!desk.tournament.registration_closed ? <small>Close registration before assigning satellite winners.</small> : null}
             {desk.payouts.length === 0 ? <small>Materialize satellite payouts before assigning winners.</small> : null}
+          </article> : null}
+          {desk.tournament.tournament_type?.code === 'flight' ? <article className="dpt-desk-panel">
+            <header><div><span>Flight completion</span><h3>Advance survivors</h3></div></header>
+            <p>Moves checked-in surviving players into the linked main tournament using {desk.tournament.chip_carryover || 'highest'}-stack carryover. This is available only after registration closes.</p>
+            <button type="button" className="danger" disabled={busy || !desk.tournament.registration_closed || desk.metrics.remaining === 0} onClick={() => void changeFlightAdvancement()}>{busy ? 'Saving…' : 'Advance flight players'}</button>
+            <button type="button" disabled={busy || !desk.entries.some((entry) => entry.qualified_flight_player)} onClick={() => void changeFlightAdvancement(true)}>Undo flight advancement</button>
+            {!desk.tournament.registration_closed ? <small>Close registration before advancing flight players.</small> : null}
           </article> : null}
           <article className="dpt-desk-panel">
             <header><div><span>Corrections</span><h3>Audit history</h3></div><strong>{desk.audit.length}</strong></header>

@@ -314,21 +314,22 @@ def main() -> None:
     )
     statements.extend(sql)
 
-    tournament_columns = ['id','event_id','venue_id','tournament_type_id','blind_structure_id','name','alias','short_description','long_description','rules_description','starts_at','ends_at','registration_starts_at','registration_ends_at','registration_closed','registration_closed_by','registration_closed_at','dealer_fee','minimum_buyin','maximum_buyin','allow_rebuy','rebuy_amount','rebuy_fee','rebuy_chips_count','initial_chips_count','players_at_final_table','points_multiplier_enabled','points_multiplier_value','participation_bonus_points','allow_search_registration','payout_template_id','total_registered_players','total_payout_players','total_payout_distribution_amount','status','created_at','updated_at','deleted_at','legacy_data']
+    tournament_columns = ['id','event_id','venue_id','tournament_type_id','main_tournament_id','blind_structure_id','name','alias','short_description','long_description','rules_description','starts_at','ends_at','registration_starts_at','registration_ends_at','registration_closed','registration_closed_by','registration_closed_at','dealer_fee','minimum_buyin','maximum_buyin','allow_rebuy','rebuy_amount','rebuy_fee','rebuy_chips_count','initial_chips_count','players_at_final_table','points_multiplier_enabled','points_multiplier_value','participation_bonus_points','chip_carryover','allow_search_registration','payout_template_id','total_registered_players','total_payout_players','total_payout_distribution_amount','status','created_at','updated_at','deleted_at','legacy_data']
     tournament_records = []
     for r in tables['dpt_tournaments']:
         tournament_records.append([
-            integer(r['id']),integer(r.get('event_id')) or None,integer(r.get('venue_id')) or None,integer(r.get('tournament_type_id')) or None,integer(r.get('blind_id')) or None,
+            integer(r['id']),integer(r.get('event_id')) or None,integer(r.get('venue_id')) or None,integer(r.get('tournament_type_id')) or None,integer(r.get('advancing_tournaments_id')) or None,integer(r.get('blind_id')) or None,
             clean_text(r.get('name')),clean_text(r.get('alias')),clean_text(r.get('short_description')),clean_text(r.get('long_description')),clean_text(r.get('rules_description')),
             clean_date(r.get('start_date')),clean_date(r.get('end_date')),clean_date(r.get('registration_start_date')),clean_date(r.get('registration_end_date')),
             truthy(r.get('registration_closed')),user_reference(r.get('registration_closed_by'),known_users),clean_date(r.get('registration_closed_date')),
             integer(r.get('dealer_fee')),integer(r.get('minimum_buyin')),integer(r.get('maximum_buyin')) or None,truthy(r.get('allow_rebuy')),integer(r.get('rebuy_amount')),integer(r.get('rebuy_fee')),integer(r.get('rebuy_chips_count')),integer(r.get('initial_chips_count')),integer(r.get('players_at_final_table')) or None,
-            truthy(r.get('points_multiplier')),number(r.get('points_multiplier_value')) or None,integer(r.get('participation_bonus_points')),truthy(r.get('allow_search_registration')),
+            truthy(r.get('points_multiplier')),number(r.get('points_multiplier_value')) or None,integer(r.get('participation_bonus_points')),
+            'sum' if truthy(r.get('chips_accumulator')) else 'highest',truthy(r.get('allow_search_registration')),
             integer(r.get('payout_distribution_id')) if integer(r.get('payout_distribution_id')) in payout_template_ids else None,
             integer(r.get('total_no_of_players')) or None,integer(r.get('total_payout_players')) or None,number(r.get('total_payout_distribution_amount')) or None,truthy(r.get('status')),
             clean_date(r.get('created_at')),clean_date(r.get('updated_at')),clean_date(r.get('deleted_at')),r,
         ])
-    sql, counts['tournaments'] = insert_batches('tournaments', tournament_columns, tournament_records, 'on conflict (id) do update set payout_template_id=excluded.payout_template_id,total_registered_players=excluded.total_registered_players,total_payout_players=excluded.total_payout_players,total_payout_distribution_amount=excluded.total_payout_distribution_amount', 150)
+    sql, counts['tournaments'] = insert_batches('tournaments', tournament_columns, tournament_records, 'on conflict (id) do update set main_tournament_id=excluded.main_tournament_id,chip_carryover=excluded.chip_carryover,payout_template_id=excluded.payout_template_id,total_registered_players=excluded.total_registered_players,total_payout_players=excluded.total_payout_players,total_payout_distribution_amount=excluded.total_payout_distribution_amount', 150)
     statements.extend(sql)
 
     tournament_payout_columns = ['id','tournament_id','payout_template_row_id','standing','payout_percentage','payout_amount','prize_description','points','created_at','updated_at','legacy_data']

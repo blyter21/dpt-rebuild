@@ -25,12 +25,16 @@ describe('tournament desk operator controls', () => {
       'Materialize payouts',
       '/satellite-winners',
       'Make satellite winners',
+      '/flight-advance',
+      'Advance flight players',
+      'Undo flight advancement',
       'Audit history',
     ]) {
       expect(source).toContain(expected);
     }
     expect(source).toContain('Confirm the correct player');
     expect(source).toContain("desk.tournament.tournament_type?.code === 'satellite'");
+    expect(source).toContain("desk.tournament.tournament_type?.code === 'flight'");
     expect(source).toContain('window.confirm');
   });
 });

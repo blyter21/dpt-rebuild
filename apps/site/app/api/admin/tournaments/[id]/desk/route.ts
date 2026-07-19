@@ -16,13 +16,13 @@ export async function GET(
   }
 
   const tournamentQuery = new URLSearchParams({
-    select: 'id,name,starts_at,ends_at,registration_closed,minimum_buy_in,initial_chips_count,rebuy_amount,rebuy_fee,rebuy_chips_count,players_at_final_table,points_multiplier_enabled,points_multiplier_value,participation_bonus_points,payout_template_id,total_registered_players,total_payout_players,total_payout_distribution_amount,event:events(id,name),venue:venues(id,name,city,state),tournament_type:tournament_types(id,code,name)',
+    select: 'id,name,starts_at,ends_at,registration_closed,main_tournament_id,chip_carryover,minimum_buy_in,initial_chips_count,rebuy_amount,rebuy_fee,rebuy_chips_count,players_at_final_table,points_multiplier_enabled,points_multiplier_value,participation_bonus_points,payout_template_id,total_registered_players,total_payout_players,total_payout_distribution_amount,event:events(id,name),venue:venues(id,name,city,state),tournament_type:tournament_types(id,code,name)',
     id: `eq.${tournamentId}`,
     deleted_at: 'is.null',
     limit: '1',
   });
   const entriesQuery = new URLSearchParams({
-    select: 'id,player_id,pre_registered,checked_in,initial_buyin,initial_chips_count,total_buy_in_amount,no_of_addons_buy,total_addon_chips,total_chips,rank,winnings,score,bounty,eliminated,elimination_sequence,final_table,player:profiles!tournament_entries_player_id_fkey(id,legacy_user_id,first_name,last_name,nick_name,avatar_url)',
+    select: 'id,player_id,pre_registered,checked_in,initial_buyin,initial_chips_count,total_buy_in_amount,no_of_addons_buy,total_addon_chips,total_chips,rank,winnings,score,bounty,eliminated,elimination_sequence,final_table,qualified_flight_player,player:profiles!tournament_entries_player_id_fkey(id,legacy_user_id,first_name,last_name,nick_name,avatar_url)',
     tournament_id: `eq.${tournamentId}`,
     deleted_at: 'is.null',
     order: 'eliminated.asc,rank.asc.nullslast,id.asc',
