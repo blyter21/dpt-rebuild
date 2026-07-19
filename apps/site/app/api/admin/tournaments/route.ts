@@ -49,7 +49,7 @@ export async function GET(request: NextRequest) {
   if(query.get('scope')==='featured') filters.push('featured=eq.true');
   if(query.get('scope')==='standard') filters.push('featured=eq.false');
   if(query.get('search')) filters.push(`name=ilike.*${encodeURIComponent(query.get('search')!.trim())}*`);
-  const select='id,name,alias,event_id,venue_id,tournament_type_id,starts_at,ends_at,status,featured,event:events(name),tournament_type:tournament_types(name,code)';
+  const select='id,name,alias,event_id,venue_id,tournament_type_id,starts_at,ends_at,status,featured,event:events(name),tournament_type:tournament_types!tournaments_tournament_type_id_fkey(name,code)';
   const records=await dptAdminSupabaseFetch(context,`/rest/v1/tournaments?select=${encodeURIComponent(select)}&${filters.join('&')}`,{headers:{Prefer:'count=exact'}});
   if(!records.ok) return NextResponse.json({error:'Tournament list unavailable'},{status:502});
   return NextResponse.json({records:await records.json(),total:Number(records.headers.get('content-range')?.split('/')[1]||0),options:setupOptions});

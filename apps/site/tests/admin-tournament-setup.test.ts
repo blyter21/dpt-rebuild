@@ -16,7 +16,7 @@ describe('tournament setup administration',()=>{
   adminFetch.mockImplementation(async(_context:unknown,url:string)=>optionResponse(url)?json([]):json([{id:9,name:'Filtered'}],200,{'content-range':'0-0/1'}));
   const request=new NextRequest('http://x/api/admin/tournaments?year=2027&event=82&type=1&status=published&scope=featured&search=Main&page=2&size=10&sort=starts_at&dir=asc');
   const result=await GET(request);expect(result.status).toBe(200);const listUrl=adminFetch.mock.calls.find((call)=>String(call[1]).startsWith('/rest/v1/tournaments?'))?.[1] as string;
-  expect(listUrl).toContain('starts_at=gte.2027-01-01');expect(listUrl).toContain('event_id=eq.82');expect(listUrl).toContain('tournament_type_id=eq.1');expect(listUrl).toContain('status=eq.true');expect(listUrl).toContain('featured=eq.true');expect(listUrl).toContain('name=ilike.*Main*');expect(listUrl).toContain('offset=10');
+  expect(listUrl).toContain('starts_at=gte.2027-01-01');expect(listUrl).toContain('event_id=eq.82');expect(listUrl).toContain('tournament_type_id=eq.1');expect(listUrl).toContain('status=eq.true');expect(listUrl).toContain('featured=eq.true');expect(listUrl).toContain('name=ilike.*Main*');expect(listUrl).toContain('offset=10');expect(decodeURIComponent(listUrl)).toContain('tournament_types!tournaments_tournament_type_id_fkey');
  });
  it('loads a complete tournament record for editing',async()=>{
   adminFetch.mockImplementation(async(_context:unknown,url:string)=>optionResponse(url)?json([]):json([{id:346,name:'Main',minimum_buyin:250,allow_rebuy:true}]));
