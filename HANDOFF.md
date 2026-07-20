@@ -18,12 +18,12 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
 - Real staging operations exist for tournament create/edit/copy/status/soft-delete and desk workflows plus audited Events, Seasons, Leagues, Venues, Blind Structures and Payout Templates administration. Tournament setup includes production list filters, named selectors, media, dates, buy-ins/rebuys, chips, scoring, qualifier/flight flags, copy-without-runtime-data, and runtime delete protection.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 118 integrated site tests, 31 tournament-engine tests and the complete 32-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts including 58 normalized qualifier relationships and 15 granular admin-role assignments.
+- Current verified gates: 127 integrated site tests, 31 tournament-engine tests and the complete 33-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts including 58 normalized qualifier relationships and 15 granular admin-role assignments.
 - Production remains read-only and untouched.
 - The dedicated Windows `PedroChromeDebug` profile is authenticated to both production and the rebuild. The rebuild session is established autonomously through a one-time Supabase admin authentication exchange; no password reset or user-entered credential is required.
 - Matched 1440×1000 production/rebuild screenshots, DOM inventories, side-by-side images and the gap report are under `reports/browser-parity/2026-07-19/`.
 - Current three-loop batch is complete and authenticated-browser accepted: tournament setup, Players/Roles/Duplicate Merge, and Content/Notifications/Email Templates. Evidence and remaining gaps are recorded in `reports/browser-parity/2026-07-19/THREE-LOOP-ACCEPTANCE.md`.
-- New three-loop batch: advanced Flights/Qualifiers/TOC relationships and Supabase Storage/media/operator UX are complete and rollback-tested; staging-simulated delivery workers are next.
+- New three-loop batch is implementation/rollback complete: advanced Flights/Qualifiers/TOC relationships, Supabase Storage/media/operator UX, and staging-only simulated delivery operations. Final authenticated Chrome acceptance is pending.
 
 ## Safety boundaries
 

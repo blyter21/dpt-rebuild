@@ -36,6 +36,7 @@ const migrationFiles = [
   'supabase/migrations/20260719200000_admin_tournament_relationships.sql',
   'supabase/migrations/20260719210000_articles_notifications_templates.sql',
   'supabase/migrations/20260719220000_secure_admin_media_and_profile_roles.sql',
+  'supabase/migrations/20260719230000_simulated_notification_delivery_queue.sql',
 ];
 
 const db = new PGlite();
@@ -378,7 +379,18 @@ const workflowSecurityResult = await db.query(`
     has_function_privilege('anon','public.dpt_public_media_key(uuid,text)','execute') as anon_can_resolve_published_media,
     has_function_privilege('anon','public.dpt_public_media_object_allowed(text)','execute') as anon_can_check_published_media,
     (select relrowsecurity from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname='media_assets') as media_assets_has_rls,
-    exists(select 1 from information_schema.columns where table_schema='public' and table_name='media_assets' and column_name='variants') as media_variants_present
+    exists(select 1 from information_schema.columns where table_schema='public' and table_name='media_assets' and column_name='variants') as media_variants_present,
+    (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('notification_delivery_attempts','profile_channel_suppressions','notification_rate_windows')) as notification_queue_tables_have_rls,
+    not has_function_privilege('anon','public.dpt_admin_claim_notification_deliveries(uuid,integer)','execute') as anon_cannot_claim_notification_queue,
+    has_function_privilege('authenticated','public.dpt_admin_claim_notification_deliveries(uuid,integer)','execute') as authenticated_can_claim_notification_queue,
+    not has_function_privilege('anon','public.dpt_admin_finalize_notification_delivery(uuid,uuid,text,text,text)','execute') as anon_cannot_finalize_notification_queue,
+    has_function_privilege('authenticated','public.dpt_admin_notification_campaign_detail(uuid,integer,integer)','execute') as authenticated_can_read_notification_history,
+    not has_function_privilege('anon','public.dpt_admin_notification_campaign_detail(uuid,integer,integer)','execute') as anon_cannot_read_notification_history,
+    has_function_privilege('authenticated','public.dpt_admin_finalize_notification_delivery(uuid,uuid,text,text,text)','execute') as authenticated_can_finalize_notification_queue,
+    not has_function_privilege('anon','public.dpt_admin_cancel_notification_campaign(uuid)','execute') as anon_cannot_cancel_notification_campaign,
+    has_function_privilege('authenticated','public.dpt_admin_cancel_notification_campaign(uuid)','execute') as authenticated_can_cancel_notification_campaign,
+    not has_function_privilege('anon','public.dpt_admin_retry_notification_delivery(uuid)','execute') as anon_cannot_retry_notification_delivery,
+    has_function_privilege('authenticated','public.dpt_admin_retry_notification_delivery(uuid)','execute') as authenticated_can_retry_notification_delivery
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
