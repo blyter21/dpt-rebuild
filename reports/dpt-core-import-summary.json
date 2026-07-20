@@ -4,6 +4,7 @@
   "counts": {
     "profiles": 2591,
     "profile_roles": 2606,
+    "profile_admin_roles": 15,
     "leagues": 2,
     "seasons": 5,
     "venues": 78,

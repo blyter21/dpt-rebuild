@@ -254,6 +254,8 @@ def main() -> None:
             role_records.append([profile_uuid(legacy_id), role])
     sql, counts['profile_roles'] = insert_batches('profile_roles', ['profile_id','role'], role_records, 'on conflict (profile_id,role) do nothing')
     statements.extend(sql)
+    counts['profile_admin_roles'] = sum(1 for _, role in role_records if role in ('super_admin','administrator'))
+    statements.append("insert into public.profile_admin_roles(profile_id,role_id) select pr.profile_id,ar.id from public.profile_roles pr join public.admin_roles ar on ar.name=pr.role::text where pr.role::text in ('super_admin','administrator') on conflict do nothing;")
 
     entity_specs = [
         ('dpt_leagues','leagues',['id','name','alias','description','status','created_at','updated_at','deleted_at','legacy_data'],

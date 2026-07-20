@@ -1,0 +1,15 @@
+import {NextRequest,NextResponse} from 'next/server';
+import {dptAdminSupabaseFetch,getDptAdminApiContext} from '../../../../../lib/dpt-admin-api';
+import {ADMIN_MEDIA_BUCKET,safeMediaKeys} from '../../../../../lib/admin-media';
+export const dynamic='force-dynamic';
+const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const sameOrigin=(request:NextRequest)=>request.headers.get('origin')===request.nextUrl.origin&&(!request.headers.get('sec-fetch-site')||request.headers.get('sec-fetch-site')==='same-origin');
+export async function GET(request:NextRequest,{params}:{params:{id:string}}){
+ const context=await getDptAdminApiContext();if(!context)return new NextResponse(null,{status:401});if(!uuid.test(params.id))return new NextResponse(null,{status:404});const variant=request.nextUrl.searchParams.get('variant')||'logo';if(!['original','thumb','card','hero','logo'].includes(variant))return new NextResponse(null,{status:404});
+ const lookup=await dptAdminSupabaseFetch(context,`/rest/v1/media_assets?select=original_key,variants&id=eq.${params.id}&state=eq.ready&deleted_at=is.null&limit=1`);if(!lookup.ok)return new NextResponse(null,{status:404});const asset=(await lookup.json() as {original_key:string;variants:Record<string,string>}[])[0];if(!asset)return new NextResponse(null,{status:404});const key=variant==='original'?asset.original_key:asset.variants?.[variant];if(!key)return new NextResponse(null,{status:404});const object=await dptAdminSupabaseFetch(context,`/storage/v1/object/${ADMIN_MEDIA_BUCKET}/${key}`);if(!object.ok||!object.body)return new NextResponse(null,{status:404});return new NextResponse(object.body,{headers:{'content-type':'image/webp','cache-control':'private, max-age=300','x-content-type-options':'nosniff'}});
+}
+export async function DELETE(request:NextRequest,{params}:{params:{id:string}}){
+ const context=await getDptAdminApiContext();if(!context)return NextResponse.json({error:'Unauthorized'},{status:401});if(!sameOrigin(request))return NextResponse.json({error:'Invalid origin'},{status:403});if(!uuid.test(params.id))return NextResponse.json({error:'Invalid media id'},{status:400});
+ const lookup=await dptAdminSupabaseFetch(context,`/rest/v1/media_assets?select=original_key,variants&id=eq.${params.id}&limit=1`);if(!lookup.ok)return NextResponse.json({error:'Media unavailable'},{status:502});const asset=(await lookup.json() as {original_key:string;variants:Record<string,string>}[])[0];if(!asset)return NextResponse.json({error:'Media not found'},{status:404});
+ const marked=await dptAdminSupabaseFetch(context,'/rest/v1/rpc/dpt_admin_delete_media',{method:'POST',body:JSON.stringify({p_id:params.id})});if(!marked.ok)return NextResponse.json({error:'Media deletion rejected'},{status:409});const deletes=await Promise.all(safeMediaKeys(asset).map((key)=>dptAdminSupabaseFetch(context,`/storage/v1/object/${ADMIN_MEDIA_BUCKET}/${key}`,{method:'DELETE'})));if(deletes.some((response)=>!response.ok))return NextResponse.json({error:'Media is marked deleting; storage cleanup must be retried'},{status:502});return NextResponse.json({media:await marked.json()});
+}

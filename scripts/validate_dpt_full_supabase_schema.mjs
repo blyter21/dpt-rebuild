@@ -35,6 +35,7 @@ const migrationFiles = [
   'supabase/migrations/20260719190000_players_permissions_duplicate_merge.sql',
   'supabase/migrations/20260719200000_admin_tournament_relationships.sql',
   'supabase/migrations/20260719210000_articles_notifications_templates.sql',
+  'supabase/migrations/20260719220000_secure_admin_media_and_profile_roles.sql',
 ];
 
 const db = new PGlite();
@@ -79,6 +80,7 @@ if (process.env.DPT_VALIDATE_PRIVATE_IMPORT === '1') {
     select
       (select count(*)::int from public.profiles) as profiles,
       (select count(*)::int from public.profile_roles) as profile_roles,
+      (select count(*)::int from public.profile_admin_roles) as profile_admin_roles,
       (select count(*)::int from public.venues) as venues,
       (select count(*)::int from public.events) as events,
       (select count(*)::int from public.tournaments) as tournaments,
@@ -359,7 +361,24 @@ const workflowSecurityResult = await db.query(`
     (select bool_and(c.relrowsecurity) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('article_categories','articles','article_profiles','media_assets','notification_campaigns','notification_recipients','notification_deliveries','internal_notifications','email_templates','email_template_versions','email_template_attachments')) as content_tables_have_rls,
     has_table_privilege('anon','public.dpt_public_published_articles','select') as anon_can_read_published_articles,
     has_column_privilege('anon','public.articles','title','select') as anon_can_read_public_article_title,
-    not has_column_privilege('anon','public.articles','body_html','select') as anon_cannot_read_private_article_body
+    not has_column_privilege('anon','public.articles','body_html','select') as anon_cannot_read_private_article_body,
+    not has_function_privilege('anon','public.dpt_admin_begin_media(text,text,bigint,integer,integer,text)','execute') as anon_cannot_begin_media,
+    has_function_privilege('authenticated','public.dpt_admin_begin_media(text,text,bigint,integer,integer,text)','execute') as authenticated_can_begin_media,
+    not has_function_privilege('anon','public.dpt_admin_finalize_media(uuid,text,jsonb)','execute') as anon_cannot_finalize_media,
+    has_function_privilege('authenticated','public.dpt_admin_finalize_media(uuid,text,jsonb)','execute') as authenticated_can_finalize_media,
+    not has_function_privilege('anon','public.dpt_admin_fail_media(uuid)','execute') as anon_cannot_fail_media,
+    not has_function_privilege('anon','public.dpt_admin_delete_media(uuid)','execute') as anon_cannot_delete_media,
+    has_function_privilege('authenticated','public.dpt_admin_delete_media(uuid)','execute') as authenticated_can_delete_media,
+    not has_function_privilege('anon','public.dpt_admin_save_article_with_media(bigint,jsonb,uuid)','execute') as anon_cannot_save_article_media,
+    has_function_privilege('authenticated','public.dpt_admin_save_article_with_media(bigint,jsonb,uuid)','execute') as authenticated_can_save_article_media,
+    not has_function_privilege('anon','public.dpt_admin_save_email_template_with_attachments(uuid,jsonb,uuid[])','execute') as anon_cannot_save_template_media,
+    has_function_privilege('authenticated','public.dpt_admin_save_email_template_with_attachments(uuid,jsonb,uuid[])','execute') as authenticated_can_save_template_media,
+    not has_function_privilege('anon','public.dpt_admin_set_profile_admin_roles(uuid,bigint[])','execute') as anon_cannot_assign_admin_roles,
+    has_function_privilege('authenticated','public.dpt_admin_set_profile_admin_roles(uuid,bigint[])','execute') as authenticated_can_assign_admin_roles,
+    has_function_privilege('anon','public.dpt_public_media_key(uuid,text)','execute') as anon_can_resolve_published_media,
+    has_function_privilege('anon','public.dpt_public_media_object_allowed(text)','execute') as anon_can_check_published_media,
+    (select relrowsecurity from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname='media_assets') as media_assets_has_rls,
+    exists(select 1 from information_schema.columns where table_schema='public' and table_name='media_assets' and column_name='variants') as media_variants_present
 `);
 const workflowSecurity = workflowSecurityResult.rows[0];
 
@@ -394,6 +413,7 @@ if (coreImportCounts) {
   const expectedCoreCounts = {
     profiles: 2591,
     profile_roles: 2606,
+    profile_admin_roles: 15,
     venues: 78,
     events: 82,
     tournaments: 271,
