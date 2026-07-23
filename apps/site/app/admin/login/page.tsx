@@ -9,7 +9,7 @@ const errors: Record<string, string> = {
 
 export const dynamic = 'force-dynamic';
 
-export default function AdminLoginPage({ searchParams }: { searchParams?: { error?: string; next?: string } }) {
+export default function AdminLoginPage({ searchParams }: { searchParams?: { error?: string; next?: string; sent?: string } }) {
   const configured = isDptAdminAuthConfigured();
   const error = searchParams?.error ? errors[searchParams.error] || 'Unable to sign in.' : '';
   const next = searchParams?.next?.startsWith('/admin') ? searchParams.next : '/admin';
@@ -28,6 +28,7 @@ export default function AdminLoginPage({ searchParams }: { searchParams?: { erro
           </div>
         ) : null}
         {error ? <div className="dpt-admin-login-error" role="alert">{error}</div> : null}
+        {searchParams?.sent === '1' ? <div className="dpt-admin-login-locked" role="status">If an authorized account matches that address, a sign-in link is on its way.</div> : null}
 
         <form action="/api/admin/auth/login" method="post" className="dpt-admin-login-form">
           <input type="hidden" name="next" value={next} />
@@ -37,6 +38,13 @@ export default function AdminLoginPage({ searchParams }: { searchParams?: { erro
           <input id="admin-password" name="password" type="password" autoComplete="current-password" required disabled={!configured} />
           <label className="dpt-admin-remember"><input name="remember" type="checkbox" value="1" disabled={!configured} /> Keep me signed in</label>
           <button type="submit" disabled={!configured}>Sign in to administration</button>
+        </form>
+
+        <form action="/api/admin/auth/magic-link" method="post" className="dpt-admin-login-form">
+          <input type="hidden" name="next" value={next} />
+          <label htmlFor="admin-magic-email">Email address</label>
+          <input id="admin-magic-email" name="email" type="email" autoComplete="email" required disabled={!configured} />
+          <button type="submit" disabled={!configured}>Email me a sign-in link</button>
         </form>
 
         <div className="dpt-admin-login-notes">

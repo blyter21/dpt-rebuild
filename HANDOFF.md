@@ -1,8 +1,39 @@
 # DPT Rebuild Lab — Handoff Summary
 
-Last updated: `2026-07-18T09:37:24-05:00`
+Last updated: `2026-07-21T19:06:04-05:00`
 
 This is the current working handoff for the Dakota Poker Tour rebuild lab. It is intended for Pedro/future agents picking up the local rebuild without rereading every loop log.
+
+## Resume checkpoint — 2026-07-21
+
+- Repository: `/home/hermes/projects/dpt-rebuild-lab`, branch `main`.
+- Deployed and remote-synchronized head: `f7f97ef52a958e4fc2ff536971c613c6ebff19fe` (`Document next three-loop authenticated acceptance`).
+- Live replacement: `https://dpt-rebuild-site.vercel.app`; `/admin` returns HTTP 200 and protected media/campaign APIs return 401 anonymously.
+- Vercel and Supabase Preview checks passed at the deployed feature head. Supabase local/remote migration histories match through migration 33 (`20260719230000_simulated_notification_delivery_queue.sql`).
+- Verified gates: 133 integrated site tests, 31 tournament-engine tests, TypeScript, Next production build, 33-migration PGlite/RLS/privilege validation, and protected production-data import.
+- Completed and authenticated-browser accepted:
+  1. tournament setup/list and operational desk workflows;
+  2. Players/Roles/Duplicate Merge;
+  3. Articles/Categories/Templates/Notifications/Internal Inbox;
+  4. advanced child flights, qualifiers and TOC selection;
+  5. private Supabase Storage media and deterministic image variants;
+  6. associated-player name selection and granular profile-admin-role assignment;
+  7. staging-only email/SMS simulation queue with suppression, leases, rate limits, retry and immutable attempt history.
+- Final browser evidence/report: `reports/browser-parity/2026-07-20/NEXT-THREE-LOOP-ACCEPTANCE.md`. Authenticated screenshots remain local-only under `C:\Users\blyte\AppData\Local\Temp\` and must not be committed.
+- Production remained read-only. Final QA campaigns/media/assets/audits/rate windows were cleaned; no external email or SMS provider call occurred.
+- Rebuild browser authentication remains agent-owned via `/home/hermes/.hermes/private/dpt/login_staging_browser.sh`; never ask Brook to log into the rebuild.
+- Dana's single imported administrator profile is linked to one Supabase Auth identity and one active `dpt_admin_accounts` row; the `/admin/login` page supports a self-service email magic link in addition to password login.
+- Deliberate boundaries still in force: no live email/SMS adapter or credentials, no scheduled live delivery worker, and no general non-image email attachments without malware scanning/threat-model work.
+- Recommended next resume loop: perform a full remaining-gap inventory against the authenticated production admin and public/mobile routes, rank only confirmed gaps by business impact, then implement the highest-value three. Do not begin production cutover, DNS changes, live provider delivery, or destructive data migration without Brook's explicit direction.
+- Useful restart commands:
+  ```bash
+  cd /home/hermes/projects/dpt-rebuild-lab
+  git status --short && git rev-parse HEAD && git ls-remote origin main
+  npm run dpt:db:validate:full
+  DPT_VALIDATE_PRIVATE_IMPORT=1 npm run dpt:db:validate:full
+  npm --workspace apps/site run typecheck
+  npx vitest run --root apps/site
+  ```
 
 ## Authoritative restart checkpoint — 2026-07-18
 
@@ -18,7 +49,7 @@ This section supersedes older read-only/review-mode notes later in this file.
 - Private profiles, entries, payouts and audit data remain inaccessible to `anon`; RLS is enabled.
 - Real staging operations exist for tournament create/edit/copy/status/soft-delete and desk workflows plus audited Events, Seasons, Leagues, Venues, Blind Structures and Payout Templates administration. Tournament setup includes production list filters, named selectors, media, dates, buy-ins/rebuys, chips, scoring, qualifier/flight flags, copy-without-runtime-data, and runtime delete protection.
 - The authenticated tournament desk UI exists at `/admin/tournaments/[id]`, with player search, registration, check-in, add-on, elimination, satellite winner assignment, flight advancement/undo, bulk rank editor, reset preview/confirmation, live-update publication controls, payout/configuration panels and a 50-entry audit history.
-- Current verified gates: 127 integrated site tests, 31 tournament-engine tests and the complete 33-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts including 58 normalized qualifier relationships and 15 granular admin-role assignments.
+- Current verified gates: 133 integrated site tests, 31 tournament-engine tests and the complete 33-migration PGlite/RLS/privilege chain pass; the protected import passes exact operational counts including 58 normalized qualifier relationships and 15 granular admin-role assignments.
 - Production remains read-only and untouched.
 - The dedicated Windows `PedroChromeDebug` profile is authenticated to both production and the rebuild. The rebuild session is established autonomously through a one-time Supabase admin authentication exchange; no password reset or user-entered credential is required.
 - Matched 1440×1000 production/rebuild screenshots, DOM inventories, side-by-side images and the gap report are under `reports/browser-parity/2026-07-19/`.
@@ -64,7 +95,7 @@ apps/admin
   -> must not be deployed or treated as the final admin architecture
 ```
 
-The required end state is one product, one Vercel project, and one integrated public/admin application. Mock data is not the product direction. Supabase staging is connected and currently serves the live public replacement data; real authenticated admin access is implemented but has not yet been owner-login verified with review mode disabled.
+The required end state is one product, one Vercel project, and one integrated public/admin application. Mock data is not the product direction. Supabase staging serves the live public replacement data; authenticated admin access is implemented and has been repeatedly verified through the agent-owned `PedroChromeDebug` staging session.
 
 ## Current packages/apps
 
@@ -73,7 +104,7 @@ The required end state is one product, one Vercel project, and one integrated pu
 | `apps/site` | Authoritative integrated replacement app: Supabase-backed public site plus integrated `/admin`; current live admin preview is read-only review mode. |
 | `apps/admin` | Historical mock simulator/reference only; not a deployment or product target. |
 | `packages/tournament-engine` | Tested TypeScript domain logic extracted from Laravel behavior; reuse where it matches production rules. |
-| `supabase` | Audited migration chain and production-derived public snapshot applied to staging; remaining work is real authenticated admin verification and later mutation workflows. |
+| `supabase` | Audited 33-migration chain, protected production-derived import, Auth and private Storage applied to `dpt-rebuild-staging`; local/remote histories match and authenticated admin mutations are rollback/browser verified. |
 | `DPT_REBUILD_SPEC` | Entity maps, business rules, schema drafts, migration/RLS/API/test plans. |
 | `loop-logs` | Evidence logs for each loop. |
 
@@ -282,15 +313,15 @@ Test Files  6 passed (6)
 Tests       31 passed (31)
 ```
 
-## Current known blockers before real admin mutation work
+## Current confirmed constraints / next decisions
 
-1. Real Supabase-authenticated owner login has not yet been verified with `DPT_ADMIN_REVIEW_MODE=disabled`.
-2. This Hermes Linux user is not authenticated to Supabase or Vercel CLI, so it cannot inspect private project metadata or change deployment environment variables without a future approved credential/session handoff.
-3. Docker/local Supabase and `psql` remain unavailable, although the full migration chain was validated with embedded Postgres and applied to the real staging project through the existing integration.
-4. Host/manager tournament assignment model is not designed yet.
-5. Audit/tournament-update process needs final shape before production-like admin mutation logging.
-6. Next/PostCSS audit advisories remain unresolved; `npm audit --omit=dev` reports 2 vulnerabilities and suggests a breaking Next 16 upgrade.
-7. Local Chromium screenshot tooling remains blocked by missing `libnspr4.so`; live HTTP and browser-stack checks are available.
+The prototype-era blocker list that previously occupied this section is superseded by the 2026-07-21 resume checkpoint.
+
+1. Live email/SMS provider adapters, credentials and scheduled delivery workers are intentionally absent; staging is simulator-only.
+2. General non-image email attachments remain disabled pending malware scanning and a separate document threat model.
+3. A fresh end-to-end remaining-gap inventory across authenticated production admin plus public desktop/mobile routes is still recommended before calling the entire replacement cutover-ready.
+4. Production cutover, DNS changes, live provider delivery and destructive migration are not authorized by the completed staging loops.
+5. Docker/local Supabase remains unavailable, but it is not blocking: PGlite validates the full migration/RLS chain and hosted staging has passed rollback and browser lifecycle verification.
 
 ## Common commands
 

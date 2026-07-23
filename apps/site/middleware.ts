@@ -11,7 +11,7 @@ function adminLoginRedirect(request: NextRequest) {
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  if (pathname === '/admin/login') return NextResponse.next();
+  if (pathname === '/admin/login' || pathname === '/admin/auth/callback') return NextResponse.next();
 
   const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
